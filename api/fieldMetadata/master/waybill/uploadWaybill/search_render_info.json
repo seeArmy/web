@@ -1,0 +1,69 @@
+{
+  "code": 200,
+  "content": [
+    {
+      "showName": "车牌号",
+      "elementCode": "text",
+      "extraParams": {"field1":"vehicleNumber","detailLinkVisiable":"false"},
+      "fieldConfigCode": "vehicleNumber"
+    },
+    {
+      "showName": "运单号",
+      "elementCode": "text",
+      "extraParams": {"field1":"shippingNoteNumber","detailLinkVisiable":"false"},
+      "fieldConfigCode": "shippingNoteNumber"
+    },
+    {
+      "showName": "发货人",
+      "elementCode": "text",
+      "extraParams": {"field1":"consignor","detailLinkVisiable":"false"},
+      "fieldConfigCode": "consignor"
+    },
+    {
+      "showName": "上报状态",
+      "elementCode": "select",
+      "extraParams": {"field1":"reportStatus","detailLinkVisiable":"false",
+        "options1":["请选择","未创建","未上报","已上报"],
+        "optionsValue1":["","uncreated","undo","reported"]
+      },
+      "fieldConfigCode": "reportStatus"
+    },{
+      "showName": "校验状态",
+      "elementCode": "select",
+      "extraParams": {
+        "field1":"truckValidateStatus","detailLinkVisiable":"false",
+        "options1":["请选择","未校验","校验成功","校验失败"],
+        "optionsValue1":["","undo","success","failed"]
+      },
+      "fieldConfigCode": "truckValidateStatus"
+    },
+    {
+      "showName": "发货地",
+      "elementCode": "selectArea",
+      "extraParams": {
+        "field1": "consignorProvinceSubdivisionCode",
+        "field2": "consignorCitySubdivisionCode",
+        "field3": "consignorCountrySubdivisionCode",
+        "detailLinkVisiable": "false"
+      },
+      "fieldConfigCode": "consignorCountrySubdivisionCode"
+    },
+    {
+      "showName": "收货地",
+      "elementCode": "selectArea",
+      "extraParams": {
+        "field1": "consigneeProvinceSubdivisionCode",
+        "field2": "consigneeCitySubdivisionCode",
+        "field3": "consigneeCountrySubdivisionCode",
+        "detailLinkVisiable": "false"
+      },
+      "fieldConfigCode": "consigneeCountrySubdivisionCode"
+    },
+    {
+      "showName": "创建日期",
+      "elementCode": "dateRange",
+      "extraParams": {"field1":"from_createTime","field3":"to_createTime","format1":"yyyy-MM-dd HH:mm:ss","format3":"yyyy-MM-dd HH:mm:ss","placeholder2":"到","default2":"到"},
+      "fieldConfigCode": "createTime"
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "code": 200,
+  "content": [
+    {
+      "showName": "运单号",
+      "elementCode": "text",
+      "extraParams": {"field1":"shippingNoteNumber","detailLinkVisiable":"false","required":"true"},
+      "fieldConfigCode": "shippingNoteNumber"
+    },{
+      "showName": "来源订单",
+      "elementCode": "text",
+      "extraParams": {"field1":"originalDocumentNumber","detailLinkVisiable":"false","required":"true"},
+      "fieldConfigCode": "originalDocumentNumber"
+    },{
+      "showName": "车牌号",
+      "elementCode": "text",
+      "extraParams": {"field1":"vehicleNumber","detailLinkVisiable":"false","required":"true"},
+      "fieldConfigCode": "vehicleNumber"
+    },{
+      "showName": "承运人",
+      "elementCode": "text",
+      "extraParams": {"field1":"carrier","detailLinkVisiable":"false","required":"true"},
+      "fieldConfigCode": "carrier"
+    },{
+      "showName": "业务类型",
+      "required":"true",
+      "elementCode": "select",
+      "extraParams": {"field1":"businessTypeCode","detailLinkVisiable":"false","optionsValue1":["1002996","1003997","1003998","1002998","1003999"],"options1":["干线普货运输","城市配送","农村配送","集装箱运输","其他"]},
+      "fieldConfigCode": "businessTypeCode"
+    }, {
+      "showName": "货物类型",
+      "required":"true",
+      "elementCode": "select",
+      "extraParams": {"field1":"cargoTypeClassificationCode","detailLinkVisiable":"false",
+        "options1":["电子产品","商品汽车","冷藏货物","大宗货物","快速消费品","农产品","其他"],
+        "optionsValue1":["90","92","93","94","95","96","999"]
+      },
+      "fieldConfigCode": "cargoTypeClassificationCode"
+    },{
+      "showName": "牌照类型",
+      "required":"true",
+      "elementCode": "select",
+      "extraParams": {
+        "field1":"licensePlateTypeCode","detailLinkVisiable":"false",
+        "options1":["大型汽车号牌","小型汽车号牌","其他号牌"],
+        "optionsValue1":["01","02","99"]
+      },
+      "fieldConfigCode": "licensePlateTypeCode"
+    },
+    {
+      "showName": "车型","required":"true",
+      "elementCode": "select",
+      "extraParams": {"field1":"vehicleClassificationCode","detailLinkVisiable":"false",
+        "options1":["普通货车","厢式货车","罐式货车","牵引车","普通挂车","罐式挂车","集装箱挂车","仓栅式货车","封闭货车","平板货车","集装箱车","自卸货车","特殊结构货车","专项作业车","厢式挂车","仓栅式挂车","平板挂车","自卸挂车","专项作业挂车","车辆运输车","车辆运输车(单排)"],
+        "optionsValue1":["H01","H02","H04","Q00","G01","G03","G05","H09","H03","H05","H06","H07","H08","Z00","G02","G07","G04","G06","G09","X91","X92"]
+      },
+      "fieldConfigCode": "vehicleClassificationCode"
+    },{
+      "showName": "载重","required":"true",
+      "elementCode": "text",
+      "extraParams": {"field1":"vehicleTonnage","detailLinkVisiable":"false"},
+      "fieldConfigCode": "vehicleTonnage"
+    },{
+      "showName": "货物名称","required":"true",
+      "elementCode": "text",
+      "extraParams": {"field1":"descriptionOfGoods","detailLinkVisiable":"false"},
+      "fieldConfigCode": "descriptionOfGoods"
+    }, {
+      "showName": "货物毛重","required":"true",
+      "elementCode": "text",
+      "extraParams": {"field1":"goodsItemGrossWeight","detailLinkVisiable":"false"},
+      "fieldConfigCode": "goodsItemGrossWeight"
+    },{
+      "showName": "发货时间","required":"true",
+      "elementCode": "date",
+      "extraParams": {"field1":"despatchActualDateTime","detailLinkVisiable":"false"},
+      "fieldConfigCode": "despatchActualDateTime"
+    },{
+      "showName": "收货时间","required":"true",
+      "elementCode": "date",
+      "extraParams": {"field1":"goodsReceiptDateTime","detailLinkVisiable":"false"},
+      "fieldConfigCode": "goodsReceiptDateTime"
+    },{
+      "showName": "发货地","required":"true",
+      "elementCode": "selectArea",
+      "extraParams": {"field1":"province1","field2":"city1","field3":"consignorCountrySubdivisionCode","detailLinkVisiable":"false"},
+      "fieldConfigCode": "consignorCountrySubdivisionCode"
+    },{
+      "showName": "收货地","required":"true",
+      "elementCode": "selectArea",
+      "extraParams": {"field1":"province2","field2":"city2","field3":"consigneeCountrySubdivisionCode","detailLinkVisiable":"false"},
+      "fieldConfigCode": "consigneeCountrySubdivisionCode"
+    },{
+      "showName": "货币总金额","required":"true",
+      "elementCode": "text",
+      "extraParams": {"field1":"totalMonetaryAmount","detailLinkVisiable":"false"},
+      "fieldConfigCode": "totalMonetaryAmount"
+    },{
+      "showName": "道路运输证号","required":"true",
+      "elementCode": "text",
+      "extraParams": {"field1":"roadTransportCertificateNumber","detailLinkVisiable":"false","placeholder1":"车辆道路运输许可证"},
+      "fieldConfigCode": "roadTransportCertificateNumber"
+    },{
+      "showName": "托运时间","required":"true",
+      "elementCode": "date",
+      "extraParams": {"field1":"consignmentDateTime","detailLinkVisiable":"false"},
+      "fieldConfigCode": "consignmentDateTime"
+    },{
+      "showName": "车辆所有人",
+      "elementCode": "text",
+      "extraParams": {"field1":"owner","detailLinkVisiable":"false"},
+      "fieldConfigCode": "owner"
+    },{
+      "showName": "发货人",
+      "elementCode": "text",
+      "extraParams": {"field1":"consignor","detailLinkVisiable":"false"},
+      "fieldConfigCode": "consignor"
+    },{
+      "showName": "个人证件号",
+      "elementCode": "text",
+      "extraParams": {"field1":"personalIdentityDocument","detailLinkVisiable":"false"},
+      "fieldConfigCode": "personalIdentityDocument"
+    },{
+      "showName": "收货人",
+      "elementCode": "text",
+      "extraParams": {"field1":"consignee","detailLinkVisiable":"false"},
+      "fieldConfigCode": "consignee"
+    },
+    {
+      "showName": "挂车牌号",
+      "elementCode": "text",
+      "extraParams": {"field1":"trailerVehiclePlateNumber","detailLinkVisiable":"false"},
+      "fieldConfigCode": "trailerVehiclePlateNumber"
+    },{
+      "showName": "体积",
+      "elementCode": "text",
+      "extraParams": {"field1":"cube","detailLinkVisiable":"false"},
+      "fieldConfigCode": "cube"
+    },{
+      "showName": "总件数",
+      "elementCode": "text",
+      "extraParams": {"field1":"totalNumberOfPackages","detailLinkVisiable":"false"},
+      "fieldConfigCode": "totalNumberOfPackages"
+    },{
+      "showName": "司机姓名",
+      "elementCode": "text",
+      "extraParams": {"field1":"nameOfPerson","detailLinkVisiable":"false"},
+      "fieldConfigCode": "nameOfPerson"
+    },{
+      "showName": "手机号",
+      "elementCode": "text",
+      "extraParams": {"field1":"telephonNumber","detailLinkVisiable":"false"},
+      "fieldConfigCode": "telephonNumber"
+    },{
+      "showName": "信用代码",
+      "elementCode": "text",
+      "extraParams": {"field1":"unifiedSocialCreditIdentifier","detailLinkVisiable":"false"},
+      "fieldConfigCode": "unifiedSocialCreditIdentifier"
+    },{
+      "showName": "道路运输证号",
+      "elementCode": "text",
+      "extraParams": {"field1":"permitNumber","detailLinkVisiable":"false","placeholder1":"无车承运人的道路运输经营许可证（无车承运）编号"},
+      "fieldConfigCode": "permitNumber"
+    },{
+      "showName": "运输经营许可证",
+      "elementCode": "text",
+      "extraParams": {"field1":"vehiclePermitNumber","detailLinkVisiable":"false","placeholder1":"车辆所属业户的道路运输经营许可证编号"},
+      "fieldConfigCode": "vehiclePermitNumber"
+    },{
+      "showName": "从业资格证号",
+      "elementCode": "text",
+      "extraParams": {"field1":"qualificationCertificateNumber","detailLinkVisiable":"false"},
+      "fieldConfigCode": "qualificationCertificateNumber"
+    },{
+      "showName": "发货详细地址",
+      "elementCode": "text",
+      "extraParams": {"field1":"placeOfLoading","detailLinkVisiable":"false"},
+      "fieldConfigCode": "placeOfLoading"
+    },{
+      "showName": "收货详细地址",
+      "elementCode": "text",
+      "extraParams": {"field1":"goodsReceiptPlace","detailLinkVisiable":"false"},
+      "fieldConfigCode": "goodsReceiptPlace"
+    },{
+      "showName": "上报备注",
+      "elementCode": "textarea",
+      "extraParams": {"field1":"reportRemark","detailLinkVisiable":"false"},
+      "fieldConfigCode": "reportRemark"
+    },{
+      "showName": "自由文本",
+      "elementCode": "textarea",
+      "extraParams": {"field1":"freeText","detailLinkVisiable":"false"},
+      "fieldConfigCode": "freeText"
+    }
+  ]
+}

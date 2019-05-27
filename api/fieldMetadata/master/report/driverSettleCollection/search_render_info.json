@@ -1,0 +1,34 @@
+{
+  "code": 200,
+  "content": [
+  {
+    "showName": "司机姓名",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"inDriverName\",\"field2\":\"driverCode\",\"placeholder1\":\"请输入司机姓名\"}",
+    "fieldConfigCode": "inDriverName"
+  },
+  {
+    "showName": "手机号",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"inDriverPhone\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "inDriverPhone"
+  },
+  {
+    "showName": "起始时间",
+    "elementCode": "date",
+    "extraParams": "{\"field1\":\"inBeginTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"area\":\"loading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "inBeginTime"
+  },
+  {
+    "showName": "截止时间",
+    "elementCode": "date",
+    "extraParams": "{\"field1\":\"inEndTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"area\":\"loading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "inEndTime"
+  },
+  {
+    "showName": "执行合同",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"driverContractName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "driverContractName"
+  }]
+}

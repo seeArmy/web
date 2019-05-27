@@ -1,0 +1,91 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "客户运价单号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"ratesSystemNo\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "ratesSystemNo"
+        },
+        {
+            "showName": "承运方",
+            "elementCode": "popSelectPartner",
+            "extraParams": "{\"field1\":\"partnerName\",\"field2\":\"partnerCode\",\"field3\":\"partnerCode\",\"field4\":\"platformPartnerCode\",\"area\":\"base\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"readonly1\":\"FALSE\",\"placeholder1\":\"请选择托运客户\",\"outputKey1\":\"partner\",\"outputKey3\":\"partner\",\"outputKey4\":\"partner\",\"inputKey1\":\"logistics.clientOrgName,partner.orgName\",\"inputKey2\":\"logistics.partnerCode,partner.code\",\"inputKey4\":\"logistics.platformPartnerCode,partner.orgCode\",\"chooseSelf3\":\"FALSE\"}",
+            "fieldConfigCode": "partnerName"
+        },
+        {
+            "showName": "线路",
+            "elementCode": "popSelectRoute",
+            "extraParams": "{\"field1\":\"routeName\",\"readonly1\":\"TRUE\",\"field2\":\"routeCode\",\"field3\":\"routeCode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入线路名称\",\"outputKey1\":\"route\",\"outputKey3\":\"route\",\"inputKey1\":\"rates.routeName,route.routeName,logistics.routeName\",\"inputKey2\":\"route.code,rates.routeCode,logistics.routeCode\"}",
+            "fieldConfigCode": "route"
+        },
+        {
+            "showName": "发货单位",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"loadingOrgName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入收货单位\",\"inputKey1\":\"logistics.loadingOrgName,route.loadingOrgName\"}",
+            "fieldConfigCode": "loadingOrgName"
+        },
+        {
+            "showName": "收货单位",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"unloadingOrgName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入收货单位\",\"inputKey1\":\"logistics.unloadingOrgName,route.unloadingOrgName\"}",
+            "fieldConfigCode": "unloadingOrgName"
+        },
+        {
+            "showName": "计量标准",
+            "elementCode": "radio",
+            "extraParams": "{\"field1\":\"meterageType\",\"default1\":\"\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"TRUE\",\"inputKey1\":\"logistics.meterageType\",\"event1\":\"current.$on(\\\"change\\\", function(val){rns[\\\"quotePriceUnitCode\\\"].$emit(\\\"refresh\\\", {codeUnitType: val});rns[\\\"freightPriceUnitCode\\\"].$emit(\\\"refresh\\\", {codeUnitType: val});rns[\\\"driverReferPriceUnitCode\\\"].$emit(\\\"refresh\\\", {codeUnitType: val}); rns[\\\"goodsPriceUnitCode\\\"].$emit(\\\"refresh\\\",{codeUnitType:val});rns[\\\"goodsLossUnitCode\\\"].$emit(\\\"refresh\\\",{codeUnitType:val});rns[\\\"clientFreightPriceUnitCode\\\"].$emit(\\\"refresh\\\",{codeUnitType:val});rns[\\\"fleetPriceUnitCode\\\"].$emit(\\\"refresh\\\",{codeUnitType:val});});\",\"optionsValue1\":[\"ton\",\"cube\",\"item\"],\"options1\":[\"吨\",\"方\" ,\"件\"]}",
+            "fieldConfigCode": "meterageType"
+        },
+        {
+            "showName": "运价",
+            "elementCode": "clientFreightPrice",
+            "extraParams": "{\"field1\":\"freightPrice\",\"field2\":\"freightPriceUnitCode\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过13位（最多2位小数）\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"13\",\"placeholder1\":\"请输入客户运价\",\"inputKey1\":\"logistics.clientFreightPrice\",\"inputKey2\":\"logistics.clientFreightPriceUnitCode\"}",
+            "fieldConfigCode": "freightPrice"
+        },
+        {
+            "showName": "结算方式",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"clientSettleMethod\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\"请输入结算方式\",\"inputKey1\":\"logistics.settleMethod\",\"optionsValue1\":[\"loadingweight\",\"unloadingweight\",\"smaller\",\"bigger\",\"trucknumber\"],\"options1\":[\"按发货货量\",\"按收货货量\",\"发货与收货两者取小\",\"发货与收货两者取大\",\"按车次\"],\"inputKey1\":\"logistics.settleMethod\"}",
+            "fieldConfigCode": "clientSettleMethod"
+        },
+
+        {
+            "showName": "货物名称",
+            "elementCode": "popSelectGoods",
+            "extraParams": "{\"field1\":\"goodsName\",\"field2\":\"goodsCode\",\"field3\":\"goodsCode\",\"field4\":\"goodsCategoryGb\",\"area\":\"base\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请选择货物名称\",\"outputKey3\":\"popGoods\",\"inputKey1\":\"popGoods.goodsName\",\"inputKey2\":\"popGoods.code\",\"inputKey4\":\"popGoods.goodsCategoryGb\",\"chooseSelf3\":\"FALSE\"}",
+            "fieldConfigCode": "goodsName"
+        },
+
+        {
+            "showName": "货物分类",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"goodsCategoryName\",\"field2\":\"goodsCategoryCode\",\"field3\":\"goodsCategoryGb\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请选择托运客户\",\"outputKey1\":\"popGoods\",\"outputKey3\":\"popGoods\",\"outputKey4\":\"partner\",\"inputKey1\":\"logistics.clientOrgName,popGoods.goodsCategoryName\",\"inputKey2\":\"logistics.clientOrgCode,partner.code\",\"inputKey4\":\"logistics.platformClientOrgCode,partner.orgCode\",\"chooseSelf3\":\"TRUE\"}",
+            "fieldConfigCode": "goodsCategoryName"
+        },
+        {
+            "showName": "运价开始时间",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"effectiveStartDate\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "effectiveStartDate"
+        },
+        {
+            "showName": "运价截止时间",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"effectiveEndDate\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "effectiveEndDate"
+        },
+        {
+            "showName": "审核状态",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"ratesApproveStatus\",\"required\":\"FALSE\",\"detailLinkVisiable\":\"FALSE\",\"optionsValue1\":[\"ready\",\"pend\",\"accept\",\"reject\",\"end\"],\"options1\":[\"待申请\",\"待审核\",\"审批通过\" ,\"审批不通过\",\"已结束\"]}",
+            "fieldConfigCode": "ratesApproveStatus"
+          },
+        {
+            "showName": "备注",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"description\",\"required\":\"false\",\"detailLinkVisiable\":\"true\",\"maxLength1\": 100,\"placeholder1\":\"请输入备注\"}",
+            "fieldConfigCode": "description"
+        }
+    ]
+}

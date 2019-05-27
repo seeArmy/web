@@ -1,0 +1,53 @@
+{
+  "code": 200,
+  "content": [
+    {
+      "showName": "公司全称",
+      "fieldConfigCode": "orgFullName",
+      "elementCode": "label",
+      "extraParams": {"field1": "orgFullName", "required": "false"}
+    },
+    {
+      "showName": "认证状态",
+      "fieldConfigCode": "certStatus",
+      "elementCode": "label",
+      "extraParams": {"field1":"certStatus", "required": "true", "optionsValue1": ["unauthenticated","authenticating","authenticated","failed"], "options1": ["未提交","待审核","审核通过","审核不通过"]}
+    },
+    {
+      "showName": "所在地区",
+      "fieldConfigCode": "area",
+      "elementCode": "selectArea",
+      "extraParams": {"field1": "province", "field2": "city", "field3": "county", "required": "false", "inputKey1": "route.province","inputKey2":"route.city","inputKey3":"route.county"}
+    },
+    {
+      "showName": "提交公司",
+      "fieldConfigCode": "requestOrgFullname",
+      "elementCode": "label",
+      "extraParams": {"field1": "requestOrgFullname", "required": "false"}
+    },
+    {
+      "showName": "提交人",
+      "fieldConfigCode": "requestUserFullname",
+      "elementCode": "label",
+      "extraParams": {"field1": "requestUserFullname", "required": "false"}
+    },
+    {
+      "showName": "提交时间",
+      "fieldConfigCode": "requestTime",
+      "elementCode": "label",
+      "extraParams": {"field1": "requestTime", "format1": "yyyy-MM-dd HH:mm:ss", "required": "false"}
+    },
+    {
+      "showName": "审核人",
+      "fieldConfigCode": "updateUsername",
+      "elementCode": "label",
+      "extraParams": {"field1": "updateUsername", "required": "false"}
+    },
+    {
+      "showName": "审核时间",
+      "fieldConfigCode": "updateTime",
+      "elementCode": "label",
+      "extraParams": {"field1": "updateTime", "required": "false"}
+    }
+  ]
+}

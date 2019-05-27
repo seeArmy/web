@@ -1,0 +1,35 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "司机姓名",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"fullName\",\"placeholder1\":\"请输入司机姓名\"}",
+            "fieldConfigCode": "fullName"
+        },
+        {
+            "showName": "手机号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"phone\",\"placeholder1\":\"请输入手机号\"}",
+            "fieldConfigCode": "phone"
+        },
+        {
+            "showName": "认证状态",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"certStatus\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"unauthenticated\",\"authenticating\",\"authenticated\",\"failed\"],\"options1\":[\"未认证\",\"认证中\",\"已认证\",\"认证失败\"]}",
+            "fieldConfigCode": "certStatus"
+        },
+        {
+            "showName": "帐号状态",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"userStatus\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\" \",\"optionsValue1\":[\"activated\",\"inactivated\"],\"options1\":[\"已激活\",\"未激活\"]}",
+            "fieldConfigCode": "userStatus"
+        },
+        {
+            "showName": "黑名单状态",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"blacklistFlag\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\" \",\"optionsValue1\":[\"1\",\"0\"],\"options1\":[\"黑名单\",\"正常\"]}",
+            "fieldConfigCode": "blacklistFlag"
+        }
+    ]
+}

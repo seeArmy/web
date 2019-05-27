@@ -1,0 +1,95 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "托运人ID",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"shipperid\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"TRUE\"}",
+            "fieldConfigCode": "shipperid"
+        },
+        {
+            "showName": "托运人类别",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"shippertype\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"TRUE\"}",
+            "fieldConfigCode": "shippertype"
+        },
+        {
+            "showName": "托运人名称",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"shippername\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "shippername"
+        },
+        {
+            "showName": "联系人名称",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"contactname\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "contactname"
+        },
+        {
+            "showName": "联系人手机号码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"contactmobiletelephonenumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "contactmobiletelephonenumber"
+        },
+        {
+            "showName": "注册资金(万元)",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"registeredcapital\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "registeredcapital"
+        },
+        {
+            "showName": "统一社会信用代码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"unifiedsocialcreditldentifier\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "unifiedsocialcreditldentifier"
+        },
+        {
+            "showName": "统一社会信用代码注册时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"unifiedsocialdatetime\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "unifiedsocialdatetime"
+        },
+        {
+            "showName": "注册时间(平台)",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"registrationdatetime\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "registrationdatetime"
+        },
+        {
+            "showName": "更新时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updatetimedatetime\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "updatetimedatetime"
+        },
+        {
+            "showName": "是否黑名单",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"isblaclklist\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "isblaclklist"
+        },
+        {
+            "showName": "是否删除",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"isdeleteflag\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "isdeleteflag"
+        },
+        {
+            "showName": "同步时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"synchronizationtime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "synchronizationtime"
+        },
+        {
+            "showName": "同步标识",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"isexception\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "isexception"
+        },
+        {
+            "showName": "联系人身份证号码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"contactidcard\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "contactidcard"
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "司机姓名",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"fullName\",\"required\":\"true\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入司机姓名\"}",
+            "fieldConfigCode": "fullName"
+        },
+        {
+            "showName": "认证状态",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"certStatus\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"TRUE\",\"optionsValue1\":[\"unauthenticated\",\"authenticating\",\"authenticated\",\"failed\"],\"options1\":[\"未认证\",\"认证中\",\"已认证\",\"认证失败\"]}",
+            "fieldConfigCode": "certStatus"
+        },
+        {
+            "showName": "帐号状态",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"userStatus\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\" \",\"optionsValue1\":[\"activated\",\"inactivated\"],\"options1\":[\"已激活\",\"未激活\"]}",
+            "fieldConfigCode": "userStatus"
+        },
+        {
+            "showName": "手机号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"phone\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"18\",\"placeholder1\":\"请输入手机号\"}",
+            "fieldConfigCode": "phone"
+        },
+        {
+            "showName": "分组",
+            "elementCode": "tag",
+            "extraParams": "{\"field1\":\"userTag\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"6\",\"placeholder1\":\"请输入分组\"}",
+            "fieldConfigCode": "userTag"
+        },
+        {
+            "showName": "身份证号",
+            "elementCode": "label",
+            "extraParams": {"field1":"identityNumber","checkRule1":"([0-9Xx]{15})([0-9Xx]{3})?","checkMsg1":"请输入正确的身份证号","required":"false","detailLinkVisiable":"false","maxLength1":"18","placeholder1":"请输入身份证号"},
+            "fieldConfigCode": "identityNumber"
+        },
+        {
+            "showName": "身份证过期日期",
+            "elementCode": "date",
+            "extraParams": {"field1":"identityExpirationDate","format1":"yyyy-MM-dd","required":"false","detailLinkVisiable":"false"},
+            "fieldConfigCode": "identityExpirationDate"
+        },
+        {
+            "showName": "驾照档案编号",
+            "elementCode": "text",
+            "extraParams": {"field1":"driverLicenseNo","required":"false","detailLinkVisiable":"false","maxLength1":"18","placeholder1":"请输入驾照档案编号"},
+            "fieldConfigCode": "driverLicenseNo"
+        },
+        {
+            "showName": "驾驶证过期日期",
+            "elementCode": "date",
+            "extraParams": {"field1":"driverLicenseExpirationDate","format1":"yyyy-MM-dd","required":"false","detailLinkVisiable":"false"},
+            "fieldConfigCode": "driverLicenseExpirationDate"
+        },
+        {
+            "showName": "从业资格证号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"qualificationCertificateNumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "qualificationCertificateNumber"
+        },
+        {
+            "showName": "从业资格证过期日期",
+            "elementCode": "date",
+            "extraParams": {"field1":"qualificationCertificateExpirationDate","format1":"yyyy-MM-dd","required":"false","detailLinkVisiable":"false"},
+            "fieldConfigCode": "qualificationCertificateExpirationDate"
+        },
+        {
+            "showName": "创建人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"creatorUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "creatorUser"
+        },
+        {
+            "showName": "创建时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "createTime"
+        },
+        {
+            "showName": "修改人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateUser"
+        },
+        {
+            "showName": "修改时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateTime"
+        },
+        {
+            "showName": "司机性质",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"userNature\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"false\",\"optionsValue1\":[\"staff\",\"affiliatedDriver\",\"individualDriver\"],\"options1\":[\"员工\",\"挂靠司机\",\"个体司机\"]}",
+            "fieldConfigCode": "userNature"
+        }
+    ]
+}

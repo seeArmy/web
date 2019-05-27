@@ -1,0 +1,59 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "车牌号",
+            "elementCode": "popSelectTruckTrailer",
+            "extraParams": "{\"field1\":\"truckLicenseNo\",\"field2\":\"truckCode\",\"field3\":\"truckCode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入车牌号匹配\",\"outputKey1\":\"truck\",\"outputKey3\":\"truck\",\"inputKey1\":\"truck.truckLicenseNo,trailer.truckLicenseNo\",\"inputKey2\":\"truck.code,trailer.code\"}",
+            "fieldConfigCode": "truckLicenseNo"
+        },
+        {
+            "showName": "司机姓名",
+            "elementCode": "popSelectDriver",
+            "extraParams": "{\"field1\":\"driverName\",\"field2\":\"driverCode\",\"field3\":\"driverCode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\"请输入姓名匹配\",\"outputKey1\":\"driver\",\"outputKey3\":\"driver\",\"inputKey1\":\"driver.fullName\",\"inputKey2\":\"driver.code\"}",
+            "fieldConfigCode": "driverName"
+        },
+        {
+            "showName": "提醒类型",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"remindType\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"车辆证照\",\"车辆保险\",\"车辆保养\",\"司机证照\",\"司机保险\"],\"options1\":[\"车辆证照\",\"车辆保险\",\"车辆保养\",\"司机证照\",\"司机保险\"]}",
+            "fieldConfigCode": "remindType"
+        },
+        {
+            "showName": "提醒内容",
+            "elementCode": "textarea",
+            "extraParams": "{\"field1\":\"remindContext\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "remindContext"
+        },
+        {
+            "showName": "提醒日期",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"remindDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "remindDate"
+        },
+        {
+            "showName": "创建人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"creatorUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "creatorUser"
+        },
+        {
+            "showName": "创建时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "createTime"
+        },
+        {
+            "showName": "修改人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateUser"
+        },
+        {
+            "showName": "修改时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateTime"
+        }
+    ]
+}

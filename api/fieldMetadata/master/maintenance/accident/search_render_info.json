@@ -1,0 +1,23 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "车牌号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"truckLicenseNo\",\"placeholder1\":\"请输入车牌号\"}",
+            "fieldConfigCode": "truckLicenseNo"
+        },
+        {
+            "showName": "司机姓名",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"driverName\",\"placeholder1\":\"请输入司机姓名\"}",
+            "fieldConfigCode": "driverName"
+        },
+        {
+            "showName": "处理状态",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"status\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"none\",\"processing\",\"solved\"],\"options1\":[\"未处理\",\"处理中\",\"已处理\"]}",
+            "fieldConfigCode": "status"
+        }
+    ]
+}

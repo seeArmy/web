@@ -1,0 +1,22 @@
+{
+  "code": 200,
+  "content": [
+  {
+    "showName": "运单号",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"waybillNo\",\"placeholder1\":\"请输入运单号\"}",
+    "fieldConfigCode": "waybillNo"
+  },
+  {
+    "showName": "货单号",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"manifestSystemNo\",\"required\":\"false\"}",
+    "fieldConfigCode": "manifestSystemNo"
+  },
+  {
+    "showName": "车牌号",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"truckLicenseNo\",\"placeholder1\":\"请输入车牌号\"}",
+    "fieldConfigCode": "truckLicenseNo"
+  }]
+}

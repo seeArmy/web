@@ -1,0 +1,106 @@
+{ "code" : 200,
+  "content" :[
+    {
+      "showName" : "司机姓名",
+      "elementCode" : "text",
+      "extraParams" : "{\"field1\":\"fullName\",\"field2\":\"userCode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入司机姓名\"}",
+      "fieldConfigCode" : "fullName"
+    },
+    {
+        "showName": "准驾车型",
+        "elementCode": "select",
+        "extraParams": {"field1":"driverLicenseAcceptType","required":"false","detailLinkVisiable":"false","optionsValue1":["A1","A2","A3","B1","B2","C1","C2"],"options1":["A1","A2","A3","B1","B2","C1","C2"]},
+        "fieldConfigCode": "driverLicenseAcceptType"
+    },
+    {
+      "showName" : "身份证号码",
+      "elementCode" : "text",
+      "extraParams" : "{\"field1\":\"identityNumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"18\",\"placeholder1\":\"请输入身份证号码\"}",
+      "fieldConfigCode" : "identityNumber"
+    },
+    {
+      "showName" : "档案编号",
+      "elementCode" : "text",
+      "extraParams" : "{\"field1\":\"driverLicenseNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入档案编号\"}",
+      "fieldConfigCode" : "driverLicenseNo"
+    },
+    {
+      "showName" : "驾驶证过期日期",
+      "elementCode" : "date",
+      "extraParams" : "{\"field1\":\"driverLicenseExpirationDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode" : "driverLicenseExpirationDate"
+    },
+    {
+      "showName" : "手机号",
+      "elementCode" : "label",
+      "extraParams" : "{\"field1\":\"phone\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"18\",\"placeholder1\":\"请输入手机号\"}",
+      "fieldConfigCode" : "phone"
+    },
+    {
+      "showName" : "司机认证结果",
+      "elementCode" : "radio",
+      "extraParams" : "{\"field1\":\"certStatus\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"authenticated\",\"failed\"],\"options1\":[\"认证通过\",\"认证不通过\"]}",
+      "fieldConfigCode" : "certStatus"
+    },
+    {
+      "showName" : "备注",
+      "elementCode" : "text",
+      "extraParams" : "{\"field1\":\"auditDescription\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入备注\"}",
+      "fieldConfigCode" : "auditDescription"
+    },
+    {
+      "showName" : "身份证",
+      "elementCode" : "file",
+      "extraParams" : "{\"field1\":\"identityResourceCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"dialogPreview\":\"FALSE\"}",
+      "fieldConfigCode" : "identityResourceCode"
+    },
+    {
+      "showName" : "身份证过期日期",
+      "elementCode" : "date",
+      "extraParams" : "{\"field1\":\"identityExpirationDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode" : "identityExpirationDate"
+    },
+    {
+      "showName": "提交公司",
+      "fieldConfigCode": "requestOrgFullname",
+      "elementCode": "label",
+      "extraParams": {"field1": "requestOrgFullname", "required": "false"}
+    },
+    {
+      "showName" : "提交人",
+      "elementCode" : "label",
+      "extraParams" : "{\"field1\":\"requestUserFullname\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode" : "requestUserFullname"
+    },
+    {
+      "showName" : "提交时间",
+      "elementCode" : "label",
+      "extraParams" : "{\"field1\":\"requestTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode" : "requestTime"
+    },
+    {
+      "showName" : "驾驶证",
+      "elementCode" : "file",
+      "extraParams" : "{\"field1\":\"driverLicenseResourceCode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"dialogPreview\":\"FALSE\"}",
+      "fieldConfigCode" : "driverLicenseResourceCode"
+    },
+    {
+        "showName": "从业资格证",
+        "elementCode": "file",
+        "extraParams": {"field1":"qualificationCertificateResourceCode","required":"false","detailLinkVisiable":"false","dialogPreview":"FALSE"},
+        "fieldConfigCode": "qualificationCertificateResourceCode"
+    },
+    {
+        "showName": "从业资格证号",
+        "elementCode": "text",
+        "extraParams": {"field1":"qualificationCertificateNumber","required":"true","detailLinkVisiable":"false","maxLength1":"19","placeholder1":"请输入从业资格证号"},
+        "fieldConfigCode": "qualificationCertificateNumber"
+    },
+    {
+        "showName": "资格证过期日期",
+        "elementCode": "date",
+        "extraParams": {"field1":"qualificationCertificateExpirationDate","format1":"yyyy-MM-dd","required":"false","detailLinkVisiable":"false"},
+        "fieldConfigCode": "qualificationCertificateExpirationDate"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "承运商名称",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"orgName\",\"placeholder1\":\"请输入承运商名称\"}",
+            "fieldConfigCode": "orgName"
+        }, 
+			  {
+			    "showName": "业务联系人",
+			    "elementCode": "text",
+			    "extraParams": "{\"field1\":\"linkmanFullName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入联系人\"}",
+			    "fieldConfigCode": "linkmanFullName"
+			  }   
+    ]
+}

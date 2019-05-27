@@ -1,0 +1,23 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "车辆牌照号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"vehiclenumber\",\"required\":\"false\",\"placeholder1\":\"请输入车辆牌照号\"}",
+            "fieldConfigCode": "vehiclenumber"
+        },
+        {
+            "showName": "同步时间",
+            "elementCode": "dateRange",
+            "extraParams": "{\"field1\":\"startTime\",\"field3\":\"endTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"format3\":\"yyyy-MM-dd HH:mm:ss\",\"placeholder2\":\"到\",\"default2\":\"到\"}",
+            "fieldConfigCode": "createTime"
+        },
+        {
+            "showName": "同步标识",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"isexception\",\"default1\":\"-1\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"0 \",\"-1\",\"unsync\"],\"options1\":[\"成功\",\"失败\",\"未同步\"]}",
+            "fieldConfigCode": "isexception"
+        }
+    ]
+}

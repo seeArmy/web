@@ -1,0 +1,35 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "司机姓名",
+            "elementCode": "popSelectDriver",
+            "extraParams": "{\"field1\":\"userFullName\",\"field2\":\"userCode\",\"field3\":\"userCode\",\"field4\":\"platformUserCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请选择司机\",\"outputKey1\":\"driver\",\"outputKey3\":\"driver\",\"outputKey4\":\"driver\",\"inputKey1\":\"driver.fullName\",\"inputKey2\":\"driver.code\",\"inputKey4\":\"driver.userCode\"}",
+            "fieldConfigCode": "userFullName"
+        },
+        {
+            "showName": "日期",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"attendanceDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "attendanceDate"
+        },
+        {
+            "showName": "手机号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"phone\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"18\",\"placeholder1\":\"请输入手机号\",\"inputKey1\":\"driver.phone\"}",
+            "fieldConfigCode": "phone"
+        },
+        {
+            "showName": "考勤状态",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"attendanceStatus\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"absent\",\"off\"],\"options1\":[\"旷工\",\"请假\"]}",
+            "fieldConfigCode": "attendanceStatus"
+        },
+        {
+            "showName": "合同名称",
+            "elementCode": "popSelectgEmployeeContract",
+            "extraParams": "{\"field1\":\"employeeContractName\",\"field2\":\"employeeContractCode\",\"field3\":\"employeeContractCode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"readonly1\":\"TRUE\",\"placeholder1\":\"请选择绑定合同\",\"inputKey1\":\"driver.employeeContractName\",\"inputKey2\":\"driver.employeeContractCode\"}",
+            "fieldConfigCode": "employeeContract"
+        }
+    ]
+}

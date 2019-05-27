@@ -1,0 +1,51 @@
+{
+  "code": 200,
+  "content": [
+    {
+      "showName": "车牌号",
+      "fieldConfigCode": "truckLicenseNo",
+      "elementCode": "text",
+      "extraParams":
+      {
+        "field1": "truckLicenseNo",
+        "placeholder1": "请输入车牌号"
+      }
+    },
+    {
+      "showName": "认证状态",
+      "fieldConfigCode": "certStatus",
+      "elementCode": "select",
+      "extraParams":
+      {
+        "field1": "certStatus",
+        "optionsValue1": ["unauthenticated", "authenticating", "authenticated", "failed"],
+        "options1": ["未认证", "认证中", "认证成功", "认证失败"]
+      }
+    },
+    {
+      "showName": "车辆种类",
+      "fieldConfigCode": "isTrailer",
+      "elementCode": "select",
+      "extraParams": "{\"field1\":\"isTrailer\", \"required\": \"false\", \"optionsValue1\": [\"false\",\"true\"], \"options1\": [\"主车\",\"挂车\"]}"
+    },
+
+    {
+      "showName": "牌照类型",
+      "elementCode": "select",
+      "extraParams": "{\"field1\":\"truckLicenseType\", \"optionsValue1\":[\"01\",\"02\",\"99\"],\"options1\":[\"大型汽车号牌\",\"小型汽车号牌\",\"其他号牌\"]}",
+      "fieldConfigCode": "truckLicenseType"
+    },
+    {
+        "showName": "车型",
+        "elementCode": "truckModel",
+        "extraParams": "{\"field1\":\"truckModelCode\",\"field2\":\"truckModelName\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"inputKey1\":\"mainTruck.truckModelCode\",\"inputKey2\":\"mainTruck.truckModelName\"}",
+        "fieldConfigCode": "truckModel"
+    },
+    {
+      "showName": "创建时间",
+      "elementCode": "dateRange",
+      "extraParams": "{\"field1\":\"from_createTime\",\"field3\":\"to_createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"format3\":\"yyyy-MM-dd HH:mm:ss\",\"default2\":\"到\"}",
+      "fieldConfigCode": "createTime"
+    }
+  ]
+}

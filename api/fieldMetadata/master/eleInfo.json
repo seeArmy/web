@@ -1,0 +1,1300 @@
+{
+  "code": 200,
+  "data":{
+    "content": {
+      "goodsLossUnit": {
+        "controlType": "select",
+        "datasource": "goodsLoss"
+      },
+      "popSelectCompanyHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "settleVolumeUnit": {
+        "controlType": "select",
+        "datasource": "settleVolumeUnit"
+      },
+      "standardDistance": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "listViceDriverFullName": {
+        "controlType": "text",
+        "datasource": ""
+      },
+      "listDriverFullName": {
+        "controlType": "text",
+        "datasource": ""
+      },
+      "popSelectInsuranceNo": {
+        "controlType": "autocomplete",
+        "datasource": "insurance"
+      },
+      "popSelectInsuranceHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectInsuranceDialog": {
+        "controlType": "pop",
+        "datasource": "insurance"
+      },
+      "popSelectBookDialog": {
+        "controlType": "pop",
+        "datasource": "book"
+      },
+
+      "fanceRedius": {
+        "controlType": "fanceRedius",
+        "datasource": ""
+      },
+
+      "popSelectShortReceivableBillDialog": {
+        "controlType": "pop",
+        "datasource": "shortReceivableBill"
+      },
+      "popSelectLogisticsDialog": {
+        "controlType": "pop",
+        "datasource": "logistics"
+      },
+      "popSelectOutsourcingLogisticsDialog": {
+        "controlType": "pop",
+        "datasource": "outsourcingLogistics"
+      },
+      "settleGoodsLossVolumeUnit": {
+        "controlType": "select",
+        "datasource": "settleVolumeUnit"
+      },
+      "popSelectClientDialog": {
+        "controlType": "pop",
+        "datasource": "partner"
+      },
+      "goodsVolumeUnit": {
+        "controlType": "select",
+        "datasource": "goodsVolume"
+      },
+      "assignGoodsVolumeUnit": {
+        "controlType": "label",
+        "datasource": "goodsVolume"
+      },
+      "chargeItemNumber": {
+        "controlType": "select",
+        "datasource": "chargeItemNumber"
+      },
+      "goodsCategorySelect": {
+        "controlType": "select",
+        "datasource": "goodsCategory"
+      },
+      "goodsCategoryName": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "chargeItemNumberUnit": {
+        "controlType": "select",
+        "datasource": ""
+      },
+      "popSelectFreightDialog": {
+        "controlType": "pop",
+        "datasource": "freight"
+      },
+      "popSelectTruckNo": {
+        "controlType": "autocomplete",
+        "datasource": "truck"
+      },
+      "goodsNameAutocomplete": {
+        "controlType": "autocomplete",
+        "datasource": "goodsName"
+      },
+
+      "goodsNameCode": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "commonText": {
+        "controlType": "text",
+        "datasource": ""
+      },
+      "textHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+
+      "standardTime": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "popSelectRatesHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectTransportHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectTransportPlatformCodeHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectSelfNo": {
+        "controlType": "autocomplete",
+        "datasource": "selfCompany"
+      },
+      "truckTrailerHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "orgManagementHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "partnerHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectShortTruckCode": {
+        "controlType": "autocomplete",
+        "datasource": "shortTruck"
+      },
+      "goodsLossMethod": {
+        "controlType": "radio",
+        "datasource": ""
+      },
+      "popSelectBankAccountHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "multilevelpop": {
+        "controlType": "multilevelpop",
+        "datasource": ""
+      },
+      "commissionNo": {
+        "controlType": "text",
+        "datasource": ""
+      },
+      "settleLossDeductionUnit": {
+        "controlType": "label",
+        "datasource": ""
+      },
+      "goodsWeight": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "assignGoodsWeight": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "logisticsLinkCode": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "pop": {
+        "controlType": "pop",
+        "datasource": ""
+      },
+      "checkbox": {
+        "controlType": "checkbox",
+        "datasource": ""
+      },
+      "popSelectSelfDialog": {
+        "controlType": "pop",
+        "datasource": "selfCompany"
+      },
+      "popSelectPartnerName": {
+        "controlType": "autocomplete",
+        "datasource": "partner"
+      },
+
+      "popSelectGoodsName": {
+        "controlType": "autocomplete",
+        "datasource": "popGoods"
+      },
+      "popSelectGoodsCategoryName": {
+        "controlType": "autocomplete",
+        "datasource": "popGoodsCategory"
+      },
+
+
+      "popSelectBankAccountDialog": {
+        "controlType": "pop",
+        "datasource": "personBankAccount"
+      },
+      "settleGoodsLossReasonable": {
+        "controlType": "label",
+        "datasource": ""
+      },
+      "popSelectTrailerHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectTrailerPlatformCodeHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectShortDriverName": {
+        "controlType": "autocomplete",
+        "datasource": "shortDriver"
+      },
+      "cubageUnit": {
+        "controlType": "select",
+        "datasource": "truckCubage"
+      },
+      "truckModelSelect": {
+        "controlType": "select",
+        "datasource": "truckModel"
+      },
+      "popSelectLongPayableBillNo": {
+        "controlType": "autocomplete",
+        "datasource": "payableBill"
+      },
+      "truckQtyNumber": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "listDriver": {
+        "controlType": "listDriver",
+        "datasource": "driver"
+      },
+      "settleGoodsLossVolume": {
+        "controlType": "label",
+        "datasource": ""
+      },
+      "settleVolume": {
+        "controlType": "label",
+        "datasource": ""
+      },
+      "truckLabel": {
+        "controlType": "autocomplete",
+        "datasource": "truck"
+      },
+      "totalMoneyAmount": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "truckSize": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "endDateRange": {
+        "controlType": "date",
+        "datasource": ""
+      },
+      "popSelectReceivableBillDialog": {
+        "controlType": "pop",
+        "datasource": "receivableBill"
+      },
+      "popSelectLongReceivableBillDialog": {
+        "controlType": "pop",
+        "datasource": "receivableBill"
+      },
+      "popSelectShortPayableBillHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "goodsLoss": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "dateRangeLabel": {
+        "controlType": "label",
+        "datasource": ""
+      },
+      "chargeItemAmount": {
+        "controlType": "select",
+        "datasource": ""
+      },
+      "wayBillLinkNo": {
+        "controlType": "autocomplete",
+        "datasource": "waybill"
+      },
+      "quoteLinkNo": {
+        "controlType": "autocomplete",
+        "datasource": "quote"
+      },
+      "popSelectReceivableBillHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectLongDriverName": {
+        "controlType": "autocomplete",
+        "datasource": "driver"
+      },
+      "tyreCode": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "trailerHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectClientName": {
+        "controlType": "autocomplete",
+        "datasource": "partner"
+      },
+      "popSelectBookHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "waybillMeterageType": {
+        "controlType": "radio",
+        "datasource": ""
+      },
+      "settleGoodsLossReasonableUnit": {
+        "controlType": "select",
+        "datasource": "settleVolumeUnit"
+      },
+      "popSelectRouteDialog": {
+        "controlType": "pop",
+        "datasource": "route"
+      },
+      "popSelectContractHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectEmployeeContractHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "startDateRange": {
+        "controlType": "date",
+        "datasource": ""
+      },
+      "image": {
+        "controlType": "image",
+        "datasource": ""
+      },
+      "popSelectPartnerDialog": {
+        "controlType": "pop",
+        "datasource": "partner"
+      },
+      "popSelectGoodsDialog": {
+        "controlType": "pop",
+        "datasource": "popGoods"
+      },
+      "popSelectGoodsCategoryDialog": {
+        "controlType": "pop",
+        "datasource": "popGoodsCategory"
+      },
+
+
+
+      "goodsLossRate": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "waybillHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectSupplyHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "regTonnageUnit": {
+        "controlType": "select",
+        "datasource": "truckCarry"
+      },
+      "ratesNameHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectTrailerDialog": {
+        "controlType": "pop",
+        "datasource": "trailer"
+      },
+      "driverReferPriceUnit": {
+        "controlType": "select",
+        "datasource": "driverPrice"
+      },
+      "settleDriverExpense": {
+        "controlType": "label",
+        "datasource": ""
+      },
+      "shortWaybillLinkNo": {
+        "controlType": "autocomplete",
+        "datasource": "waybill"
+      },
+      "tyredeepWrinklesUnit": {
+        "controlType": "label",
+        "datasource": ""
+      },
+      "listViceDriverPhone": {
+        "controlType": "text",
+        "datasource": ""
+      },
+      "driverReferPrice": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "popSelectDriverHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectDriverPlatformCodeHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectShortTruckHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectPayableBillNo": {
+        "controlType": "autocomplete",
+        "datasource": "payableBill"
+      },
+      "routeHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "quoteTypeRadio": {
+        "controlType": "radio",
+        "datasource": ""
+      },
+      "goodsLossTypeRadio": {
+        "controlType": "radio",
+        "datasource": ""
+      },
+      "wayBillLinkCode": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "quoteLinkCode": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+
+      "quoteTypePriceUnit": {
+        "controlType": "select",
+        "datasource": "driverPrice"
+      },
+      "goodsLossTypePriceUnit": {
+        "controlType": "select",
+        "datasource": "goodsLoss"
+      },
+      "goodsLossTypePrice": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "popSelectSelfHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectLongTruckHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "goodsNum": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "assignGoodsNum": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "settleGrossProfit": {
+        "controlType": "label",
+        "datasource": ""
+      },
+      "logisticsLinkNo": {
+        "controlType": "autocomplete",
+        "datasource": "logistics"
+      },
+      "driverPriceUnit": {
+        "controlType": "select",
+        "datasource": "driverPrice"
+      },
+      "truckQtyUnit": {
+        "controlType": "label",
+        "datasource": ""
+      },
+      "popSelectShortDriverHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectShortTruckDialog": {
+        "controlType": "pop",
+        "datasource": "truck"
+      },
+      "smallTicketCode": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectFreightNo": {
+        "controlType": "autocomplete",
+        "datasource": "freight"
+      },
+      "clientFreightPriceUnit": {
+        "controlType": "select",
+        "datasource": "carrierPrice"
+      },
+      "popSelectLongLogisticNo": {
+        "controlType": "autocomplete",
+        "datasource": "logistics"
+      },
+      "label": {
+        "controlType": "label",
+        "datasource": ""
+      },
+      "labelNum": {
+        "controlType": "label",
+        "datasource": ""
+      },
+      "labelUnit": {
+        "controlType": "label",
+        "datasource": ""
+      },
+      "driverHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectFleetHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "truckName": {
+        "controlType": "autocomplete",
+        "datasource": "truck"
+      },
+      "selectCommissionNo": {
+        "controlType": "select",
+        "datasource": ""
+      },
+      "regTonnage": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "goodsLossRateMethod": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectAssignDialog": {
+        "controlType": "pop",
+        "datasource": "assign"
+      },
+      "popSelectTruckHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "truckSizeUnit": {
+        "controlType": "select",
+        "datasource": "truckSize"
+      },
+      "bookNo": {
+        "controlType": "autocomplete",
+        "datasource": "book"
+      },
+      "bookCode": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "select": {
+        "controlType": "select",
+        "datasource": ""
+      },
+      "standardTimeUnit": {
+        "controlType": "select",
+        "datasource": "routeDuration"
+      },
+      "chargeItemNumberHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "textarea": {
+        "controlType": "textarea",
+        "datasource": ""
+      },
+      "popSelectPayableBillHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "freightNo": {
+        "controlType": "label",
+        "datasource": ""
+      },
+      "settleGrossProfitUnit": {
+        "controlType": "label",
+        "datasource": ""
+      },
+      "popSelectLongReceivableBillNo": {
+        "controlType": "autocomplete",
+        "datasource": "receivableBill"
+      },
+      "number": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "chargeItemPrice": {
+        "controlType": "select",
+        "datasource": ""
+      },
+      "popSelectLogisticsNo": {
+        "controlType": "autocomplete",
+        "datasource": "logistics"
+      },
+      "popSelectOutsourcingLogisticsNo": {
+        "controlType": "autocomplete",
+        "datasource": "outsourcingLogistics"
+      },
+      "popSelectOrgDialog": {
+        "controlType": "pop",
+        "datasource": "customOrg"
+      },
+      "text": {
+        "controlType": "text",
+        "datasource": ""
+      },
+      "freightCode": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "truckLongLinkCode": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectAssignHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectCompanyDialog": {
+        "controlType": "pop",
+        "datasource": "company"
+      },
+      "popSelectLongLogisticsDialog": {
+        "controlType": "pop",
+        "datasource": "logistics"
+      },
+      "popSelectTruckDialog": {
+        "controlType": "pop",
+        "datasource": "truck"
+      },
+      "popSelectClientHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "waybillSettleMethod": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "telephoneNo": {
+        "controlType": "text",
+        "datasource": ""
+      },
+      "popSelectRouteName": {
+        "controlType": "autocomplete",
+        "datasource": "route"
+      },
+      "truckHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectBookNo": {
+        "controlType": "autocomplete",
+        "datasource": "book"
+      },
+      "goodsPrice": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "totalMoneyAmountUnit": {
+        "controlType": "label",
+        "datasource": ""
+      },
+      "popSelectOrgHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectShortPayableBillNo": {
+        "controlType": "autocomplete",
+        "datasource": "payableBill"
+      },
+      "popSelectLongTruckDialog": {
+        "controlType": "pop",
+        "datasource": "truck"
+      },
+      "truckLicenseNo": {
+        "controlType": "autocomplete",
+        "datasource": "transport"
+      },
+      "settleDriverFreight": {
+        "controlType": "label",
+        "datasource": ""
+      },
+      "shortLogisticsLinkNo": {
+        "controlType": "autocomplete",
+        "datasource": "logistics"
+      },
+      "popSelectFleetDialog": {
+        "controlType": "pop",
+        "datasource": "fleet"
+      },
+      "cubage": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "smallTicketNo": {
+        "controlType": "autocomplete",
+        "datasource": "waybill"
+      },
+      "popSelectShortReceivableBillNo": {
+        "controlType": "autocomplete",
+        "datasource": "receivableBill"
+      },
+      "popSelectShortReceivableBillHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "goodsWeightUnit": {
+        "controlType": "select",
+        "datasource": "goodsWeight"
+      },
+      "assignGoodsWeightUnit": {
+        "controlType": "label",
+        "datasource": "goodsWeight"
+      },
+      "popSelectClientRatesDialog": {
+        "controlType": "pop",
+        "datasource": "rates"
+      },
+      "endNumberRange": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "ratesName": {
+        "controlType": "autocomplete",
+        "datasource": "rates"
+      },
+      "chargeItemPriceHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectAssignNo": {
+        "controlType": "autocomplete",
+        "datasource": "assign"
+      },
+      "file": {
+        "controlType": "file",
+        "datasource": ""
+      },
+      "files": {
+        "controlType": "files",
+        "datasource": ""
+      },
+      "settleDriverPayment": {
+        "controlType": "label",
+        "datasource": ""
+      },
+      "truckLongLinkNo": {
+        "controlType": "autocomplete",
+        "datasource": "truck"
+      },
+      "popSelectSupplyDialog": {
+        "controlType": "pop",
+        "datasource": "supply"
+      },
+      "standardDistanceUnit": {
+        "controlType": "select",
+        "datasource": "standardDistance"
+      },
+      "settleDriverExpenseUnit": {
+        "controlType": "label",
+        "datasource": ""
+      },
+      "popSelectSupplyName": {
+        "controlType": "autocomplete",
+        "datasource": "supply"
+      },
+      "popSelectTransportDialog": {
+        "controlType": "pop",
+        "datasource": "transport"
+      },
+      "moneyAmount": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "settleDriverFreightUnit": {
+        "controlType": "label",
+        "datasource": ""
+      },
+      "popSelectLongDriverDialog": {
+        "controlType": "pop",
+        "datasource": "driver"
+      },
+      "listTrailerTruckLicenseNo": {
+        "controlType": "text",
+        "datasource": ""
+      },
+      "popSelectTransportCode": {
+        "controlType": "autocomplete",
+        "datasource": "transport"
+      },
+      "listTrailerTruck": {
+        "controlType": "listTrailerTruck",
+        "datasource": "trailer"
+      },
+      "popSelectLongLogisticsHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectShortDriverDialog": {
+        "controlType": "pop",
+        "datasource": "driver"
+      },
+      "popSelectTrailerNo": {
+        "controlType": "autocomplete",
+        "datasource": "trailer"
+      },
+      "hide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "selectCounty": {
+        "controlType": "select",
+        "datasource": "county"
+      },
+      "popSelectRatesDialog": {
+        "controlType": "pop",
+        "datasource": "rates"
+      },
+      "clientFreightPrice": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "truckTrailerName": {
+        "controlType": "autocomplete",
+        "datasource": "allTruck"
+      },
+      "popSelectLongPayableBillDialog": {
+        "controlType": "pop",
+        "datasource": "payableBill"
+      },
+      "date": {
+        "controlType": "date",
+        "datasource": ""
+      },
+      "listDriverPhone": {
+        "controlType": "text",
+        "datasource": ""
+      },
+      "popSelectLongTruckCode": {
+        "controlType": "autocomplete",
+        "datasource": "truck"
+      },
+      "mileageUnit": {
+        "controlType": "select",
+        "datasource": "mileageUnit"
+      },
+      "popSelectTruckTrailerDialog": {
+        "controlType": "pop",
+        "datasource": "allTruck"
+      },
+      "popSelectShortLogisticsHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "settleDriverPaymentUnit": {
+        "controlType": "label",
+        "datasource": ""
+      },
+      "mileageNumber": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "shortLogisticsLinkCode": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "tyreNo": {
+        "controlType": "autocomplete",
+        "datasource": "tyre"
+      },
+      "orgManagementName": {
+        "controlType": "autocomplete",
+        "datasource": "company"
+      },
+      "parnterName": {
+        "controlType": "autocomplete",
+        "datasource": "partner"
+      },
+      "popSelectContractDialog": {
+        "controlType": "pop",
+        "datasource": "transportContract"
+      },
+      "popSelectEmployeeContractDialog": {
+        "controlType": "pop",
+        "datasource": "employeeContract"
+      },
+      "truckShorLinkCode": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "routeName": {
+        "controlType": "autocomplete",
+        "datasource": "route"
+      },
+      "radio": {
+        "controlType": "radio",
+        "datasource": ""
+      },
+      "popSelectRouteHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "goodsPriceUnit": {
+        "controlType": "select",
+        "datasource": "goodsPrice"
+      },
+      "popSelectShortLogisticsDialog": {
+        "controlType": "pop",
+        "datasource": "logistics"
+      },
+      "popSelectContractNo": {
+        "controlType": "autocomplete",
+        "datasource": "transportContract"
+      },
+      "popSelectEmployeeContractNo": {
+        "controlType": "autocomplete",
+        "datasource": "employeeContract"
+      },
+      "truckCode": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "shortWaybillLinkCode": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "tyredeepWrinklesNumber": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "popSelectShortLogisticsNo": {
+        "controlType": "autocomplete",
+        "datasource": "logistics"
+      },
+      "tag": {
+        "controlType": "tag",
+        "datasource": ""
+      },
+      "newTag": {
+        "controlType": "newTag",
+        "datasource": ""
+      },
+      "popSelectReceivableBillNo": {
+        "controlType": "autocomplete",
+        "datasource": "receivableBill"
+      },
+      "goodsNumUnit": {
+        "controlType": "select",
+        "datasource": "goodsNumber"
+      },
+      "assignGoodsNumUnit": {
+        "controlType": "label",
+        "datasource": "goodsNumber"
+      },
+      "popSelectDriverName": {
+        "controlType": "autocomplete",
+        "datasource": "driver"
+      },
+      "popSelectTruckTrailerNo": {
+        "controlType": "autocomplete",
+        "datasource": "allTruck"
+      },
+      "selectProvince": {
+        "controlType": "select",
+        "datasource": "province"
+      },
+      "popSelectFreightHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectShortPayableBillDialog": {
+        "controlType": "pop",
+        "datasource": "layableBill"
+      },
+      "selectCommissionCode": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "taxRate": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "logisticsNo": {
+        "controlType": "autocomplete",
+        "datasource": "logistics"
+      },
+      "driverName": {
+        "controlType": "autocomplete",
+        "datasource": "driver"
+      },
+      "moneyUnit": {
+        "controlType": "label",
+        "datasource": ""
+      },
+      "popSelectFleetName": {
+        "controlType": "autocomplete",
+        "datasource": "fleet"
+      },
+      "taxRateUnit": {
+        "controlType": "label",
+        "datasource": ""
+      },
+      "selectCity": {
+        "controlType": "select",
+        "datasource": "city"
+      },
+      "popSelectOrgName": {
+        "controlType": "autocomplete",
+        "datasource": "customOrg"
+      },
+      "link": {
+        "controlType": "link",
+        "datasource": ""
+      },
+      "belongDateMonth": {
+        "controlType": "text",
+        "datasource": ""
+      },
+      "startNumberRange": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "popSelectCompanyName": {
+        "controlType": "text",
+        "datasource": "company"
+      },
+      "truckNoLinkCode": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectBankAccountNo": {
+        "controlType": "autocomplete",
+        "datasource": "personBankAccount"
+      },
+      "settleLossDeduction": {
+        "controlType": "label",
+        "datasource": ""
+      },
+      "trailerName": {
+        "controlType": "autocomplete",
+        "datasource": "trailer"
+      },
+      "popSelectLongDriverHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "commissionCode": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectPayableBillDialog": {
+        "controlType": "pop",
+        "datasource": "payableBill"
+      },
+      "popSelectTruckTrailerHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectLongPayableBillHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "goodsLossRateUnit": {
+        "controlType": "select",
+        "datasource": "goodsLossRation"
+      },
+      "driverPrice": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "popSelectLogisticsHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectOutsourcingLogisticsHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectDriverDialog": {
+        "controlType": "pop",
+        "datasource": "driver"
+      },
+      "popSelectPartnerHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectGoodsHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectGoodsCategoryHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+
+
+      "popSelectPartnerPlatformCodeHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "autocomplete": {
+        "controlType": "autocomplete",
+        "datasource": ""
+      },
+      "truckNoLinkNo": {
+        "controlType": "autocomplete",
+        "datasource": "truck"
+      },
+      "numberRangeLabel": {
+        "controlType": "label",
+        "datasource": ""
+      },
+      "truckLabelHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "belongDateYear": {
+        "controlType": "text",
+        "datasource": ""
+      },
+      "goodsVolume": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "assignGoodsVolume": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "chargeItemAmountHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectLongReceivableBillHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "quoteTypePrice": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "orgTag": {
+        "controlType": "tag",
+        "datasource": "orgTag"
+      },
+      "popSelectRatesName": {
+        "controlType": "autocomplete",
+        "datasource": "rates"
+      },
+      "listViceDriver": {
+        "controlType": "listViceDriver",
+        "datasource": "driver"
+      },
+      "truckShorLinkNo": {
+        "controlType": "autocomplete",
+        "datasource": "truck"
+      },
+      "logisticsHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "waybillNo": {
+        "controlType": "autocomplete",
+        "datasource": "waybill"
+      },
+      "settleSettingNumber": {
+        "controlType": "number",
+        "datasource": ""
+      },
+      "settleSettingNumberUnit": {
+        "controlType": "select",
+        "datasource": ""
+      },
+      "commissionNo": {
+        "controlType": "text",
+        "datasource": ""
+      },
+      "commissionCode": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectSupplyName": {
+        "controlType": "autocomplete",
+        "datasource": "supply"
+      },
+      "popSelectSupplyHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectSupplyDialog": {
+        "controlType": "pop",
+        "datasource": "supply"
+      },
+      "progress": {
+        "controlType": "progress",
+        "datasource": ""
+      },
+      "status": {
+        "controlType": "status",
+        "datasource": ""
+      },
+      "popSelectCraneDriverHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectCraneDriverPlatformCodeHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectCraneDriverName": {
+        "controlType": "autocomplete",
+        "datasource": "craneDriver"
+      },
+      "popSelectCraneDriverDialog": {
+        "controlType": "pop",
+        "datasource": "craneDriver"
+      },
+      "popSelectCraneCompanyHide": {
+      "controlType": "hide",
+      "datasource": ""
+      },
+      "popSelectCraneCompanyPlatformCodeHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectCraneCompanyName": {
+        "controlType": "autocomplete",
+        "datasource": "craneCompany"
+      },
+      "popSelectCraneCompanyDialog": {
+        "controlType": "pop",
+        "datasource": "craneCompany"
+      },
+      "popSelectCraneLicenseHide": {
+      "controlType": "hide",
+      "datasource": ""
+      },
+      "popSelectCraneLicensePlatformCodeHide": {
+        "controlType": "hide",
+        "datasource": ""
+      },
+      "popSelectCraneLicenseName": {
+        "controlType": "autocomplete",
+        "datasource": "craneLicense"
+      },
+      "popSelectCraneLicenseDialog": {
+        "controlType": "pop",
+        "datasource": "craneLicense"
+      },
+      "listCraneDriver": {
+        "controlType": "listCraneDriver",
+        "datasource": "craneDriver"
+      },
+      "listCraneDriverPhone": {
+        "controlType": "text",
+        "datasource": ""
+      },
+      "listCraneDriverFullName": {
+        "controlType": "text",
+        "datasource": ""
+      }
+    }
+  }
+}

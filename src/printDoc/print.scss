@@ -1,0 +1,259 @@
+// print
+@import "../assets/sass/_reset-default.scss";
+@import "../assets/sass/_color.scss";
+
+.org {
+  color: #f48400;
+}
+.blue {
+  color: $blue;
+}
+.red {
+  color: $red;
+}
+.green {
+  color: $green;
+}
+
+.underline {
+  margin: 0 5px;
+  padding: 0 10px;
+  border-bottom: solid 1px #000;
+}
+
+.print-doc {
+  font-family: simsun;
+  color: #000;
+  width: 1000px;
+  margin: 20px auto;
+}
+
+.print-tit {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.print-now {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color:#000;
+  border: solid 1px #000;
+  color: #fff;
+  border-radius:3px;
+  font-size: 14px;
+  cursor: pointer;
+  &:hover {
+    background-color: #f48400;
+    border-color: #f48400;
+  }
+}
+
+// page id
+.print-id {
+  .img-view {
+    position: relative;
+    height: 400px;
+    margin-bottom: 20px;
+    text-align: center;
+    img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+  .water-mask {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    color: #fff;
+    opacity: .2;
+    text-shadow: 0 1px 0 #000;
+  }
+}
+
+// page certificate
+.print-certificate {
+  width: 550px;
+  font-size: 18px;
+  .print-tit {
+    margin-bottom: 40px;
+  }
+  p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .right {
+    text-align: right;
+  }
+  .content {
+    padding-top: 20px;
+    margin-bottom: 100px;
+    line-height: 2;
+  }
+  .txtbox {
+    margin: 0 5px;
+    padding: 0 10px;
+    height: 18px;
+    line-height: 18px;
+    border: 0;
+    border-bottom: solid 1px #000;
+    text-align: center;
+    font-family: simsun;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+// page declaration
+.print-declaration {
+  font-size: 14px;
+  h2 {
+    margin-bottom: 20px;
+  }
+  p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .right {
+    text-align: right;
+  }
+  .pct {
+    margin-right: -50px;
+  }
+  .check-item {
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+    input {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+    label {
+      cursor: pointer;
+    }
+  }
+  .year,.month,.day {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 50px;
+  }
+  .signature {
+    margin-right: 150px;
+  }
+  .sig-top {
+    margin-right: 50px;
+  }
+}
+
+.print-table {
+  width: 100%;
+  border: solid 1px #000;
+  th, td {
+    line-height: 1.4;
+    text-align: center;
+    padding: 8px 0;
+    border: solid 1px #000;
+  }
+  .txtbox {
+    width: 100%;
+    border: 0;
+    text-align: center;
+    font-family: simsun;
+    font-size: 14px;
+  }
+  .inline-txtbox {
+    width: 80px;
+  }
+}
+
+// print-trust-deed
+.print-trust-deed {
+  font-size: 14px;
+  .logo {
+    margin-bottom: 30px;
+  }
+  h2.print-tit {
+    margin-bottom: 60px;
+    font-size: 22px;
+  }
+  .logo {
+    text-align: right;
+    opacity: .6;
+  }
+  table {
+    margin-bottom: 20px;
+  }
+  .nb-table {
+    width: 100%;
+    margin-bottom: 50px;
+    th {
+      text-align: left;
+    }
+    th,td {
+      padding: 15px 0;
+    }
+  }
+  .bg-th {
+    th {
+      background-color: #eee;
+    }
+  }
+  .footer {
+    // position: absolute;
+    // left: 50%;
+    // bottom: 30px;
+    // margin-left: -500px;
+    // width: 1000px;
+    padding-top: 50px;
+    .cprt {
+      font-size: 0;
+      margin-bottom: 100px;
+      span {
+        display: inline-block;
+        width: 33.3333%;
+        font-size: 14px;
+        strong {
+          margin-left: 50px;
+          font-weight: 700;
+        }
+      }
+    }
+    .tc {
+      text-align: center;
+    }
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+ 
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.print-multi {
+  padding: 10px 40px 10px 10px;
+  text-align: left;
+}
+
+.for-print {
+  display: none;
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+  .for-print {
+    display: inline;
+  }
+}
+
+

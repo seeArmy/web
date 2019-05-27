@@ -1,0 +1,95 @@
+{
+    "code": 200,
+    "content": [
+      {
+        "showName": "付款方",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"payerOrgName\",\"field2\":\"payerOrgCode\",\"field3\":\"payerOrgCode\",\"field4\":\"platformPayerOrgCode\"}",
+        "fieldConfigCode": "payerOrgName"
+      },
+      {
+        "showName": "账单名称",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"billName\",\"detailLinkVisiable\":\"false\"}",
+        "fieldConfigCode": "billName"
+      },
+      {
+        "showName": "应收账单号",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"billNo\",\"detailLinkVisiable\":\"false\"}",
+        "fieldConfigCode": "billNo"
+      },
+      {
+        "showName": "账单状态",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"receivableBillStatus\",\"optionsValue1\":[\"none\",\"pend\",\"accept\",\"reject\",\"destroy\"],\"options1\":[\"待提交审核\",\"待审核\",\"审核通过\",\"审核不通过\",\"已作废\"]}",
+        "fieldConfigCode": "receivableBillStatus"
+      },
+      {
+        "showName": "发送状态",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"billAffirmStatus\",\"optionsValue1\":[\"none\",\"pend\"],\"options1\":[\"未发送\",\"已发送\"]}",
+        "fieldConfigCode": "billAffirmStatus"
+      },
+      {
+        "showName": "对方确认状态",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"payableBillStatus\",\"optionsValue1\":[\"none\",\"pend\",\"accept\",\"reject\",\"destroy\"],\"options1\":[\"待对方确认\",\"待审核\",\"对方确认通过\",\"对方确认不通过\",\"已作废\"]}",
+        "fieldConfigCode": "payableBillStatus"
+      },
+      {
+        "showName": "开票状态",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"invoiced\",\"optionsValue1\":[\"yes\",\"no\"],\"options1\":[\"已开票\",\"未开票\"]}",
+        "fieldConfigCode": "invoiced"
+      },
+      {
+        "showName": "收款状态",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"receivableStatus\",\"optionsValue1\":[\"none\",\"part\",\"all\"],\"options1\":[\"未收款\",\"部分收款\",\"全部收款\"]}",
+        "fieldConfigCode": "receivableStatus"
+      },
+      {
+        "showName": "未收金额",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"unreceivedAmount\"}",
+        "fieldConfigCode": "unreceivedAmount"
+      },
+      {
+        "showName": "应收金额",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"receivableAmount\"}",
+        "fieldConfigCode": "receivableAmount"
+      },
+      {
+        "showName": "己收金额",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"receivedAmount\"}",
+        "fieldConfigCode": "receivedAmount"
+      },
+      {
+        "showName": "创建人",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"creatorUsername\"}",
+        "fieldConfigCode": "creatorUsername"
+      },
+      {
+        "showName": "创建时间",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"createTime\"}",
+        "fieldConfigCode": "createTime"
+      },
+      {
+        "showName": "修改人",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"updateUsername\"}",
+        "fieldConfigCode": "updateUsername"
+      },
+      {
+        "showName": "修改时间",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"updateTime\"}",
+        "fieldConfigCode": "updateTime"
+      }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "code": 200,
+    "content": [ 
+        {
+            "showName": "运单号",
+            "elementCode": "wayBillLink",
+            "extraParams": "{\"field1\":\"waybillNo\",\"field2\":\"waybillCode\"}",
+            "fieldConfigCode": "waybillNo"
+        },
+        {
+            "showName": "车牌号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"truckLicenseNo\",\"field2\":\"truckCode\",\"field3\":\"truckCode\",\"field4\":\"platformTruckCode\"}",
+            "fieldConfigCode": "truckLicenseNo"
+        },
+        {
+            "showName": "评价得分",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"evaluationScore\"}",
+            "fieldConfigCode": "evaluationScore"
+        },
+        {
+            "showName": "评价内容",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"description\"}",
+            "fieldConfigCode": "description"
+        },
+        {
+            "showName": "评价时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "createTime"
+        }
+    ]
+}

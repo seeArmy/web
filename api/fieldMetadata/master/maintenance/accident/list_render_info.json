@@ -1,0 +1,119 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "车牌号",
+            "elementCode": "popSelectTruckTrailer",
+            "extraParams": "{\"field1\":\"truckLicenseNo\",\"field2\":\"truckCode\",\"field3\":\"truckCode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入车牌号匹配\",\"outputKey1\":\"truck\",\"outputKey3\":\"truck\",\"inputKey1\":\"truck.truckLicenseNo,trailer.truckLicenseNo\",\"inputKey2\":\"truck.code,trailer.code\"}",
+            "fieldConfigCode": "truckLicenseNo"
+        },
+        {
+            "showName": "司机姓名",
+            "elementCode": "popSelectDriver",
+            "extraParams": "{\"field1\":\"driverName\",\"field2\":\"driverCode\",\"field3\":\"driverCode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入司机姓名匹配\",\"outputKey1\":\"driver\",\"outputKey3\":\"driver\",\"inputKey1\":\"driver.fullName\",\"inputKey2\":\"driver.code\"}",
+            "fieldConfigCode": "driverName"
+        },
+        {
+            "showName": "事故时间",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"accidentDate\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "accidentDate"
+        },
+        {
+            "showName": "处理状态",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"status\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"none\",\"processing\",\"solved\"],\"options1\":[\"未处理\",\"处理中\",\"已处理\"]}",
+            "fieldConfigCode": "status"
+        },
+        {
+            "showName": "肇事地点",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"accidentAddress\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入肇事地点\"}",
+            "fieldConfigCode": "accidentAddress"
+        },
+        {
+            "showName": "事故摘要",
+            "elementCode": "textarea",
+            "extraParams": "{\"field1\":\"summary\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入事故摘要\"}",
+            "fieldConfigCode": "summary"
+        },
+        {
+            "showName": "损失金额",
+            "elementCode": "money",
+            "extraParams": "{\"field1\":\"damagesAmount\",\"field2\":\"damagesAmountUnitCode\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过13位（最多2位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"13\",\"placeholder1\":\"请输入损失金额\"}",
+            "fieldConfigCode": "damagesAmount"
+        },
+        {
+            "showName": "保险公司",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"insuranceCompany\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入保险公司\"}",
+            "fieldConfigCode": "insuranceCompany"
+        },
+        {
+            "showName": "接案人",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"takeCasePeople\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入接案人\"}",
+            "fieldConfigCode": "takeCasePeople"
+        },
+        {
+            "showName": "实际赔偿金额",
+            "elementCode": "money",
+            "extraParams": "{\"field1\":\"actualCompensationAmount\",\"field2\":\"actualCompensationAmountUnitCode\",\"default2\":\"元\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过13位（最多2位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"13\",\"placeholder1\":\"请输入实际赔偿金额\"}",
+            "fieldConfigCode": "actualCompensationAmount"
+        },
+        {
+            "showName": "差额",
+            "elementCode": "money",
+            "extraParams": "{\"field1\":\"gapAmount\",\"field2\":\"gapAmountUnitCode\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过13位（最多2位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"13\",\"placeholder1\":\"请输入差额\"}",
+            "fieldConfigCode": "gapAmount"
+        },
+        {
+            "showName": "驾驶责任分成",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"drivingResponsibility\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入驾驶责任分成\"}",
+            "fieldConfigCode": "drivingResponsibility"
+        },
+        {
+            "showName": "驾驶责任金额",
+            "elementCode": "money",
+            "extraParams": "{\"field1\":\"drivingResponsibilityAmount\",\"field2\":\"drivingResponsibilityAmountUnitCode\",\"default2\":\"元\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过13位（最多2位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"13\",\"placeholder1\":\"请输入驾驶责任金额\"}",
+            "fieldConfigCode": "drivingResponsibilityAmount"
+        },
+        {
+            "showName": "专案人",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"projectPeople\",\"default2\":\"元\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入专案人\"}",
+            "fieldConfigCode": "projectPeople"
+        },
+        {
+            "showName": "终结日期",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"endDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "endDate"
+        },
+        {
+            "showName": "创建人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"creatorUsername\",\"default2\":\"元\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "creatorUser"
+        },
+        {
+            "showName": "创建时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "createTime"
+        },
+        {
+            "showName": "修改人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateUser"
+        },
+        {
+            "showName": "修改时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateTime"
+        }
+    ]
+}

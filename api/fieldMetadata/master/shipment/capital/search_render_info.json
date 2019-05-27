@@ -1,0 +1,35 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "流水号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"serialnumber\",\"required\":\"false\",\"placeholder1\":\"请输入流水号\"}",
+            "fieldConfigCode": "serialnumber"
+        },
+        {
+            "showName": "派车单号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"jobordernumber\",\"required\":\"false\",\"placeholder1\":\"请输入派车单号\"}",
+            "fieldConfigCode": "jobordernumber"
+        },
+        {
+            "showName": "参与方名称",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"partname\",\"required\":\"false\",\"placeholder1\":\"请输入参与方名称\"}",
+            "fieldConfigCode": "partname"
+        },
+        {
+            "showName": "同步时间",
+            "elementCode": "dateRange",
+            "extraParams": "{\"field1\":\"startTime\",\"field3\":\"endTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"format3\":\"yyyy-MM-dd HH:mm:ss\",\"placeholder2\":\"到\",\"default2\":\"到\"}",
+            "fieldConfigCode": "createTime"
+        },
+        {
+            "showName": "同步标识",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"isexception\",\"default1\":\"-1\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"0 \",\"-1\",\"unsync\"],\"options1\":[\"成功\",\"失败\",\"未同步\"]}",
+            "fieldConfigCode": "isexception"
+        }
+    ]
+}

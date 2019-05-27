@@ -1,0 +1,99 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "驾驶员ID",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"driverid\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"TRUE\"}",
+            "fieldConfigCode": "driverid"
+        },
+        {
+            "showName": "姓名",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"nameofperson\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "nameofperson"
+        },
+        {
+            "showName": "性别",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"gender\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "gender"
+        },
+        {
+            "showName": "身份证号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"identitydocumentnumber\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "identitydocumentnumber"
+        },
+        {
+            "showName": "移动电话号码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"mobiletelephonenumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "mobiletelephonenumber"
+        },
+        {
+            "showName": "电话号码",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"telephonenumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入运输经营许可证\"}",
+            "fieldConfigCode": "telephonenumber"
+        },
+        {
+            "showName": "从业资格信息证号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"qualificationcertificatenumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "qualificationcertificatenumber"
+        },
+        {
+            "showName": "备注",
+            "elementCode": "textarea",
+            "extraParams": {
+              "field1": "remark",
+              "maxLength1":512,
+              "detailLinkVisiable": "false"
+            },
+            "fieldConfigCode": "remark"
+        },
+        {
+            "showName": "所属实际承运人id",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"carrierid\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "carrierid"
+        },
+        {
+            "showName": "注册时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"registrationdatetime\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "registrationdatetime"
+        },
+        {
+            "showName": "更新时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updatetimedatetime\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "updatetimedatetime"
+        },
+        {
+            "showName": "是否黑名单",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"isblaclklist\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "isblaclklist"
+        },
+        {
+            "showName": "是否删除",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"isdeleteflag\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "isdeleteflag"
+        },
+        {
+            "showName": "同步时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"synchronizationtime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "synchronizationtime"
+        },
+        {
+            "showName": "同步标识",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"isexception\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "isexception"
+        }
+    ]
+}

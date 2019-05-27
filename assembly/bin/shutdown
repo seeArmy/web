@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+APP_NAME="rltx-webpack-qlh"
+
+PID=`ps -ef | grep webpack-dev-server.js | grep -v 'grep' | awk '{print $2}'`
+# PID=`ps -ef | grep "$APP_NAME" | grep -v '$0' | grep -v 'grep' | awk '{print $2}'`
+
+if [ $? -eq 0 ];
+then
+	echo "waiting $APP_NAME shutdown..."
+	for id in $PID
+	do
+		kill -9 $id
+		echo "killed $id"
+	done
+	sleep 1
+fi

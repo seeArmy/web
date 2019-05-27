@@ -1,0 +1,29 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "设备名称",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"deviceName\",\"placeholder1\":\"请输入设备名称\"}",
+            "fieldConfigCode": "deviceName"
+        },
+        {
+            "showName": "设备编号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"deviceNo\",\"placeholder1\":\"请输入设备编号\"}",
+            "fieldConfigCode": "deviceNo"
+        },
+        {
+            "showName": "车牌号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"truckLicenseNo\",\"placeholder1\":\"请输入车牌号\"}",
+            "fieldConfigCode": "truckLicenseNo"
+        },
+        {
+            "showName": "流量卡号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"simCardNo\",\"placeholder1\":\"请输入流量卡号\"}",
+            "fieldConfigCode": "simCardNo"
+        }
+    ]
+}

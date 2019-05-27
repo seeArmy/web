@@ -1,0 +1,101 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "车牌号",
+            "elementCode": "popSelectTruckTrailer",
+            "extraParams": "{\"field1\":\"truckLicenseNo\",\"field2\":\"truckCode\",\"field3\":\"truckCode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入车牌号匹配\",\"outputKey1\":\"truck\",\"outputKey3\":\"truck\",\"inputKey1\":\"truck.truckLicenseNo,trailer.truckLicenseNo\",\"inputKey2\":\"truck.code,trailer.code\"}",
+            "fieldConfigCode": "truckLicenseNo"
+        },
+        {
+            "showName": "险种类型",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"insuranceType\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"TCI\",\"VCI\",\"CLI\"],\"options1\":[\"交强险\",\"商业险\",\"承运人货物险\"]}",
+            "fieldConfigCode": "insuranceType"
+        },
+        {
+            "showName": "保险公司",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"insuranceCompany\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入保险公司名称\"}",
+            "fieldConfigCode": "insuranceCompany"
+        },
+        {
+            "showName": "投保日期",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"insuranceDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "insuranceDate"
+        },
+        {
+            "showName": "到期日期",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"expireDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "expireDate"
+        },
+        {
+            "showName": "保额",
+            "elementCode": "money",
+            "extraParams": "{\"field1\":\"insuranceAmount\",\"field2\":\"insuranceAmountUnitCode\",\"default2\":\"元\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过13位（最多2位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"13\",\"placeholder1\":\"请输入保额\"}",
+            "fieldConfigCode": "insuranceAmount"
+        },
+        {
+            "showName": "保险单号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"insuranceNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入保险单号\"}",
+            "fieldConfigCode": "insuranceNo"
+        },
+        {
+            "showName": "锁号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"lockNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入锁号\"}",
+            "fieldConfigCode": "lockNo"
+        },
+        {
+            "showName": "车船税金额",
+            "elementCode": "money",
+            "extraParams": "{\"field1\":\"travelTaxAmount\",\"field2\":\"travelTaxAmountUnitCode\",\"default2\":\"元\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过13位（最多2位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"13\",\"placeholder1\":\"请输入车船税金额\"}",
+            "fieldConfigCode": "travelTaxAmount"
+        },
+        {
+            "showName": "保费金额",
+            "elementCode": "money",
+            "extraParams": "{\"field1\":\"premiumAmount\",\"field2\":\"premiumAmountUnitCode\",\"default2\":\"元\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过13位（最多2位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"13\",\"placeholder1\":\"请输入保费金额\"}",
+            "fieldConfigCode": "premiumAmount"
+        },
+        {
+            "showName": "备注",
+            "elementCode": "textarea",
+            "extraParams": "{\"field1\":\"description\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入备注\"}",
+            "fieldConfigCode": "description"
+        },
+        {
+            "showName": "提醒日期",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"remindDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "remindDate"
+        },
+        {
+            "showName": "创建人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"creatorUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "creatorUser"
+        },
+        {
+            "showName": "创建时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "createTime"
+        },
+        {
+            "showName": "修改人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateUser"
+        },
+        {
+            "showName": "修改时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateTime"
+        }
+    ]
+}

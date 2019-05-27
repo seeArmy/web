@@ -1,0 +1,65 @@
+{
+  "code": 200,
+  "content": [
+    {
+      "showName": "货物编号",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"goodsSystemNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "goodsSystemNo"
+    },
+    {
+      "showName": "货物线下编号",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"goodsNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "goodsNo"
+    },
+    {
+      "showName": "货物名称",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"goodsName\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "goodsName"
+    },
+    {
+      "showName": "货物分类",
+      "elementCode": "goodsCategorySelect",
+      "extraParams": "{\"field1\":\"goodsCategoryCode\",\"field2\":\"goodsCategoryName\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"outputKey1\":\"goodsCategory\",\"inputKey2\":\"goodsCategory.goodsCategoryName\"}",
+      "fieldConfigCode": "goodsCategoryCode"
+    },
+    {
+      "showName": "国标货物类型",
+      "elementCode": "select",
+      "extraParams": "{\"field1\":\"goodsCategoryGb\",\"default1\":\"94\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"90\",\"92\",\"93\",\"94\",\"95\",\"96\",\"999\"],\"options1\":[\"电子产品\",\"商品汽车\",\"冷藏货物\",\"大宗货物\",\"快速消费品\",\"农产品\",\"其他\"],\"inputKey1\":\"goodsCategory.goodsCategoryGb\"}",
+      "fieldConfigCode": "goodsCategoryGb"
+    },
+    {
+      "showName": "计量标准",
+      "elementCode": "radio",
+      "extraParams": "{\"field1\":\"meterageType\",\"default1\":\"ton\",\"readonly1\":\"TRUE\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"ton\",\"cube\",\"item\"],\"options1\":[\"吨\",\"方\",\"件\"],\"inputKey1\":\"goodsCategory.meterageType\"}",
+      "fieldConfigCode": "meterageType"
+    },
+    {
+        "showName": "货物单价",
+        "elementCode": "goodsPrice",
+        "extraParams": "{\"field1\":\"goodsPrice\",\"field2\":\"goodsPriceUnitCode\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过13位（最多2位小数）\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"13\",\"placeholder1\":\"请输入货物单价\",\"inputKey1\":\"logistics.goodsPrice\",\"inputKey2\":\"logistics.goodsPriceUnitCode\"}",
+        "fieldConfigCode": "goodsPrice"
+    },
+    {
+      "showName": "创建人",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"creatorUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "creatorUser"
+    },
+    {
+      "showName": "创建时间",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "createTime"
+    },
+    {
+      "showName": "备注",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"description\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"inputKey1\":\"goodsCategory.description\"}",
+      "fieldConfigCode": "description"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+    "code": 200,
+    "content": [{
+      "showName": "发货日期",
+      "fieldConfigCode": "loadingDate",
+      "elementCode": "dateRange",
+      "extraParams": {"field1":"from_loadingDate","field3":"to_loadingDate","format1":"yyyy-MM-dd","format3":"yyyy-MM-dd","default2":"到"}
+    }, {
+      "showName": "收货日期",
+      "fieldConfigCode": "unloadingDate",
+      "elementCode": "dateRange",
+      "extraParams": {"field1":"from_unloadingDate","field3":"to_unloadingDate","format1":"yyyy-MM-dd","format3":"yyyy-MM-dd","default2":"到"}
+    }, {
+      "showName": "托运客户",
+      "fieldConfigCode": "clientOrgName",
+      "elementCode": "text",
+      "extraParams": {"field1": "clientOrgName"}
+    }]
+}

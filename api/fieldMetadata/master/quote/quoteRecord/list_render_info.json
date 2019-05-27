@@ -1,0 +1,77 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "承运方",
+            "elementCode": "popSelectPartner",
+            "extraParams": "{\"field1\":\"ownerOrgName\",\"field2\":\"ownerOrgCode\",\"field3\":\"ownerOrgCode\",\"field4\":\"platformOwnerOrgCode\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\"}",
+            "fieldConfigCode": "ownerOrgName"
+        },
+        {
+            "showName": "下单状态",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"quoteStatus\",\"required\":\"FALSE\",\"detailLinkVisiable\":\"FALSE\",\"optionsValue1\":[\"pend\",\"ordered\",\"ignore\",\"carrierCancel\",\"carrierReceived\",\"carrierReject\"],\"options1\":[\"待下单\",\"已下单待承运方接单\",\"已忽略下单\" ,\"承运方取消报价\",\"承运方已接单\",\"承运方已拒绝\"]}",
+            "fieldConfigCode": "quoteStatus"
+        },
+        {
+            "showName": "承运方运价",
+            "elementCode": "driverPrice",
+            "extraParams": "{\"field1\":\"quotePrice\",\"field2\":\"quotePriceUnitCode\",\"required\":\"FALSE\",\"detailLinkVisiable\":\"FALSE\"}",
+            "fieldConfigCode": "quotePrice"
+        },
+        {
+            "showName": "分配重量",
+            "elementCode": "goodsWeight",
+            "extraParams": "{\"field1\":\"goodsWeight\",\"field2\":\"goodsWeightUnitCode\",\"default2\":\"ton\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,4})?\",\"checkMsg1\":\"不超过15位（最多4位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入计划重量\",\"inputKey1\":\"logistics.goodsWeight\"}",
+            "fieldConfigCode": "goodsWeight"
+        },
+        {
+            "showName": "分配体积",
+            "elementCode": "goodsVolume",
+            "extraParams": "{\"field1\":\"goodsVolume\",\"field2\":\"goodsVolumeUnitCode\",\"default2\":\"cube\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,4})?\",\"checkMsg1\":\"不超过15位（最多4位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入计划体积\",\"inputKey1\":\"logistics.goodsVolume\"}",
+            "fieldConfigCode": "goodsVolume"
+        },
+        {
+            "showName": "分配数量",
+            "elementCode": "goodsNum",
+            "extraParams": "{\"field1\":\"goodsNum\",\"field2\":\"goodsNumUnitCode\",\"default2\":\"item\",\"checkRule1\":\"[0-9]{1,10}\",\"checkMsg1\":\"不超过10位的整数\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"10\",\"placeholder1\":\"请输入计划数量\",\"inputKey1\":\"logistics.goodsNum\"}",
+            "fieldConfigCode": "goodsNum"
+        },
+        {
+            "showName": "分配车次",
+            "elementCode": "truckQty",
+            "extraParams": "{\"field1\":\"truckQty\",\"field2\":\"truckQtyUnitCode\",\"default2\":\"车\",\"checkRule1\":\"[0-9]{1,10}\",\"checkMsg1\":\"不超过10位的整数\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"10\",\"placeholder1\":\"请输入需求车辆数\",\"inputKey1\":\"logistics.truckQty\"}",
+            "fieldConfigCode": "truckQty"
+        },
+        {
+            "showName": "请求重量",
+            "elementCode": "goodsWeight",
+            "extraParams": "{\"field1\":\"requestGoodsWeight\",\"field2\":\"requestGoodsWeightUnitCode\",\"default2\":\"ton\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,4})?\",\"checkMsg1\":\"不超过15位（最多4位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入计划重量\",\"inputKey1\":\"logistics.goodsWeight\"}",
+            "fieldConfigCode": "requestGoodsWeight"
+        },
+        {
+            "showName": "请求体积",
+            "elementCode": "goodsVolume",
+            "extraParams": "{\"field1\":\"requestGoodsVolume\",\"field2\":\"requestGoodsVolumeUnitCode\",\"default2\":\"cube\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,4})?\",\"checkMsg1\":\"不超过15位（最多4位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入计划体积\",\"inputKey1\":\"logistics.goodsVolume\"}",
+            "fieldConfigCode": "requestGoodsVolume"
+        },
+        {
+            "showName": "请求数量",
+            "elementCode": "goodsNum",
+            "extraParams": "{\"field1\":\"requestGoodsNum\",\"field2\":\"requestGoodsNumUnitCode\",\"default2\":\"item\",\"checkRule1\":\"[0-9]{1,10}\",\"checkMsg1\":\"不超过10位的整数\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"10\",\"placeholder1\":\"请输入计划数量\",\"inputKey1\":\"logistics.goodsNum\"}",
+            "fieldConfigCode": "requestGoodsNum"
+        },
+        {
+            "showName": "请求车次",
+            "elementCode": "truckQty",
+            "extraParams": "{\"field1\":\"requestTruckQty\",\"field2\":\"requestTruckQtyUnitCode\",\"default2\":\"车\",\"checkRule1\":\"[0-9]{1,10}\",\"checkMsg1\":\"不超过10位的整数\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"10\",\"placeholder1\":\"请输入需求车辆数\",\"inputKey1\":\"logistics.truckQty\"}",
+            "fieldConfigCode": "requestTruckQty"
+        },
+        {
+            "showName": "抢单时间",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "createTime"
+        }
+    ]
+}

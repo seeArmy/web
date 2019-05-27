@@ -1,0 +1,59 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "姓名",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"fullName\",\"required\":\"true\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入姓名\"}",
+            "fieldConfigCode": "fullName"
+        },
+        {
+            "showName": "帐号状态",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"userStatus\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\" \",\"optionsValue1\":[\"activated\",\"inactivated\"],\"options1\":[\"已激活\",\"未激活\"]}",
+            "fieldConfigCode": "userStatus"
+        },
+        {
+            "showName": "部门",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"departmentName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\"请输入部门\"}",
+            "fieldConfigCode": "departmentName"
+        },
+        {
+            "showName": "角色",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"roleName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\"请输入角色\"}",
+            "fieldConfigCode": "roleName"
+        },
+        {
+            "showName": "手机号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"phone\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"18\",\"placeholder1\":\"请输入手机号\"}",
+            "fieldConfigCode": "phone"
+        },
+        {
+            "showName": "创建人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"creatorUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "creatorUser"
+        },
+        {
+            "showName": "创建时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "createTime"
+        },
+        {
+            "showName": "修改人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateUser"
+        },
+        {
+            "showName": "修改时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateTime"
+        }
+    ]
+}

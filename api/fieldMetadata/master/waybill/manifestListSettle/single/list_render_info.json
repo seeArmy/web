@@ -1,0 +1,59 @@
+{
+  "code": 200,
+  "content": [
+  {
+    "showName": "货物名称",
+    "elementCode": "goodsNameAutocomplete",
+    "extraParams": "{\"field1\":\"goodsName\",\"field2\":\"goodsCode\",\"outputKey1\":\"goods\",\"inputKey1\":\"goods.goodsName\",\"inputKey2\":\"goods.code\"}",
+    "fieldConfigCode": "goodsName"
+  },
+  {
+    "showName": "货物分类",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"goodsCategory\",\"default1\":\"\",\"readonly1\":\"\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"inputKey1\":\"goods.goodsCategoryName\",\"outputKey1\":\"goodsCategory\"}",
+    "fieldConfigCode": "goodsCategory"
+  },
+  {
+    "showName": "计量标准",
+    "elementCode": "select",
+    "extraParams": "{\"field1\":\"meterageType\",\"default1\":\"\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"ton\",\"cube\",\"item\"],\"options1\":[\"吨\",\"方\",\"件\"],\"inputKey1\":\"goods.meterageType,goodsCategory.meterageType\"}",
+    "fieldConfigCode": "meterageType"
+  },
+  {
+    "showName": "数量",
+    "elementCode": "assignGoodsNum",
+    "extraParams": "{\"field1\":\"goodsNum\",\"field2\":\"goodsNumUnitCode\",\"default2\":\"item\",\"optionsValue2\":[\"item\"],\"options2\":[\"件\"],\"neddSubtotal1\":\"TRUE\",\"checkRule1\":\"[0-9]{1,10}\",\"checkMsg1\":\"不超过10位的整数\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":10,\"placeholder1\":\"请输入数量\"}",
+    "fieldConfigCode": "goodsNum"
+  },
+
+  {
+    "showName": "重量",
+    "elementCode": "assignGoodsWeight",
+    "extraParams": "{\"field1\":\"goodsWeight\",\"field2\":\"goodsWeightUnitCode\",\"default2\":\"ton\",\"optionsValue2\":[\"ton\"],\"options2\":[\"吨\"],\"neddSubtotal1\":\"TRUE\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,4})?\",\"checkMsg1\":\"不超过15位（最多4位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":15,\"placeholder1\":\"请输入重量\"}",
+    "fieldConfigCode": "goodsWeight"
+  },
+  {
+    "showName": "体积",
+    "elementCode": "assignGoodsVolume",
+    "extraParams": "{\"field1\":\"goodsVolume\",\"field2\":\"goodsVolumeUnitCode\",\"default2\":\"cube\",\"optionsValue2\":[\"cube\"],\"options2\":[\"方\"],\"neddSubtotal1\":\"TRUE\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,4})?\",\"checkMsg1\":\"不超过15位（最多4位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":15,\"placeholder1\":\"请输入体积\"}",
+    "fieldConfigCode": "goodsVolume"
+  },
+  {
+    "showName": "货物单价",
+    "elementCode": "goodsPrice",
+    "extraParams": "{\"field1\":\"goodsPrice\",\"field2\":\"goodsPriceUnitCode\",\"required\":\"false\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过13位（最多2位小数）\",\"detailLinkVisiable\":\"false\",\"maxLength1\":13,\"placeholder1\":\"请输入货物单价\",\"inputKey1\":\"rates.goodsPrice\",\"inputKey2\":\"rates.goodsPriceUnitCode\"}",
+    "fieldConfigCode": "goodsPrice"
+  },
+  {
+    "showName": "合理货差系数",
+    "elementCode": "goodsLossTypeMore",
+    "extraParams": "{\"field1\":\"goodsLossMethod\",\"field2\":\"goodsLoss\",\"field3\":\"goodsLossUnitCode\",\"default1\":\"none\",\"checkRule2\":\"[0-9]{1,10}(\\\\.[0-9]{0,4})?\",\"checkMsg2\":\"请输入正确的数字，不超过15位（最多4位小数）\",\"required1\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength2\":15,\"placeholder2\":\"请输入合理货差系数\",\"inputKey1\":\"rates.goodsLossMethod\",\"inputKey2\":\"rates.goodsLoss\",\"inputKey3\":\"rates.goodsLossUnitCode\",\"optionsValue1\":[\"none\",\"goods.loss.ration\",\"goods.loss\"],\"options1\":[\"不计算\",\"按系数\",\"按量\"]}",
+    "fieldConfigCode": "freightLoss"
+  },
+  {
+    "showName": "货物备注",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"description\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":200}",
+    "fieldConfigCode": "description"
+  }]
+}

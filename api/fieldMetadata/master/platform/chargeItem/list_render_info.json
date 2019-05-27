@@ -1,0 +1,65 @@
+{
+  "code": 200,
+  "content": [
+    {
+      "showName": "序号",
+      "fieldConfigCode": "seqNo",
+      "elementCode": "label",
+      "extraParams": "{\"field1\": \"seqNo\", \"required\": \"false\"}"
+    },
+    {
+      "showName": "科目名称",
+      "fieldConfigCode": "chargeItemName",
+      "elementCode": "label",
+      "extraParams": "{\"field1\": \"chargeItemName\", \"detailLinkVisiable\": \"true\", \"required\": \"false\"}"
+    },
+    {
+      "showName": "科目代码",
+      "fieldConfigCode": "code",
+      "elementCode": "label",
+      "extraParams": "{\"field1\": \"code\", \"required\": \"false\"}"
+    },
+    {
+      "showName": "状态",
+      "fieldConfigCode": "disabled",
+      "elementCode": "radio",
+      "extraParams": "{\"field1\": \"disabled\",\"default1\":\"false\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"false\",\"true\"],\"options1\":[\"启用\",\"禁用\"]}"
+    },
+    {
+      "showName": "单项支付通道",
+      "fieldConfigCode": "paymentChannel",
+      "elementCode": "select",
+      "extraParams": "{\"field1\": \"paymentChannel\",\"optionsValue1\":[\"none\",\"cash\"],\"options1\":[\"无单项支付通道\",\"现金支付\"]}"
+    },
+    {
+      "showName": "单项付款是否审核",
+      "fieldConfigCode": "paymentApproveType",
+      "elementCode": "radio",
+      "extraParams": "{\"field1\": \"paymentApproveType\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"payment\",\"approve\",\"none\"],\"options1\":[\"无审核直接付\",\"付前需要审核\",\"无单项付款\"]}"
+    },
+    {
+      "showName": "创建人",
+      "fieldConfigCode": "creatorUsername",
+      "elementCode": "label",
+      "extraParams": "{\"field1\": \"creatorUsername\", \"required\": \"false\"}"
+    },
+    {
+      "showName": "创建时间",
+      "fieldConfigCode": "createTime",
+      "elementCode": "label",
+      "extraParams": "{\"field1\": \"createTime\", \"required\": \"false\"}"
+    },
+    {
+      "showName": "修改人",
+      "fieldConfigCode": "updateUsername",
+      "elementCode": "label",
+      "extraParams": "{\"field1\": \"updateUsername\", \"required\": \"false\"}"
+    },
+    {
+      "showName": "修改时间",
+      "fieldConfigCode": "updateTime",
+      "elementCode": "label",
+      "extraParams": "{\"field1\": \"updateTime\", \"required\": \"false\"}"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "code": 200,
+  "content": [
+    {
+      "showName": "费用名称",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"chargeItemName\",\"freeze1\":\"true\"}",
+      "fieldConfigCode": "chargeItemName"
+    },
+    {
+      "showName": "数量",
+      "elementCode": "labelNumberInput",
+      "extraParams": "{\"field1\":\"chargeItemNumber\",\"field2\":\"chargeItemNumberUnitCode\",\"default2\":\"item\",\"optionsValue2\":[\"item\",\"litre\",\"kg\",\"ton\",\"km\"],\"options2\":[\"件\",\"升\",\"千克\",\"吨\",\"公里\"],\"required\":\"false\",\"maxLength1\":10,\"placeholder1\":\"\"}",
+      "fieldConfigCode": "chargeItemNumber"
+    },
+    {
+      "showName": "单价",
+      "elementCode": "labelNumberInput",
+      "extraParams": "{\"field1\":\"chargeItemPrice\",\"field2\":\"chargeItemPriceUnitCode\",\"default2\":\"yuanperitem\",\"optionsValue2\":[\"yuanperitem\",\"yuanperlitre\",\"yuanperkg\",\"yuanperton\",\"yuanperkm\"],\"options2\":[\"元/件\",\"元/升\",\"元/千克\",\"元/吨\",\"元/公里\"],\"required\":\"false\",\"maxLength1\":10,\"placeholder1\":\"\"}",
+      "fieldConfigCode": "chargeItemPrice"
+    },
+    {
+      "showName": "金额",
+      "elementCode": "labelNumberInput",
+      "extraParams": "{\"field1\":\"chargeAmounts\",\"field2\":\"chargeAmountsUnitCode\",\"default2\":\"yuan\",\"required\":\"false\",\"maxLength1\":15,\"optionsValue2\":[\"yuan\"],\"options2\":[\"元\"],\"required\":\"false\",\"maxLength1\":10,\"placeholder1\":\"\"}",
+      "fieldConfigCode": "chargeAmounts"
+    },
+    {
+      "showName": "付款状态",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"chargeItemPaybillStatus\",\"required\":\"false\",\"optionsValue1\":[\"uncreated\",\"ready\",\"approvePend\",\"reject\",\"pend\",\"failed\",\"paid\"],\"options1\":[\"待创建\",\"待申请\",\"待审核\",\"审核未通过\",\"待支付\",\"支付失败\",\"已支付\"]}",
+      "fieldConfigCode": "chargeItemPaybillStatus"
+    },
+    {
+      "showName": "相关附件",
+      "elementCode": "file",
+      "extraParams": "{\"field1\":\"attachmentList\",\"required\":\"FALSE\",\"maxLength1\":3}",
+      "fieldConfigCode": "attachmentList"
+    },
+    {
+      "showName": "关联付款单号",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"chargeItemPaybillNo\",\"field2\":\"chargeItemPaybillCode\"}",
+      "fieldConfigCode": "chargeItemPaybillNo"
+    },
+    {
+      "showName": "备注",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"description\",\"required\":\"false\",\"maxLength1\":200}",
+      "fieldConfigCode": "description"
+    }
+  ]
+}

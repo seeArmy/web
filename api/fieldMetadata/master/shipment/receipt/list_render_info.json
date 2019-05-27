@@ -1,0 +1,65 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "派车单号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"jobordernumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"TRUE\"}",
+            "fieldConfigCode": "jobordernumber"
+        },
+        {
+            "showName": "运单号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"shippingnotenumber\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "shippingnotenumber"
+        },
+        {
+            "showName": "运输价格",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"monetaryamount\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "monetaryamount"
+        },
+        {
+            "showName": "回单照片访问地址",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"photoaccessaddress\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "photoaccessaddress"
+        },
+        {
+            "showName": "回单附加信息",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"receiptadditionalinformation\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "receiptadditionalinformation"
+        },
+        {
+            "showName": "是否删除",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"isdeleteflag\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "isdeleteflag"
+        },
+        {
+            "showName": "同步时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"synchronizationtime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "synchronizationtime"
+        },
+        {
+            "showName": "同步标识",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"isexception\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "isexception"
+        },
+        {
+            "showName": "部级同步标识",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"isexception\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "syncstaus"
+        },
+        {
+            "showName": "部级同步时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"syncdate\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "syncdate"
+        }
+    ]
+}

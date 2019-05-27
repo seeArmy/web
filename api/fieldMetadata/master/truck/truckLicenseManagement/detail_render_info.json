@@ -1,0 +1,240 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "车牌号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"truckLicenseNo\",\"required\":\"true\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入车牌号\"}",
+            "fieldConfigCode": "truckLicenseNo"
+        },
+        {
+            "showName": "认证状态",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"certStatus\",\"default1\":\"unauthenticated\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"TRUE\",\"optionsValue1\":[\"unauthenticated\",\"authenticating\",\"authenticated\",\"failed\"],\"options1\":[\"未认证\",\"认证中\",\"已认证\",\"认证失败\"]}",
+            "fieldConfigCode": "certStatus"
+        },
+        {
+            "showName": "标签",
+            "elementCode": "tag",
+            "extraParams": "{\"field1\":\"truckTag\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"6\"}",
+            "fieldConfigCode": "truckTag"
+        },
+        {
+            "showName": "牌照类型",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"truckLicenseType\",\"default1\":\"truck\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"optionsValue1\":[\"01\",\"02\",\"99\"],\"options1\":[\"大型汽车号牌\",\"小型汽车号牌\",\"其他号牌\"]}",
+            "fieldConfigCode": "truckLicenseType"
+        },
+        {
+            "showName": "联系手机号",
+            "elementCode": "number",
+            "extraParams": "{\"field1\":\"truckFixedMobile\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入手机号\"}",
+            "fieldConfigCode": "truckFixedMobile"
+        },
+        {
+            "showName": "车型",
+            "elementCode": "truckModel",
+            "extraParams": "{\"field1\":\"truckModelCode\",\"field2\":\"truckModelName\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\"请选择车型\"}",
+            "fieldConfigCode": "truckModelCode"
+        },
+        {
+            "showName": "载重",
+            "elementCode": "regTonnage",
+            "extraParams": "{\"field1\":\"regTonnage\",\"field2\":\"regTonnageUnitCode\",\"default2\":\"ton\",\"required\":\"true\",\"checkRule1\":\"[0-9]{1,6}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过9位（最多2位小数）\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"9\",\"placeholder1\":\"请输入车辆载重\"}",
+            "fieldConfigCode": "regTonnage"
+        },
+        {
+            "showName": "车长",
+            "elementCode": "truckSize",
+            "extraParams": "{\"field1\":\"truckLength\",\"field2\":\"truckLengthUnitCode\",\"default2\":\"meter\",\"checkRule1\":\"[0-9]{1,6}(\\\\.[0-9]{0,3})?\",\"checkMsg1\":\"不超过10位（最多3位小数）\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"10\",\"placeholder1\":\"请输入车辆长度\"}",
+            "fieldConfigCode": "truckLength"
+        },
+        {
+            "showName": "车宽",
+            "elementCode": "truckSize",
+            "extraParams": "{\"field1\":\"truckWidth\",\"field2\":\"truckWidthUnitCode\",\"default2\":\"meter\",\"checkRule1\":\"[0-9]{1,6}(\\\\.[0-9]{0,3})?\",\"checkMsg1\":\"不超过10位（最多3位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"10\",\"placeholder1\":\"请输入车辆宽度\"}",
+            "fieldConfigCode": "truckWidth"
+        },
+        {
+            "showName": "车高",
+            "elementCode": "truckSize",
+            "extraParams": "{\"field1\":\"truckHeight\",\"field2\":\"truckHeightUnitCode\",\"default2\":\"meter\",\"checkRule1\":\"[0-9]{1,6}(\\\\.[0-9]{0,3})?\",\"checkMsg1\":\"不超过10位（最多3位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"10\",\"placeholder1\":\"请输入车辆高度\"}",
+            "fieldConfigCode": "truckHeight"
+        },
+        {
+            "showName": "容积",
+            "elementCode": "cubage",
+            "extraParams": "{\"field1\":\"cubage\",\"field2\":\"cubageUnitCode\",\"default2\":\"cube\",\"checkRule1\":\"[0-9]{1,6}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过6位（最多2位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"6\",\"placeholder1\":\"请输入车辆容积\"}",
+            "fieldConfigCode": "cubage"
+        },
+        {
+            "showName": "动力类型",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"powerType\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\"请选择动力类型\",\"optionsValue1\":[\"gas\",\"oil\"],\"options1\":[\"气车\",\"油车\"]}",
+            "fieldConfigCode": "powerType"
+        },
+        {
+            "showName": "道路运输证号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"transportLicenseNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入车辆道路运输证号\"}",
+            "fieldConfigCode": "transportLicenseNo"
+        },
+        {
+            "showName": "运输经营许可证",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"vehiclePermitNumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入运输经营许可证\"}",
+            "fieldConfigCode": "vehiclePermitNumber"
+        },
+        {
+            "showName": "备注",
+            "elementCode": "textarea",
+            "extraParams": "{\"field1\":\"description\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入备注\"}",
+            "fieldConfigCode": "description"
+        },
+        {
+            "showName": "品牌型号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"truckBrand\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入车辆品牌型号\"}",
+            "fieldConfigCode": "truckBrand"
+        },
+        {
+            "showName": "总质量",
+            "elementCode": "regTonnage",
+            "extraParams": "{\"field1\":\"truckTotalWeight\",\"field2\":\"truckTotalWeightUnitCode\",\"default2\":\"ton\",\"checkRule1\":\"[0-9]{1,6}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过9位（最多2位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"9\",\"placeholder1\":\"请输入车辆总质量\"}",
+            "fieldConfigCode": "truckTotalWeight"
+        },
+        {
+            "showName": "整备质量",
+            "elementCode": "regTonnage",
+            "extraParams": "{\"field1\":\"truckCurbWeight\",\"field2\":\"truckCurbWeightUnitCode\",\"default2\":\"ton\",\"checkRule1\":\"[0-9]{1,6}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过9位（最多2位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"9\",\"placeholder1\":\"请输入车辆整备质量\"}",
+            "fieldConfigCode": "truckCurbWeight"
+        },
+        {
+            "showName": "注册日期",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"truckRegisterDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "truckRegisterDate"
+        },
+        {
+            "showName": "车辆所有人",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"truckOwner\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入车辆所有人\"}",
+            "fieldConfigCode": "truckOwner"
+        },
+        {
+            "showName": "主驾姓名",
+            "elementCode": "popSelectDriver",
+            "extraParams": "{\"field1\":\"driverFullName\",\"field2\":\"driverCode\",\"field3\":\"driverCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"outputKey1\":\"driver\",\"outputKey3\":\"driver\",\"inputKey1\":\"driver.driverFullName\",\"inputKey2\":\"driver.code\"}",
+            "fieldConfigCode": "driverFullName"
+        },
+        {
+            "showName": "主驾手机号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"driverPhone\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"inputKey1\":\"driver.phone\"}",
+            "fieldConfigCode": "driverPhone"
+        },
+        {
+            "showName": "副驾姓名",
+            "elementCode": "popSelectDriver",
+            "extraParams": "{\"field1\":\"viceDriverFullName\",\"field2\":\"viceDriverCode\",\"field3\":\"viceDriverCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"outputKey1\":\"viceDriver\",\"outputKey3\":\"viceDriver\",\"inputKey1\":\"viceDriver.driverFullName\",\"inputKey2\":\"viceDriver.code\"}",
+            "fieldConfigCode": "viceDriverFullName"
+        },
+        {
+            "showName": "副驾手机号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"viceDriverPhone\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"inputKey1\":\"viceDriver.phone\"}",
+            "fieldConfigCode": "viceDriverPhone"
+        },
+        {
+            "showName": "创建人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"creatorUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "creatorUser"
+        },
+        {
+            "showName": "创建时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "createTime"
+        },
+        {
+            "showName": "修改人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateUser"
+        },
+        {
+            "showName": "修改时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateTime"
+        },
+        {
+            "showName" : "驾驶证",
+             "elementCode" : "file",
+             "extraParams" : "{\"field1\":\"drivingLicenseNo\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"dialogPreview\":\"TRUE\"}",
+             "fieldConfigCode" : "drivingLicenseNo"
+        },
+        {
+            "showName" : "运输证附件",
+             "elementCode" : "file",
+             "extraParams" : "{\"field1\":\"transportLicenseRecourseCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"dialogPreview\":\"TRUE\"}",
+             "fieldConfigCode" : "transportLicenseRecourseCode"
+        },
+         {
+            "showName" : "车辆照片",
+             "elementCode" : "file",
+             "extraParams" : "{\"field1\":\"truckPictureResourceCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"dialogPreview\":\"TRUE\"}",
+             "fieldConfigCode" : "truckPictureResourceCode"
+        },
+        {
+            "showName" : "行驶证附件",
+             "elementCode" : "file",
+             "extraParams" : "{\"field1\":\"drivingLicenseRecourseCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"dialogPreview\":\"TRUE\"}",
+             "fieldConfigCode" : "drivingLicenseRecourseCode"
+        },
+        {
+            "showName": "发动机号码",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"truckEngineNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入发动机号码\"}",
+            "fieldConfigCode": "truckEngineNo"
+        },
+        {
+            "showName": "行驶证过期日期",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"drivingLicenseExpirationDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "drivingLicenseExpirationDate"
+        },
+        {
+            "showName": "联系人",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"truckLinkman\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入联系人\"}",
+            "fieldConfigCode": "truckLinkman"
+        },
+        {
+            "showName": "准牵引总质量",
+            "elementCode": "regTonnage",
+            "extraParams": "{\"field1\":\"truckTowWeight\",\"field2\":\"truckTowWeightUnitCode\",\"default2\":\"ton\",\"checkRule1\":\"[0-9]{1,6}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过9位（最多2位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"9\",\"placeholder1\":\"请输入车辆总质量\"}",
+            "fieldConfigCode": "truckTowWeight"
+        },
+        {
+            "showName": "车辆经营范围",
+            "elementCode": "textarea",
+            "extraParams": "{\"field1\":\"truckBizScope\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入车辆经营范围\"}",
+            "fieldConfigCode": "truckBizScope"
+        },
+        {
+            "showName": "运输证过期日期",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"transportLicenseExpirationDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "transportLicenseExpirationDate"
+        },
+        {
+            "showName": "车辆识别代号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"truckIdentifyCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入车辆识别代号\"}",
+            "fieldConfigCode": "truckIdentifyCode"
+        }
+    ]
+    
+}

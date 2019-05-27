@@ -1,0 +1,113 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "货物信息ID",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"goodsid\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"TRUE\"}",
+            "fieldConfigCode": "goodsid"
+        },
+        {
+            "showName": "派车单号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"jobordernumber\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "jobordernumber"
+        },
+        {
+            "showName": "货物分类代码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"goodsclassificationname\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "goodsclassificationname"
+        },
+        {
+            "showName": "货物名称",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"descriptionofgoods\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "descriptionofgoods"
+        },
+        {
+            "showName": "货物重量",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"goodsitemgrossweight\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "goodsitemgrossweight"
+        },
+        {
+            "showName": "重量单位代码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"measurementunitcode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "measurementunitcode"
+        },
+        {
+            "showName": "货物体积",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"cube\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "cube"
+        },
+        {
+            "showName": "体积计量单位代码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"volumemeasurementunitcode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "volumemeasurementunitcode"
+        },
+        {
+            "showName": "是否删除",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"isdeleteflag\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "isdeleteflag"
+        },
+        {
+            "showName": "同步时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"synchronizationtime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "synchronizationtime"
+        },
+        {
+            "showName": "同步标识",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"isexception\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "isexception"
+        },
+        {
+            "showName": "总件数",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"totalnumberofpackages\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "totalnumberofpackages"
+        },
+        {
+            "showName": "签收时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"confirmtime\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "confirmtime"
+        },
+        {
+            "showName": "确认收货重量",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"confirmgoodsweight\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "confirmgoodsweight"
+        },
+        {
+            "showName": "确认收货体积",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"confirmcube\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "confirmcube"
+        },
+        {
+            "showName": "确认收货件数",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"confirmpackages\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "confirmpackages"
+        },
+        {
+            "showName": "签收类型代码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"signtypecode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "signtypecode"
+        },
+        {
+            "showName": "运费",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"carriage\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "carriage"
+        }
+    ]
+}

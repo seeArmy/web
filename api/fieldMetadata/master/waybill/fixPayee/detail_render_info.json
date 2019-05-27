@@ -1,0 +1,43 @@
+{
+    "code": 200,
+    "content": [
+
+        {
+            "showName": "主驾收款人",
+            "elementCode": "popSelectDriver",
+            "extraParams": "{\"field1\":\"payeeDriverFullName\",\"field2\":\"payeeDriverCode\",\"field3\":\"payeeDriverCode\",\"field4\":\"payeePlatformDriverCode\",\"area\":\"transporter\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入主驾收款人姓名\",\"outputKey1\":\"payeeDriver\",\"outputKey3\":\"payeeDriver\",\"outputKey4\":\"payeeDriver\",\"inputKey1\":\"transport.driverFullName,payeeDriver.fullName,driver.fullName\",\"inputKey2\":\"transport.driverCode,payeeDriver.code,driver.code\",\"inputKey4\":\"transport.platformDriverCode,payeeDriver.userCode,driver.userCode\"}",
+            "fieldConfigCode": "payeeDriverFullName"
+        },
+        {
+            "showName": "主驾银行账户",
+            "elementCode": "popSelectBankAccount",
+            "extraParams": "{\"field1\":\"driverPayeeBankAccountNo\",\"field2\":\"driverPayeeBankAccountCode\",\"field3\":\"driverPayeeBankAccountCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"30\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入主驾银行账号\",\"outputKey1\":\"driverBank\",\"outputKey3\":\"driverBank\",\"inputKey1\":\"transport.driverPayeeBankAccountNo,driver.bankAccountNo,payeeDriver.bankAccountNo,driverBank.bankAccountNo\",\"inputKey2\":\"driver.bankAccountCode,payeeDriver.bankAccountCode,driverBank.bankAccountCode\"}",
+            "fieldConfigCode": "driverPayeeBankAccountNo"
+        },
+        {
+            "showName": "主驾开户行",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"driverPayeeBankName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入主驾开户行\",\"inputKey1\":\"transport.driverPayeeBankName,driver.bankName,payeeDriver.bankName,driverBank.bankName\"}",
+            "fieldConfigCode": "driverPayeeBankName"
+        },
+        {
+            "showName": "主驾银行户名",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"driverPayeeBankAccountName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入主驾银行户名\",\"inputKey1\":\"transport.driverPayeeBankAccountName,driver.bankAccountName,payeeDriver.bankAccountName,driverBank.bankAccountName\"}",
+            "fieldConfigCode": "driverPayeeBankAccountName"
+        },
+
+        {
+            "showName": "主驾手机号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"payeeDriverPhone\",\"area\":\"transporter\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"18\",\"placeholder1\":\"请输入主驾手机号\",\"inputKey1\":\"transport.driverPhone,driver.phone,payeeDriver.phone\"}",
+            "fieldConfigCode": "payeeDriverPhone"
+        },
+        {
+            "showName": "主驾银行账号备注",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"driverPayeeBankAccountDescription\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入主驾银行户名\",\"inputKey1\":\"transport.driverPayeeBankAccountDescription,driver.bankAccountDescription,payeeDriver.bankAccountDescription,driverBank.bankAccountDescription\"}",
+            "fieldConfigCode": "driverPayeeBankAccountDescription"
+        }
+    ]
+}

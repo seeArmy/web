@@ -1,0 +1,79 @@
+{
+  "code": 200,
+  "content": [
+    {
+      "showName": "单车付款单号",
+      "elementCode": "text",
+      "extraParams":
+      {
+        "field1": "paybillNo",
+        "detailLinkVisiable": "false"
+      },
+      "fieldConfigCode": "paybillNo"
+    },
+    {
+      "showName": "审核状态",
+      "elementCode": "select",
+      "extraParams":
+      {
+        "field1": "paybillApproveStatus",
+        "detailLinkVisiable": "false",
+        "options1": ["待申请", "待审核", "审核通过", "审核不通过"],
+        "optionsValue1": ["ready", "pend", "accept", "reject"]
+      },
+      "fieldConfigCode": "paybillApproveStatus"
+    },
+    {
+      "showName": "付款单类型",
+      "elementCode": "select",
+      "extraParams":
+      {
+        "field1": "paybillType",
+        "detailLinkVisiable": "false",
+        "options1": ["单车", "单项"],
+        "optionsValue1": ["order", "item"]
+      },
+      "fieldConfigCode": "paybillType"
+    },
+    {
+      "showName": "运单号",
+      "elementCode": "text",
+      "extraParams":
+      {
+        "field1": "waybillNo",
+        "detailLinkVisiable": "false"
+      },
+      "fieldConfigCode": "waybillNo"
+    },
+    {
+      "showName": "车牌号",
+      "elementCode": "text",
+      "extraParams":
+      {
+        "field1": "truckLicenseNo",
+        "detailLinkVisiable": "false"
+      },
+      "fieldConfigCode": "truckLicenseNo"
+    },
+    {
+      "showName": "司机",
+      "elementCode": "text",
+      "extraParams":
+      {
+        "field1": "payeeName",
+        "detailLinkVisiable": "false"
+      },
+      "fieldConfigCode": "payeeName"
+    },
+    {
+      "showName": "客户",
+      "elementCode": "text",
+      "extraParams":
+      {
+        "field1": "clientOrgName",
+        "detailLinkVisiable": "false"
+      },
+      "fieldConfigCode": "clientOrgName"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "code": 200,
+  "content": [
+    {
+      "showName": "序号",
+      "fieldConfigCode": "seqNo",
+      "elementCode": "number",
+      "extraParams": "{\"field1\": \"seqNo\",\"maxLength1\":4, \"required\": \"false\"}"
+    },
+    {
+      "showName": "科目名称",
+      "fieldConfigCode": "chargeItemName",
+      "elementCode": "text",
+      "extraParams": "{\"field1\": \"chargeItemName\", \"required\": \"true\", \"placeholder1\": \"请输入科目名称\"}"
+    },
+    {
+      "showName": "科目代码",
+      "fieldConfigCode": "code",
+      "elementCode": "text",
+      "extraParams": "{\"field1\": \"code\", \"required\": \"true\", \"placeholder1\": \"请输入科目代码\"}"
+    },
+    {
+      "showName": "状态",
+      "fieldConfigCode": "disabled",
+      "elementCode": "radio",
+      "extraParams": "{\"field1\": \"disabled\",\"default1\":\"false\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"false\",\"true\"],\"options1\":[\"启用\",\"禁用\"]}"
+    },
+    {
+      "showName": "单项支付通道",
+      "fieldConfigCode": "paymentChannel",
+      "elementCode": "select",
+      "extraParams": "{\"field1\": \"paymentChannel\",\"optionsValue1\":[\"none\",\"cash\"],\"options1\":[\"无单项支付通道\",\"现金支付\"]}"
+    },
+    {
+      "showName": "单项付款是否审核",
+      "fieldConfigCode": "paymentApproveType",
+      "elementCode": "radio",
+      "extraParams": "{\"field1\": \"paymentApproveType\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"payment\",\"approve\",\"none\"],\"options1\":[\"无审核直接付\",\"付前需要审核\",\"无单项付款\"]}"
+    },
+    {
+      "showName": "数量来源方式",
+      "fieldConfigCode": "select",
+      "elementCode": "chargeItemNumberResource",
+      "extraParams": "{\"field1\": \"chargeItemNumberResource\",\"optionsValue1\":[\"none\",\"input\",\"fixed\"],\"options1\":[\"无\",\"直接输入\",\"固定值\"]}"
+    },
+    {
+      "showName": "数量固定值",
+      "fieldConfigCode": "chargeItemNumberExpression",
+      "elementCode": "text",
+      "extraParams": "{\"field1\": \"chargeItemNumberExpression\", \"required\": \"false\", \"placeholder1\": \"请输入固定值\"}"
+    },
+    {
+      "showName": "数量单位",
+      "fieldConfigCode": "chargeItemNumberUnitCode",
+      "elementCode": "chargeItemNumberUnit",
+      "extraParams": "{\"field1\": \"chargeItemNumberUnitCode\", \"field2\": \"chargeItemNumberUnitName\", \"required\": \"false\",\"inputKey2\": \"selectOption.value\", \"outputKey1\": \"selectOption\",\"optionsValue1\":[\"item\",\"litre\",\"kg\",\"ton\"],\"options1\":[\"件\",\"升\",\"千克\",\"吨\"]}"
+    },
+    {
+      "showName": "单价来源方式",
+      "fieldConfigCode": "select",
+      "elementCode": "chargeItemPriceResource",
+      "extraParams": "{\"field1\": \"chargeItemPriceResource\",\"optionsValue1\":[\"none\",\"input\",\"fixed\"],\"options1\":[\"无\",\"直接输入\",\"固定值\"]}"
+    },
+    {
+      "showName": "单价固定值",
+      "fieldConfigCode": "chargeItemPriceExpression",
+      "elementCode": "text",
+      "extraParams": "{\"field1\": \"chargeItemPriceExpression\", \"required\": \"false\", \"placeholder1\": \"请输入固定值\"}"
+    },
+    {
+      "showName": "价格单位",
+      "fieldConfigCode": "chargeItemPriceUnitCode",
+      "elementCode": "chargeItemPrice",
+      "extraParams": "{\"field1\": \"chargeItemPriceUnitCode\",\"field2\": \"chargeItemPriceUnitName\", \"required\": \"false\",\"inputKey2\": \"chargeItemPrice.value\", \"outputKey1\": \"chargeItemPrice\",\"optionsValue1\":[\"yuanperitem\",\"yuanperlitre\",\"yuanperkg\",\"yuanperton\"],\"options1\":[\"元/件\",\"元/升\",\"元/千克\",\"元/吨\"]}"
+    },
+
+
+    {
+      "showName": "金额来源方式",
+      "fieldConfigCode": "select",
+      "elementCode": "chargeItemAmountsResource",
+      "extraParams": "{\"field1\": \"chargeItemAmountsResource\",\"optionsValue1\":[\"none\",\"input\",\"standard\"],\"options1\":[\"无\",\"直接输入\",\"数量*单价\"]}"
+    },
+    {
+      "showName": "金额固定值",
+      "fieldConfigCode": "chargeItemAmountsExpression",
+      "elementCode": "text",
+      "extraParams": "{\"field1\": \"chargeItemAmountsExpression\", \"required\": \"false\", \"placeholder1\": \"请输入固定值\"}"
+    },
+    {
+      "showName": "金额单位",
+      "fieldConfigCode": "chargeItemAmountsUnitCode",
+      "elementCode": "chargeItemAmount",
+      "extraParams": "{\"field1\": \"chargeItemAmountsUnitCode\",\"field2\": \"chargeItemAmountsUnitName\", \"required\": \"false\",\"inputKey2\": \"chargeItemAmount.value\", \"outputKey1\": \"chargeItemAmount\",\"optionsValue1\":[\"yuan\"],\"options1\":[\"元\"]}"
+    },
+    {
+      "showName": "金额精度规则",
+      "fieldConfigCode": "select",
+      "elementCode": "chargeItemAmountsRule",
+      "extraParams": "{\"field1\": \"chargeItemAmountsRule\",\"optionsValue1\":[\"up\",\"down\",\"halfup\"],\"options1\":[\"向上取整\",\"向下取整\",\"四舍五入\"]}"
+    },
+    {
+      "showName": "金额精度",
+      "fieldConfigCode": "select",
+      "elementCode": "chargeItemAmountsPrecision",
+      "extraParams": "{\"field1\": \"chargeItemAmountsPrecision\",\"optionsValue1\":[\"0\",\"1\",\"2\"],\"options1\":[\"0\",\"1\",\"2\"]}"
+    }
+  ]
+}
+
+

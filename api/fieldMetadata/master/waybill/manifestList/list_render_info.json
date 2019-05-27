@@ -1,0 +1,64 @@
+{
+  "code": 200,
+  "content": [
+  {
+    "showName": "货单号",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"manifestSystemNo\",\"required\":\"false\"}",
+    "fieldConfigCode": "manifestSystemNo"
+  },
+  {
+    "showName": "运单号",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"waybillNo\",\"placeholder1\":\"请输入运单号\"}",
+    "fieldConfigCode": "waybillNo"
+  },
+  {
+      "showName": "车牌号",
+      "elementCode": "popSelectTruck",
+      "extraParams": "{\"field1\":\"truckLicenseNo\",\"field2\":\"truckCode\",\"field3\":\"truckCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入车牌号匹配\",\"outputKey1\":\"truck\",\"outputKey3\":\"truck\",\"inputKey1\":\"truck.truckLicenseNo\",\"inputKey2\":\"truck.code\"}",
+      "fieldConfigCode": "truckLicenseNo"
+  },
+  {
+      "showName": "客户",
+      "elementCode": "popSelectPartner",
+      "extraParams": "{\"field1\":\"clientOrgName\",\"field2\":\"clientOrgCode\",\"field3\":\"clientOrgCode\",\"field4\":\"platformClientOrgCode\",\"area\":\"base\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请选择托运客户\",\"outputKey1\":\"partner\",\"outputKey3\":\"partner\",\"outputKey4\":\"partner\",\"inputKey1\":\"logistics.clientOrgName,partner.orgName\",\"inputKey2\":\"logistics.clientOrgCode,partner.code\",\"inputKey4\":\"logistics.platformClientOrgCode,partner.orgCode\",\"chooseSelf3\":\"TRUE\"}",
+      "fieldConfigCode": "clientOrg"
+  },
+  {
+    "showName": "货物名称",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"goodsName\",\"required\":\"false\"}",
+    "fieldConfigCode": "goodsName"
+  },
+  {
+    "showName": "型号",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"modelName\",\"required\":\"false\"}",
+    "fieldConfigCode": "modelName"
+  },
+  {
+    "showName": "规格",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"specifications\",\"required\":\"false\"}",
+    "fieldConfigCode": "specifications"
+  },
+  {
+    "showName": "出厂重量",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"originalWeight\",\"required\":\"false\"}",
+    "fieldConfigCode": "originalWeight"
+  },
+  {
+    "showName": "数量",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"originalNum\",\"required\":\"false\"}",
+    "fieldConfigCode": "originalNum"
+  },
+  {
+    "showName": "备注",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"description\",\"required\":\"false\"}",
+    "fieldConfigCode": "description"
+  }]
+}

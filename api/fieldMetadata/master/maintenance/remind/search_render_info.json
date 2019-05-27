@@ -1,0 +1,29 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "车牌号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"truckLicenseNo\",\"placeholder1\":\"请输入车牌号\"}",
+            "fieldConfigCode": "truckLicenseNo"
+        },
+        {
+            "showName": "司机姓名",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"driverName\",\"placeholder1\":\"请输入司机姓名\"}",
+            "fieldConfigCode": "driverName"
+        },
+        {
+            "showName": "提醒类型",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"remindType\",\"optionsValue1\":[\"车辆证照\",\"车辆保险\",\"车辆保养\",\"司机证照\",\"司机保险\"],\"options1\":[\"车辆证照\",\"车辆保险\",\"车辆保养\",\"司机证照\",\"司机保险\"]}",
+            "fieldConfigCode": "remindType"
+        },
+        {
+            "showName": "提醒日期",
+            "elementCode": "dateRange",
+            "extraParams": "{\"field1\":\"from_remindDate\",\"field3\":\"to_remindDate\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"format3\":\"yyyy-MM-dd HH:mm:ss\",\"default2\":\"到\"}",
+            "fieldConfigCode": "remindDate"
+        }
+    ]
+}

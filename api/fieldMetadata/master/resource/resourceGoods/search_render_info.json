@@ -1,0 +1,29 @@
+{
+  "code": 200,
+  "content": [
+    {
+      "showName": "货物线下编号",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"goodsNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "goodsNo"
+    },
+    {
+      "showName": "货物名称",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"goodsName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "goodsName"
+    },
+    {
+      "showName": "货物编号",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"goodsSystemNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "goodsSystemNo"
+    },
+    {
+      "showName": "货物分类",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"goodsCategoryName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "goodsCategoryName"
+    }
+  ]
+}

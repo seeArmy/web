@@ -1,0 +1,59 @@
+{
+  "code": 200,
+  "content": [
+    {
+      "showName": "司机姓名",
+      "fieldConfigCode": "fullName",
+      "elementCode": "label",
+      "extraParams": "{\"field1\": \"fullName\", \"required\": \"false\", \"detailLinkVisiable\": \"true\"}"
+    },
+    {
+      "showName": "账号状态",
+      "fieldConfigCode": "userStatus",
+      "elementCode": "label",
+      "extraParams": "{\"field1\": \"userStatus\", \"required\": \"true\", \"optionsValue1\": [\"activated\",\"inactivated\"], \"options1\": [\"已激活\",\"未激活\"]}"
+    },
+    {
+      "showName": "审核状态",
+      "fieldConfigCode": "certStatus",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"certStatus\", \"required\": \"true\", \"optionsValue1\": [\"unauthenticated\",\"authenticating\",\"authenticated\",\"failed\"], \"options1\": [\"未提交\",\"待审核\",\"审核通过\",\"审核不通过\"]}"
+    },
+    {
+      "showName": "审核人",
+      "fieldConfigCode": "auditUserFullname",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"auditUserFullname\", \"required\": \"false\"}"
+    },
+    {
+      "showName": "是否加入黑名单",
+      "fieldConfigCode": "isBlack",
+      "elementCode": "label",
+      "extraParams": "{\"field1\": \"isBlack\", \"required\": \"false\", \"optionsValue1\": [\"true\",\"false\"], \"options1\": [\"是\",\"否\"]}"
+    },
+    {
+      "showName": "手机号",
+      "fieldConfigCode": "phone",
+      "elementCode": "label",
+      "extraParams": "{\"field1\": \"phone\", \"required\": \"false\"}"
+    },
+    {
+      "showName": "提交公司",
+      "fieldConfigCode": "requestOrgFullname",
+      "elementCode": "label",
+      "extraParams": {"field1": "requestOrgFullname", "required": "false"}
+    },
+    {
+      "showName": "提交人",
+      "fieldConfigCode": "requestUserFullname",
+      "elementCode": "label",
+      "extraParams": "{\"field1\": \"requestUserFullname\", \"required\": \"false\"}"
+    },
+    {
+      "showName": "提交时间",
+      "fieldConfigCode": "requestTime",
+      "elementCode": "label",
+      "extraParams": "{\"field1\": \"requestTime\", \"format1\": \"yyyy-MM-dd HH:mm:ss\", \"required\": \"false\"}"
+    }
+  ]
+}

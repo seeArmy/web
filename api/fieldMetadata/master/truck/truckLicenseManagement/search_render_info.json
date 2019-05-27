@@ -1,0 +1,16 @@
+{
+  "code": 200,
+  "content": [
+  {
+    "showName": "车牌号",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"truckLicenseNo\",\"placeholder1\":\"请输入车牌号\"}",
+    "fieldConfigCode": "truckLicenseNo"
+  },
+  {
+    "showName": "联系手机号",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"truckFixedMobile\",\"required\":\"true\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入车牌号\"}",
+    "fieldConfigCode": "truckFixedMobile"
+  }]
+}

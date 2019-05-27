@@ -1,0 +1,29 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "司机姓名",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"userFullName\",\"placeholder1\":\"请输入司机姓名\"}",
+            "fieldConfigCode": "userFullName"
+        },
+        {
+            "showName": "手机号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"phone\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"18\",\"placeholder1\":\"请输入手机号\",\"inputKey1\":\"driver.phone\"}",
+            "fieldConfigCode": "phone"
+        },
+        {
+            "showName": "日期",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"attendanceDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "attendanceDate"
+        },
+        {
+            "showName": "考勤状态",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"attendanceStatus\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"absent\",\"off\"],\"options1\":[\"旷工\",\"请假\"]}",
+            "fieldConfigCode": "attendanceStatus"
+        }
+    ]
+}

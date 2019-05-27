@@ -1,0 +1,89 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "车牌号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"truckLicenseNo\",\"placeholder1\":\"请输入车牌号\"}",
+            "fieldConfigCode": "truckLicenseNo"
+        },
+        {
+            "showName": "运单号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"waybillNo\",\"placeholder1\":\"请输入运单号\"}",
+            "fieldConfigCode": "waybillNo"
+        },
+        {
+            "showName": "运单状态",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"waybillStatus\",\"optionsValue1\":[\"unloading\",\"going\",\"finish\",\"cancel\"],\"options1\":[\"待发货\",\"运输中\",\"运输完成\",\"运单取消\"]}",
+            "fieldConfigCode": "waybillStatus"
+        },
+          {
+            "showName": "承运商",  
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"carrierOrgName\",\"field2\":\"carrierOrgCode\",\"field3\":\"carrierOrgCode\",\"field4\":\"platformCarrierOrgCode\",\"required\":\"false\",\"readonly1\":\"TRUE\",\"readonly2\":\"TRUE\",\"readonly3\":\"TRUE\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入承运方\",\"outputKey1\":\"partner\",\"outputKey3\":\"partner\"}",
+            "fieldConfigCode": "carrierOrgCode"
+        },
+        {
+            "showName": "外包订单号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"logisticsNo\",\"defaulUrlParm1\":\"formOutsourcingWaybill\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"readonly1\":\"TRUE\",\"outputKey1\":\"logistics\",\"outputKey3\":\"logistics\",\"inputKey1\":\"logistics.logisticsNo\",\"inputKey2\":\"logistics.code\",\"event3\":\"current.$on(\\\"change\\\", function(val){rns[\\\"ratesCode\\\"].$emit(\\\"refresh\\\", {logisticsCode: val.code});});\"}",
+            "fieldConfigCode": "logisticsCode"
+        },
+         {
+            "showName": "线路名称",
+            "elementCode": "selectRoute",
+            "extraParams": "{\"field1\":\"routeName\",\"field2\":\"routeCode\",\"placeholder1\":\"请输入线路名称\"}",
+            "fieldConfigCode": "route"
+        },
+        {
+            "showName": "主驾",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"driverFullName\",\"field2\":\"driverCode\",\"placeholder1\":\"请输入主驾\"}",
+            "fieldConfigCode": "driverFullName"
+        },
+        {
+            "showName": "发货单位",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"loadingOrgName\",\"placeholder1\":\"请输入发货单位\"}",
+            "fieldConfigCode": "loadingOrgName"
+        },
+        {
+            "showName": "收货单位",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"unloadingOrgName\",\"placeholder1\":\"请输入收货单位\"}",
+            "fieldConfigCode": "unloadingOrgName"
+        },
+         {
+            "showName": "发货地",
+            "elementCode": "selectArea",
+            "extraParams": "{\"field1\":\"loadingProvinceCode\",\"field2\":\"loadingCityCode\",\"field3\":\"loadingCountyCode\"}",
+            "fieldConfigCode": "loadingArea"
+        },
+        {
+            "showName": "收货地",
+            "elementCode": "selectArea",
+            "extraParams": "{\"field1\":\"unloadingProvinceCode\",\"field2\":\"unloadingCityCode\",\"field3\":\"unloadingCountyCode\"}",
+            "fieldConfigCode": "unloadingArea"
+        },
+        {
+            "showName": "计划发货时间",
+            "elementCode": "dateRange",
+            "extraParams": "{\"field1\":\"from_departDate\",\"field3\":\"to_departDate\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"format3\":\"yyyy-MM-dd HH:mm:ss\",\"placeholder2\":\"到\",\"default2\":\"到\"}",
+            "fieldConfigCode": "departDate"
+        },
+        {
+            "showName": "计划收货时间",
+            "elementCode": "dateRange",
+            "extraParams": "{\"field1\":\"from_returnDate\",\"field3\":\"to_returnDate\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"format3\":\"yyyy-MM-dd HH:mm:ss\",\"placeholder2\":\"到\",\"default2\":\"到\"}",
+            "fieldConfigCode": "returnDate"
+        },
+        {
+          "showName": "创建时间",
+          "elementCode": "dateRange",
+          "extraParams": "{\"field1\":\"from_createTime\",\"field3\":\"to_createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"format3\":\"yyyy-MM-dd HH:mm:ss\",\"default2\":\"到\"}",
+          "fieldConfigCode": "createTime"
+        }
+    ]
+}

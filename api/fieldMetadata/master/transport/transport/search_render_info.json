@@ -1,0 +1,59 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "主车牌号",
+            "elementCode": "selectTruck",
+            "extraParams": "{\"field1\":\"mainTruckLicenseNo\",\"field2\":\"mainTruckCode\",\"placeholder1\":\"请输入主车牌号\"}",
+            "fieldConfigCode": "mainTruck"
+        },
+        {
+            "showName": "挂车牌号",
+            "elementCode": "selectTrailer",
+            "extraParams": "{\"field1\":\"trailerTruckLicenseNo\",\"field2\":\"trailerTruckCode\",\"placeholder1\":\"请输入挂车牌号\"}",
+            "fieldConfigCode": "trailerTruck"
+        },
+        {
+            "showName": "标签",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"transportTag\",\"placeholder1\":\"请输入标签\"}",
+            "fieldConfigCode": "transportTag"
+        },
+        {
+            "showName": "主驾",
+            "elementCode": "selectDriver",
+            "extraParams": "{\"field1\":\"driverFullName\",\"placeholder1\":\"请输入主驾姓名\"}",
+            "fieldConfigCode": "driver"
+        },
+        {
+            "showName": "副驾",
+            "elementCode": "selectDriver",
+            "extraParams": "{\"field1\":\"viceDriverFullName\",\"placeholder1\":\"请输入副驾姓名\"}",
+            "fieldConfigCode": "viceDriver"
+        },
+        {
+            "showName": "车型",
+            "elementCode": "truckModel",
+            "extraParams": "{\"field1\":\"truckModelCode\",\"field2\":\"truckModelName\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"inputKey1\":\"mainTruck.truckModelCode\",\"inputKey2\":\"mainTruck.truckModelName\"}",
+            "fieldConfigCode": "truckModel"
+        },
+        {
+            "showName": "道路运输证号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"transportLicenseNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入车辆道路运输证号\"}",
+            "fieldConfigCode": "transportLicenseNo"
+        },
+        {
+            "showName": "运输经营许可证",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"vehiclePermitNumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入运输经营许可证\"}",
+            "fieldConfigCode": "vehiclePermitNumber"
+        },
+        {
+            "showName": "创建日期",
+            "elementCode": "dateRange",
+            "extraParams": "{\"field1\":\"from_createTime\",\"field3\":\"to_createTime\",\"format1\":\"yyyy-MM-dd\",\"format3\":\"yyyy-MM-dd\",\"placeholder2\":\"到\",\"default2\":\"到\"}",
+            "fieldConfigCode": "createTime"
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+  "code": 200,
+  "content": [
+  {
+    "showName": "司机姓名",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"fullName\",\"required\":\"false\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入司机姓名\"}",
+    "fieldConfigCode": "fullName"
+  },
+  {
+    "showName": "手机号",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"phone\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"18\",\"placeholder1\":\"请输入手机号\"}",
+    "fieldConfigCode": "phone"
+  },
+  {
+    "showName": "所在组织",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"ownerOrgName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "ownerOrgName"
+  },
+  {
+    "showName": "委托收款人",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"authorizePayeeFullName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "authorizePayeeFullName"
+  },
+  {
+    "showName": "委托收款人手机",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"authorizePayeePhone\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"18\",\"placeholder1\":\"请输入手机号\"}",
+    "fieldConfigCode": "authorizePayeePhone"
+  },
+  {
+    "showName": "委托附件",
+    "elementCode": "file",
+    "extraParams": "{\"field1\":\"authorizeResourceCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"dialogPreview\":\"TRUE\"}",
+    "fieldConfigCode": "authorizeResourceCode"
+  }]
+}

@@ -1,0 +1,461 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "运单号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"waybillNo\",\"field2\":\"code\",\"area\":\"base\",\"required\":\"true\",\"detailLinkVisiable\":\"true\"}",
+            "fieldConfigCode": "waybillNo"
+        },
+        {
+            "showName": "车牌号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"truckLicenseNo\",\"field2\":\"truckCode\",\"field3\":\"truckCode\",\"area\":\"transporter\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入车牌号\",\"outputKey1\":\"transport\",\"outputKey3\":\"transport\",\"inputKey1\":\"transport.mainTruckLicenseNo\",\"inputKey2\":\"transport.mainTruckCode\"}",
+            "fieldConfigCode": "truckLicenseNo"
+        },
+        {
+            "showName": "主驾",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"driverFullName\",\"field2\":\"driverCode\",\"field3\":\"driverCode\",\"area\":\"transporter\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入主驾姓名\",\"outputKey1\":\"driver\",\"outputKey3\":\"driver\",\"inputKey1\":\"transport.driverFullName,driver.fullName\",\"inputKey2\":\"transport.driverCode,driver.code\"}",
+            "fieldConfigCode": "driverFullName"
+        },
+        {
+            "showName": "运单状态",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"waybillStatus\",\"default1\":\"unloading\",\"area\":\"base\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"unloading\",\"going\",\"finish\",\"cancel\"],\"options1\":[\"待装货\",\"运输中\",\"运输完成\",\"运单取消\"]}",
+            "fieldConfigCode": "waybillStatus"
+        },
+        {
+            "showName": "结算状态",
+            "elementCode": "radio",
+            "extraParams": "{\"field1\":\"settleStatus\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"unsettle\",\"pass\",\"settle\",\"paid\"],\"options1\":[\"未结算\",\"结算通过\",\"暂不结算，保存信息\",\"已付款\"]}",
+            "fieldConfigCode": "settleStatus"
+        },
+        {
+            "showName": "托运客户",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"clientOrgName\",\"field2\":\"clientOrgCode\",\"field3\":\"clientOrgCode\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入订单委托方\",\"outputKey1\":\"partner\",\"outputKey3\":\"partner\",\"inputKey1\":\"logistics.clientOrgName,route.clientOrgName,partner.orgName\",\"inputKey2\":\"logistics.clientOrgCode,route.clientOrgCode,partner.code\"}",
+            "fieldConfigCode": "clientOrg"
+        },
+        {
+            "showName": "线路名称",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"routeName\",\"field2\":\"routeCode\",\"field3\":\"routeCode\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入专线\",\"outputKey1\":\"route\",\"outputKey3\":\"route\",\"inputKey1\":\"logistics.routeName,route.routeName\",\"inputKey2\":\"logistics.routeCode,route.code\"}",
+            "fieldConfigCode": "route"
+        },
+        {
+            "showName": "货物名称",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"goodsName\",\"area\":\"base\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入货品\",\"inputKey1\":\"logistics.goodsName\"}",
+            "fieldConfigCode": "goodsName"
+        },
+        {
+            "showName": "货物单价",
+            "elementCode": "goodsPrice",
+            "extraParams": "{\"field1\":\"goodsPrice\",\"field2\":\"goodsPriceUnitCode\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过13位（最多2位小数）\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"13\",\"placeholder1\":\"请输入货物单价\",\"inputKey1\":\"logistics.goodsPrice,rates.goodsPrice\",\"inputKey2\":\"logistics.goodsPriceUnitCode,rates.goodsPriceUnitCode\"}",
+            "fieldConfigCode": "goodsPrice"
+        },
+        {
+            "showName": "计量标准",
+            "elementCode": "radio",
+            "extraParams": "{\"field1\":\"meterageType\",\"default1\":\"ton\",\"area\":\"base\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"TRUE\",\"inputKey1\":\"logistics.meterageType\",\"event1\":\"current.$on(\\\"change\\\", function(val){rns[\\\"driverPriceUnitCode\\\"].$emit(\\\"refresh\\\", {codeUnitType: val}); rns[\\\"goodsPriceUnitCode\\\"].$emit(\\\"refresh\\\",{codeUnitType:val});rns[\\\"clientFreightPriceUnitCode\\\"].$emit(\\\"refresh\\\",{codeUnitType:val});});\",\"optionsValue1\":[\"ton\",\"cube\",\"item\"],\"options1\":[\"吨\",\"方\",\"件\"]}",
+            "fieldConfigCode": "meterageType"
+        },
+        {
+            "showName": "合理货差系数",
+            "elementCode": "goodsLossType",
+            "extraParams": "{\"field1\":\"goodsLossMethod\",\"field2\":\"goodsLoss\",\"field3\":\"goodsLossUnitCode\",\"default1\":\"goods.loss.ration\",\"default3\":\"percent\",\"optionsValue1\":[\"goods.loss\",\"goods.loss.ration\"],\"options1\":[\"按量\",\"按系数\"]}",
+            "fieldConfigCode": "freightLoss"
+        },
+        {
+            "showName": "结算方式",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"settleMethod\",\"required\":\"TRUE\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"loadingweight\",\"unloadingweight\",\"smaller\",\"bigger\",\"trucknumber\"],\"options1\":[\"按发货货量\",\"按收货货量\",\"发货与收货两者取小\",\"发货与收货两者取大\",\"按车次\"]}",
+            "fieldConfigCode": "settleMethod"
+        },
+        {
+            "showName": "客户运价",
+            "elementCode": "clientFreightPrice",
+            "extraParams": "{\"field1\":\"clientFreightPrice\",\"field2\":\"clientFreightPriceUnitCode\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过13位（最多2位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"13\",\"placeholder1\":\"请输入客户运价\",\"inputKey1\":\"rates.clientFreightRate\",\"inputKey2\":\"rates.clientFreightRateUnitCode\"}",
+            "fieldConfigCode": "clientFreightPrice"
+        },
+        {
+            "showName": "司机运价",
+            "elementCode": "driverPrice",
+            "extraParams": "{\"field1\":\"driverPrice\",\"field2\":\"driverPriceUnitCode\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过13位（最多2位小数）\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"13\",\"placeholder1\":\"请输入司机运价\",\"inputKey1\":\"logistics.driverReferPrice,rates.driverReferencePrice\",\"inputKey2\":\"logistics.driverReferPriceUnitCode,rates.driverReferencePriceUnitCode\"}",
+            "fieldConfigCode": "driverPrice"
+        },
+        {
+            "showName": "运价备注",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"ratesDescription\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入运价备注\",\"inputKey1\":\"rates.goodsName\"}",
+            "fieldConfigCode": "ratesDescription"
+        },
+        {
+            "showName": "发货重量(吨)",
+            "elementCode": "number",
+            "extraParams": "{\"field1\":\"loadingGoodsWeight\",\"field2\":\"loadingGoodsWeightUnitCode\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,4})?\",\"checkMsg1\":\"不超过15位（最多4位小数）\",\"area\":\"loading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入发货重量\"}",
+            "fieldConfigCode": "loadingGoodsWeight"
+        },
+        {
+            "showName": "发货体积(方)",
+            "elementCode": "number",
+            "extraParams": "{\"field1\":\"loadingGoodsVolume\",\"field2\":\"loadingGoodsVolumeUnitCode\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,4})?\",\"checkMsg1\":\"不超过15位（最多4位小数）\",\"area\":\"loading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入发货体积\"}",
+            "fieldConfigCode": "loadingGoodsVolume"
+        },
+        {
+            "showName": "发货数量(件)",
+            "elementCode": "number",
+            "extraParams": "{\"field1\":\"loadingGoodsNum\",\"field2\":\"loadingGoodsNumUnitCode\",\"checkRule1\":\"[0-9]{1,10}\",\"checkMsg1\":\"不超过10位的整数\",\"area\":\"loading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"10\",\"placeholder1\":\"请输入发货数量\"}",
+            "fieldConfigCode": "loadingGoodsNum"
+        },
+        {
+            "showName": "发货时间",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"loadingTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"area\":\"loading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "loadingTime"
+        },
+        {
+            "showName": "收货重量(吨)",
+            "elementCode": "number",
+            "extraParams": "{\"field1\":\"unloadingGoodsWeight\",\"field2\":\"unloadingGoodsWeightUnitCode\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,4})?\",\"checkMsg1\":\"不超过15位（最多4位小数）\",\"area\":\"unloading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入收货重量\"}",
+            "fieldConfigCode": "unloadingGoodsWeight"
+        },
+        {
+            "showName": "收货体积(方)",
+            "elementCode": "number",
+            "extraParams": "{\"field1\":\"unloadingGoodsVolume\",\"field2\":\"unloadingGoodsVolumeUnitCode\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,4})?\",\"checkMsg1\":\"不超过15位（最多4位小数）\",\"area\":\"unloading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入收货体积\"}",
+            "fieldConfigCode": "unloadingGoodsVolume"
+        },
+        {
+            "showName": "收货数量(件)",
+            "elementCode": "number",
+            "extraParams": "{\"field1\":\"unloadingGoodsNum\",\"field2\":\"unloadingGoodsNumUnitCode\",\"checkRule1\":\"[0-9]{1,10}\",\"checkMsg1\":\"不超过10位的整数\",\"area\":\"unloading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"10\",\"placeholder1\":\"请输入收货数量\"}",
+            "fieldConfigCode": "unloadingGoodsNum"
+        },
+        {
+            "showName": "收货时间",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"unloadingTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"area\":\"unloading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "unloadingTime"
+        },
+        {
+            "showName": "实际货差",
+            "elementCode": "settleGoodsLossVolume",
+            "extraParams": "{\"field1\":\"actualGoodsLoss\",\"field2\":\"actualGoodsLossUnitCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"true\",\"readonly2\":\"true\"}",
+            "fieldConfigCode": "actualGoodsLoss"
+        },
+        {
+            "showName": "合理货差量",
+            "elementCode": "settleGoodsLossReasonable",
+            "extraParams": "{\"field1\":\"settleGoodsLossReasonable\",\"field2\":\"settleGoodsLossReasonableUnitCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"true\",\"readonly2\":\"true\"}",
+            "fieldConfigCode": "settleGoodsLossReasonable"
+        },
+        {
+            "showName": "货差超标量",
+            "elementCode": "settleGoodsLossVolume",
+            "extraParams": "{\"field1\":\"settleGoodsLossVolume\",\"field2\":\"settleGoodsLossVolumeUnitCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"true\",\"readonly2\":\"true\"}",
+            "fieldConfigCode": "settleGoodsLossVolume"
+        },
+        {
+            "showName": "亏吨扣款",
+            "elementCode": "number",
+            "extraParams": "{\"field1\":\"settleLossDeduction\",\"default2\":\"元\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"true\",\"readonly2\":\"true\"}",
+            "fieldConfigCode": "settleLossDeduction"
+        },
+        {
+            "showName": "应收总费用计算值",
+            "elementCode": "number",
+            "extraParams": "{\"field1\":\"settleClientOrgPayeeCalculated\",\"default2\":\"元\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"true\",\"readonly2\":\"true\"}",
+            "fieldConfigCode": "settleClientOrgPayeeCalculated"
+        },
+        {
+            "showName": "应收调整金额",
+            "elementCode": "number",
+            "extraParams": "{\"field1\":\"settleClientOrgPayeeAdjust\",\"default2\":\"元\",\"checkRule1\":\"(-)?[0-9]{1,8}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"数据格式不对\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"11\",\"readonly2\":\"true\",\"placeholder1\":\"请输入调整金额\"}",
+            "fieldConfigCode": "settleClientOrgPayeeAdjust"
+        },
+        {
+            "showName": "应收客户总费用",
+            "elementCode": "number",
+            "extraParams": "{\"field1\":\"settleClientOrgPayee\",\"default2\":\"元\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"true\",\"readonly2\":\"true\"}",
+            "fieldConfigCode": "settleClientOrgPayee"
+        },
+        {
+            "showName": "应付总费用计算值",
+            "elementCode": "number",
+            "extraParams": "{\"field1\":\"settleTotalPayment\",\"default2\":\"元\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"true\",\"readonly2\":\"true\"}",
+            "fieldConfigCode": "settleTotalPayment"
+        },
+        {
+            "showName": "应付调整金额",
+            "elementCode": "number",
+            "extraParams": "{\"field1\":\"settleAdjustAmount\",\"default2\":\"元\",\"checkRule1\":\"(-)?[0-9]{1,8}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"数据格式不对\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"11\",\"readonly2\":\"true\",\"placeholder1\":\"请输入调整金额\"}",
+            "fieldConfigCode": "settleAdjustAmount"
+        },
+        {
+            "showName": "应付司机总费用",
+            "elementCode": "number",
+            "extraParams": "{\"field1\":\"settleDriverPayment\",\"default2\":\"元\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"true\",\"readonly2\":\"true\"}",
+            "fieldConfigCode": "settleDriverPayment"
+        },
+        {
+            "showName": "预计毛利",
+            "elementCode": "number",
+            "extraParams": "{\"field1\":\"settleGrossProfit\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"true\"}",
+            "fieldConfigCode": "settleGrossProfit"
+        },
+        {
+            "showName": "来源订单",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"logisticsNo\",\"field2\":\"logisticsCode\",\"field3\":\"logisticsCode\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"readonly1\":\"TRUE\",\"outputKey1\":\"logistics\",\"outputKey3\":\"logistics\",\"inputKey1\":\"logistics.logisticsNo\",\"inputKey2\":\"logistics.code\",\"event3\":\"current.$on(\\\"change\\\", function(val){rns[\\\"ratesCode\\\"].$emit(\\\"refresh\\\", {logisticsCode: val.code});});\"}",
+            "fieldConfigCode": "logisticsCode"
+        },
+        {
+            "showName": "货源号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"freightNo\",\"field2\":\"code\",\"required\":\"true\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\"}",
+            "fieldConfigCode": "freightNo"
+        },
+        {
+            "showName": "业务类型",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"businessTypeCode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\"请输入业务类型\",\"inputKey1\":\"logistics.businessTypeCode\",\"optionsValue1\":[\"1002996\",\"1003997\",\"1003998\",\"1002998\",\"1003999\"],\"options1\":[\"干线普货运输\",\"城市配送\",\"农村配送\",\"集装箱运输\",\"其他\"]}",
+            "fieldConfigCode": "businessTypeCode"
+        },
+        {
+            "showName": "货物类型",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"cargoTypeClassificationCode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\"请输入货物类型\",\"inputKey1\":\"logistics.cargoTypeClassificationCode\",\"optionsValue1\":[\"90\",\"92\",\"93\",\"94\",\"95\",\"96\",\"999\"],\"options1\":[\"电子产品\",\"商品汽车\",\"冷藏货物\",\"大宗货物\",\"快速消费品\",\"农产品\",\"其他\"]}",
+            "fieldConfigCode": "cargoTypeClassificationCode"
+        },
+        {
+            "showName": "发货单位",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"loadingOrgName\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入发货方\",\"inputKey1\":\"logistics.loadingOrgName,route.loadingOrgName\"}",
+            "fieldConfigCode": "loadingOrgName"
+        },
+        {
+            "showName": "发货地",
+            "elementCode": "selectArea",
+            "extraParams": "{\"field1\":\"loadingProvinceCode\",\"field2\":\"loadingCityCode\",\"field3\":\"loadingCountyCode\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"inputKey1\":\"logistics.loadingProvinceCode,route.loadingProvinceCode\",\"inputKey2\":\"logistics.loadingCityCode,routeloadingCityCode\",\"inputKey3\":\"logistics.loadingCountyCode,route.loadingCountyCode\"}",
+            "fieldConfigCode": "loadingArea"
+        },
+        {
+            "showName": "发货详细地址",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"loadingAddr\",\"required\":\"TRUE\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入发货详细地址\",\"inputKey1\":\"logistics.loadingAddress\"}",
+            "fieldConfigCode": "loadingAddress"
+        },
+        {
+            "showName": "发货联系人",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"loadingUserFullName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入发货联系人\",\"inputKey1\":\"logistics.loadingUserFullName\"}",
+            "fieldConfigCode": "loadingUserFullName"
+        },
+        {
+            "showName": "发货联系电话",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"loadingUserPhone\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入发货联系电话\",\"inputKey1\":\"logistics.loadingUserPhone\"}",
+            "fieldConfigCode": "loadingUserPhone"
+        },
+        {
+            "showName": "收货单位",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"unloadingOrgName\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入收货方\",\"inputKey1\":\"logistics.unloadingOrgName,route.unloadingOrgName\"}",
+            "fieldConfigCode": "unloadingOrgName"
+        },
+        {
+            "showName": "收货地",
+            "elementCode": "selectArea",
+            "extraParams": "{\"field1\":\"unloadingProvinceCode\",\"field2\":\"unloadingCityCode\",\"field3\":\"unloadingCountyCode\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"inputKey1\":\"logistics.unloadingProvinceCode,route.unloadingProvinceCode\",\"inputKey2\":\"logistics.unloadingCityCode,route.unloadingCityCode\",\"inputKey3\":\"logistics.unloadingCountyCode,route.unloadingCountyCode\"}",
+            "fieldConfigCode": "unloadingArea"
+        },
+        {
+            "showName": "收货详细地址",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"unloadingAddr\",\"required\":\"TRUE\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入收货详细地址\",\"inputKey1\":\"logistics.unloadingAddress\"}",
+            "fieldConfigCode": "unloadingAddress"
+        },
+        {
+            "showName": "收货联系人",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"unloadingUserFullName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入收货联系人\",\"inputKey1\":\"logistics.unloadingUserFullName\"}",
+            "fieldConfigCode": "unloadingUserFullName"
+        },
+        {
+            "showName": "收货联系电话",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"unloadingUserPhone\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入收货联系电话\",\"inputKey1\":\"logistics.unloadingUserPhone\"}",
+            "fieldConfigCode": "unloadingUserPhone"
+        },
+        {
+            "showName": "主驾手机号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"driverPhone\",\"area\":\"transporter\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"18\",\"placeholder1\":\"请输入主驾手机号\",\"inputKey1\":\"transport.driverPhone,driver.phone\"}",
+            "fieldConfigCode": "driverPhone"
+        },
+        {
+            "showName": "副驾",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"viceDriverFullName\",\"field2\":\"viceDriverCode\",\"field3\":\"viceDriverCode\",\"area\":\"transporter\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入副驾姓名\",\"outputKey1\":\"viceDriver\",\"outputKey3\":\"viceDriver\",\"inputKey1\":\"transport.viceDriverFullName,viceDriver.fullName\",\"inputKey2\":\"transport.viceDriverCode,viceDriver.code\"}",
+            "fieldConfigCode": "viceDriverName"
+        },
+        {
+            "showName": "副驾手机号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"viceDriverPhone\",\"area\":\"transporter\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"18\",\"placeholder1\":\"请输入副驾手机号\",\"inputKey1\":\"transport.viceDriverPhone,viceDriver.phone\"}",
+            "fieldConfigCode": "viceDriverPhone"
+        },
+        {
+            "showName": "主驾驾驶证",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"driverLicenseNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"19\",\"placeholder1\":\"请输入主驾驾驶证号\",\"inputKey1\":\"transport.driverLicenseNo,driver.driverLicenseNo\"}",
+            "fieldConfigCode": "driverLicenseNo"
+        },
+        {
+            "showName": "副驾驾驶证",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"viceDriverLicenseNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"19\",\"placeholder1\":\"请输入副驾驾驶证号\",\"inputKey1\":\"transport.viceDriverLicenseNo,viceDriver.driverLicenseNo\"}",
+            "fieldConfigCode": "viceDriverLicenseNo"
+        },
+        {
+            "showName": "主驾开户行",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"driverPayeeBankName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入主驾开户行\",\"inputKey1\":\"transport.driverPayeeBankName,driver.bankName,driverBank.bankName\"}",
+            "fieldConfigCode": "driverPayeeBankName"
+        },
+        {
+            "showName": "主驾银行户名",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"driverPayeeBankAccountName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入主驾银行户名\",\"inputKey1\":\"transport.driverPayeeBankAccountName,driver.bankAccountName,driverBank.bankAccountName\"}",
+            "fieldConfigCode": "driverPayeeBankAccountName"
+        },
+        {
+            "showName": "主驾银行账户",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"driverPayeeBankAccountNo\",\"field2\":\"driverPayeeBankAccountCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"30\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入主驾银行账号\",\"outputKey1\":\"driverBank\",\"outputKey3\":\"driverBank\",\"inputKey1\":\"transport.driverPayeeBankAccountNo,driver.bankAccountNo,driverBank.bankAccountNo\",\"inputKey2\":\"driver.bankAccountCode,driverBank.bankAccountCode\"}",
+            "fieldConfigCode": "driverPayeeBankAccountNo"
+        },
+        {
+            "showName": "副驾开户行",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"viceDriverPayeeBankName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入副驾开户行\",\"inputKey1\":\"transport.viceDriverPayeeBankName,viceDriver.bankName,viceDriverBank.bankName\"}",
+            "fieldConfigCode": "viceDriverPayeeBankName"
+        },
+        {
+            "showName": "副驾银行户名",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"viceDriverPayeeBankAccountName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入副驾银行户名\",\"inputKey1\":\"transport.viceDriverPayeeBankAccountName,viceDriver.bankAccountName,viceDriverBank.bankAccountName\"}",
+            "fieldConfigCode": "viceDriverPayeeBankAccountName"
+        },
+        {
+            "showName": "副驾银行账号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"viceDriverPayeeBankAccountNo\",\"field2\":\"viceDriverPayeeBankAccountCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"30\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入副驾银行账号\",\"outputKey1\":\"viceDriverBank\",\"outputKey3\":\"viceDriverBank\",\"inputKey1\":\"transport.viceDriverPayeeBankAccountNo,viceDriver.bankAccountNo,viceDriverBank.bankAccountNo\",\"inputKey2\":\"viceDriver.bankAccountCode,viceDriverBank.bankAccountCode\"}",
+            "fieldConfigCode": "viceDriverPayeeBankAccountNo"
+        },
+        {
+            "showName": "发货操作人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"loadingInputUserFullName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "loadingInputUserFullName"
+        },
+        {
+            "showName": "发货操作时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"loadingInputTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "loadingInputTime"
+        },
+        {
+            "showName": "收货操作人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"unloadingInputUserFullName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "unloadingInputUserFullName"
+        },
+        {
+            "showName": "收货操作时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"unloadingInputTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "unloadingInputTime"
+        },
+        {
+            "showName": "发车时间",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"departDate\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"area\":\"loading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "departDate"
+        },
+        {
+            "showName": "发车里程",
+            "elementCode": "standardDistance",
+            "extraParams": "{\"field1\":\"departMileage\",\"field2\":\"departMileageUnitCode\",\"default2\":\"km\",\"checkRule1\":\"[0-9]{1,10}\",\"checkMsg1\":\"不超过10位的整数\",\"area\":\"loading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"10\",\"placeholder1\":\"请输入发车里程\"}",
+            "fieldConfigCode": "departMileage"
+        },
+        {
+            "showName": "收车时间",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"returnDate\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"area\":\"unloading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "returnDate"
+        },
+        {
+            "showName": "收车里程",
+            "elementCode": "standardDistance",
+            "extraParams": "{\"field1\":\"returnMileage\",\"field2\":\"returnMileageUnitCode\",\"default2\":\"km\",\"checkRule1\":\"[0-9]{1,10}\",\"checkMsg1\":\"不超过10位的整数\",\"area\":\"unloading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"10\",\"placeholder1\":\"请输入收车里程\"}",
+            "fieldConfigCode": "returnMileage"
+        },
+        {
+            "showName": "运单备注",
+            "elementCode": "textarea",
+            "extraParams": "{\"field1\":\"description\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入备注\"}",
+            "fieldConfigCode": "description"
+        },
+        {
+            "showName": "打印状态",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"dispatchPrintStatus\",\"default1\":\"unprint\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"unprint\",\"printed\"],\"options1\":[\"未打印\",\"已打印\"],\"readonly1\":\"TRUE\"}",
+            "fieldConfigCode": "dispatchPrintStatus"
+        },
+        {
+            "showName": "上报记录",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"reportStatus\",\"default1\":\"undo\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"uncreated\",\"undo\",\"reported\"],\"options1\":[\"未创建\",\"未上报\",\"已上报\"],\"readonly1\":\"TRUE\"}",
+            "fieldConfigCode": "reportStatus"
+        },
+        {
+            "showName": "运单创建人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"creatorUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "creatorUsername"
+        },
+        {
+            "showName": "运单创建时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "createTime"
+        },
+        {
+            "showName": "运单最后更新人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateUsername"
+        },
+        {
+            "showName": "运单最后更新时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateTime"
+        },
+        {
+            "showName": "结算操作人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"settleUserFullName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "settleUserFullName"
+        },
+        {
+            "showName": "结算操作时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"settleTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "settleTime"
+        }
+    ]
+}

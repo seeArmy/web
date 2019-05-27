@@ -1,0 +1,189 @@
+{
+  "code": 200,
+  "content": [
+  {
+    "showName": "线路名称",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"routeName\",\"required\":\"true\",\"detailLinkVisiable\":\"true\",\"maxLength1\": 20,\"placeholder1\":\"请输入线路名称\"}",
+    "fieldConfigCode": "routeName"
+  },
+  {
+    "showName": "发货单位",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"loadingOrgName\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入发货单位\"}",
+    "fieldConfigCode": "loadingOrg"
+  },
+  {
+    "showName": "发货联系人",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"loadingLinkmanFullName\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 20,\"placeholder1\":\"请输入发货联系人\"}",
+    "fieldConfigCode": "loadingLinkmanFullName"
+  },
+  {
+    "showName": "发货联系电话",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"loadingContact\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 20,\"placeholder1\":\"请输入发货联系电话\"}",
+    "fieldConfigCode": "loadingContact"
+  },
+  {
+    "showName": "发货地",
+    "elementCode": "selectArea",
+    "extraParams": "{\"field1\":\"loadingProvinceCode\",\"field2\":\"loadingCityCode\",\"field3\":\"loadingCountyCode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "loadingArea"
+  },
+  {
+    "showName": "发货详细地址",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"loadingAddress\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入发货详细地址\"}",
+    "fieldConfigCode": "loadingAddress"
+  },
+  {
+    "showName": "收货单位",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"unloadingOrgName\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输收货单位\"}",
+    "fieldConfigCode": "unloadingOrg"
+  },
+  {
+    "showName": "收货联系人",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"unloadingLinkmanFullName\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 20,\"placeholder1\":\"请输入收货联系人\"}",
+    "fieldConfigCode": "unloadingLinkmanFullName"
+  },
+  {
+    "showName": "收货联系电话",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"unloadingContact\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 20,\"placeholder1\":\"请输入收货联系电话\"}",
+    "fieldConfigCode": "unloadingContact"
+  },
+  {
+    "showName": "收货地",
+    "elementCode": "selectArea",
+    "extraParams": "{\"field1\":\"unloadingProvinceCode\",\"field2\":\"unloadingCityCode\",\"field3\":\"unloadingCountyCode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "unloadingArea"
+  },
+  {
+    "showName": "收货详细地址",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"unloadingAddress\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入收货详细地址\"}",
+    "fieldConfigCode": "unloadingAddress"
+  },
+  {
+    "showName": "标准运距",
+    "elementCode": "standardDistance",
+    "extraParams": "{\"field1\":\"standardDistance\",\"field2\":\"standardDistanceUnitCode\",\"default2\":\"km\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,3})?\",\"checkMsg1\":\"不超过14位（最多3位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 14,\"placeholder1\":\"请输入标准运距\"}",
+    "fieldConfigCode": "standardDistance"
+  },
+  {
+    "showName": "标准时长",
+    "elementCode": "standardTime",
+    "extraParams":
+    {
+      "field1": "standardTime",
+      "field2": "standardTimeUnitCode",
+      "default2": "day",
+      "checkRule1": "\\d{1,6}\\.?\\d{0,2}",
+      "checkMsg1": "最多输入两位小数",
+      "required": "false",
+      "detailLinkVisiable": "false",
+      "maxLength1": 6,
+      "placeholder1": "请输入标准时长"
+    },
+    "fieldConfigCode": "standardTime"
+  },
+  {
+    "showName": "备注",
+    "elementCode": "textarea",
+    "extraParams": "{\"field1\":\"description\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 200,\"placeholder1\":\"请输入备注\"}",
+    "fieldConfigCode": "description"
+  },
+  {
+    "showName": "创建人",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"creatorUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "creatorUser"
+  },
+  {
+    "showName": "创建时间",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "createTime"
+  },
+  {
+    "showName": "修改人",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"updateUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "updateUser"
+  },
+  {
+    "showName": "修改时间",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"updateTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "updateTime"
+  },
+  {
+    "showName": "装货地所处经度",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"loadingLongitude\",\"required\":\"true\",\"detailLinkVisiable\":\"true\",\"maxLength1\": 20,\"placeholder1\":\"请输入线路名称\"}",
+    "fieldConfigCode": "loadingLongitude"
+  },
+  {
+    "showName": "装货地所处纬度",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"loadingLatitude\",\"required\":\"true\",\"detailLinkVisiable\":\"true\",\"maxLength1\": 20,\"placeholder1\":\"请输入线路名称\"}",
+    "fieldConfigCode": "loadingLatitude"
+  },
+  {
+    "showName": "发货围栏",
+    "elementCode": "fanceRedius",
+    "extraParams": "{\"field1\":\"loadingFanceRedius\",\"field2\":\"loadingFanceRediusUnitCode\",\"field3\":\"loadingAreaRedius\",\"field4\":\"loadingAreaRediusUnitCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 20,\"placeholder1\":\"请输入线路名称\"}",
+    "fieldConfigCode": "loadingFanceRedius"
+  },
+  {
+    "showName": "收货地所处经度",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"unloadingLongitude\",\"required\":\"true\",\"detailLinkVisiable\":\"true\",\"maxLength1\": 20,\"placeholder1\":\"请输入线路名称\"}",
+    "fieldConfigCode": "unloadingLongitude"
+  },
+  {
+    "showName": "收货地所处纬度",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"unloadingLatitude\",\"required\":\"true\",\"detailLinkVisiable\":\"true\",\"maxLength1\": 20,\"placeholder1\":\"请输入线路名称\"}",
+    "fieldConfigCode": "unloadingLatitude"
+  },
+  {
+    "showName": "收货围栏",
+    "elementCode": "fanceRedius",
+    "extraParams": "{\"field1\":\"unloadingFanceRedius\",\"field2\":\"unloadingFanceRediusUnitCode\",\"field3\":\"unloadingAreaRedius\",\"field4\":\"unloadingAreaRediusUnitCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 20,\"placeholder1\":\"请输入线路名称\"}",
+    "fieldConfigCode": "unloadingFanceRedius"
+  },
+  {
+    "showName": "发货真实地址城市",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"realLoadingAddressCity\"}",
+    "fieldConfigCode": "realLoadingAddressCity"
+  },
+  {
+    "showName": "发货真实地址",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"realLoadingAddress\"}",
+    "fieldConfigCode": "realLoadingAddressCity"
+  },
+  {
+    "showName": "收款真实地址城市",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"realUnloadingAddressCity\"}",
+    "fieldConfigCode": "realLoadingAddressCity"
+  },
+  {
+    "showName": "收款真实地址",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"realUnloadingAddress\"}",
+    "fieldConfigCode": "realLoadingAddressCity"
+  },
+  {
+    "showName": "业务类型",
+    "elementCode": "select",
+    "extraParams": "{\"field1\":\"businessTypeCode\",\"default1\":\"1002996\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\"请输入业务类型\",\"inputKey1\":\"logistics.businessTypeCode\",\"optionsValue1\":[\"1002996\",\"1003997\",\"1003998\",\"1002998\",\"1003999\"],\"options1\":[\"干线普货运输\",\"城市配送\",\"农村配送\",\"集装箱运输\",\"其他\"]}",
+    "fieldConfigCode": "businessTypeCode"
+  }]
+}

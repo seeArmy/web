@@ -1,0 +1,23 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "车牌号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"mainTruckLicenseNo\",\"placeholder1\":\"请输入车牌号\"}",
+            "fieldConfigCode": "mainTruck"
+        },
+        {
+            "showName": "司机",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"driverFullName\",\"placeholder1\":\"请输入司机\"}",
+            "fieldConfigCode": "driver"
+        },
+        {
+            "showName": "标签",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"transportTag\",\"placeholder1\":\"请输入标签\"}",
+            "fieldConfigCode": "transportTag"
+        }
+    ]
+}

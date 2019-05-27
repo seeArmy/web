@@ -1,0 +1,89 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "发票号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"invoiceNo\",\"required\":\"false\",\"detailLinkVisiable\":\"true\"}",
+            "fieldConfigCode": "invoiceNo"
+        },
+        {
+            "showName": "开票日期",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"invoiceTime\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "invoiceTime"
+        },
+        {
+            "showName": "收票日期",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"receiveInvoiceTime\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "receiveInvoiceTime"
+        },
+        {
+            "showName": "归属年月",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"attributionDate\",\"format1\":\"yyyy-MM\",\"area\":\"\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\"请选择归属年月\"}",
+            "fieldConfigCode": "attributionDate"
+        },
+        {
+            "showName": "销售方名称",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"payeeOrgName\",\"field2\":\"payeeOrgCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入销售方公司名\",\"outputKey1\":\"supply\",\"outputKey3\":\"supply\",\"inputKey1\":\"payable.payeeOrgName\",\"inputKey2\":\"payable.payeeOrgCode\"}",
+            "fieldConfigCode": "payeeOrgName"
+        },
+        {
+            "showName": "价税合计",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"totalAmount\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入价税合计（小写）\"}",
+            "fieldConfigCode": "listTotalAmount"
+        },
+        {
+            "showName": "不含税金额",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"excludeTaxAmount\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入不含税金额\"}",
+            "fieldConfigCode": "excludeTaxAmount"
+        },
+        {
+            "showName": "税额",
+            "elementCode": "taxRate",
+            "extraParams": "{\"field1\":\"vatTaxAmount\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入税额\"}",
+            "fieldConfigCode": "vatTaxAmount"
+        },
+        {
+            "showName": "发票类型",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"invoiceType\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"vat\",\"vatpecial\"],\"options1\":[\"增值税普通发票\",\"增值税专用发票\"]}",
+            "fieldConfigCode": "invoiceType"
+        },
+        {
+            "showName": "进项系统号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"inputNo\",\"required\":\"false\",\"detailLinkVisiable\":\"true\"}",
+            "fieldConfigCode": "inputNo"
+        },
+        {
+            "showName": "创建人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"creatorUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "creatorUser"
+        },
+        {
+            "showName": "创建时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "createTime"
+        },
+        {
+            "showName": "修改人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateUser"
+        },
+        {
+            "showName": "修改时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateTime"
+        }
+    ]
+}

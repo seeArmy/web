@@ -1,0 +1,137 @@
+{
+  "code": 200,
+  "content": [
+    {
+        "showName": "车牌号",
+        "elementCode": "popSelectTransport",
+        "extraParams": "{\"field1\":\"truckLicenseNo\",\"field2\":\"truckCode\",\"field3\":\"truckCode\",\"field4\":\"platformTruckCode\",\"area\":\"transporter\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入车牌号\",\"outputKey1\":\"transport\",\"outputKey3\":\"transport\",\"outputKey4\":\"transport\",\"inputKey1\":\"transport.mainTruckLicenseNo\",\"inputKey2\":\"transport.mainTruckCode\",\"inputKey4\":\"transport.platformMainTruckCode\",\"isOpenTruckConfig3\":\"TRUE\"}",
+        "fieldConfigCode": "truckLicenseNo"
+    },
+    {
+        "showName": "挂车牌号",
+        "elementCode": "popSelectTrailer",
+        "extraParams": "{\"field1\":\"trailerTruckLicenseNo\",\"field2\":\"trailerTruckCode\",\"field3\":\"trailerTruckCode\",\"field4\":\"platformTrailerTruckCode\",\"area\":\"transporter\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入挂车牌号\",\"outputKey1\":\"trailer\",\"outputKey3\":\"trailer\",\"outputKey4\":\"trailer\",\"inputKey1\":\"transport.trailerTruckLicenseNo,trailer.truckLicenseNo\",\"inputKey2\":\"transport.trailerTruckCode,trailer.code\",\"inputKey4\":\"transport.platformTrailerTruckCode,trailer.truckCode\",\"isOpenTruckConfig3\":\"TRUE\"}",
+        "fieldConfigCode": "trailerTruckLicenseNo"
+    },
+    {
+        "showName": "主驾",
+        "elementCode": "popSelectDriver",
+        "extraParams": "{\"field1\":\"driverFullName\",\"field2\":\"driverCode\",\"field3\":\"driverCode\",\"field4\":\"platformDriverCode\",\"area\":\"transporter\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入主驾姓名\",\"outputKey1\":\"driver\",\"outputKey3\":\"driver\",\"outputKey4\":\"driver\",\"inputKey1\":\"transport.driverFullName,driver.fullName\",\"inputKey2\":\"transport.driverCode,driver.code\",\"inputKey4\":\"transport.platformDriverCode,driver.userCode\",\"isOpenTruckConfig3\":\"TRUE\"}",
+        "fieldConfigCode": "driverFullName"
+    },
+    {
+        "showName": "主驾手机号",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"driverPhone\",\"area\":\"transporter\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"18\",\"placeholder1\":\"请输入主驾手机号\",\"inputKey1\":\"transport.driverPhone,driver.phone\"}",
+        "fieldConfigCode": "driverPhone"
+    },
+    {
+        "showName": "主驾身份证号",
+        "elementCode": "text",
+        "extraParams": {"field1":"driverIdentityNumber","checkRule1":"([0-9Xx]{15})([0-9Xx]{3})?","checkMsg1":"请输入正确的身份证号","required":"false","detailLinkVisiable":"false","maxLength1":"18","placeholder1":"请输入主驾身份证号","inputKey1":"transport.driverIdentityNumber,driver.identityNumber","hide": "true"},
+        "fieldConfigCode": "driverIdentityNumber"
+    },
+    {
+        "showName": "副驾",
+        "elementCode": "popSelectDriver",
+        "extraParams": "{\"field1\":\"viceDriverFullName\",\"field2\":\"viceDriverCode\",\"field3\":\"viceDriverCode\",\"field4\":\"platformViceDriverCode\",\"area\":\"transporter\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入副驾姓名\",\"outputKey1\":\"viceDriver\",\"outputKey3\":\"viceDriver\",\"outputKey4\":\"viceDriver\",\"inputKey1\":\"transport.viceDriverFullName,viceDriver.fullName\",\"inputKey2\":\"transport.viceDriverCode,viceDriver.code\",\"inputKey4\":\"transport.platformViceDriverCode,viceDriver.userCode\",\"isOpenTruckConfig3\":\"TRUE\"}",
+        "fieldConfigCode": "viceDriverName"
+    },
+    {
+        "showName": "副驾手机号",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"viceDriverPhone\",\"area\":\"transporter\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"18\",\"placeholder1\":\"请输入副驾手机号\",\"inputKey1\":\"transport.viceDriverPhone,viceDriver.phone\"}",
+        "fieldConfigCode": "viceDriverPhone"
+    },
+    {
+        "showName": "主驾收款人",
+        "elementCode": "popSelectDriver",
+        "extraParams": "{\"field1\":\"payeeDriverFullName\",\"field2\":\"payeeDriverCode\",\"field3\":\"payeeDriverCode\",\"field4\":\"payeePlatformDriverCode\",\"area\":\"transporter\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入主驾收款人姓名\",\"outputKey1\":\"payeeDriver\",\"outputKey3\":\"payeeDriver\",\"outputKey4\":\"payeeDriver\",\"inputKey1\":\"transport.driverFullName,payeeDriver.fullName,driver.fullName\",\"inputKey2\":\"transport.driverCode,payeeDriver.code,driver.code\",\"inputKey4\":\"transport.platformDriverCode,payeeDriver.userCode,driver.userCode\"}",
+        "fieldConfigCode": "payeeDriverFullName"
+    },
+    {
+        "showName": "主驾收款人电话",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"payeeDriverPhone\",\"placeholder1\":\"请输入主驾收款人电话\",\"inputKey1\":\"transport.driverPhone,payeeDriver.phone,driver.authorizePayeePhone\"}",
+        "fieldConfigCode": "payeeDriverPhone"
+    },
+    {
+        "showName": "副驾收款人",
+        "elementCode": "popSelectDriver",
+        "extraParams": "{\"field1\":\"payeeViceDriverFullName\",\"field2\":\"payeeViceDriverCode\",\"field3\":\"payeeViceDriverCode\",\"field4\":\"payeePlatformViceDriverCode\",\"area\":\"transporter\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入副驾收款人姓名\",\"outputKey1\":\"payeeViceDriver\",\"outputKey3\":\"payeeViceDriver\",\"outputKey4\":\"payeeViceDriver\",\"inputKey1\":\"transport.viceDriverFullName,payeeViceDriver.fullName,viceDriver.fullName\",\"inputKey2\":\"transport.viceDriverCode,payeeViceDriver.code,viceDriver.code\",\"inputKey4\":\"transport.platformViceDriverCode,payeeViceDriver.userCode,viceDriver.userCode\"}",
+        "fieldConfigCode": "payeeViceDriverFullName"
+    },
+    {
+        "showName": "副驾收款人电话",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"payeeViceDriverPhone\",\"placeholder1\":\"请输入副驾收款人电话\",\"inputKey1\":\"transport.viceDriverPhone,payeeViceDriver.phone\"}",
+        "fieldConfigCode": "payeeViceDriverPhone"
+    },
+    {
+        "showName": "司机运价",
+        "elementCode": "driverPrice",
+        "extraParams": "{\"field1\":\"driverPrice\",\"field2\":\"driverPriceUnitCode\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,4})?\",\"checkMsg1\":\"不超过13位（最多4位小数）\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"13\",\"placeholder1\":\"请输入司机运价\"}",
+        "fieldConfigCode": "driverPrice"
+    },
+    {
+        "showName": "司机结算方式",
+        "elementCode": "select",
+        "extraParams": "{\"field1\":\"settleMethod\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\"请输入结算方式\",\"inputKey1\":\"logistics.settleMethod\",\"optionsValue1\":[\"loadingweight\",\"unloadingweight\",\"smaller\",\"bigger\",\"trucknumber\"],\"options1\":[\"按发货货量\",\"按收货货量\",\"发货与收货两者取小\",\"发货与收货两者取大\",\"按车次\"],\"transparent\":\"true\"}",
+        "fieldConfigCode": "settleMethod"
+    },
+    {
+        "showName": "分配车次",
+        "elementCode": "truckQty",
+        "extraParams": "{\"field1\":\"truckQty\",\"field2\":\"truckQtyUnitCode\",\"default1\":1,\"default2\":\"车\",\"checkRule1\":\"[0-9]{1,10}\",\"checkMsg1\":\"不超过10位的整数\",\"required\":\"false\",\"transparent\":\"true\",\"maxLength1\":10,\"placeholder1\":\"请输入分配车次\",\"hide\": \"true\"}",
+        "fieldConfigCode": "truckQty"
+    },
+    {
+        "showName": "备注",
+        "elementCode": "textarea",
+        "extraParams": "{\"field1\":\"description\",\"required\":\"false\",\"maxLength1\":200,\"placeholder1\":\"请输入备注\"}",
+        "fieldConfigCode": "description"
+    },
+    {
+        "showName": "计划发货时间",
+        "elementCode": "date",
+        "extraParams": "{\"field1\":\"departDate\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"area\":\"loading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+        "fieldConfigCode": "departDate"
+    },
+    {
+        "showName": "计划收货时间",
+        "elementCode": "date",
+        "extraParams": "{\"field1\":\"returnDate\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"area\":\"unloading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+        "fieldConfigCode": "returnDate"
+    },
+    {
+      "showName": "主驾开户银行",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"driverPayeeBankName\",\"area\":\"bank\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":50,\"placeholder1\":\"请输入开户行\",\"inputKey1\":\"transport.driverPayeeBankName,driver.bankName\",\"hide\": \"true\"}",
+      "fieldConfigCode": "driverPayeeBankName"
+    },
+    {
+      "showName": "主驾银行户名",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"driverPayeeBankAccountName\",\"area\":\"bank\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":50,\"placeholder1\":\"请输入银行户名\",\"inputKey1\":\"transport.driverPayeeBankAccountName,driver.bankAccountName\",\"hide\": \"true\"}",
+      "fieldConfigCode": "driverPayeeBankAccountName"
+    },
+    {
+      "showName": "主驾银行账号",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"driverPayeeBankAccountNo\",\"field2\":\"driverPayeeBankAccountCode\",\"area\":\"bank\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":30,\"placeholder1\":\"请输入银行账号\",\"inputKey1\":\"transport.driverPayeeBankAccountNo,driver.bankAccountNo\",\"inputKey2\":\"driver.bankAccountCode\",\"hide\": \"true\"}",
+      "fieldConfigCode": "driverPayeeBankAccountNo"
+    },
+    {
+        "showName": "主驾驾驶证",
+        "elementCode": "text",
+        "extraParams": "{\"field1\":\"driverLicenseNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"19\",\"placeholder1\":\"请输入主驾驾驶证号\",\"inputKey1\":\"transport.driverLicenseNo,driver.driverLicenseNo\",\"hide\": \"true\"}",
+        "fieldConfigCode": "driverLicenseNo"
+    },
+    {
+      "showName": "主驾油卡卡号",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"driverFuelCardNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":20,\"placeholder1\":\"请输入油卡卡号\",\"inputKey1\":\"transport.driverFuelCardNo,driver.fuelCardNo\",\"hide\": \"true\"}",
+      "fieldConfigCode": "driverFuelCardNo"
+    }
+  ]
+}

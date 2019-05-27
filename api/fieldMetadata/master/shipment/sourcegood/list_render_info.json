@@ -1,0 +1,305 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "货源信息id",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"sourcegoodsid\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"TRUE\"}",
+            "fieldConfigCode": "sourcegoodsid"
+        },
+        {
+            "showName": "托运人id",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"shipperid\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "shipperid"
+        },
+        {
+            "showName": "货源录入时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"goodsinsertdatetime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "goodsinsertdatetime"
+        },
+        {
+            "showName": "托运人名称",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"shippername\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "shippername"
+        },
+        {
+            "showName": "联系人名称",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"contactname\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "contactname"
+        },
+        {
+            "showName": "个人证件类别代码",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"personalidentitytypecode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "personalidentitytypecode"
+        },
+        {
+            "showName": "个人证件",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"personalidentitydocument\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "personalidentitydocument"
+        },
+        {
+            "showName": "电话号码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"telephonenumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "telephonenumber"
+        },
+        {
+            "showName": "移动电话号码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"mobiletelephonenumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "mobiletelephonenumber"
+        },
+        {
+            "showName": "国家行政区划代码（发货地代码）",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"countrysubdivisioncode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "countrysubdivisioncode"
+        },
+        {
+            "showName": "国家行政区划名称（发货地）",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"countrysubdivisionname\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "countrysubdivisionname"
+        },
+        {
+            "showName": "装货地点",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"placeofloading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "placeofloading"
+        },
+        {
+            "showName": "货运站代码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"loadtransportstationcode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "loadtransportstationcode"
+        },
+        {
+            "showName": "货运站名称",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"loadtransportstationname\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "loadtransportstationname"
+        },
+        {
+            "showName": "要求装货起始日期",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"resquestedloadstartdatetime\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "resquestedloadstartdatetime"
+        },
+        {
+            "showName": "要求装货结束日期",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"resquestedloadenddatetime\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "resquestedloadenddatetime"
+        },
+        {
+            "showName": "收货人（收货单位）",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"consignee\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "consignee"
+        },
+        {
+            "showName": "收货联系人姓名",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"consicontactname\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "consicontactname"
+        },
+        {
+            "showName": "收货人电话号码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"consitelephonenumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "consitelephonenumber"
+        },
+        {
+            "showName": "收货人移动电话号码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"consimobiletelephonenumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "consimobiletelephonenumber"
+        },
+        {
+            "showName": "收货人国家行政区划代码（收货地代码）",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"consicountrysubdivisioncode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "consicountrysubdivisioncode"
+        },
+        {
+            "showName": "收货人国家行政区划名称（收货地）",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"consicountrysubdivisionname\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "consicountrysubdivisionname"
+        },
+        {
+            "showName": "卸货地点（收货详细地址）",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"goodsreceiptplace\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "goodsreceiptplace"
+        },
+        {
+            "showName": "卸货货运站代码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"receipttransportstationcode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "receipttransportstationcode"
+        },
+        {
+            "showName": "卸货货运站名称",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"receipttransportstationname\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "receipttransportstationname"
+        },
+        {
+            "showName": "要求卸货日期时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"requestedunloadeddatetime\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "requestedunloadeddatetime"
+        },
+        {
+            "showName": "是否带票",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"taketicketflag\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "taketicketflag"
+        },
+        {
+            "showName": "价格类型",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"pricetype\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "pricetype"
+        },
+        {
+            "showName": "保险公司名称",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"insurancecompany\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "insurancecompany "
+        },
+        {
+            "showName": "保险单号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"insurancebillcode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "insurancebillcode "
+        },
+        {
+            "showName": "保险单访问地址",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"insuranceaccessaddress\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "insuranceaccessaddress "
+        },
+        {
+            "showName": "货物编码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"goodscode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "goodscode "
+        },
+        {
+            "showName": "货物HS编码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"cargohsnumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "cargohsnumber "
+        },
+        {
+            "showName": "货物类型分类代码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"cargotypeclassificationcode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "cargotypeclassificationcode "
+        },
+        {
+            "showName": "货物名称",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"descriptionofgoods\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "descriptionofgoods "
+        },
+        {
+            "showName": "总件数",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"totalnumberofpackages\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "totalnumberofpackages "
+        },
+        {
+            "showName": "包装类型代码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"packagetypecode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "packagetypecode "
+        },
+        {
+            "showName": "货物重量",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"itemgrossweight\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "itemgrossweight "
+        },
+        {
+            "showName": "货物重量计量单位代码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"measurementunitcode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "measurementunitcode "
+        },
+        {
+            "showName": "货物体积",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"cube\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "cube "
+        },
+        {
+            "showName": "货物体积计量单位代码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"volumemeasurementunitcode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "volumemeasurementunitcode "
+        },
+        {
+            "showName": "货币总金额",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"totalmonetaryamount\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "totalmonetaryamount "
+        },
+        {
+            "showName": "货物托运车型要求",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"vehicletyperequirement\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "vehicletyperequirement "
+        },
+        {
+            "showName": "货物托运车长要求",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"vehiclelengthrequirement\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "vehiclelengthrequirement "
+        },
+        {
+            "showName": "货物类型名称",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"goodsprice\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "goodsprice "
+        },
+        {
+            "showName": "货值",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"goodstypename\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "goodgoodstypenamesprice "
+        },
+        {
+            "showName": "合同编号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"contractnumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "contractnumber "
+        },
+        {
+            "showName": "是否删除",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"isdeleteflag\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "isdeleteflag"
+        },
+        {
+            "showName": "同步时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"synchronizationtime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "synchronizationtime"
+        },
+        {
+            "showName": "同步标识",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"isexception\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "isexception"
+        }
+    ]
+}

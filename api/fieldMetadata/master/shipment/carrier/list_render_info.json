@@ -1,0 +1,113 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "承运人ID",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"carrierid\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"TRUE\"}",
+            "fieldConfigCode": "carrierid"
+        },
+        {
+            "showName": "承运人类别",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"carriertype\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"TRUE\"}",
+            "fieldConfigCode": "carriertype"
+        },
+        {
+            "showName": "承运人名称",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"carriername\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "carriername"
+        },
+        {
+            "showName": "联系人名称",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"contactname\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "contactname"
+        },
+        {
+            "showName": "承运人注册地址",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"carrierregisteredaddress\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入运输经营许可证\"}",
+            "fieldConfigCode": "carrierregisteredaddress"
+        },
+        {
+            "showName": "注册资金(万元)",
+            "elementCode": "money",
+            "extraParams": "{\"field1\":\"registeredcapital\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"default2\":\"万元\"}",
+            "fieldConfigCode": "registeredcapital"
+        },
+        {
+            "showName": "统一社会信用代码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"unifiedsocialcreditldentifier\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "unifiedsocialcreditldentifier"
+        },
+        {
+            "showName": "经营范围",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"businessscope\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "businessscope"
+        },
+        {
+            "showName": "道路运输许可证号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"permitnumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "permitnumber"
+        },
+        {
+            "showName": "所属辖区",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"countrysubdivisioncode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "countrysubdivisioncode"
+        },
+        {
+            "showName": "联系人名称",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"contactname\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "contactname"
+        },
+        {
+            "showName": "联系人手机号码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"contactmobiletelephonenumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "contactmobiletelephonenumber"
+        },
+        {
+            "showName": "注册时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"registrationdatetime\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "registrationdatetime"
+        },
+        {
+            "showName": "更新时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updatetimedatetime\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "updatetimedatetime"
+        },
+        {
+            "showName": "是否黑名单",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"isblaclklist\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "isblaclklist"
+        },
+        {
+            "showName": "是否删除",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"isdeleteflag\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "isdeleteflag"
+        },
+        {
+            "showName": "同步时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"synchronizationtime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "synchronizationtime"
+        },
+        {
+            "showName": "同步标识",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"isexception\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "isexception"
+        }
+    ]
+}

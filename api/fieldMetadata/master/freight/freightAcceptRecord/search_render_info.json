@@ -1,0 +1,17 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "车牌号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"truckLicenseNo\",\"placeholder1\":\"请输入车牌号\"}",
+            "fieldConfigCode": "truckLicenseNo"
+        },
+        {
+            "showName": "派车状态",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"driverAcceptStatus\",\"optionsValue1\":[\"undispatched\",\"dispatched\",\"ignored\"],\"options1\":[\"待派车\",\"已派车\" ,\"已忽略\"]}",
+            "fieldConfigCode": "driverAcceptStatus"
+        }
+    ]
+}

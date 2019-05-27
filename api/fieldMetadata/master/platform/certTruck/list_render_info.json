@@ -1,0 +1,83 @@
+{
+  "code": 200,
+  "content": [
+    {
+      "showName": "车牌号",
+      "fieldConfigCode": "truckLicenseNo",
+      "elementCode": "label",
+      "extraParams": "{\"field1\": \"truckLicenseNo\", \"required\": \"false\", \"detailLinkVisiable\": \"true\"}"
+    },
+    {
+      "showName": "审核状态",
+      "fieldConfigCode": "certStatus",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"certStatus\", \"required\": \"true\", \"optionsValue1\": [\"unauthenticated\",\"authenticating\",\"authenticated\",\"failed\"], \"options1\": [\"未提交\",\"待审核\",\"审核通过\",\"审核不通过\"]}"
+    },
+    {
+      "showName": "车辆种类",
+      "fieldConfigCode": "isTrailer",
+      "elementCode": "select",
+      "extraParams": "{\"field1\":\"isTrailer\", \"required\": \"false\", \"optionsValue1\": [\"false\",\"true\"], \"options1\": [\"主车\",\"挂车\"]}"
+    },
+    {
+      "showName": "审核人",
+      "fieldConfigCode": "auditUserFullname",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"auditUserFullname\", \"required\": \"false\"}"
+    },
+    {
+      "showName": "是否加入黑名单",
+      "fieldConfigCode": "isBlack",
+      "elementCode": "label",
+      "extraParams": "{\"field1\": \"isBlack\", \"required\": \"false\", \"optionsValue1\": [\"true\",\"false\"], \"options1\": [\"是\",\"否\"]}"
+    },
+    {
+      "showName": "动力类型",
+      "fieldConfigCode": "powerType",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"powerType\",\"optionsValue1\":[\"oil\",\"gas\"],\"options1\":[\"油车\",\"气车\"]}"
+    },
+    {
+      "showName": "车型",
+      "fieldConfigCode": "truckModelCode",
+      "elementCode": "truckModel",
+      "extraParams": "{\"field1\":\"truckModelCode\",\"field2\":\"truckModelName\",\"required\":\"false\"}"
+    },
+    {
+      "showName": "车长",
+      "fieldConfigCode": "truckLength",
+      "elementCode": "truckSize",
+      "extraParams": "{\"field1\":\"truckLength\",\"field2\":\"truckLengthUnitCode\",\"required\":\"false\"}"
+    },
+    {
+      "showName": "载重",
+      "fieldConfigCode": "regTonnage",
+      "elementCode": "regTonnage",
+      "extraParams": "{\"field1\":\"regTonnage\",\"field2\":\"regTonnageUnitCode\",\"required\":\"false\"}"
+    },
+    {
+      "showName": "容积",
+      "fieldConfigCode": "cubage",
+      "elementCode": "cubage",
+      "extraParams": "{\"field1\":\"cubage\",\"field2\":\"cubageUnitCode\",\"required\":\"false\"}"
+    },
+    {
+        "showName": "提交公司",
+        "fieldConfigCode": "requestOrgFullname",
+        "elementCode": "label",
+        "extraParams": {"field1": "requestOrgFullname", "required": "false"}
+    },
+    {
+      "showName": "提交人",
+      "fieldConfigCode": "requestUserFullname",
+      "elementCode": "label",
+      "extraParams": "{\"field1\": \"requestUserFullname\", \"required\": \"false\"}"
+    },
+    {
+      "showName": "提交时间",
+      "fieldConfigCode": "requestTime",
+      "elementCode": "label",
+      "extraParams": "{\"field1\": \"requestTime\", \"format1\": \"yyyy-MM-dd HH:mm:ss\", \"required\": \"false\"}"
+    }
+  ]
+}

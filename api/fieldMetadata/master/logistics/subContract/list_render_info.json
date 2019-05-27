@@ -1,0 +1,59 @@
+{
+  "code": 200,
+  "content": [
+    {
+      "showName": "货物名称",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"goodsName\",\"placeholder1\":\"\"}",
+      "fieldConfigCode": "goodsName"
+    },
+    {
+      "showName": "货物分类",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"goodsCategory\",\"default1\":\"\",\"readonly1\":\"\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"inputKey1\":\"goods.goodsCategoryName\",\"outputKey1\":\"goodsCategory\"}",
+      "fieldConfigCode": "goodsCategory"
+    },
+    {
+      "showName": "总数量",
+      "elementCode": "goodsNum",
+      "extraParams": "{\"field1\":\"goodsNum\",\"field2\":\"goodsNumUnitCode\",\"default2\":\"item\",\"neddSubtotal1\":\"TRUE\",\"checkRule1\":\"[0-9]{1,10}\",\"checkMsg1\":\"不超过10位的整数\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"10\",\"placeholder1\":\"请输入数量\"}",
+      "fieldConfigCode": "goodsNum"
+    },
+    {
+      "showName": "总重量",
+      "elementCode": "goodsWeight",
+      "extraParams": "{\"field1\":\"goodsWeight\",\"field2\":\"goodsWeightUnitCode\",\"default2\":\"ton\",\"neddSubtotal1\":\"TRUE\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,4})?\",\"checkMsg1\":\"不超过15位（最多4位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入重量\"}",
+      "fieldConfigCode": "goodsWeight"
+    },
+    {
+      "showName": "总体积",
+      "elementCode": "goodsVolume",
+      "extraParams": "{\"field1\":\"goodsVolume\",\"field2\":\"goodsVolumeUnitCode\",\"default2\":\"cube\",\"neddSubtotal1\":\"TRUE\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,4})?\",\"checkMsg1\":\"不超过15位（最多4位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入体积\"}",
+      "fieldConfigCode": "goodsVolume"
+    },
+    {
+      "showName": "待分配数量",
+      "elementCode": "goodsNum",
+      "extraParams": "{\"field1\":\"tobeAssignedGoodsNum\",\"field2\":\"tobeAssignedGoodsNumUnitCode\",\"default2\":\"item\",\"neddSubtotal1\":\"TRUE\",\"default2\":\"item\",\"checkRule1\":\"[0-9]{1,10}\",\"checkMsg1\":\"不超过10位的整数\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"10\",\"placeholder1\":\"请输入数量\"}",
+      "fieldConfigCode": "tobeAssignedGoodsNum"
+    },
+    {
+      "showName": "待分配重量",
+      "elementCode": "goodsWeight",
+      "extraParams": "{\"field1\":\"tobeAssignedGoodsWeight\",\"field2\":\"tobeAssignedGoodsWeightUnitCode\",\"default2\":\"ton\",\"neddSubtotal1\":\"TRUE\",\"default2\":\"ton\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,4})?\",\"checkMsg1\":\"不超过15位（最多4位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入重量\"}",
+      "fieldConfigCode": "tobeAssignedGoodsWeight"
+    },
+    {
+      "showName": "待分配体积",
+      "elementCode": "goodsVolume",
+      "extraParams": "{\"field1\":\"tobeAssignedGoodsVolume\",\"field2\":\"tobeAssignedGoodsVolumeUnitCode\",\"default2\":\"cube\",\"neddSubtotal1\":\"TRUE\",\"default2\":\"cube\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,4})?\",\"checkMsg1\":\"不超过15位（最多4位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入体积\"}",
+      "fieldConfigCode": "tobeAssignedGoodsVolume"
+    },
+    {
+      "showName": "备注",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"description\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\"}",
+      "fieldConfigCode": "description"
+    }
+  ]
+}

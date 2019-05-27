@@ -1,0 +1,95 @@
+#circle {
+  .el-progress__text {
+    color: $white;
+  }
+  .el-col {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+    margin-top: 3%;
+  }
+  .s-ring {
+    // text-align: center;
+    &--out{
+      height: 100px;
+      width: 100px;
+      padding: 2px;
+      border-radius: 50%;
+      position: relative;
+      &.r1 {
+        border: 1px dotted lighten($uiColor, 10);
+      }
+      &.r2 {
+        border: 1px dotted lighten($line2Color, 10);
+      }
+    }
+
+    &--in{
+      height: 93px;
+      width: 94px;
+      padding: 2px;
+      border-radius: 50%;
+      &.r1{
+        border: 1px dashed lighten($uiColor, 10);
+      }
+      &.r2{
+        border: 1px dashed lighten($line2Color, 10);
+      }
+    }
+
+    height: 88px;
+    width: 88px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &.r1 {
+      border: 3px solid lighten($uiColor, 10);
+      .info {
+        color: $lineColor;
+      }
+    }
+    &.r2{
+      border: 3px solid lighten($line2Color, 10);
+
+      .num {
+        color:  $yellow;
+      }
+      .info {
+        color: $line2Color;
+      }
+    }
+    border-radius: 50%;
+    &::before {
+      border: 2px solid red;
+      border-radius: 50%;
+    }
+    .num {
+      font-size: 130%;
+      color: $lineColor;
+    }
+    .info {
+      font-size: 70%;
+      font-weight: 500;
+    }
+  }
+  .circle-line {
+    border-bottom: 1px solid $uiColor;
+    // height: 50%;
+    .el-col {
+      height: inherit;
+    }
+    // margin-bottom: 5%;
+    // width: 100%;
+  }
+
+  .percent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .el-progress {
+      padding: 5%;
+    }
+    // height: 30%;
+  }
+}

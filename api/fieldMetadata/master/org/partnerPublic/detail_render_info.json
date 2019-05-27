@@ -1,0 +1,52 @@
+{
+  "code": 200,
+  "content": [
+  {
+    "showName": "公司全称",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"orgFullName\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入公司全称\"}",
+    "fieldConfigCode": "orgFullName"
+  },
+  {
+    "showName": "公司简称",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"orgName\",\"required\":\"true\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入公司简称\"}",
+    "fieldConfigCode": "orgName"
+  },
+  {
+    "showName": "组织类型",
+    "elementCode": "select",
+    "extraParams": "{\"field1\":\"orgType\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"1\",\"2\",\"3\"],\"options1\":[\"运营方\",\"承运方\",\"托运方\"]}",
+    "fieldConfigCode": "orgType"
+  },
+  {
+    "showName": "认证状态",
+    "elementCode": "select",
+    "extraParams": "{\"field1\":\"certStatus\",\"required\":\"false\",\"readonly1\":\"TRUE\",\"detailLinkVisiable\":\"false\",\"default1\":\"unauthenticated\",\"optionsValue1\":[\"unauthenticated\",\"authenticating\",\"authenticated\",\"failed\"],\"options1\":[\"未认证\",\"认证中\",\"已认证\",\"认证失败\"]}",
+    "fieldConfigCode": "certStatus"
+  },
+  {
+    "showName": "纳税人识别号",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"taxNumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入纳税人识别号\"}",
+    "fieldConfigCode": "orgTaxNumber"
+  },
+  {
+    "showName": "纳税人资质",
+    "elementCode": "select",
+    "extraParams": "{\"field1\":\"taxType\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"general\",\"small\"],\"options1\":[\"一般纳税人\",\"小规模纳税人\"]}",
+    "fieldConfigCode": "taxType"
+  },
+  {
+    "showName": "所在地区",
+    "elementCode": "selectArea",
+    "extraParams": "{\"field1\":\"province\",\"field2\":\"city\",\"field3\":\"county\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "orgArea"
+  },
+  {
+    "showName": "详细地址",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"address\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入详细地址\"}",
+    "fieldConfigCode": "orgAddress"
+  }]
+}

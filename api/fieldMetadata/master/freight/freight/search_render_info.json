@@ -1,0 +1,41 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "货源号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"freightNo\"}",
+            "fieldConfigCode": "freightNo"
+        },
+        {
+            "showName": "货源状态",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"status\",\"optionsValue1\":[\"pushling\",\"finished\"],\"options1\":[\"发布中\",\"已结束\"]}",
+            "fieldConfigCode": "status"
+        },
+        {
+            "showName": "调车模式",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"scheduleType\",\"default1\":\"\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"platform\",\"self\"],\"options1\":[\"委托调车模式\",\"自助调车模式\"]}",
+            "fieldConfigCode": "scheduleType"
+        },
+        {
+            "showName": "订单号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"logisticsNo\"}",
+            "fieldConfigCode": "logisticsNo"
+        },
+        {
+            "showName": "发货地",
+            "elementCode": "selectArea",
+            "extraParams": "{\"field1\":\"loadingProvinceCode\",\"field2\":\"loadingCityCode\",\"field3\":\"loadingCountyCode\"}",
+            "fieldConfigCode": "loadingArea"
+        },
+        {
+            "showName": "收货地",
+            "elementCode": "selectArea",
+            "extraParams": "{\"field1\":\"unloadingProvinceCode\",\"field2\":\"unloadingCityCode\",\"field3\":\"unloadingCountyCode\"}",
+            "fieldConfigCode": "unloadingArea"
+        }
+    ]
+}

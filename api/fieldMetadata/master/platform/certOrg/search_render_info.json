@@ -1,0 +1,17 @@
+{
+  "code": 200,
+  "content": [
+    {
+      "showName": "认证状态",
+      "fieldConfigCode": "certStatus",
+      "elementCode": "select",
+      "extraParams": {"field1":"certStatus", "required": "false", "optionsValue1": ["authenticating","authenticated","failed"], "options1": ["待审核","审核通过","审核不通过"]}
+    },
+    {
+      "showName": "公司全称",
+      "fieldConfigCode": "orgFullName",
+      "elementCode": "text",
+      "extraParams": {"field1": "orgFullName", "required": "false"}
+    }
+  ]
+}

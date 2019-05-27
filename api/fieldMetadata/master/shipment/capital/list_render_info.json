@@ -1,0 +1,83 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "资金流水单ID",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"documentnumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"TRUE\"}",
+            "fieldConfigCode": "documentnumber"
+        },
+        {
+            "showName": "流水号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"serialnumber\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "serialnumber"
+        },
+        {
+            "showName": "开票信息ID",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"billingid\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "billingid"
+        },
+        {
+            "showName": "参与方功能代码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"partfunctioncode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "partfunctioncode"
+        },
+        {
+            "showName": "参与方名称",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"partname\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "partname"
+        },
+        {
+            "showName": "日期时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"datetime\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "datetime"
+        },
+        {
+            "showName": "货币金额",
+            "elementCode": "money",
+            "extraParams": "{\"field1\":\"monetaryamount\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"default2\":\"元\"}",
+            "fieldConfigCode": "monetaryamount"
+        },
+        {
+            "showName": "付款方式代码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"paymentmeans\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "paymentmeans"
+        },
+        {
+            "showName": "派车单号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"jobordernumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "jobordernumber"
+        },
+        {
+            "showName": "银行代码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"bankcode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "bankcode"
+        },
+        {
+            "showName": "是否删除",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"isdeleteflag\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "isdeleteflag"
+        },
+        {
+            "showName": "同步时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"synchronizationtime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "synchronizationtime"
+        },
+        {
+            "showName": "同步标识",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"isexception\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "isexception"
+        }
+    ]
+}   

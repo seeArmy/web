@@ -1,0 +1,137 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "运单号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"waybillNo\",\"field2\":\"code\",\"area\":\"base\",\"required\":\"true\",\"detailLinkVisiable\":\"true\"}",
+            "fieldConfigCode": "waybillNo"
+        },
+        {
+            "showName": "头车牌号",
+            "elementCode": "popSelectTruck",
+            "extraParams": "{\"field1\":\"truckLicenseNo\",\"field2\":\"truckCode\",\"field3\":\"truckCode\",\"field4\":\"truckCode\",\"area\":\"transporter\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入车牌号\",\"outputKey1\":\"transport\",\"outputKey3\":\"transport\",\"outputKey4\":\"transport\",\"inputKey1\":\"transport.mainTruckLicenseNo\",\"inputKey2\":\"transport.mainTruckCode\",\"inputKey4\":\"transport.mainTruckCode\"}",
+            "fieldConfigCode": "truckLicenseNo"
+        },
+        {
+            "showName": "挂车牌号",
+            "elementCode": "popSelectTrailer",
+            "extraParams": "{\"field1\":\"trailerTruckLicenseNo\",\"field2\":\"trailerTruckCode\",\"field3\":\"trailerTruckCode\",\"field4\":\"platformTrailerTruckCode\",\"area\":\"transporter\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入挂车牌号\",\"outputKey1\":\"trailer\",\"outputKey3\":\"trailer\",\"outputKey4\":\"trailer\",\"inputKey1\":\"transport.trailerTruckLicenseNo,trailer.truckLicenseNo\",\"inputKey2\":\"transport.trailerTruckCode,trailer.code\",\"inputKey4\":\"transport.trailerTruckCode,trailer.truckCode\"}",
+            "fieldConfigCode": "trailerTruckLicenseNo"
+        },
+        {
+            "showName": "司机姓名",
+            "elementCode": "popSelectPerson",
+            "extraParams": "{\"field1\":\"driverFullName\",\"field2\":\"driverCode\",\"field3\":\"driverCode\",\"area\":\"transporter\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入主驾姓名\",\"outputKey1\":\"driver\",\"outputKey3\":\"driver\",\"outputKey4\":\"driver\",\"inputKey1\":\"transport.driverFullName,driver.fullName\",\"inputKey2\":\"transport.driverCode,driver.code\",\"inputKey4\":\"transport.platformDriverCode,driver.userCode\"}",
+            "fieldConfigCode": "driverFullName"
+        },
+         {
+            "showName": "手机号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"driverPhone\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "driverPhone"
+        },
+        {
+            "showName": "司机状态",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"driverStatus\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "driverStatus"
+        },
+        {
+            "showName": "工作状态",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"driverWorkStatus\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "driverWorkStatus"
+        },
+        {
+            "showName": "运单执行司机数",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"driverNum\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "driverNum"
+        },
+        {
+            "showName": "收货方",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"unloadingOrgName\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入收货方\",\"inputKey1\":\"logistics.unloadingOrgName,route.unloadingOrgName\"}",
+            "fieldConfigCode": "unloadingOrgName"
+        },
+        {
+            "showName": "线路名称",
+            "elementCode": "popSelectRoute",
+            "extraParams": "{\"field1\":\"routeName\",\"field2\":\"routeCode\",\"field3\":\"routeCode\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入专线\",\"outputKey1\":\"route\",\"outputKey3\":\"route\",\"inputKey1\":\"logistics.routeName,route.routeName\",\"inputKey2\":\"logistics.routeCode,route.code\"}",
+            "fieldConfigCode": "route"
+        },
+        {
+            "showName": "标准运距",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"standardDistance\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入收货方\",\"inputKey1\":\"logistics.unloadingOrgName,route.unloadingOrgName\"}",
+            "fieldConfigCode": "standardDistance"
+        },
+         {
+            "showName": "货物名称",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"goodsName\",\"area\":\"base\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入货品\",\"inputKey1\":\"logistics.goodsName\"}",
+            "fieldConfigCode": "goodsName"
+        },
+        {
+            "showName": "中介费",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"agencyFee\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "agencyFee"
+        },
+        {
+            "showName": "预提费用",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"accruedExpense\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "accruedExpense"
+        },
+        {
+            "showName": "发货重量",
+            "elementCode": "goodsWeight",
+            "extraParams": "{\"field1\":\"loadingGoodsWeight\",\"field2\":\"loadingGoodsWeightUnitCode\",\"default2\":\"ton\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,4})?\",\"checkMsg1\":\"不超过15位（最多4位小数）\",\"area\":\"loading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入发货重量\"}",
+            "fieldConfigCode": "loadingGoodsWeight"
+        },
+        {
+            "showName": "收货重量",
+            "elementCode": "goodsWeight",
+            "extraParams": "{\"field1\":\"unloadingGoodsWeight\",\"field2\":\"unloadingGoodsWeightUnitCode\",\"default2\":\"ton\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,4})?\",\"checkMsg1\":\"不超过15位（最多4位小数）\",\"area\":\"unloading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入收货重量\"}",
+            "fieldConfigCode": "unloadingGoodsWeight"
+        },
+        {
+            "showName": "发货时间",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"loadingTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"area\":\"loading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "loadingTime"
+        },
+        {
+            "showName": "收货时间",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"unloadingTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"area\":\"unloading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "unloadingTime"
+        },
+        {
+            "showName": "订单委托方",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"clientOrgName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "clientOrgName"
+        },
+        {
+            "showName": "订单号",
+            "elementCode": "popSelectLogistics",
+            "extraParams": "{\"field1\":\"logisticsNo\",\"field2\":\"logisticsCode\",\"field3\":\"logisticsCode\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"readonly1\":\"TRUE\",\"outputKey1\":\"logistics\",\"outputKey3\":\"logistics\",\"inputKey1\":\"logistics.logisticsNo\",\"inputKey2\":\"logistics.code\",\"event3\":\"current.$on(\\\"change\\\", function(val){rns[\\\"ratesCode\\\"].$emit(\\\"refresh\\\", {logisticsCode: val.code});});\"}",
+            "fieldConfigCode": "logisticsCode"
+        },
+        {
+            "showName": "调度员",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"creatorUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "creatorUsername"
+        },
+        {
+            "showName": "派车时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"waybillCreateTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "createTime"
+        }
+    ]
+}

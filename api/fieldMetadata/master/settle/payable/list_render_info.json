@@ -1,0 +1,83 @@
+{
+    "code": 200,
+    "content": [
+      {
+        "showName": "收款方名称",
+        "elementCode": "selectPartner",
+        "extraParams": "{\"field1\":\"payeeOrgName\",\"field2\":\"payeeOrgCode\",\"field3\":\"payeeOrgCode\",\"field4\":\"platformPayeeOrgCode\"}",
+        "fieldConfigCode": "payeeOrgName"
+      },
+      {
+        "showName": "账单名称",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"billName\",\"detailLinkVisiable\":\"true\"}",
+        "fieldConfigCode": "billName"
+      },
+      {
+        "showName": "账单编号",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"billNo\",\"detailLinkVisiable\":\"true\"}",
+        "fieldConfigCode": "billNo"
+      },
+      {
+        "showName": "账单状态",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"payableBillStatus\",\"optionsValue1\":[\"none\",\"pend\",\"accept\",\"reject\",\"destroy\"],\"options1\":[\"待提交审核\",\"待审核\",\"审核通过\",\"审核不通过\",\"已作废\"]}",
+        "fieldConfigCode": "payableBillStatus"
+      },
+      {
+        "showName": "收票状态",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"receivedInvoice\",\"optionsValue1\":[\"yes\",\"no\"],\"options1\":[\"已收票\",\"未收票\"]}",
+        "fieldConfigCode": "receivedInvoice"
+      },
+      {
+        "showName": "付款状态",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"payStatus\",\"optionsValue1\":[\"none\",\"part\",\"all\"],\"options1\":[\"未付款\",\"部分付款\",\"全部付款\"]}",
+        "fieldConfigCode": "payStatus"
+      },
+      {
+        "showName": "未付金额",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"unpaidAmount\"}",
+        "fieldConfigCode": "unpaidAmount"
+      },
+      {
+        "showName": "应付金额",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"payableAmount\"}",
+        "fieldConfigCode": "payableAmount"
+      },
+      {
+        "showName": "己付金额",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"paidAmount\"}",
+        "fieldConfigCode": "paidAmount"
+      },
+      {
+        "showName": "创建人",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"creatorUsername\"}",
+        "fieldConfigCode": "creatorUsername"
+      },
+      {
+        "showName": "创建时间",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"createTime\"}",
+        "fieldConfigCode": "createTime"
+      },
+      {
+        "showName": "修改人",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"updateUsername\"}",
+        "fieldConfigCode": "updateUsername"
+      },
+      {
+        "showName": "修改时间",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"updateTime\"}",
+        "fieldConfigCode": "updateTime"
+      }
+    ]
+}

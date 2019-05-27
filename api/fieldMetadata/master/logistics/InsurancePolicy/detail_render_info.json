@@ -1,0 +1,53 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "线下保单ID",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"insuranceNo\",\"required\":\"false\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"20\"}",
+            "fieldConfigCode": "insuranceNo"
+        },
+        {
+            "showName": "保险产品名称",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"insuranceProductName\",\"required\":\"false\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"20\"}",
+            "fieldConfigCode": "insuranceProductName"
+        },
+        {
+            "showName": "保险公司名称",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"insuranceCompanyName\",\"required\":\"true\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"50\"}",
+            "fieldConfigCode": "insuranceCompanyName"
+        },
+        {
+            "showName": "保险单号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"insurancePolicyNo\",\"required\":\"true\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"20\"}",
+            "fieldConfigCode": "insurancePolicyNo"
+        },
+        {
+            "showName": "保险单文件",
+            "elementCode": "files",
+            "extraParams": "{\"field1\":\"insuranceAttachment\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "insuranceAttachment"
+        },
+        {
+            "showName": "开始时间",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"startTime\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "startTime"
+        },
+        {
+            "showName": "截至时间",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"endTime\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "endTime"
+        },
+        {
+            "showName": "备注",
+            "elementCode": "textarea",
+            "extraParams": "{\"field1\":\"description\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"100\"}",
+            "fieldConfigCode": "description"
+        }
+    ]
+}

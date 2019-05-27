@@ -1,0 +1,41 @@
+{
+  "code": 200,
+  "content": [
+    {
+      "showName": "车牌号",
+      "elementCode": "text",
+      "extraParams": {"field1":"vehicleNumber","detailLinkVisiable":"false","placeholder1":"请输入车牌号"},
+      "fieldConfigCode": "vehicleNumber"
+    },
+    {
+      "showName": "运单号",
+      "elementCode": "text",
+      "extraParams": {"field1":"shippingNoteNumber","detailLinkVisiable":"false","placeholder1":"请输入运单号"},
+      "fieldConfigCode": "shippingNoteNumber"
+    },
+    {
+      "showName": "上报状态",
+      "elementCode": "select",
+      "extraParams": {"field1":"reportStatus","detailLinkVisiable":"false",
+        "options1":["请选择","未创建","未上报","已上报"],
+        "optionsValue1":["","uncreated","undo","reported"]
+      },
+      "fieldConfigCode": "reportStatus"
+    },{
+      "showName": "校验状态",
+      "elementCode": "select",
+      "extraParams": {
+        "field1":"validateStatus","detailLinkVisiable":"false",
+        "options1":["请选择","未校验","校验成功","校验失败"],
+        "optionsValue1":["","undo","success","failed"]
+      },
+      "fieldConfigCode": "validateStatus"
+    },
+    {
+      "showName": "创建日期",
+      "elementCode": "dateRange",
+      "extraParams": {"field1":"from_createTime","field3":"to_createTime","format1":"yyyy-MM-dd HH:mm:ss","format3":"yyyy-MM-dd HH:mm:ss","placeholder2":"到","default2":"到"},
+      "fieldConfigCode": "createTime"
+    }
+  ]
+}

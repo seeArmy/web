@@ -1,0 +1,69 @@
+{
+  "code": 200,
+  "content": [
+  {
+    "showName": "运单号",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"waybillNo\",\"placeholder1\":\"请输入运单号\"}",
+    "fieldConfigCode": "waybillNo"
+  },
+  {
+    "showName": "车牌号",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"truckLicenseNo\",\"placeholder1\":\"请输入车牌号\"}",
+    "fieldConfigCode": "truckLicenseNo"
+  },
+  {
+    "showName": "托运客户",
+    "elementCode": "selectPartner",
+    "extraParams": "{\"field1\":\"clientOrgName\",\"field2\":\"clientOrgCode\",\"placeholder1\":\"请输入托运客户\"}",
+    "fieldConfigCode": "clientOrg"
+  },
+  {
+    "showName": "线路",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"routeName\",\"field2\":\"routeCode\",\"placeholder1\":\"请输入线路名称\"}",
+    "fieldConfigCode": "route"
+  },
+  {
+    "showName": "司机",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"driverFullName\",\"placeholder1\":\"请输入司机\"}",
+    "fieldConfigCode": "driverFullName"
+  },
+  {
+    "showName": "订单号",
+    "elementCode": "selectLogistics",
+    "extraParams": "{\"field1\":\"logisticsNo\",\"field2\":\"logisticsCode\",\"placeholder1\":\"请输入来源订单\"}",
+    "fieldConfigCode": "logisticsCode"
+  },
+  {
+    "showName": "合规状态",
+    "elementCode": "select",
+    "extraParams":
+    {
+      "field1": "complianceStatus",
+      "detailLinkVisiable": "false",
+      "options1": ["待确认", "合规", "不合规"],
+      "optionsValue1": [ "pend", "yes", "no"]
+    },
+    "fieldConfigCode": "complianceStatus"
+  },{
+    "showName": "付款支付状态",
+    "elementCode": "select",
+    "extraParams":
+    {
+      "field1": "settlePaymentPayStatus",
+      "detailLinkVisiable": "false",
+      "options1": ["未创建", "待支付", "已支付","支付失败","支付取消"],
+      "optionsValue1": ["uncreated", "pend", "paid","failed","cancel"]
+    },
+    "fieldConfigCode": "settlePaymentPayStatus"
+  },
+  {
+    "showName": "结算通过时间",
+    "elementCode": "dateRange",
+    "extraParams": "{\"field1\":\"from_settleTime\",\"field3\":\"to_settleTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"format3\":\"yyyy-MM-dd HH:mm:ss\",\"default2\":\"到\"}",
+    "fieldConfigCode": "settleTime"
+  }]
+}

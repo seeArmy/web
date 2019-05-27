@@ -1,0 +1,100 @@
+{
+  "code": 200,
+  "content": [
+  {
+    "showName": "询价单号",
+    "elementCode": "quoteLink",
+    "extraParams": "{\"field1\":\"rfqNo\",\"field2\":\"rfqCode\",\"area\":\"base\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "quoteLink"
+  },
+  {
+    "showName": "报价单号",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"quoteNo\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\"}",
+    "fieldConfigCode": "rfqNo"
+  },
+  {
+    "showName": "下单状态",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"quoteStatus\",\"required\":\"FALSE\",\"detailLinkVisiable\":\"FALSE\",\"optionsValue1\":[\"pend\",\"ordered\",\"ignore\",\"carrierCancel\",\"carrierReceived\",\"carrierReject\"],\"options1\":[\"待下单\",\"已下单待承运方接单\",\"已忽略下单\" ,\"承运方取消报价\",\"承运方已接单\",\"承运方已拒绝\"]}",
+    "fieldConfigCode": "quoteStatus"
+  },
+  {
+    "showName": "托运客户",
+    "elementCode": "popSelectPartner",
+    "extraParams": "{\"field1\":\"clientOrgName\",\"field2\":\"clientOrgCode\",\"field3\":\"clientOrgCode\",\"field4\":\"platformClientOrgCode\",\"required\":\"false\",\"readonly1\":\"TRUE\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入托运客户\",\"outputKey1\":\"partner\",\"outputKey3\":\"partner\",\"outputKey4\":\"partner\",\"inputKey1\":\"rates.partnerName,partner.orgName\",\"inputKey2\":\"partner.code,rates.partnerCode\",\"inputKey4\":\"partner.orgCode\",\"isPageOrder3\":\"1\"}",
+    "fieldConfigCode": "clientOrg"
+  },
+  {
+    "showName": "线路名称",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"routeName\",\"readonly1\":\"TRUE\",\"field2\":\"routeCode\",\"field3\":\"routeCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入线路名称\",\"outputKey1\":\"route\",\"outputKey3\":\"route\",\"inputKey1\":\"rates.routeName,route.routeName\",\"inputKey2\":\"route.code,rates.routeCode\"}",
+    "fieldConfigCode": "route"
+  },
+  {
+    "showName": "货物名称",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"goodsName\",\"required\":\"FALSE\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入货品\",\"inputKey1\":\"logistics.goodsName\"}",
+    "fieldConfigCode": "goodsName"
+  },
+  {
+    "showName": "报价类型",
+    "elementCode": "quoteType",
+    "extraParams": "{\"field1\":\"quoteType\",\"field2\":\"quotePrice\",\"field3\":\"quotePriceUnitCode\",\"default1\":\"price\",\"checkRule2\":\"[0-9]{1,10}(\\\\.[0-9]{0,2})?\",\"checkMsg2\":\"不超过13位（最多2位小数）\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength2\":\"13\",\"placeholder2\":\"请输入报价\",\"optionsValue1\":[\"quote\",\"price\"],\"options1\":[\"承运方报价\",\"一口价\"]}",
+    "fieldConfigCode": "quotePrice"
+  },
+  {
+    "showName": "发货单位",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"loadingOrgName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\"}",
+    "fieldConfigCode": "loadingOrgName"
+  },
+  {
+    "showName": "收货单位",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"unloadingOrgName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\"}",
+    "fieldConfigCode": "unloadingOrgName"
+  },
+  {
+    "showName": "发货地",
+    "elementCode": "selectArea",
+    "extraParams": "{\"field1\":\"loadingProvinceCode\",\"field2\":\"loadingCityCode\",\"field3\":\"loadingCountyCode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"TRUE\",\"readonly2\":\"TRUE\",\"readonly3\":\"TRUE\",\"inputKey1\":\"logistics.loadingProvinceCode\",\"inputKey2\":\"logistics.loadingCityCode\",\"inputKey3\":\"logistics.loadingCountyCode\"}",
+    "fieldConfigCode": "loadingArea"
+  },
+  {
+    "showName": "收货地",
+    "elementCode": "selectArea",
+    "extraParams": "{\"field1\":\"unloadingProvinceCode\",\"field2\":\"unloadingCityCode\",\"field3\":\"unloadingCountyCode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"TRUE\",\"readonly2\":\"TRUE\",\"readonly3\":\"TRUE\",\"inputKey1\":\"logistics.unloadingProvinceCode\",\"inputKey2\":\"logistics.unloadingCityCode\",\"inputKey3\":\"logistics.unloadingCountyCode\"}",
+    "fieldConfigCode": "unloadingArea"
+  },
+  {
+    "showName": "分配重量",
+    "elementCode": "money",
+    "extraParams": "{\"field1\":\"goodsWeight\",\"default2\":\"吨\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,4})?\",\"checkMsg1\":\"不超过15位（最多4位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入计划重量\"}",
+    "fieldConfigCode": "goodsWeight"
+  },
+  {
+    "showName": "分配体积",
+    "elementCode": "money",
+    "extraParams": "{\"field1\":\"goodsVolume\",\"default2\":\"方\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,4})?\",\"checkMsg1\":\"不超过15位（最多4位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\"}",
+    "fieldConfigCode": "goodsVolume"
+  },
+  {
+    "showName": "分配数量",
+    "elementCode": "money",
+    "extraParams": "{\"field1\":\"goodsNum\",\"default2\":\"件\",\"checkRule1\":\"[0-9]{1,10}\",\"checkMsg1\":\"不超过10位的整数\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"10\"}",
+    "fieldConfigCode": "goodsAmount"
+  },
+  {
+    "showName": "分配车次",
+    "elementCode": "money",
+    "extraParams": "{\"field1\":\"truckQty\",\"required\":\"false\",\"default2\":\"车\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "truckQty"
+  },
+  {
+    "showName": "抢单时间",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "createTime"
+  }]
+}

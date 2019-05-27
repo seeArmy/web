@@ -1,0 +1,29 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "发票号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"invoiceNo\"}",
+            "fieldConfigCode": "invoiceNo"
+        },
+        {
+            "showName": "销售方名称",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"payeeOrgName\",\"field2\":\"payeeOrgCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入销售方公司名\",\"outputKey1\":\"supply\",\"outputKey3\":\"supply\",\"inputKey1\":\"payable.payeeOrgName\",\"inputKey2\":\"payable.payeeOrgCode\"}",
+            "fieldConfigCode": "payeeOrgName"
+        },
+        {
+            "showName": "归属年月",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"attributionDate\",\"format1\":\"yyyy-MM\",\"area\":\"\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\"请选择归属年月\"}",
+            "fieldConfigCode": "attributionDate"
+        },
+        {
+            "showName": "进项系统号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"inputNo\"}",
+            "fieldConfigCode": "inputNo"
+        }
+    ]
+}

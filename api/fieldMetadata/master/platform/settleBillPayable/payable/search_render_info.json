@@ -1,0 +1,47 @@
+{
+    "code": 200,
+    "content": [
+      {
+        "showName": "账单号",
+        "elementCode": "text",
+        "extraParams": "{\"field1\":\"billNo\",\"detailLinkVisiable\":\"true\",\"placeholder1\": \"请输入账单号\"}",
+        "fieldConfigCode": "billNo"
+      },
+      {
+        "showName": "付款方",
+        "elementCode": "text",
+        "extraParams": "{\"field1\":\"payerOrgName\",\"placeholder1\": \"请输入付款方名称\"}",
+        "fieldConfigCode": "payerOrgName"
+      },
+      {
+        "showName": "账单状态",
+        "elementCode": "select",
+        "extraParams": "{\"field1\":\"billStatus\",\"optionsValue1\":[\"none\",\"pend\",\"accept\",\"reject\",\"destroy\"],\"options1\":[\"待提交审核\",\"待审核\",\"审核通过\",\"审核不通过\",\"已作废\"]}",
+        "fieldConfigCode": "billStatusB"
+      },
+      {
+        "showName": "账单状态",
+        "elementCode": "select",
+        "extraParams": "{\"field1\":\"billStatus\",\"optionsValue1\":[\"pend,accept,reject,destroy\",\"pend\",\"accept\",\"reject\",\"destroy\"],\"options1\":[\"全部\",\"待审核\",\"审核通过\",\"审核不通过\",\"已作废\"]}",
+        "fieldConfigCode": "billStatusS"
+      },
+      {
+        "showName": "平台收款状态",
+        "elementCode": "select",
+        "extraParams": "{\"field1\":\"receivableStatus\",\"optionsValue1\":[\"none\",\"all\"],\"options1\":[\"未收款\",\"收款完成\"]}",
+        "fieldConfigCode": "receivableStatus"
+      },
+      {
+        "showName": "开票状态",
+        "elementCode": "select",
+        "extraParams": "{\"field1\":\"invoiced\",\"optionsValue1\":[\"yes\",\"no\"],\"options1\":[\"已开票\",\"未开票\"]}",
+        "fieldConfigCode": "invoiced"
+      },
+      {
+        "showName": "创建时间",
+        "elementCode": "dateRange",
+        "extraParams": "{\"field1\":\"from_createTime\",\"field3\":\"to_createTime\",\"format1\":\"yyyy-MM-dd\",\"format3\":\"yyyy-MM-dd\",\"default2\":\"到\"}",
+        "fieldConfigCode": "createTime"
+      }
+    ]
+}

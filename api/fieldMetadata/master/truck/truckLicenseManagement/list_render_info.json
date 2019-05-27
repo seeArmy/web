@@ -1,0 +1,101 @@
+{
+  "code": 200,
+  "content": [
+    {
+      "showName": "车牌号",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"truckLicenseNo\",\"required\":\"true\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入车牌号\"}",
+      "fieldConfigCode": "truckLicenseNo"
+    },
+    {
+      "showName": "联系手机号",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"truckFixedMobile\",\"required\":\"true\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入车牌号\"}",
+      "fieldConfigCode": "truckFixedMobile"
+    },
+    {
+      "showName": "车型",
+      "elementCode": "truckModel",
+      "extraParams": "{\"field1\":\"truckModelCode\",\"field2\":\"truckModelName\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\"请选择车型\"}",
+      "fieldConfigCode": "truckModelCode"
+    },
+    {
+      "showName": "载重",
+      "elementCode": "regTonnage",
+      "extraParams": "{\"field1\":\"regTonnage\",\"field2\":\"regTonnageUnitCode\",\"default2\":\"ton\",\"checkRule1\":\"[0-9]{1,6}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过9位（最多2位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"9\",\"placeholder1\":\"请输入车辆载重\"}",
+      "fieldConfigCode": "regTonnage"
+    },
+    {
+      "showName": "车长",
+      "elementCode": "truckSize",
+      "extraParams": "{\"field1\":\"truckLength\",\"field2\":\"truckLengthUnitCode\",\"default2\":\"meter\",\"checkRule1\":\"[0-9]{1,6}(\\\\.[0-9]{0,3})?\",\"checkMsg1\":\"不超过10位（最多3位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"10\",\"placeholder1\":\"请输入车辆长度\"}",
+      "fieldConfigCode": "truckLength"
+    },
+    {
+      "showName": "行驶证过期时间",
+      "elementCode": "date",
+      "extraParams": "{\"field1\":\"drivingLicenseExpirationDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"search1\":\"\"}",
+      "fieldConfigCode": "drivingLicenseExpirationDate"
+    },
+    {
+      "showName": "营运证过期时间",
+      "elementCode": "date",
+      "extraParams": "{\"field1\":\"transportLicenseExpirationDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"search1\":\"\"}",
+      "fieldConfigCode": "transportLicenseExpirationDate"
+    },
+    {
+      "showName": "技术评定过期时间",
+      "elementCode": "date",
+      "extraParams": "{\"field1\":\"technicalGradeExpirationDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"search1\":\"\"}",
+      "fieldConfigCode": "technicalGradeExpirationDate"
+    },
+    {
+      "showName": "交强险过期日期",
+      "elementCode": "date",
+      "extraParams": "{\"field1\":\"tciPolicyExpirationDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"search1\":\"\"}",
+      "fieldConfigCode": "tciPolicyExpirationDate"
+    },
+    {
+      "showName": "商业险过期日期",
+      "elementCode": "date",
+      "extraParams": "{\"field1\":\"vicPolicyExpirationDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"search1\":\"\"}",
+      "fieldConfigCode": "vicPolicyExpirationDate"
+    },
+    {
+      "showName": "承运险过期日期",
+      "elementCode": "date",
+      "extraParams": "{\"field1\":\"cliPolicyExpirationDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"search1\":\"\"}",
+      "fieldConfigCode": "cliPolicyExpirationDate"
+    },
+    {
+      "showName": "罐检过期日期",
+      "elementCode": "date",
+      "extraParams": "{\"field1\":\"oilTankInspectionExpirationDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"search1\":\"\"}",
+      "fieldConfigCode": "oilTankInspectionExpirationDate"
+    },
+    {
+      "showName": "创建人",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"creatorUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "creatorUser"
+    },
+    {
+      "showName": "创建时间",
+      "elementCode": "date",
+      "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "createTime"
+    },
+    {
+      "showName": "修改人",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"updateUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "updateUser"
+    },
+    {
+      "showName": "修改时间",
+      "elementCode": "date",
+      "extraParams": "{\"field1\":\"updateTime\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "updateTime"
+    }
+  ]
+}

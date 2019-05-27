@@ -1,0 +1,149 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "主车牌号",
+            "elementCode": "popSelectLongTruck",
+            "extraParams": "{\"field1\":\"mainTruckLicenseNo\",\"field2\":\"mainTruckCode\",\"field3\":\"mainTruckCode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入主车牌号\",\"outputKey1\":\"mainTruck\",\"outputKey3\":\"mainTruck\",\"inputKey1\":\"mainTruck.truckLicenseNo\",\"inputKey2\":\"mainTruck.code\"}",
+            "fieldConfigCode": "mainTruck"
+        },
+        {
+            "showName": "车辆认证状态",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"mainTruckCertStatus\",\"optionsValue1\":[\"unauthenticated\",\"authenticating\",\"authenticated\",\"failed\"],\"options1\":[\"未认证\",\"认证中\",\"已认证\",\"认证失败\"]}",
+            "fieldConfigCode": "mainTruckCertStatus"
+        },
+        {
+            "showName": "挂车牌号",
+            "elementCode": "popSelectTrailer",
+            "extraParams": "{\"field1\":\"trailerTruckLicenseNo\",\"field2\":\"trailerTruckCode\",\"field3\":\"trailerTruckCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入挂车牌号\",\"outputKey1\":\"trailerTruck\",\"outputKey3\":\"trailerTruck\",\"inputKey1\":\"trailerTruck.truckLicenseNo\",\"inputKey2\":\"trailerTruck.code\"}",
+            "fieldConfigCode": "trailerTruck"
+        },
+        {
+            "showName": "随车手机号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"truckFixedMobile\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入随车手机号\",\"inputKey1\":\"mainTruck.phone\"}",
+            "fieldConfigCode": "truckFixedMobile"
+        },
+        {
+            "showName": "标签",
+            "elementCode": "tag",
+            "extraParams": "{\"field1\":\"transportTag\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"6\",\"placeholder1\":\"请输入标签\"}",
+            "fieldConfigCode": "transportTag"
+        },
+        {
+            "showName": "车型",
+            "elementCode": "truckModel",
+            "extraParams": "{\"field1\":\"truckModelCode\",\"field2\":\"truckModelName\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"inputKey1\":\"mainTruck.truckModelCode\",\"inputKey2\":\"mainTruck.truckModelName\"}",
+            "fieldConfigCode": "truckModel"
+        },
+        {
+            "showName": "车长",
+            "elementCode": "truckSize",
+            "extraParams": "{\"field1\":\"truckLength\",\"field2\":\"truckLengthUnitCode\",\"default2\":\"meter\",\"checkRule1\":\"[0-9]{1,6}(\\\\.[0-9]{0,3})?\",\"checkMsg1\":\"不超过10位（最多3位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"10\",\"placeholder1\":\"请输入车辆长度\",\"inputKey1\":\"mainTruck.truckLength\",\"inputKey2\":\"mainTruck.truckLengthUnitCode\"}",
+            "fieldConfigCode": "truckLength"
+        },
+        {
+            "showName": "动力类型",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"powerType\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"inputKey1\":\"mainTruck.powerType\",\"optionsValue1\":[\"gas\",\"oil\"],\"options1\":[\"气车\",\"油车\"]}",
+            "fieldConfigCode": "powerType"
+        },
+        {
+            "showName": "主驾",
+            "elementCode": "popSelectLongDriver",
+            "extraParams": "{\"field1\":\"driverFullName\",\"field2\":\"driverCode\",\"field3\":\"driverCode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入主驾姓名\",\"outputKey1\":\"driver\",\"outputKey3\":\"driver\",\"inputKey1\":\"driver.fullName\",\"inputKey2\":\"driver.code\"}",
+            "fieldConfigCode": "driver"
+        },
+        {
+            "showName": "主驾认证状态",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"driverCertStatus\",\"optionsValue1\":[\"unauthenticated\",\"authenticating\",\"authenticated\",\"failed\"],\"options1\":[\"未认证\",\"认证中\",\"已认证\",\"认证失败\"]}",
+            "fieldConfigCode": "driverCertStatus"
+        },
+        {
+            "showName": "主驾手机号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"driverPhone\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"18\",\"placeholder1\":\"请输入主驾手机号\",\"inputKey1\":\"driver.phone\"}",
+            "fieldConfigCode": "driverPhone"
+        },
+        {
+            "showName": "副驾",
+            "elementCode": "popSelectDriver",
+            "extraParams": "{\"field1\":\"viceDriverFullName\",\"field2\":\"viceDriverCode\",\"field3\":\"viceDriverCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入副驾姓名\",\"outputKey1\":\"viceDriver\",\"outputKey3\":\"viceDriver\",\"inputKey1\":\"viceDriver.fullName\",\"inputKey2\":\"viceDriver.code\"}",
+            "fieldConfigCode": "viceDriver"
+        },
+        {
+            "showName": "副驾认证状态",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"viceDriverCertStatus\",\"optionsValue1\":[\"unauthenticated\",\"authenticating\",\"authenticated\",\"failed\"],\"options1\":[\"未认证\",\"认证中\",\"已认证\",\"认证失败\"]}",
+            "fieldConfigCode": "viceDriverCertStatus"
+        },
+        {
+            "showName": "副驾手机号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"viceDriverPhone\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"18\",\"placeholder1\":\"请输入副驾手机号\",\"inputKey1\":\"viceDriver.phone\"}",
+            "fieldConfigCode": "viceDriverPhone"
+        },
+        {
+            "showName": "主驾银行户名",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"driverPayeeBankAccountName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入主驾银行户名\",\"inputKey1\":\"driver.bankAccountName\"}",
+            "fieldConfigCode": "driverPayeeBankAccountName"
+        },
+        {
+            "showName": "主驾开户行",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"driverPayeeBankName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入主驾开户行\",\"inputKey1\":\"driver.bankName\"}",
+            "fieldConfigCode": "driverPayeeBankName"
+        },
+        {
+            "showName": "主驾银行账号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"driverPayeeBankAccountNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"30\",\"placeholder1\":\"请输入主驾银行帐号\",\"inputKey1\":\"driver.bankAccountNo\"}",
+            "fieldConfigCode": "driverPayeeBankAccountNo"
+        },
+        {
+            "showName": "副驾银行户名",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"viceDriverPayeeBankAccountName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入副驾银行户名\",\"inputKey1\":\"viceDriver.bankAccountName\"}",
+            "fieldConfigCode": "viceDriverPayeeBankAccountName"
+        },
+        {
+            "showName": "副驾开户行",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"viceDriverPayeeBankName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入副驾开户行\",\"inputKey1\":\"viceDriver.bankName\"}",
+            "fieldConfigCode": "viceDriverPayeeBankName"
+        },
+        {
+            "showName": "副驾银行账号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"viceDriverPayeeBankAccountNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"30\",\"placeholder1\":\"请输入副驾银行帐号\",\"inputKey1\":\"viceDriver.bankAccountNo\"}",
+            "fieldConfigCode": "viceDriverPayeeBankAccountNo"
+        },
+        {
+            "showName": "创建人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"creatorUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "creatorUser"
+        },
+        {
+            "showName": "创建时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "createTime"
+        },
+        {
+            "showName": "修改人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateUser"
+        },
+        {
+            "showName": "修改时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateTime"
+        }
+    ]
+}

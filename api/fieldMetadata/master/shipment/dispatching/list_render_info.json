@@ -1,0 +1,77 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "派车单号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"jobordernumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"TRUE\"}",
+            "fieldConfigCode": "jobordernumber"
+        },
+        {
+            "showName": "车辆信息ID",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"vehicleid\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "vehicleid"
+        },
+        {
+            "showName": "运单号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"shippingnotenumber\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "shippingnotenumber"
+        },
+        {
+            "showName": "驾驶员身份证",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"identitydocumentnumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "identitydocumentnumber"
+        },
+        {
+            "showName": "派车单生成时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"singlegenerationtime\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "singlegenerationtime"
+        },
+        {
+            "showName": "预计抵达时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"estimatedarrivaltime\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "estimatedarrivaltime"
+        },
+        {
+            "showName": "实际发车时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"actualdeparturetime\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "actualdeparturetime"
+        },
+        {
+            "showName": "收货时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"goodsreceiptdatetime\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "goodsreceiptdatetime"
+        },
+        {
+            "showName": "实际行驶公里数",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"actualmileage\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "actualmileage"
+        },
+        {
+            "showName": "是否删除",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"isdeleteflag\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "isdeleteflag"
+        },
+        {
+            "showName": "同步时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"synchronizationtime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "synchronizationtime"
+        },
+        {
+            "showName": "同步标识",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"isexception\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "isexception"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+@import "normalize.scss";
+@import "reset.scss";
+@import "rltx.scss";
+
+// 新增蓝色主题
+@import "theme-blue.scss";
+
+body {
+	//min-width: 1130px;
+}
+
+.block-box {
+  // padding: 20px;
+  min-height: 300px;
+  border: 1px solid $borderColor;
+}
+
+.center {
+  text-align: center;
+}

@@ -1,0 +1,49 @@
+{
+    "code": 200,
+    "content": [{
+      "showName": "托运客户",
+      "fieldConfigCode": "clientOrgName",
+      "elementCode": "label",
+      "extraParams": {"field1": "clientOrgName", "required": "false"}
+    }, {
+      "showName": "车次",
+      "fieldConfigCode": "vehicleTimes",
+      "elementCode": "number",
+      "extraParams": {"field1": "vehicleTimes", "required": "false"}
+    }, {
+      "showName": "结算重量",
+      "fieldConfigCode": "settleWeight",
+      "elementCode": "number",
+      "extraParams": {"field1": "settleWeight", "required": "false"}
+    }, {
+      "showName": "结算体积",
+      "fieldConfigCode": "settleVolume",
+      "elementCode": "number",
+      "extraParams": {"field1": "settleVolume", "required": "false"}
+    }, {
+      "showName": "结算数量",
+      "fieldConfigCode": "settleNum",
+      "elementCode": "number",
+      "extraParams": {"field1": "settleNum", "required": "false"}
+    }, {
+      "showName": "货差扣款",
+      "fieldConfigCode": "settleLossDeduction",
+      "elementCode": "number",
+      "extraParams": {"field1": "settleLossDeduction", "required": "false"}
+    }, {
+      "showName": "应收客户费用",
+      "fieldConfigCode": "settleClientOrgPayee",
+      "elementCode": "number",
+      "extraParams": {"field1": "settleClientOrgPayee", "required": "false"}
+    }, {
+      "showName": "应付司机费用",
+      "fieldConfigCode": "settleDriverPayment",
+      "elementCode": "number",
+      "extraParams": {"field1": "settleDriverPayment", "required": "false"}
+    }, {
+      "showName": "预计毛利",
+      "fieldConfigCode": "settleGrossProfit",
+      "elementCode": "number",
+      "extraParams": {"field1": "settleGrossProfit", "required": "false"}
+    }]
+}

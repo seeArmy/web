@@ -1,0 +1,23 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "公司全称",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"orgFullName\",\"placeholder1\":\"请输入公司全称\"}",
+            "fieldConfigCode": "orgFullName"
+        },
+    	{
+    	    "showName": "激活状态",
+    	    "elementCode": "select",
+    	    "extraParams": "{\"field1\":\"orgStatus\",\"optionsValue1\":[\"inactivated\",\"activated\"],\"options1\":[\"未激活\",\"已激活\"]}",
+    	    "fieldConfigCode": "orgStatus"
+    	},
+        {
+            "showName": "认证状态",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"certStatus\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"unauthenticated\",\"authenticating\",\"authenticated\",\"failed\"],\"options1\":[\"未认证\",\"认证中\",\"已认证\",\"认证失败\"]}",
+            "fieldConfigCode": "certStatus"
+        }
+    ]
+}

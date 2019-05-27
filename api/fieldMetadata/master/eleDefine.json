@@ -1,0 +1,923 @@
+{
+  "code": 200,
+  "data": {
+    "content": {
+      "bookNo": {
+        "elementInfoCodes": [
+          "bookNo",
+          "bookCode"
+        ]
+      },
+      "standardDistance": {
+        "elementInfoCodes": [
+          "standardDistance",
+          "standardDistanceUnit"
+        ]
+      },
+      "select": {
+        "elementInfoCodes": [
+          "select"
+        ]
+      },
+      "goodsCategorySelect": {
+        "elementInfoCodes": [
+          "goodsCategorySelect",
+          "goodsCategoryName"
+        ]
+      },
+      "selectLogistics": {
+        "elementInfoCodes": [
+          "logisticsNo",
+          "logisticsHide"
+        ]
+      },
+      "popSelectInsurance": {
+        "elementInfoCodes": [
+          "popSelectInsuranceNo",
+          "popSelectInsuranceHide",
+          "popSelectInsuranceDialog"
+        ]
+      },
+      "popSelectSupply": {
+        "elementInfoCodes": [
+          "popSelectSupplyName",
+          "popSelectSupplyHide",
+          "popSelectSupplyDialog"
+        ]
+      },
+      "popSelectDriver": {
+        "elementInfoCodes": [
+          "popSelectDriverName",
+          "popSelectDriverHide",
+          "popSelectDriverDialog",
+          "popSelectDriverPlatformCodeHide"
+        ]
+      },
+       "popSelectPerson": {
+        "elementInfoCodes": [
+          "popSelectDriverName",
+          "popSelectDriverHide",
+          "popSelectDriverDialog"
+        ]
+      },
+      "textarea": {
+        "elementInfoCodes": [
+          "textarea"
+        ]
+      },
+      "freightNo": {
+        "elementInfoCodes": [
+          "freightNo",
+          "freightCode"
+        ]
+      },
+      "truckQty": {
+        "elementInfoCodes": [
+          "truckQtyNumber",
+          "truckQtyUnit"
+        ]
+      },
+      "number": {
+        "elementInfoCodes": [
+          "number"
+        ]
+      },
+      "popSelectContract": {
+        "elementInfoCodes": [
+          "popSelectContractNo",
+          "popSelectContractHide",
+          "popSelectContractDialog"
+        ]
+      },
+      "popSelectgEmployeeContract": {
+        "elementInfoCodes": [
+          "popSelectEmployeeContractNo",
+          "popSelectEmployeeContractHide",
+          "popSelectEmployeeContractDialog"
+        ]
+      },
+      "chargeItemPrice": {
+        "elementInfoCodes": [
+          "chargeItemPrice",
+          "chargeItemPriceHide"
+        ]
+      },
+      "selectTrailer": {
+        "elementInfoCodes": [
+          "trailerName",
+          "trailerHide"
+        ]
+      },
+      "text": {
+        "elementInfoCodes": [
+          "text"
+        ]
+      },
+      "popSelectSelf": {
+        "elementInfoCodes": [
+          "popSelectSelfNo",
+          "popSelectSelfHide",
+          "popSelectSelfDialog"
+        ]
+      },
+      "chargeItemNumber": {
+        "elementInfoCodes": [
+          "chargeItemNumber",
+          "chargeItemNumberHide"
+        ]
+      },
+      "popSelectLongPayableBill": {
+        "elementInfoCodes": [
+          "popSelectLongPayableBillNo",
+          "popSelectLongPayableBillHide",
+          "popSelectLongPayableBillDialog"
+        ]
+      },
+      "popSelectReceivableBill": {
+        "elementInfoCodes": [
+          "popSelectReceivableBillNo",
+          "popSelectReceivableBillHide",
+          "popSelectReceivableBillDialog"
+        ]
+      },
+      "truckLongLink": {
+        "elementInfoCodes": [
+          "truckLongLinkNo",
+          "truckLongLinkCode"
+        ]
+      },
+      "standardTime": {
+        "elementInfoCodes": [
+          "standardTime",
+          "standardTimeUnit"
+        ]
+      },
+      "popSelectPartner": {
+        "elementInfoCodes": [
+          "popSelectPartnerName",
+          "popSelectPartnerHide",
+          "popSelectPartnerDialog",
+          "popSelectPartnerPlatformCodeHide"
+        ]
+      },
+      "popSelectGoods": {
+        "elementInfoCodes": [
+          "popSelectGoodsName",
+          "popSelectGoodsHide",
+          "popSelectGoodsDialog"
+        ]
+      },
+      "popSelectGoodsCategory": {
+        "elementInfoCodes": [
+          "popSelectGoodsCategoryName",
+          "popSelectGoodsCategoryHide",
+          "popSelectGoodsCategoryDialog"
+        ]
+      },
+      "popSelectTruckTrailer": {
+        "elementInfoCodes": [
+          "popSelectTruckTrailerNo",
+          "popSelectTruckTrailerHide",
+          "popSelectTruckTrailerDialog"
+        ]
+      },
+      "popSelectClientRates": {
+        "elementInfoCodes": [
+          "popSelectClientRatesDialog"
+        ]
+      },
+      "goodsPrice": {
+        "elementInfoCodes": [
+          "goodsPrice",
+          "goodsPriceUnit"
+        ]
+      },
+      "shortLogisticsLink": {
+        "elementInfoCodes": [
+          "shortLogisticsLinkNo",
+          "shortLogisticsLinkCode"
+        ]
+      },
+      "settleDriverFreight": {
+        "elementInfoCodes": [
+          "settleDriverFreight",
+          "settleDriverFreightUnit"
+        ]
+      },
+      "popSelectShortLogistics": {
+        "elementInfoCodes": [
+          "popSelectShortLogisticsNo",
+          "popSelectShortLogisticsHide",
+          "popSelectShortLogisticsDialog"
+        ]
+      },
+      "popSelectShortPayableBill": {
+        "elementInfoCodes": [
+          "popSelectShortPayableBillNo",
+          "popSelectShortPayableBillHide",
+          "popSelectShortPayableBillDialog"
+        ]
+      },
+      "cubage": {
+        "elementInfoCodes": [
+          "cubage",
+          "cubageUnit"
+        ]
+      },
+      "popSelectLongLogistics": {
+        "elementInfoCodes": [
+          "popSelectLongLogisticNo",
+          "popSelectLongLogisticsHide",
+          "popSelectLongLogisticsDialog"
+        ]
+      },
+      "dateRange": {
+        "elementInfoCodes": [
+          "startDateRange",
+          "dateRangeLabel",
+          "endDateRange"
+        ]
+      },
+
+      "multilevelpop": {
+        "elementInfoCodes": [
+          "multilevelpop"
+        ]
+      },
+      "commissionNo": {
+        "elementInfoCodes": [
+          "commissionNo",
+          "commissionCode"
+        ]
+      },
+      "popSelectBook": {
+        "elementInfoCodes": [
+          "popSelectBookNo",
+          "popSelectBookHide",
+          "popSelectBookDialog"
+        ]
+      },
+      "quoteType": {
+        "elementInfoCodes": [
+          "quoteTypeRadio",
+          "quoteTypePrice",
+          "quoteTypePriceUnit"
+        ]
+      },
+      "goodsLossType": {
+        "elementInfoCodes": [
+          "goodsLossTypeRadio",
+          "goodsLossTypePrice",
+          "goodsLossTypePriceUnit"
+        ]
+      },
+      "goodsLossTypeMore": {
+        "elementInfoCodes": [
+          "goodsLossTypeRadio",
+          "goodsLossTypePrice",
+          "goodsLossTypePriceUnit"
+        ]
+      },
+      "truckShortLink": {
+        "elementInfoCodes": [
+          "truckShorLinkNo",
+          "truckShorLinkCode"
+        ]
+      },
+      "goodsWeight": {
+        "elementInfoCodes": [
+          "goodsWeight",
+          "goodsWeightUnit"
+        ]
+      },
+      "assignGoodsWeight": {
+        "elementInfoCodes": [
+          "assignGoodsWeight",
+          "assignGoodsWeightUnit"
+        ]
+      },
+      "numberRange": {
+        "elementInfoCodes": [
+          "startNumberRange",
+          "numberRangeLabel",
+          "endNumberRange"
+        ]
+      },
+      "popSelectLongReceivableBill": {
+        "elementInfoCodes": [
+          "popSelectLongReceivableBillNo",
+          "popSelectLongReceivableBillHide",
+          "popSelectLongReceivableBillDialog"
+        ]
+      },
+      "pop": {
+        "elementInfoCodes": [
+          "pop"
+        ]
+      },
+      "file": {
+        "elementInfoCodes": [
+          "file"
+        ]
+      },
+      "files": {
+        "elementInfoCodes": [
+          "files"
+        ]
+      },
+      "popSelectPayableBill": {
+        "elementInfoCodes": [
+          "popSelectPayableBillNo",
+          "popSelectPayableBillHide",
+          "popSelectPayableBillDialog"
+        ]
+      },
+      "settleDriverPayment": {
+        "elementInfoCodes": [
+          "settleDriverPayment",
+          "settleDriverPaymentUnit"
+        ]
+      },
+      "checkbox": {
+        "elementInfoCodes": [
+          "checkbox"
+        ]
+      },
+      "selectWaybill": {
+        "elementInfoCodes": [
+          "waybillNo",
+          "waybillHide"
+        ]
+      },
+      "selectTruckTrailer": {
+        "elementInfoCodes": [
+          "truckTrailerName",
+          "truckTrailerHide"
+        ]
+      },
+      "settleGoodsLossReasonable": {
+        "elementInfoCodes": [
+          "settleGoodsLossReasonable",
+          "settleGoodsLossReasonableUnit"
+        ]
+      },
+      "listTrailerTruck": {
+        "elementInfoCodes": [
+          "listTrailerTruck",
+          "listTrailerTruckLicenseNo"
+        ]
+      },
+      "popSelectFreight": {
+        "elementInfoCodes": [
+          "popSelectFreightNo",
+          "popSelectFreightHide",
+          "popSelectFreightDialog"
+        ]
+      },
+      "popSelectLongTruck": {
+        "elementInfoCodes": [
+          "popSelectLongTruckCode",
+          "popSelectLongTruckHide",
+          "popSelectLongTruckDialog"
+        ]
+      },
+      "listDriver": {
+        "elementInfoCodes": [
+          "listDriver",
+          "listDriverPhone",
+          "listDriverFullName"
+        ]
+      },
+      "settleGoodsLossVolume": {
+        "elementInfoCodes": [
+          "settleGoodsLossVolume",
+          "settleGoodsLossVolumeUnit"
+        ]
+      },
+      "settleVolume": {
+        "elementInfoCodes": [
+          "settleVolume",
+          "settleVolumeUnit"
+        ]
+      },
+      "popSelectCompany": {
+        "elementInfoCodes": [
+          "popSelectCompanyName",
+          "popSelectCompanyHide",
+          "popSelectCompanyDialog"
+        ]
+      },
+      "hide": {
+        "elementInfoCodes": [
+          "hide"
+        ]
+      },
+      "truckLabel": {
+        "elementInfoCodes": [
+          "truckLabel",
+          "truckLabelHide"
+        ]
+      },
+      "totalMoneyAmount": {
+        "elementInfoCodes": [
+          "totalMoneyAmount",
+          "totalMoneyAmountUnit"
+        ]
+      },
+      "clientFreightPrice": {
+        "elementInfoCodes": [
+          "clientFreightPrice",
+          "clientFreightPriceUnit"
+        ]
+      },
+      "truckSize": {
+        "elementInfoCodes": [
+          "truckSize",
+          "truckSizeUnit"
+        ]
+      },
+      "date": {
+        "elementInfoCodes": [
+          "date"
+        ]
+      },
+      "popSelectRoute": {
+        "elementInfoCodes": [
+          "popSelectRouteName",
+          "popSelectRouteHide",
+          "popSelectRouteDialog"
+        ]
+      },
+      "goodsLoss": {
+        "elementInfoCodes": [
+          "goodsLossMethod",
+          "goodsLoss",
+          "goodsLossUnit"
+        ],
+        "event": "field1.$on(\"change\", function(val){field3.$emit(\"refresh\", {datasource: val});});"
+      },
+      "popSelectTruck": {
+        "elementInfoCodes": [
+          "popSelectTruckNo",
+          "popSelectTruckHide",
+          "popSelectTruckDialog"
+        ]
+      },
+      "chargeItemAmount": {
+        "elementInfoCodes": [
+          "chargeItemAmount",
+          "chargeItemAmountHide"
+        ]
+      },
+      "radio": {
+        "elementInfoCodes": [
+          "radio"
+        ]
+      },
+      "waybillMeterageType": {
+        "elementInfoCodes": [
+          "waybillMeterageType",
+          "waybillSettleMethod"
+        ]
+      },
+      "tag": {
+        "elementInfoCodes": [
+          "tag"
+        ]
+      },
+      "newTag": {
+        "elementInfoCodes": [
+          "newTag"
+        ]
+      },
+      "popSelectShortReceivableBill": {
+        "elementInfoCodes": [
+          "popSelectShortReceivableBillNo",
+          "popSelectShortReceivableBillHide"
+        ]
+      },
+      "mileage": {
+        "elementInfoCodes": [
+          "mileageNumber",
+          "mileageUnit"
+        ]
+      },
+      "logisticsLink": {
+        "elementInfoCodes": [
+          "logisticsLinkNo",
+          "logisticsLinkCode"
+        ]
+      },
+      "image": {
+        "elementInfoCodes": [
+          "image"
+        ]
+      },
+      "goodsLossRate": {
+        "elementInfoCodes": [
+          "goodsLossRateMethod",
+          "goodsLossRate",
+          "goodsLossRateUnit"
+        ]
+      },
+      "selectDriver": {
+        "elementInfoCodes": [
+          "driverName",
+          "driverHide"
+        ]
+      },
+      "telephone": {
+        "elementInfoCodes": [
+          "telephoneNo"
+        ]
+      },
+      "smallTicket": {
+        "elementInfoCodes": [
+          "smallTicketNo",
+          "smallTicketCode"
+        ]
+      },
+      "truckModel": {
+        "elementInfoCodes": [
+          "truckModelSelect"
+        ]
+      },
+      "taxRate": {
+        "elementInfoCodes": [
+          "taxRate",
+          "taxRateUnit"
+        ]
+      },
+      "selectRoute": {
+        "elementInfoCodes": [
+          "routeName",
+          "routeHide"
+        ]
+      },
+      "popSelectLogistics": {
+        "elementInfoCodes": [
+          "popSelectLogisticsNo",
+          "popSelectLogisticsHide",
+          "popSelectLogisticsDialog"
+        ]
+      },
+      "popSelectOutsourcingLogistics": {
+        "elementInfoCodes": [
+          "popSelectOutsourcingLogisticsNo",
+          "popSelectOutsourcingLogisticsHide",
+          "popSelectOutsourcingLogisticsDialog"
+        ]
+      },
+      "settleDriverExpense": {
+        "elementInfoCodes": [
+          "settleDriverExpense",
+          "settleDriverExpenseUnit"
+        ]
+      },
+      "popSelectLongDriver": {
+        "elementInfoCodes": [
+          "popSelectLongDriverName",
+          "popSelectLongDriverHide",
+          "popSelectLongDriverDialog"
+        ]
+      },
+      "driverReferPrice": {
+        "elementInfoCodes": [
+          "driverReferPrice",
+          "driverReferPriceUnit"
+        ]
+      },
+      "popSelectTransport": {
+        "elementInfoCodes": [
+          "popSelectTransportCode",
+          "popSelectTransportHide",
+          "popSelectTransportDialog",
+          "popSelectTransportPlatformCodeHide"
+        ]
+      },
+      "link": {
+        "elementInfoCodes": [
+          "link"
+        ]
+      },
+      "popSelectShortDriver": {
+        "elementInfoCodes": [
+          "popSelectShortDriverName",
+          "popSelectShortDriverHide",
+          "popSelectShortDriverDialog"
+        ]
+      },
+      "popSelectShortTruck": {
+        "elementInfoCodes": [
+          "popSelectShortTruckCode",
+          "popSelectShortTruckHide",
+          "popSelectShortTruckDialog"
+        ]
+      },
+      "popSelectFleet": {
+        "elementInfoCodes": [
+          "popSelectFleetName",
+          "popSelectFleetHide",
+          "popSelectFleetDialog"
+        ]
+      },
+      "settleLossDeduction": {
+        "elementInfoCodes": [
+          "settleLossDeduction",
+          "settleLossDeductionUnit"
+        ]
+      },
+      "popSelectBankAccount": {
+        "elementInfoCodes": [
+          "popSelectBankAccountNo",
+          "popSelectBankAccountHide",
+          "popSelectBankAccountDialog"
+        ]
+      },
+      "tyredeepWrinkles": {
+        "elementInfoCodes": [
+          "tyredeepWrinklesNumber",
+          "tyredeepWrinklesUnit"
+        ]
+      },
+      "selectTyre": {
+        "elementInfoCodes": [
+          "tyreNo",
+          "tyreCode"
+        ]
+      },
+      "popSelectTrailer": {
+        "elementInfoCodes": [
+          "popSelectTrailerNo",
+          "popSelectTrailerHide",
+          "popSelectTrailerDialog",
+          "popSelectTrailerPlatformCodeHide"
+        ]
+      },
+      "popSelectOrg": {
+        "elementInfoCodes": [
+          "popSelectOrgName",
+          "popSelectOrgHide",
+          "popSelectOrgDialog"
+        ]
+      },
+      "popSelectAssign": {
+        "elementInfoCodes": [
+          "popSelectAssignNo",
+          "popSelectAssignHide",
+          "popSelectAssignDialog"
+        ]
+      },
+      "goodsNum": {
+        "elementInfoCodes": [
+          "goodsNum",
+          "goodsNumUnit"
+        ]
+      },
+      "assignGoodsNum": {
+        "elementInfoCodes": [
+          "assignGoodsNum",
+          "assignGoodsNumUnit"
+        ]
+      },
+      "settleGrossProfit": {
+        "elementInfoCodes": [
+          "settleGrossProfit",
+          "settleGrossProfitUnit"
+        ]
+      },
+      "truckNoLink": {
+        "elementInfoCodes": [
+          "truckNoLinkNo",
+          "truckNoLinkCode"
+        ]
+      },
+      "driverPrice": {
+        "elementInfoCodes": [
+          "driverPrice",
+          "driverPriceUnit"
+        ]
+      },
+      "shortWaybillLink": {
+        "elementInfoCodes": [
+          "shortWaybillLinkNo",
+          "shortWaybillLinkCode"
+        ]
+      },
+      "selectRates": {
+        "elementInfoCodes": [
+          "ratesName",
+          "ratesNameHide"
+        ]
+      },
+      "autocomplete": {
+        "elementInfoCodes": [
+          "autocomplete"
+        ]
+      },
+      "goodsNameAutocomplete": {
+        "elementInfoCodes": [
+          "goodsNameAutocomplete",
+          "goodsNameCode"
+        ]
+      },
+      "commonText": {
+        "elementInfoCodes": [
+          "commonText",
+          "textHide",
+          "textHide",
+          "textHide",
+          "textHide"
+        ]
+      },
+      "wayBillLink": {
+        "elementInfoCodes": [
+          "wayBillLinkNo",
+          "wayBillLinkCode"
+        ]
+      },
+      "quoteLink": {
+        "elementInfoCodes": [
+          "quoteLinkNo",
+          "quoteLinkCode"
+        ]
+      },
+      "selectArea": {
+        "elementInfoCodes": [
+          "selectProvince",
+          "selectCity",
+          "selectCounty"
+        ]
+      },
+      "fanceRedius": {
+        "elementInfoCodes": [
+          "fanceRedius"
+        ]
+      },
+      "goodsVolume": {
+        "elementInfoCodes": [
+          "goodsVolume",
+          "goodsVolumeUnit"
+        ]
+      },
+      "assignGoodsVolume": {
+        "elementInfoCodes": [
+          "assignGoodsVolume",
+          "assignGoodsVolumeUnit"
+        ]
+      },
+      "transport": {
+        "elementInfoCodes": [
+          "truckLicenseNo",
+          "truckCode"
+        ]
+      },
+      "label": {
+        "elementInfoCodes": [
+          "label"
+        ]
+      },
+      "labelNumUnit": {
+        "elementInfoCodes": [
+          "labelNum",
+          "labelUnit"
+        ]
+      },
+      "popSelectClient": {
+        "elementInfoCodes": [
+          "popSelectClientName",
+          "popSelectClientHide",
+          "popSelectClientDialog"
+        ]
+      },
+      "selectCommissionNo": {
+        "elementInfoCodes": [
+          "selectCommissionNo",
+          "selectCommissionCode"
+        ]
+      },
+      "regTonnage": {
+        "elementInfoCodes": [
+          "regTonnage",
+          "regTonnageUnit"
+        ]
+      },
+      "money": {
+        "elementInfoCodes": [
+          "moneyAmount",
+          "moneyUnit"
+        ]
+      },
+      "orgTag": {
+        "elementInfoCodes": [
+          "orgTag"
+        ]
+      },
+      "popSelectRates": {
+        "elementInfoCodes": [
+          "popSelectRatesName",
+          "popSelectRatesHide",
+          "popSelectRatesDialog"
+        ]
+      },
+      "selectorgManagement": {
+        "elementInfoCodes": [
+          "orgManagementName",
+          "orgManagementHide"
+        ]
+      },
+      "selectPartner": {
+        "elementInfoCodes": [
+          "parnterName",
+          "partnerHide"
+        ]
+      },
+      "selectTruck": {
+        "elementInfoCodes": [
+          "truckName",
+          "truckHide"
+        ]
+      },
+      "belongDate": {
+        "elementInfoCodes": [
+          "belongDateYear",
+          "belongDateMonth"
+        ]
+      },
+      "listViceDriver": {
+        "elementInfoCodes": [
+          "listViceDriver",
+          "listViceDriverPhone",
+          "listViceDriverFullName"
+        ]
+      },
+      "labelTextInput": {
+        "elementInfoCodes": [
+          "text",
+          "label"
+        ]
+      },
+      "labelNumberInput": {
+        "elementInfoCodes": [
+          "number",
+          "label"
+        ]
+      },
+      "chargeItemNumberUnit": {
+        "elementInfoCodes": [
+          "chargeItemNumberUnit",
+          "chargeItemNumberHide"
+        ]
+      },
+      "settleSetting": {
+        "elementInfoCodes": [
+          "settleSettingNumber",
+          "settleSettingNumberUnit"
+        ]
+      },
+      "commissionNo": {
+        "elementInfoCodes": ["commissionNo", "commissionCode"]
+      },
+      "popSelectSupply": {
+        "elementInfoCodes": ["popSelectSupplyName", "popSelectSupplyHide", "popSelectSupplyDialog"]
+      },
+      "progress": {
+        "elementInfoCodes": ["progress"]
+      },
+      "status": {
+        "elementInfoCodes": ["status"]
+      },
+      "popSelectCraneCompany": {
+        "elementInfoCodes": [
+          "popSelectCraneCompanyName",
+          "popSelectCraneCompanyHide",
+          "popSelectCraneCompanyDialog",
+          "popSelectCraneCompanyPlatformCodeHide"
+        ]
+      },
+      "popSelectCraneDriver": {
+        "elementInfoCodes": [
+          "popSelectCraneDriverName",
+          "popSelectCraneDriverHide",
+          "popSelectCraneDriverDialog",
+          "popSelectCraneDriverPlatformCodeHide"
+        ]
+      },
+      "popSelectCraneLicense": {
+        "elementInfoCodes": [
+          "popSelectCraneLicenseName",
+          "popSelectCraneLicenseHide",
+          "popSelectCraneLicenseDialog",
+          "popSelectCraneLicensePlatformCodeHide"
+        ]
+      },
+      "listCraneDriver": {
+        "elementInfoCodes": [
+          "listCraneDriver",
+          "listCraneDriverPhone",
+          "listCraneDriverFullName"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "伙伴简称",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"orgName\",\"placeholder1\":\"请输入伙伴简称\"}",
+            "fieldConfigCode": "orgName"
+        }     
+    ]
+}

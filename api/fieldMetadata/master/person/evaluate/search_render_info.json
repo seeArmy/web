@@ -1,0 +1,18 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "运单号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"waybillNo\",\"field2\":\"code\",\"area\":\"base\",\"required\":\"true\",\"detailLinkVisiable\":\"true\"}",
+            "fieldConfigCode": "waybillNo"
+        },
+        {
+            "showName": "车牌号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"truckLicenseNo\",\"field2\":\"truckCode\",\"field3\":\"truckCode\",\"field4\":\"platformTruckCode\",\"area\":\"transporter\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入车牌号\",\"outputKey1\":\"transport\",\"outputKey3\":\"transport\",\"outputKey4\":\"transport\",\"inputKey1\":\"transport.mainTruckLicenseNo\",\"inputKey2\":\"transport.mainTruckCode\",\"inputKey4\":\"transport.mainTruckCode\"}",
+            "extendParams": "{\"detailLink\":[{\"key\":\"truckCode\",\"params\":\"platformTruckCode\"}],\"detailLinkUrl\":\"/truck/add.html?editable=false\",\"detailTitle\":\"clientOrgName\",\"detailTitle1\":\"车辆详情\"}",
+            "fieldConfigCode": "truckLicenseNo"
+        }
+    ]
+}

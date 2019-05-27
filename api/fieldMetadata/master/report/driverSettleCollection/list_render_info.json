@@ -1,0 +1,138 @@
+{
+  "code": 200,
+  "content": [
+
+    {
+      "showName": "司机姓名",
+      "elementCode": "popSelectPerson",
+      "extraParams": "{\"field1\":\"driverFullName\",\"field2\":\"driverCode\",\"field3\":\"driverCode\",\"area\":\"transporter\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入主驾姓名\",\"outputKey1\":\"driver\",\"outputKey3\":\"driver\",\"outputKey4\":\"driver\",\"inputKey1\":\"transport.driverFullName,driver.fullName\",\"inputKey2\":\"transport.driverCode,driver.code\",\"inputKey4\":\"transport.platformDriverCode,driver.userCode\"}",
+      "fieldConfigCode": "driverFullName"
+    },
+    {
+      "showName": "手机号",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"driverPhone\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "driverPhone"
+    },
+    {
+      "showName": "执行合同",
+      "elementCode": "popSelectgEmployeeContract",
+      "extraParams": "{\"field1\":\"driverContractName\",\"field2\":\"driverContractCode\",\"field3\":\"driverContractCode\",\"readonly1\":\"TRUE\",\"readonly3\":\"TRUE\",\"inputKey1\":\"transport.driverEmployeeContractName,driver.employeeContractName\",\"inputKey3\":\"transport.driverEmployeeContractCode,driver.employeeContractCode\"}",
+      "fieldConfigCode": "driverContractName"
+    },
+    {
+      "showName": "中介费",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"agencyFee\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "agencyFee"
+    },
+    {
+      "showName": "中介费合计",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"agencyFeeAmount\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "agencyFeeAmount"
+    },
+    {
+      "showName": "预提费用",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"accruedExpense\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "accruedExpense"
+    },
+    {
+      "showName": "预提费用合计",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"accruedExpenseAmount\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "accruedExpenseAmount"
+    },
+    {
+      "showName": "执行运单数",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"waybillNum\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "waybillNum"
+    },
+    {
+      "showName": "按车次结算",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"waybillNumSettle\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "waybillNumSettle"
+    },
+    {
+      "showName": "运单公里数",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"waybillDistance\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "waybillDistance"
+    },
+    {
+      "showName": "运单公里数结算",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"waybillDistanceSettle\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "waybillDistanceSettle"
+    },
+    {
+      "showName": "运单运输重量",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"waybillWeight\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "waybillWeight"
+    },
+    {
+      "showName": "按运输重量结算",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"waybillWeightSettle\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "waybillWeightSettle"
+    },
+    {
+      "showName": "顶班次数",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"replaceWork\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "replaceWork"
+    },
+    {
+      "showName": "顶班结算",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"replaceWorkSettle\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "replaceWorkSettle"
+    },
+    {
+      "showName": "补贴合计",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"allowancesAmount\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "allowancesAmount"
+    },
+    {
+      "showName": "试用期天数",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"robationPeriod\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "robationPeriod"
+    },
+    {
+      "showName": "试用期工资",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"robationPeriodAmount\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "robationPeriodAmount"
+    },
+    {
+      "showName": "请假天数",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"leaveNum\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "leaveNum"
+    },
+    {
+      "showName": "旷工天数",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"skipWorkNum\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "skipWorkNum"
+    },
+    {
+      "showName": "底薪",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"baseSalary\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "baseSalary"
+    },
+    {
+      "showName": "结算合计",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"settleAmount\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "settleAmount"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+#report {
+  .el-row {
+    height: 100%;
+  }
+  .report-block {
+    border: 1px solid $uiColor;
+    padding: 5%;
+    display: flex;
+    min-height: 100px;
+    background-color: rgba($uiColor, .5);
+    &__title {
+      &.success {
+        color: $successColor;
+      }
+      &.fail {
+        color: $warnColor;
+      }
+      font-weight: 800;
+      text-align: center;
+    }
+    &__info {
+      margin-left: 10%;
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      justify-content: center;
+      align-content: center;
+      &.success {
+        b{
+          color: $successColor;
+        }
+      }
+      &.fail {
+        b {
+          color: $warnColor;
+        }
+      }
+    }
+  }
+}
+
+.check-style {
+  &-circle {
+    width: 6vh;
+    height: 6vh;
+    border-style: solid;
+    border-width: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  &-unequal-width {
+    width: 20%;
+    height: 50%;
+    border-style: solid;
+    border-width: 0 5px 5px 0;
+    transform: rotate(45deg);
+  }
+  &-cross-width {
+    width: 80%;
+    display: inline-block;
+    position: relative;
+    &::before {
+      content: '';
+      width: inherit;
+      border-top-width: 5px;
+      border-top-style: solid;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    &::after {
+      content: '';
+      width: inherit;
+      border-top-width: 5px;
+      border-top-style: solid;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+
+}

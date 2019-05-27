@@ -1,0 +1,41 @@
+{
+  "code": 200,
+  "content": [
+    {
+      "showName": "货物名称",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"goodsName\",\"placeholder1\":\"\"}",
+      "fieldConfigCode": "goodsName"
+    },
+    {
+      "showName": "货物分类",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"goodsCategory\",\"default1\":\"\",\"readonly1\":\"\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"inputKey1\":\"goods.goodsCategoryName\",\"outputKey1\":\"goodsCategory\"}",
+      "fieldConfigCode": "goodsCategory"
+    },
+    {
+      "showName": "分配数量",
+      "elementCode": "assignGoodsNum",
+      "extraParams": "{\"field1\":\"assignGoodsNum\",\"field2\":\"assignGoodsNumUnitCode\",\"default2\":\"item\",\"optionsValue2\":[\"item\"],\"options2\":[\"件\"],\"neddSubtotal1\":\"TRUE\",\"checkRule1\":\"[0-9]{1,10}\",\"checkMsg1\":\"不超过10位的整数\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"10\",\"placeholder1\":\"请输入数量\"}",
+      "fieldConfigCode": "assignGoodsNum"
+    },
+    {
+      "showName": "分配重量",
+      "elementCode": "assignGoodsWeight",
+      "extraParams": "{\"field1\":\"assignGoodsWeight\",\"field2\":\"assignGoodsWeightUnitCode\",\"default2\":\"ton\",\"optionsValue2\":[\"ton\"],\"options2\":[\"吨\"],\"neddSubtotal1\":\"TRUE\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,4})?\",\"checkMsg1\":\"不超过15位（最多4位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入重量\"}",
+      "fieldConfigCode": "assignGoodsWeight"
+    },
+    {
+      "showName": "分配体积",
+      "elementCode": "assignGoodsVolume",
+      "extraParams": "{\"field1\":\"assignGoodsVolume\",\"field2\":\"assignGoodsVolumeUnitCode\",\"default2\":\"cube\",\"optionsValue2\":[\"cube\"],\"options2\":[\"方\"],\"neddSubtotal1\":\"TRUE\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,4})?\",\"checkMsg1\":\"不超过15位（最多4位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入体积\"}",
+      "fieldConfigCode": "assignGoodsVolume"
+    },
+    {
+      "showName": "备注",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"description\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\"}",
+      "fieldConfigCode": "description"
+    }
+  ]
+}

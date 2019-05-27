@@ -1,0 +1,65 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "车牌号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"truckLicenseNo\",\"required\":\"true\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入车牌号\"}",
+            "fieldConfigCode": "truckLicenseNo"
+        },
+        {
+            "showName": "认证状态",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"certStatus\",\"default1\":\"unauthenticated\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"TRUE\",\"optionsValue1\":[\"unauthenticated\",\"authenticating\",\"authenticated\",\"failed\"],\"options1\":[\"未认证\",\"认证中\",\"已认证\",\"认证失败\"]}",
+            "fieldConfigCode": "certStatus"
+        },
+        {
+            "showName": "分组",
+            "elementCode": "tag",
+            "extraParams": "{\"field1\":\"truckTag\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"6\"}",
+            "fieldConfigCode": "truckTag"
+        },
+        {
+            "showName": "车型",
+            "elementCode": "truckModel",
+            "extraParams": "{\"field1\":\"truckModelCode\",\"field2\":\"truckModelName\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\"请选择车型\"}",
+            "fieldConfigCode": "truckModelCode"
+        },
+        {
+            "showName": "载重",
+            "elementCode": "regTonnage",
+            "extraParams": "{\"field1\":\"regTonnage\",\"field2\":\"regTonnageUnitCode\",\"default2\":\"ton\",\"checkRule1\":\"[0-9]{1,6}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过9位（最多2位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"9\",\"placeholder1\":\"请输入车辆载重\"}",
+            "fieldConfigCode": "regTonnage"
+        },
+        {
+            "showName": "车长",
+            "elementCode": "truckSize",
+            "extraParams": "{\"field1\":\"truckLength\",\"field2\":\"truckLengthUnitCode\",\"default2\":\"meter\",\"checkRule1\":\"[0-9]{1,6}(\\\\.[0-9]{0,3})?\",\"checkMsg1\":\"不超过10位（最多3位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"10\",\"placeholder1\":\"请输入车辆长度\"}",
+            "fieldConfigCode": "truckLength"
+        },
+        {
+            "showName": "创建人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"creatorUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "creatorUser"
+        },
+        {
+            "showName": "创建时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "createTime"
+        },
+        {
+            "showName": "修改人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateUser"
+        },
+        {
+            "showName": "修改时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateTime"
+        }
+    ]
+}

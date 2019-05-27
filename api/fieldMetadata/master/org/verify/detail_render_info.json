@@ -1,0 +1,35 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "公司名称",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"orgName\",\"required\":\"true\",\"maxLength1\": 20,\"placeholder1\":\"请输入公司名称\"}",
+            "fieldConfigCode": "orgName"
+        },
+        {
+            "showName": "公司全称",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"orgFullName\",\"required\":\"true\",\"maxLength1\": 20,\"placeholder1\":\"请输入公司全称\"}",
+            "fieldConfigCode": "orgFullName"
+        },
+        {
+            "showName": "发证时间",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"businessLicenseIssuanceDate\",\"format1\":\"yyyy-MM-dd\"}",
+            "fieldConfigCode": "businessLicenseIssuanceDate"
+        },
+        {
+            "showName": "截止时间",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"businessLicenseExpirationDate\",\"format1\":\"yyyy-MM-dd\"}",
+            "fieldConfigCode": "businessLicenseExpirationDate"
+        },
+        {
+            "showName": "营业执照",
+            "elementCode": "file",
+            "extraParams": "{\"field1\":\"businessLicenseResourceCode\",\"required\":\"true\"}",
+            "fieldConfigCode": "businessLicenseResourceCode"
+        }
+    ]
+}

@@ -1,0 +1,232 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "进项系统号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"inputNo\",\"required\":\"false\",\"detailLinkVisiable\":\"true\"}",
+            "fieldConfigCode": "inputNo"
+        },
+        {
+            "showName": "发票类型",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"invoiceType\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"vat\",\"vatpecial\"],\"options1\":[\"增值税普通发票\",\"增值税专用发票\"]}",
+            "fieldConfigCode": "invoiceType"
+        },
+        {
+            "showName": "发票号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"invoiceNo\",\"required\":\"false\",\"detailLinkVisiable\":\"true\"}",
+            "fieldConfigCode": "invoiceNo"
+        },
+        {
+            "showName": "开票日期",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"invoiceTime\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "invoiceTime"
+        },
+        {
+            "showName": "收票日期",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"receiveInvoiceTime\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "receiveInvoiceTime"
+        },
+        {
+            "showName": "归属年月",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"attributionDate\",\"format1\":\"yyyy-MM\",\"area\":\"\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\"请选择归属年月\"}",
+            "fieldConfigCode": "attributionDate"
+        },
+        {
+            "showName": "购买方名称",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"payerOrgName\",\"field2\":\"payerOrgCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入购买方名称\",\"inputKey1\":\"payable.payerOrgName\",\"inputKey2\":\"payable.payerOrgCode\"}",
+            "fieldConfigCode": "payerOrgName"
+        },
+        {
+            "showName": "购买方纳税人识别号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"payerOrgTaxNumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入购买方纳税人识别号\"}",
+            "fieldConfigCode": "payerOrgTaxNumber"
+        },
+        {
+            "showName": "购买方地址",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"payerOrgAddress\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入购买方地址\"}",
+            "fieldConfigCode": "payerOrgAddress"
+        },
+        {
+            "showName": "购买方电话",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"payerOrgTelephone\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入购买方电话\"}",
+            "fieldConfigCode": "payerOrgTelephone"
+        },
+        {
+            "showName": "购买方开户行",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"payerOrgBankName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入购买方开户行\"}",
+            "fieldConfigCode": "payerOrgBankName"
+        },
+        {
+            "showName": "购买方银行账号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"payerOrgBankAccountNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入购买方银行账号\"}",
+            "fieldConfigCode": "payerOrgBankAccountNo"
+        },
+        {
+            "showName": "税目类型",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"vatType\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"transport\",\"agency\"],\"options1\":[\"运输费\",\"代理费\"]}",
+            "fieldConfigCode": "vatType"
+        },
+        {
+            "showName": "货物或服务",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"vatCategory\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入货物或服务\"}",
+            "fieldConfigCode": "vatCategory"
+        },
+        {
+            "showName": "规格型号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"vatModel\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入规格型号\"}",
+            "fieldConfigCode": "vatModel"
+        },
+        {
+            "showName": "单位",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"vatUnitName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入单位\"}",
+            "fieldConfigCode": "vatUnitName"
+        },
+        {
+            "showName": "数量",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"vatNumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入数量\"}",
+            "fieldConfigCode": "vatNumber"
+        },
+        {
+            "showName": "单价类型",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"vatPriceType\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"include\",\"exclude\"],\"options1\":[\"不含税运价\",\"含税运价\"]}",
+            "fieldConfigCode": "vatPriceType"
+        },
+        {
+            "showName": "单价",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"vatPrice\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入单价\"}",
+            "fieldConfigCode": "vatPrice"
+        },
+        {
+            "showName": "金额",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"vatAmount\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入金额\"}",
+            "fieldConfigCode": "vatAmount"
+        },
+        {
+            "showName": "税率",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"vatTaxRate\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入税率\"}",
+            "fieldConfigCode": "vatTaxRate"
+        },
+        {
+            "showName": "税额",
+            "elementCode": "taxRate",
+            "extraParams": "{\"field1\":\"vatTaxAmount\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入税额\"}",
+            "fieldConfigCode": "vatTaxAmount"
+        },
+        {
+            "showName": "不含税金额",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"excludeTaxAmount\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入不含税金额\"}",
+            "fieldConfigCode": "excludeTaxAmount"
+        },
+        {
+            "showName": "价税合计（大写）",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"capitalizedTotalAmount\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入价税合计（大写）\"}",
+            "fieldConfigCode": "capitalizedTotalAmount"
+        },
+        {
+            "showName": "价税合计（小写）",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"totalAmount\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入价税合计（小写）\"}",
+            "fieldConfigCode": "totalAmount"
+        },
+        {
+            "showName": "销售方公司名称",
+            "elementCode": "popSelectPartner",
+            "extraParams": "{\"field1\":\"payeeOrgName\",\"field2\":\"payeeOrgCode\",\"field3\":\"payeeOrgCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请选择客户名称\",\"outputKey1\":\"supply\",\"outputKey3\":\"supply\",\"inputKey1\":\"supply.orgFullName,payable.payeeOrgName\",\"inputKey2\":\"payable.payeeOrgCode,supply.code\"}",
+            "fieldConfigCode": "payeeOrgName"
+        },
+        {
+            "showName": "销售方纳税人识别号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"payeeOrgTaxNumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入销售方纳税人识别号\",\"inputKey1\":\"supply.taxNumber\"}",
+            "fieldConfigCode": "payeeOrgTaxNumber"
+        },
+        {
+            "showName": "销售方地址",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"payeeOrgAddress\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入销售方地址\",\"inputKey1\":\"supply.address\"}",
+            "fieldConfigCode": "payeeOrgAddress"
+        },
+        {
+            "showName": "销售方电话",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"payeeOrgTelephone\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入销售方电话\",\"inputKey1\":\"supply.linkmanPhone\"}",
+            "fieldConfigCode": "payeeOrgTelephone"
+        },
+        {
+            "showName": "销售方开户行",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"payeeOrgBankName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入销售方开户行\",\"inputKey1\":\"supply.bankName\"}",
+            "fieldConfigCode": "payeeOrgBankName"
+        },
+        {
+            "showName": "销售方银行账号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"payeeOrgBankAccountNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入销售方银行账号\",\"inputKey1\":\"supply.bankAccountNo\"}",
+            "fieldConfigCode": "payeeOrgBankAccountNo"
+        },
+        {
+            "showName": "描述",
+            "elementCode": "textarea",
+            "extraParams": "{\"field1\":\"description\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 200,\"placeholder1\":\"请输入描述\"}",
+            "fieldConfigCode": "description"
+        },
+        {
+            "showName": "账单总金额",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"payableAmount\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"inputKey1\":\"payable.payableAmount\"}",
+            "fieldConfigCode": "payableAmount"
+        },
+        {
+            "showName": "已收票金额",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"invoicedAmount\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"inputKey1\":\"payable.invoicedAmount\"}",
+            "fieldConfigCode": "invoicedAmount"
+        },
+        {
+            "showName": "剩余收票金额",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"remainderInvoiceAmount\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"inputKey1\":\"payable.remainderInvoiceAmount\"}",
+            "fieldConfigCode": "remainderInvoiceAmount"
+        },
+        {
+          "showName": "应付账单号",
+          "elementCode": "popSelectLongPayableBill",
+          "extraParams": {
+            "field1": "billNo",
+            "field2": "billCode",
+            "field3": "billCode",
+            "required": "false",
+            "detailLinkVisiable": "false",
+            "readonly1": "TRUE",
+            "outputKey1": "payable",
+            "outputKey3": "payable",
+            "inputKey1": "payable.billNo",
+            "inputKey2": "payable.code"
+          },
+          "fieldConfigCode": "longBillNo"
+        }
+    ]
+}

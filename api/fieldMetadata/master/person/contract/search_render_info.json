@@ -1,0 +1,16 @@
+{
+  "code": 200,
+  "content": [
+  {
+    "showName": "合同名称",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"contractName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入合约名称\"}",
+    "fieldConfigCode": "contractName"
+  },
+  {
+    "showName": "底薪",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"baseSalary\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "baseSalary"
+  }]
+}

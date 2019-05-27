@@ -1,0 +1,11 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "保险单号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"insurancePolicyNo\",\"placeholder1\":\"请输入保险单号\"}",
+            "fieldConfigCode": "insurancePolicyNo"
+        }
+    ]
+}

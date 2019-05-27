@@ -1,0 +1,23 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "车牌号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"truckLicenseNo\",\"placeholder1\":\"请输入车牌号匹配\"}",
+            "fieldConfigCode": "truckLicenseNo"
+        },
+        {
+            "showName": "轮胎号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"tyreNo\",\"placeholder1\":\"请输入轮胎号\"}",
+            "fieldConfigCode": "tyreNo"
+        },
+        {
+            "showName": "使用状态",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"status\",\"optionsValue1\":[\"inUse\",\"deactivated\",\"scrapped\"],\"options1\":[\"使用中\",\"已停用\",\"已报废\"]}",
+            "fieldConfigCode": "status"
+        }
+    ]
+}

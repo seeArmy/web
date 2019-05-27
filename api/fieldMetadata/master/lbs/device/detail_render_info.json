@@ -1,0 +1,35 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "设备名称",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"deviceName\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入设备名称\"}",
+            "fieldConfigCode": "deviceName"
+        },
+        {
+            "showName": "设备编号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"deviceNo\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入设备编号\"}",
+            "fieldConfigCode": "deviceNo"
+        },
+        {
+            "showName": "车牌号",
+            "elementCode": "popSelectTruck",
+            "extraParams": "{\"field1\":\"truckLicenseNo\",\"field2\":\"truckCode\",\"field3\":\"truckCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入车牌号匹配\",\"outputKey1\":\"truck\",\"outputKey3\":\"truck\",\"inputKey1\":\"truck.truckLicenseNo\",\"inputKey2\":\"truck.code\"}",
+            "fieldConfigCode": "truckLicenseNo"
+        },
+        {
+            "showName": "流量卡号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"simCardNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入流量卡号\"}",
+            "fieldConfigCode": "simCardNo"
+        },
+        {
+            "showName": "有效期至",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"expiryDate\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "expiryDate"
+        }
+    ]
+}

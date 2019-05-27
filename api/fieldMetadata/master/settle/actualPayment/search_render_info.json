@@ -1,0 +1,17 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "收款方",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"carrierOrgName\",\"placeholder1\":\"请输入收款方\"}",
+            "fieldConfigCode": "carrierOrgName"
+        },
+        {
+            "showName": "付款时间",
+            "elementCode": "dateRange",
+            "extraParams": "{\"field1\":\"from_operateTime\",\"field3\":\"to_operateTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"format3\":\"yyyy-MM-dd HH:mm:ss\",\"placeholder2\":\"到\",\"default2\":\"到\"}",
+            "fieldConfigCode": "operateTime"
+        }
+    ]
+}

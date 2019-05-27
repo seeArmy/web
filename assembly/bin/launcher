@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+APP_NAME="rltx-webpack-qlh"
+APP_ARGS=""
+
+
+APP_OUTPUT_PATH="/opt/logs/$APP_NAME"
+APP_CONSOLE_LOG="$APP_OUTPUT_PATH/console.log"
+
+
+PROJECT_HOME=`pwd`
+
+mkdir -p ${APP_OUTPUT_PATH}
+
+SBIN=${PROJECT_HOME}/sbin/${APP_NAME}
+
+APP_ARGS="-addr=:8088 -webroot=$PROJECT_HOME/webroot"
+
+CMD="$SBIN $APP_ARGS >> $APP_CONSOLE_LOG 2>&1 &"
+
+eval ${CMD}

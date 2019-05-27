@@ -1,0 +1,17 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "车牌号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"truckLicenseNo\",\"placeholder1\":\"请输入车牌号匹配\"}",
+            "fieldConfigCode": "truckLicenseNo"
+        },
+        {
+            "showName": "险种类型",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"insuranceType\",\"optionsValue1\":[\"TCI\",\"VCI\",\"CLI\"],\"options1\":[\"交强险\",\"商业险\",\"承运人货物险\"]}",
+            "fieldConfigCode": "insuranceType"
+        }
+    ]
+}

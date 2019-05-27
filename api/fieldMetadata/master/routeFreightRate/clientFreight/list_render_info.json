@@ -1,0 +1,95 @@
+{
+  "code": 200,
+  "content": [
+  {
+    "showName": "客户运价单号",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"ratesSystemNo\",\"required\":\"true\",\"detailLinkVisiable\":\"true\"}",
+    "fieldConfigCode": "ratesSystemNo"
+  },
+  {
+    "showName": "状态",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"ratesApproveStatus\",\"required\":\"FALSE\",\"detailLinkVisiable\":\"FALSE\",\"optionsValue1\":[\"ready\",\"pend\",\"accept\",\"reject\",\"end\"],\"options1\":[\"待申请\",\"待审核\",\"审批通过\" ,\"审批不通过\",\"已结束\"]}",
+    "fieldConfigCode": "ratesApproveStatus"
+  },
+  {
+    "showName": "客户",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"partnerName\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "partnerName"
+  },
+  {
+    "showName": "线路",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"routeName\",\"readonly1\":\"TRUE\",\"field2\":\"routeCode\",\"field3\":\"routeCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入线路名称\",\"outputKey1\":\"route\",\"outputKey3\":\"route\",\"inputKey1\":\"rates.routeName,route.routeName\",\"inputKey2\":\"route.code,rates.routeCode\"}",
+    "fieldConfigCode": "routeName"
+  },
+  {
+    "showName": "货物名称",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"goodsName\",\"required\":\"FALSE\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入货品\",\"inputKey1\":\"logistics.goodsName\"}",
+    "fieldConfigCode": "goodsName"
+  },
+  {
+      "showName": "运价",
+      "elementCode": "clientFreightPrice",
+      "extraParams": "{\"field1\":\"freightPrice\",\"field2\":\"freightPriceUnitCode\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过13位（最多2位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"13\",\"placeholder1\":\"请输入客户运价\",\"inputKey1\":\"rates.clientFreightRate\",\"inputKey2\":\"rates.clientFreightRateUnitCode\"}",
+      "fieldConfigCode": "freightPrice"
+  },
+  {
+    "showName": "结算方式",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"clientSettleMethod\",\"required\":\"FALSE\",\"detailLinkVisiable\":\"FALSE\",\"optionsValue1\":[\"loadingweight\",\"unloadingweight\",\"smaller\",\"bigger\",\"trucknumber\"],\"options1\":[\"按发货货量\",\"按收货货量\",\"发货与收货两者取小\",\"发货与收货两者取大\",\"按车次\"]}",
+    "fieldConfigCode": "clientSettleMethod"
+  },
+  {
+    "showName": "运价开始时间",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"effectiveStartDate\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "effectiveStartDate"
+  },
+  {
+    "showName": "运价截止时间",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"effectiveEndDate\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "effectiveEndDate"
+  },
+  {
+    "showName": "备注",
+    "elementCode": "textarea",
+    "extraParams": "{\"field1\":\"description\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入备注\"}",
+    "fieldConfigCode": "description"
+  },
+  {
+    "showName": "审核备注",
+    "elementCode": "textarea",
+    "extraParams": "{\"field1\":\"ratesApproveDescription\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入备注\"}",
+    "fieldConfigCode": "ratesApproveDescription"
+  },
+  {
+    "showName": "创建人",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"creatorUsername\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "creatorUsername"
+  },
+  {
+    "showName": "创建时间",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "createTime"
+  },
+  {
+    "showName": "修改人",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"updateUsername\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "updateUsername"
+  },
+  {
+    "showName": "修改时间",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"updateTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "updateTime"
+  }
+  ]
+}

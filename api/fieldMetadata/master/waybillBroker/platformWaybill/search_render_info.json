@@ -1,0 +1,102 @@
+{
+  "code": 200,
+  "content": [
+    {
+      "showName": "运单号",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"waybillNo\",\"field2\":\"code\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"true\"}",
+      "fieldConfigCode": "waybillNo"
+    },
+    {
+      "showName": "运单状态",
+      "elementCode": "select",
+      "extraParams": "{\"field1\":\"waybillStatus\",\"default1\":\"unloading\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"unloading\",\"going\",\"finish\"],\"options1\":[\"待发货\",\"运输中\",\"运输完成\"]}",
+      "fieldConfigCode": "waybillStatus"
+    },
+     {
+      "showName": "合规状态",
+      "elementCode": "select",
+      "extraParams": "{\"field1\":\"complianceStatus\",\"default1\":\"\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"yes\",\"no\",\"pend\"],\"options1\":[\"合规\",\"不合规\",\"待确认\"],\"readonly1\":\"false\"}",
+      "fieldConfigCode": "complianceStatus"
+    },
+    {
+      "showName": "单车结算状态",
+      "elementCode": "select",
+      "extraParams": "{\"field1\":\"settleStatus\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"unsettle\",\"pass\",\"settle\"],\"options1\":[\"未结算\",\"结算通过\",\"暂不结算，保存信息\"]}",
+      "fieldConfigCode": "settleStatus"
+    },
+    {
+      "showName": "支付状态",
+      "elementCode": "select",
+      "extraParams": "{\"field1\":\"settlePaymentPayStatus\",\"default1\":\"\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"uncreated\",\"pend\",\"paid\",\"cancel\"],\"options1\":[\"未创建\",\"待支付\",\"已支付\",\"支付失败\",\"支付取消\"],\"readonly1\":\"false\"}",
+      "fieldConfigCode": "settlePaymentPayStatus"
+    },
+    {
+      "showName": "上报运单状态",
+      "elementCode": "select",
+      "extraParams": "{\"field1\":\"reportStatus\",\"default1\":\"\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"uncreated\",\"undo\",\"reported\"],\"options1\":[\"未创建\",\"未上报\",\"已上报\"],\"readonly1\":\"false\"}",
+      "fieldConfigCode": "reportStatus"
+    },
+
+    {
+      "showName": "上报运费状态",
+      "elementCode": "select",
+      "extraParams": "{\"field1\":\"reportCapitalStatus\",\"default1\":\"\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"uncreated\",\"undo\",\"reported\"],\"options1\":[\"未创建\",\"未上报\",\"已上报\"],\"readonly1\":\"false\"}",
+      "fieldConfigCode": "reportCapitalStatus"
+    },
+    {
+      "showName": "车牌号",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"truckLicenseNo\",\"area\":\"transporter\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"\",\"placeholder1\":\"请输入车牌号\"}",
+      "fieldConfigCode": "truckLicenseNo"
+    },
+    {
+      "showName": "主驾",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"driverFullName\",\"area\":\"transporter\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"\",\"placeholder1\":\"请输入主驾姓名\"}",
+      "fieldConfigCode": "driverFullName"
+    },
+    {
+      "showName": "运单原始托运方",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"originalConsignOrgName\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"readonly1\":\"\",\"placeholder1\":\"请输入运单原始托运方\"}",
+      "fieldConfigCode": "originalConsignOrgName"
+    },
+    {
+      "showName": "运单托运方",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"consignOrgName\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"readonly1\":\"\",\"placeholder1\":\"请输入运单托运方\"}",
+      "fieldConfigCode": "consignOrgName"
+    },
+    {
+      "showName": "线路名称",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"routeName\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"\",\"placeholder1\":\"请输入专线\"}",
+      "fieldConfigCode": "routeName"
+    },
+    {
+      "showName": "调车模式",
+      "elementCode": "select",
+      "extraParams": "{\"field1\":\"scheduleType\",\"default1\":\"self\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"self\",\"platform\"],\"options1\":[\"自助调车\",\"委托调车\"]}",
+      "fieldConfigCode": "scheduleType"
+    },
+    {
+      "showName": "发货时间",
+      "elementCode": "dateRange",
+      "extraParams": {"field1":"from_loadingTime","field3":"to_loadingTime","format1":"yyyy-MM-dd HH:mm:ss","format3":"yyyy-MM-dd HH:mm:ss","placeholder2":"到","default2":"到"},
+      "fieldConfigCode": "loadingTime"
+    },
+     {
+      "showName": "收货时间",
+      "elementCode": "dateRange",
+      "extraParams": {"field1":"from_unloadingTime","field3":"to_unloadingTime","format1":"yyyy-MM-dd HH:mm:ss","format3":"yyyy-MM-dd HH:mm:ss","placeholder2":"到","default2":"到"},
+      "fieldConfigCode": "unloadingTime"
+    },
+     {
+      "showName": "创建时间",
+      "elementCode": "dateRange",
+      "extraParams": {"field1":"from_createTime","field3":"to_createTime","format1":"yyyy-MM-dd HH:mm:ss","format3":"yyyy-MM-dd HH:mm:ss","placeholder2":"到","default2":"到"},
+      "fieldConfigCode": "createTime"
+    }
+  ]
+}

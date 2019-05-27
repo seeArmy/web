@@ -1,0 +1,168 @@
+{
+  "code": 200,
+  "content": [
+  {
+    "showName": "公司全称",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"orgFullName\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入公司全称\"}",
+    "fieldConfigCode": "orgFullName"
+  },
+  {
+    "showName": "公司简称",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"orgName\",\"required\":\"true\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入公司简称\"}",
+    "fieldConfigCode": "orgName"
+  },
+  {
+    "showName": "组织类型",
+    "elementCode": "select",
+    "extraParams": "{\"field1\":\"orgType\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"1\",\"2\",\"3\"],\"options1\":[\"运营方\",\"承运方\",\"托运方\"]}",
+    "fieldConfigCode": "orgType"
+  },
+  {
+    "showName": "认证状态",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"certStatus\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"unauthenticated\",\"authenticating\",\"authenticated\",\"failed\"],\"options1\":[\"未认证\",\"认证中\",\"已认证\",\"认证失败\"]}",
+    "fieldConfigCode": "certStatus"
+  },
+  {
+    "showName": "纳税人识别号",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"taxNumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入纳税人识别号\"}",
+    "fieldConfigCode": "orgTaxNumber"
+  },
+  {
+    "showName": "纳税人资质",
+    "elementCode": "select",
+    "extraParams": "{\"field1\":\"taxType\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"general\",\"small\"],\"options1\":[\"一般纳税人\",\"小规模纳税人\"]}",
+    "fieldConfigCode": "taxType"
+  },
+  {
+    "showName": "营业执照附件",
+    "elementCode": "file",
+    "extraParams": "{\"field1\":\"businessLicenseResourceCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"dialogPreview\":\"TRUE\"}",
+    "fieldConfigCode": "businessLicenseResourceCode"
+  },
+  {
+    "showName": "统一信用代码",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"creditCode\",\"required\":\"false\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入信用代码\"}",
+    "fieldConfigCode": "creditCode"
+  },
+  {
+    "showName": "执照过期日期",
+    "elementCode": "date",
+    "extraParams": "{\"field1\":\"businessLicenseExpirationDate\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd\"}",
+    "fieldConfigCode": "businessLicenseExpirationDate"
+  },
+  {
+    "showName": "道路运输经营许可证附件",
+    "elementCode": "file",
+    "extraParams": "{\"field1\":\"transportCertificateResourceCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"dialogPreview\":\"TRUE\"}",
+    "fieldConfigCode": "transportCertificateResourceCode"
+  },
+  {
+    "showName": "许可证号码",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"transportCertificate\",\"required\":\"false\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入许可证号码\"}",
+    "fieldConfigCode": "transportCertificate"
+  },
+  {
+    "showName": "证件过期日期",
+    "elementCode": "date",
+    "extraParams": "{\"field1\":\"transportCertificateExpirationDate\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd\"}",
+    "fieldConfigCode": "transportCertificateExpirationDate"
+  },
+  {
+    "showName": "外部编码",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"orgExternalNo\",\"placeholder1\":\"请输入外部编码\"}",
+    "fieldConfigCode": "orgExternalNo"
+  },
+  {
+    "showName": "业务联系人",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"linkmanFullName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入联系人\"}",
+    "fieldConfigCode": "linkmanFullName"
+  },
+  {
+    "showName": "联系电话",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"linkmanPhone\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入联系电话\"}",
+    "fieldConfigCode": "linkmanPhone"
+  },
+  {
+    "showName": "所在地区",
+    "elementCode": "selectArea",
+    "extraParams": "{\"field1\":\"province\",\"field2\":\"city\",\"field3\":\"county\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "orgArea"
+  },
+  {
+    "showName": "详细地址",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"address\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入详细地址\"}",
+    "fieldConfigCode": "orgAddress"
+  },
+  {
+    "showName": "交易费",
+    "elementCode": "settleSetting",
+    "extraParams":
+    {
+      "field1": "settleTradingConfigValue",
+      "field2": "settleTradingConfigUnitCode",
+      "checkRule1": "\\d{1,6}\\.?\\d{0,3}",
+      "checkMsg1": "请输入合理的值，最多输入三位小数",
+      "required": "false",
+      "detailLinkVisiable": "false",
+      "placeholder1": "请输入交易费",
+      "optionsValue2": ["%", "yuan"],
+      "options2": ["%", "元"],
+      "inputKey1": "partner.settleConfigValue4,logistics.settleConfigValue4",
+      "inputKey2": "partner.settleConfigUnitCode4,logistics.settleConfigUnitCode4"
+    },
+    "fieldConfigCode": "settleTradingConfigValue"
+  },
+  {
+    "showName": "运杂费标准",
+    "elementCode": "settleSetting",
+    "extraParams":
+    {
+      "field1": "settleConfigValue4",
+      "field2": "settleConfigUnitCode4",
+      "checkRule1": "\\d{1,6}\\.?\\d{0,3}",
+      "checkMsg1": "请输入合理的值，最多输入三位小数",
+      "required": "false",
+      "detailLinkVisiable": "false",
+      "placeholder1": "请输入运杂费",
+      "optionsValue2": ["%", "yuan"],
+      "options2": ["%", "元"],
+      "inputKey1": "partner.settleConfigValue4,logistics.settleConfigValue4",
+      "inputKey2": "partner.settleConfigUnitCode4,logistics.settleConfigUnitCode4"
+    },
+    "fieldConfigCode": "settleConfigValue4"
+  },
+  {
+    "showName": "代理人",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"businessAgent\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入代理人\"}",
+    "fieldConfigCode": "businessAgent"
+  },
+  {
+    "showName": "法人代表姓名",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"legalPersonName\",\"placeholder1\":\"请输入法人代表姓名\"}",
+    "fieldConfigCode": "legalPersonName"
+  },
+  {
+      "showName": "法人代表身份证号",
+      "elementCode": "text",
+      "extraParams": {"field1":"legalPersonIdentityNumber","checkRule1":"([0-9Xx]{15})([0-9Xx]{3})?","checkMsg1":"请输入正确的身份证号","required":"false","detailLinkVisiable":"false","maxLength1":"18","placeholder1":"请输入法人代表身份证号"},
+      "fieldConfigCode": "legalPersonIdentityNumber"
+  },
+  {
+      "showName": "法人代表身份证附件",
+      "elementCode": "file",
+      "extraParams": {"field1":"legalPersonResourceCode","required":"false","detailLinkVisiable":"false","dialogPreview":"TRUE"},
+      "fieldConfigCode": "legalPersonResourceCode"
+  }]
+}

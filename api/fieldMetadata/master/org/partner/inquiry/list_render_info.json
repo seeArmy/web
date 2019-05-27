@@ -1,0 +1,28 @@
+{
+  "code": 200,
+  "content": [
+  {
+    "showName": "承运商名称",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"orgName\",\"required\":\"true\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"50\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入伙伴简称\"}",
+    "fieldConfigCode": "orgName"
+  },
+  {
+    "showName": "业务联系人",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"linkmanFullName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入联系人\"}",
+    "fieldConfigCode": "linkmanFullName"
+  },
+  {
+    "showName": "联系电话",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"linkmanPhone\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入联系电话\"}",
+    "fieldConfigCode": "linkmanPhone"
+  },
+  {
+    "showName": "分组",
+    "elementCode": "tag",
+    "extraParams": "{\"field1\":\"orgTag\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"6\"}",
+    "fieldConfigCode": "orgTag"
+  }]
+}

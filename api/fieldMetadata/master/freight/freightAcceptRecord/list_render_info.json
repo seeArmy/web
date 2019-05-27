@@ -1,0 +1,53 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "车牌号",
+            "elementCode": "popSelectTransport",
+            "extraParams": "{\"field1\":\"truckLicenseNo\",\"field2\":\"platformTruckCode\",\"field3\":\"platformTruckCode\",\"field4\":\"platformTruckCode\",\"required\":\"FALSE\",\"detailLinkVisiable\":\"FALSE\",\"showIcon1\":\"true\"}",
+            "fieldConfigCode": "truckLicenseNo"
+        },
+        {
+            "showName": "派车状态",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"driverAcceptStatus\",\"default1\":\"undispatched\",\"required\":\"FALSE\",\"detailLinkVisiable\":\"FALSE\",\"optionsValue1\":[\"undispatched\",\"dispatched\",\"ignored\",\"comfirmed\",\"canceled\"],\"options1\":[\"司机已接,待派车\",\"已派车\" ,\"已忽略\",\"已派车\",\"司机,已取消\"]}",
+            "fieldConfigCode": "driverAcceptStatus"
+        },
+        {
+            "showName": "司机运价",
+            "elementCode": "driverPrice",
+            "extraParams": "{\"field1\":\"driverPrice\",\"field2\":\"driverPriceUnitCode\",\"required\":\"FALSE\",\"detailLinkVisiable\":\"FALSE\"}",
+            "fieldConfigCode": "driverPrice"
+        },
+        {
+            "showName": "司机姓名",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"driverFullName\",\"field2\":\"driverCode\",\"required\":\"FALSE\",\"detailLinkVisiable\":\"FALSE\",\"showIcon1\":\"true\"}",
+            "fieldConfigCode": "driverFullName"
+        },
+        {
+            "showName": "司机手机号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"driverPhone\",\"required\":\"FALSE\",\"detailLinkVisiable\":\"FALSE\"}",
+            "fieldConfigCode": "driverPhone"
+        },
+        {
+            "showName": "动力类型",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"truckPowerType\",\"required\":\"FALSE\",\"detailLinkVisiable\":\"FALSE\",\"optionsValue1\":[\"gas\",\"oil\"],\"options1\":[\"气车\",\"油车\"]}",
+            "fieldConfigCode": "truckPowerType"
+        },
+        {
+            "showName": "车长",
+            "elementCode": "truckSize",
+            "extraParams": "{\"field1\":\"truckLength\",\"field2\":\"truckLengthUnitCode\",\"required\":\"FALSE\",\"detailLinkVisiable\":\"FALSE\"}",
+            "fieldConfigCode": "truckLength"
+        },
+        {
+            "showName": "接货时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"FALSE\",\"detailLinkVisiable\":\"FALSE\"}",
+            "fieldConfigCode": "createTime"
+        }
+    ]
+}

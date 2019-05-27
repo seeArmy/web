@@ -1,0 +1,17 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "姓名",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"fullName\",\"placeholder1\":\"请输入姓名\"}",
+            "fieldConfigCode": "fullName"
+        },
+        {
+            "showName": "手机号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"phone\",\"placeholder1\":\"请输入手机号\"}",
+            "fieldConfigCode": "phone"
+        }
+    ]
+}

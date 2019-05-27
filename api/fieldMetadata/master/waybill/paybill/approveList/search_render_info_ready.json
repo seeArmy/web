@@ -1,0 +1,53 @@
+{
+  "code": 200,
+  "content": [
+    {
+      "showName": "运单号",
+      "elementCode": "wayBillLink",
+      "extraParams": {"field1":"waybillNo","field2":"waybillCode"},
+      "fieldConfigCode": "waybillNo"
+    },
+    {
+      "showName": "审核状态",
+      "elementCode": "select",
+      "extraParams":
+      {
+        "field1": "settlePaymentApproveStatus",
+        "detailLinkVisiable": "false",
+        "options1": ["待申请", "待审核", "审核通过", "审核不通过"],
+        "optionsValue1": ["ready", "pend", "accept", "reject"]
+      },
+      "fieldConfigCode": "settlePaymentApproveStatus"
+    },
+      {
+      "showName": "车牌号",
+      "elementCode": "text",
+      "extraParams": {"field1":"truckLicenseNo","detailLinkVisiable":"false"},
+      "fieldConfigCode": "truckLicenseNo"
+    },
+    {
+      "showName": "收款人",
+      "elementCode": "text",
+      "extraParams": {"field1":"driverFullName","detailLinkVisiable":"false"},
+      "fieldConfigCode": "driverFullName"
+    },
+    {
+      "showName": "客户",
+      "elementCode": "text",
+      "extraParams": {"field1":"clientOrgName","detailLinkVisiable":"false"},
+      "fieldConfigCode": "clientOrgName"
+    },
+     {
+      "showName": "线路",
+      "elementCode": "text",
+      "extraParams": {"field1":"routeName","detailLinkVisiable":"false"},
+      "fieldConfigCode": "routeName"
+    },
+    {
+      "showName": "结算通过时间",
+      "elementCode": "dateRange",
+      "extraParams": "{\"field1\":\"from_settleTime\",\"field3\":\"to_settleTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"format3\":\"yyyy-MM-dd HH:mm:ss\",\"default2\":\"到\"}",
+      "fieldConfigCode": "settleTime"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "线路名称",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"routeName\",\"placeholder1\":\"请输入线路名称\"}",
+            "fieldConfigCode": "routeName"
+        },
+        {
+            "showName": "发货单位",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"loadingOrgName\",\"placeholder1\":\"请输入发货单位\"}",
+            "fieldConfigCode": "loadingOrg"
+        },
+        {
+            "showName": "收货单位",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"unloadingOrgName\",\"placeholder1\":\"请输入收货单位\"}",
+            "fieldConfigCode": "unloadingOrg"
+        }
+    ]
+}

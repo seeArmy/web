@@ -1,0 +1,17 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "承运方",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"ownerOrgName\",\"placeholder1\":\"请输入承运方名称\"}",
+            "fieldConfigCode": "ownerOrgName"
+        },
+        {
+            "showName": "下单状态",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"quoteStatus\",\"required\":\"FALSE\",\"detailLinkVisiable\":\"FALSE\",\"optionsValue1\":[\"pend\",\"ordered\",\"ignore\",\"carrierCancel\",\"carrierReject\"],\"options1\":[\"待下单\",\"已下单\",\"已忽略下单\" ,\"承运方已取消\",\"承运方已拒绝\"]}",
+            "fieldConfigCode": "quoteStatus"
+        }
+    ]
+}

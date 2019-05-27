@@ -1,0 +1,83 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "线路名称",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"routeName\",\"required\":\"true\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入线路名称\"}",
+            "fieldConfigCode": "routeName"
+        },
+        {
+            "showName": "发货单位",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"loadingOrgName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入发货单位\"}",
+            "fieldConfigCode": "loadingOrg"
+        },
+        {
+            "showName": "发货联系人",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"loadingLinkmanFullName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入发货联系人\"}",
+            "fieldConfigCode": "loadingLinkmanFullName"
+        },
+        {
+            "showName": "发货联系电话",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"loadingContact\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入发货联系电话\"}",
+            "fieldConfigCode": "loadingContact"
+        },
+        {
+            "showName": "收货单位",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"unloadingOrgName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输收货单位\"}",
+            "fieldConfigCode": "unloadingOrg"
+        },
+        {
+            "showName": "收货联系人",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"unloadingLinkmanFullName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入收货联系人\"}",
+            "fieldConfigCode": "unloadingLinkmanFullName"
+        },
+        {
+            "showName": "收货联系电话",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"unloadingContact\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入收货联系电话\"}",
+            "fieldConfigCode": "unloadingContact"
+        },
+        {
+            "showName": "标准运距",
+            "elementCode": "standardDistance",
+            "extraParams": "{\"field1\":\"standardDistance\",\"field2\":\"standardDistanceUnitCode\",\"default2\":\"km\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,3})?\",\"checkMsg1\":\"不超过14位（最多3位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"14\",\"placeholder1\":\"请输入标准运距\"}",
+            "fieldConfigCode": "standardDistance"
+        },
+        {
+            "showName": "标准时长",
+            "elementCode": "standardTime",
+            "extraParams": "{\"field1\":\"standardTime\",\"field2\":\"standardTimeUnitCode\",\"default2\":\"day\",\"checkRule1\":\"[0-9]{1,6}\",\"checkMsg1\":\"不超过6位的整数\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"6\",\"placeholder1\":\"请输入标准时长\"}",
+            "fieldConfigCode": "standardTime"
+        },
+        {
+            "showName": "创建人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"creatorUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "creatorUser"
+        },
+        {
+            "showName": "创建时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "createTime"
+        },
+        {
+            "showName": "修改人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateUser"
+        },
+        {
+            "showName": "修改时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateTime"
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+  "code": 200,
+  "content": [
+  {
+    "showName": "外包运价单号",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"ratesSystemNo\",\"placeholder1\":\"请输入外包运价单号\"}",
+    "fieldConfigCode": "ratesSystemNo"
+  },
+  {
+    "showName": "承运方",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"partnerName\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入承运方\",\"outputKey1\":\"partner\",\"outputKey3\":\"partner\",\"outputKey4\":\"partner\",\"inputKey1\":\"rates.partnerName,partner.orgName\",\"inputKey2\":\"partner.code,rates.partnerCode\",\"inputKey4\":\"partner.orgCode\",\"isPageOrder3\":\"1\"}",
+    "fieldConfigCode": "partnerName"
+  },
+  {
+    "showName": "线路",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"routeName\",\"placeholder1\":\"请输入线路名称\"}",
+    "fieldConfigCode": "routeName"
+  },
+  {
+    "showName": "货物名称",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"goodsName\",\"placeholder1\":\"请输入货物名称\"}",
+    "fieldConfigCode": "goodsName"
+  },
+  {
+    "showName": "运价截止时间",
+    "elementCode": "dateRange",
+    "extraParams": "{\"field1\":\"effectiveStartDate\",\"field3\":\"effectiveEndDate\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"format3\":\"yyyy-MM-dd HH:mm:ss\",\"placeholder2\":\"到\",\"default2\":\"到\"}",
+    "fieldConfigCode": "createTime"
+  },
+  {
+    "showName": "状态",
+    "elementCode": "select",
+    "extraParams": "{\"field1\":\"ratesApproveStatus\",\"optionsValue1\":[\"ready\",\"pend\",\"accept\",\"reject\",\"end\"],\"options1\":[\"待申请\",\"待审核\",\"审批通过\" ,\"审批不通过\",\"已结束\"]}",
+    "fieldConfigCode": "ratesApproveStatus"
+  }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "合同编号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"contractnumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "contractnumber"
+        },
+        {
+            "showName": "合同类型(1:托运合同,2:承运合同)",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"contracttype\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "contracttype"
+        },
+        {
+            "showName": "甲方",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"firstparty\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "firstparty"
+        },
+        {
+            "showName": "乙方",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"secondparty\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "secondparty"
+        },
+        {
+            "showName": "合同金额",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"contractamount\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "contractamount"
+        },
+        {
+            "showName": "合同签订时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"contractdatetime\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "contractdatetime"
+        },
+        {
+            "showName": "合同照片访问地址",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"contractphotoaccessaddress\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "contractphotoaccessaddress"
+        },
+        {
+            "showName": "是否删除(0:否;1:是)",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"isdeleteflag\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "isdeleteflag"
+        },
+        {
+            "showName": "同步时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"synchronizationtime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "synchronizationtime"
+        },
+        {
+            "showName": "同步标识(0:成功,-1:失败)",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"isexception\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "isexception"
+        }
+    ]
+}

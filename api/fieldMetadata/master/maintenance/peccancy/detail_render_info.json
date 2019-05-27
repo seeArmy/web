@@ -1,0 +1,89 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "车牌号",
+            "elementCode": "popSelectTruckTrailer",
+            "extraParams": "{\"field1\":\"truckLicenseNo\",\"field2\":\"truckCode\",\"field3\":\"truckCode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入车牌号匹配\",\"outputKey1\":\"truck\",\"outputKey3\":\"truck\",\"inputKey1\":\"truck.truckLicenseNo,trailer.truckLicenseNo\",\"inputKey2\":\"truck.code,trailer.code\"}",
+            "fieldConfigCode": "truckLicenseNo"
+        },
+        {
+            "showName": "司机姓名",
+            "elementCode": "popSelectDriver",
+            "extraParams": "{\"field1\":\"driverName\",\"field2\":\"driverCode\",\"field3\":\"driverCode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入司机姓名匹配\",\"outputKey1\":\"driver\",\"outputKey3\":\"driver\",\"inputKey1\":\"driver.fullName\",\"inputKey2\":\"driver.code\"}",
+            "fieldConfigCode": "driverName"
+        },
+        {
+            "showName": "违章类型",
+            "elementCode": "radio",
+            "extraParams": "{\"field1\":\"type\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"scene\",\"camera\"],\"options1\":[\"现场\",\"电子眼\"]}",
+            "fieldConfigCode": "type"
+        },
+        {
+            "showName": "违章单号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"ticketNumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入违章单号\"}",
+            "fieldConfigCode": "ticketNumber"
+        },
+        {
+            "showName": "处理状态",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"status\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"none\",\"processing\",\"solved\"],\"options1\":[\"未处理\",\"处理中\",\"已处理\"]}",
+            "fieldConfigCode": "status"
+        },
+        {
+            "showName": "违章日期",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"peccancyDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "peccancyDate"
+        },
+        {
+            "showName": "违章地点",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"peccancyAddress\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入违章地点\"}",
+            "fieldConfigCode": "peccancyAddress"
+        },
+        {
+            "showName": "违章记分",
+            "elementCode": "number",
+            "extraParams": "{\"field1\":\"peccancyPoints\",\"checkRule1\":\"[0-9]{1,2}\",\"checkMsg1\":\"不超过2位的整数\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"2\",\"placeholder1\":\"请输入违章记分\"}",
+            "fieldConfigCode": "peccancyPoints"
+        },
+        {
+            "showName": "违章罚款",
+            "elementCode": "money",
+            "extraParams": "{\"field1\":\"peccancyFine\",\"field2\":\"peccancyFineUnitCode\",\"default2\":\"元\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过13位（最多2位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"13\",\"placeholder1\":\"请输入违章罚款\"}",
+            "fieldConfigCode": "peccancyFine"
+        },
+        {
+            "showName": "代理费",
+            "elementCode": "money",
+            "extraParams": "{\"field1\":\"agencyFee\",\"field2\":\"agencyFeeUnitCode\",\"default2\":\"元\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过13位（最多2位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"13\",\"placeholder1\":\"请输入违章代理费\"}",
+            "fieldConfigCode": "agencyFee"
+        },
+        {
+            "showName": "滞纳金",
+            "elementCode": "money",
+            "extraParams": "{\"field1\":\"lateFee\",\"field2\":\"lateFeeUnitCode\",\"default2\":\"元\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过13位（最多2位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"13\",\"placeholder1\":\"请输入违章滞纳金\"}",
+            "fieldConfigCode": "lateFee"
+        },
+        {
+            "showName": "接单日期",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"takeDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "takeDate"
+        },
+        {
+            "showName": "行为分类",
+            "elementCode": "checkbox",
+            "extraParams": "{\"field1\":\"actionType\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"闯红灯\",\"无证驾驶\",\"超载\",\"酒后驾驶\",\"超速行驶\"],\"options1\":[\"闯红灯\",\"无证驾驶\",\"超载\",\"酒后驾驶\",\"超速行驶\"]}",
+            "fieldConfigCode": "actionType"
+        },
+        {
+            "showName": "备注",
+            "elementCode": "textarea",
+            "extraParams": "{\"field1\":\"description\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入备注\"}",
+            "fieldConfigCode": "description"
+        }
+    ]
+}

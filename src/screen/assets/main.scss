@@ -1,0 +1,223 @@
+// main scss
+@import './s.scss';
+@import './table.scss';
+@import './circle.scss';
+@import './report.scss';
+
+#niube {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  z-index: 0;
+  overflow: hidden;
+  word-break: break-all;
+  background-color: $uiColor;
+  background-image: -ms-linear-gradient(0deg, $a 0%, $b 100%);
+  background-image: -o-linear-gradient(0deg, $a, $b);
+  background-image: linear-gradient(0deg, $a, $b);
+}
+.el-date-editor.el-input {
+  width: 35%;
+}
+.el-input__inner {
+  height: none;
+  color: $textColor;
+  background-color:lighten($b, 5);
+  border-radius: 0px;
+  border-color: $lineColor;
+
+}
+
+.screen {
+  font-size: 100%;
+  color: $white;
+  .title {
+    display: block;
+    text-align: center;
+    height: 5%;
+    margin-bottom: 1%;
+    padding: 0 3% 0 3%;
+    position: relative;
+    top: 10px;
+    .top-banner {
+      position: absolute;
+      background: url('./top_bg.png') no-repeat center 0;
+      background-size: 100% 100%;
+      width: 35%;
+      z-index: 10;
+      height: 100%;
+      left: 33%;
+      top: -10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 120%;
+    }
+    span {
+      left: 45%;
+      position: absolute;
+      z-index: 99;
+    }
+  }
+  .el-col {
+    height: 100%;
+  }
+  .row {
+    // display: flex;
+    height: 91%;
+    margin-top: 3%;
+    padding-left: 2%;
+    // padding-bottom: 3%;
+    // margin-bottom: 3%;
+  }
+
+  &-a {
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    width: 40px;
+    height: 15px;
+    border-left: $lineColor;
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-top: $lineColor;
+    border-top-width: 3px;
+    border-top-style: solid;
+  }
+  &-b {
+    position: absolute;
+    right: -4px;
+    top: -4px;
+    width: 40px;
+    height: 15px;
+    border-right: $lineColor;
+    border-right-width: 3px;
+    border-right-style: solid;
+    border-top: $lineColor;
+    border-top-width: 3px;
+    border-top-style: solid;
+  }
+  &-c {
+    position: absolute;
+    left: -4px;
+    bottom: -4px;
+    width: 40px;
+    height: 15px;
+    border-left: $lineColor;
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-bottom: $lineColor;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+  }
+  &-d {
+    position: absolute;
+    right: -4px;
+    bottom: -4px;
+    width: 40px;
+    height: 15px;
+    border-right: $lineColor;
+    border-right-width: 3px;
+    border-right-style: solid;
+    border-bottom: $lineColor;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+  }
+  &-octagon {
+    width: 45%;
+    margin: -3vh 30%;
+    position: absolute;
+    text-align: center;
+    padding: 1.7% 0;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px 2px $lineColor;
+    background-color: $uiColor;
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+
+    &-row {
+      flex: 1;
+      padding: 2% 5% 0 0;
+      // border: 1px solid $uiColor;
+      &-inner {
+        height: 100%;
+        border: 1px solid $uiColor;
+        position: relative;
+      }
+    }
+    .h33 {
+      height: 30%;
+      margin-bottom: 3%;
+      &:last-child {
+        height: 31%;
+        margin-bottom: 0;
+      }
+    }
+    .h40 {
+      height: 40%;
+    }
+    .h60 {
+      height: 52%;
+      margin-bottom: 5%;
+    }
+    .h70 {
+      height: 63%;
+      margin-bottom: 4%;
+    }
+    .h30 {
+      height: 30%;
+    }
+
+    &-content {
+      // width: 90%;
+      height: 100%;
+      // padding: 0 5%;
+    }
+  }
+}
+
+
+@media screen and (max-width:993px) {
+  .screen {
+    .row {
+      display: inline-block;
+    }
+  }
+}
+
+@media screen and (min-width: 991px) {
+  body {
+    overflow-y: hidden;
+    // font-size: 80%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  // body {
+  //   font-size: 20px;
+  // }
+}
+
+@media screen and (min-width: 2000px) {
+  // body {
+  //   font-size: 30px;
+  // }
+}
+
+@media screen and (min-width: 3000px) {
+  // body {
+  //   font-size: 40px;
+  // }
+}
+
+@media screen and (min-width: 5000px) {
+  // body {
+  //   font-size: 50px;
+  // }
+}

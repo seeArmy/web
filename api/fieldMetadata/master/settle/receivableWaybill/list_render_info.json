@@ -1,0 +1,101 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "订单号",
+            "elementCode": "logisticsLink",
+            "extraParams": "{\"field1\":\"logisticsNo\",\"field2\":\"logisticsCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\"}",
+            "fieldConfigCode": "logisticsNo"
+        },
+        {
+            "showName": "运单号",
+            "elementCode": "wayBillLink",
+            "extraParams": "{\"field1\":\"waybillNo\",\"field2\":\"code\",\"area\":\"base\",\"required\":\"true\",\"detailLinkVisiable\":\"true\"}",
+            "fieldConfigCode": "waybillNo"
+        },
+        {
+            "showName": "车牌号",
+            "elementCode": "popSelectTruck",
+            "extraParams": "{\"field1\":\"truckLicenseNo\",\"field2\":\"truckCode\",\"area\":\"transporter\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入车牌号\"}",
+            "fieldConfigCode": "truckLicenseNo"
+        },
+        {
+            "showName": "挂车牌号",
+            "elementCode": "popSelectTruckTrailer",
+            "extraParams": "{\"field1\":\"trailerTruckLicenseNo\",\"field2\":\"trailerTruckCode\",\"area\":\"transporter\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入挂车牌号\"}",
+            "fieldConfigCode": "trailerTruckLicenseNo"
+        },
+        {
+            "showName": "线路",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"routeName\",\"field2\":\"routeCode\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入线路名称\"}",
+            "fieldConfigCode": "routeName"
+        },
+        {
+            "showName": "货物总称",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"goodsName\",\"area\":\"base\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入货物总称\"}",
+            "fieldConfigCode": "goodsName"
+        },
+        {
+            "showName": "客户运价",
+            "elementCode": "clientFreightPrice",
+            "extraParams": "{\"field1\":\"clientFreightPrice\",\"field2\":\"clientFreightPriceUnitCode\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过13位（最多2位小数）\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"13\",\"placeholder1\":\"请输入客户运价\"}",
+            "fieldConfigCode": "clientFreightPrice"
+        },
+        {
+            "showName": "发货日期",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"loadingTime\",\"format1\":\"yyyy-MM-dd\",\"area\":\"loading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "loadingTime"
+        },
+        {
+            "showName": "收货日期",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"unloadingTime\",\"format1\":\"yyyy-MM-dd\",\"area\":\"unloading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "unloadingTime"
+        },
+        {
+            "showName": "发货重量",
+            "elementCode": "goodsWeight",
+            "extraParams": "{\"field1\":\"loadingGoodsWeight\",\"field2\":\"loadingGoodsWeightUnitCode\",\"default2\":\"ton\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,4})?\",\"checkMsg1\":\"不超过15位（最多4位小数）\",\"area\":\"loading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入发货重量\"}",
+            "fieldConfigCode": "loadingGoodsWeight"
+        },
+        {
+            "showName": "发货体积",
+            "elementCode": "goodsVolume",
+            "extraParams": "{\"field1\":\"loadingGoodsVolume\",\"field2\":\"loadingGoodsVolumeUnitCode\",\"default2\":\"cube\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,4})?\",\"checkMsg1\":\"不超过15位（最多4位小数）\",\"area\":\"loading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入发货体积\"}",
+            "fieldConfigCode": "loadingGoodsVolume"
+        },
+        {
+            "showName": "发货数量",
+            "elementCode": "goodsNum",
+            "extraParams": "{\"field1\":\"loadingGoodsNum\",\"field2\":\"loadingGoodsNumUnitCode\",\"default2\":\"item\",\"checkRule1\":\"[0-9]{1,10}\",\"checkMsg1\":\"不超过10位的整数\",\"area\":\"loading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"10\",\"placeholder1\":\"请输入发货数量\"}",
+            "fieldConfigCode": "loadingGoodsNum"
+        },
+        {
+            "showName": "收货重量",
+            "elementCode": "goodsWeight",
+            "extraParams": "{\"field1\":\"unloadingGoodsWeight\",\"field2\":\"unloadingGoodsWeightUnitCode\",\"default2\":\"ton\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,4})?\",\"checkMsg1\":\"不超过15位（最多4位小数）\",\"area\":\"unloading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入收货重量\"}",
+            "fieldConfigCode": "unloadingGoodsWeight"
+        },
+        {
+            "showName": "收货体积",
+            "elementCode": "goodsVolume",
+            "extraParams": "{\"field1\":\"unloadingGoodsVolume\",\"field2\":\"unloadingGoodsVolumeUnitCode\",\"default2\":\"cube\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,4})?\",\"checkMsg1\":\"不超过15位（最多4位小数）\",\"area\":\"unloading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入收货体积\"}",
+            "fieldConfigCode": "unloadingGoodsVolume"
+        },
+        {
+            "showName": "收货数量",
+            "elementCode": "goodsNum",
+            "extraParams": "{\"field1\":\"unloadingGoodsNum\",\"field2\":\"unloadingGoodsNumUnitCode\",\"default2\":\"item\",\"checkRule1\":\"[0-9]{1,10}\",\"checkMsg1\":\"不超过10位的整数\",\"area\":\"unloading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"10\",\"placeholder1\":\"请输入收货数量\"}",
+            "fieldConfigCode": "unloadingGoodsNum"
+        },
+        {
+            "showName": "运单状态",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"waybillStatus\",\"default1\":\"unloading\",\"area\":\"base\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"unloading\",\"going\",\"finish\",\"cancel\"],\"options1\":[\"待发货\",\"运输中\",\"运输完成\",\"运单取消\"]}",
+            "fieldConfigCode": "waybillStatus"
+        }
+    ]
+}

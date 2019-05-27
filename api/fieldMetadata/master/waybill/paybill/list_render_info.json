@@ -1,0 +1,175 @@
+{
+  "code": 200,
+  "content": [
+  {
+    "showName": "单车付款单号",
+    "elementCode": "label",
+    "extraParams":
+    {
+      "field1": "paybillNo",
+      "detailLinkVisiable": "false"
+    },
+    "fieldConfigCode": "paybillNo"
+  },
+  {
+    "showName": "付款单类型",
+    "elementCode": "label",
+    "extraParams": {
+      "field1": "paybillType",
+      "detailLinkVisiable": "false",
+      "options1": ["单车", "单项"],
+      "optionsValue1": ["order", "item"]
+    },
+    "fieldConfigCode": "paybillType"
+  },
+  {
+    "showName": "控制状态",
+    "elementCode": "label",
+    "extraParams":
+    {
+      "field1": "paybillFreezeStatus",
+      "detailLinkVisiable": "false",
+      "options1": ["冻结", "正常"],
+      "optionsValue1": ["freeze", "normal"]
+    },
+    "fieldConfigCode": "paybillFreezeStatus"
+  },
+  {
+    "showName": "支付状态",
+    "elementCode": "label",
+    "extraParams":
+    {
+      "field1": "paybillPayStatus",
+      "detailLinkVisiable": "false",
+      "options1": ["待支付", "已支付", "支付失败"],
+      "optionsValue1": ["pend", "paid", "failed"]
+    },
+    "fieldConfigCode": "paybillPayStatus"
+  },
+  {
+    "showName": "支付渠道",
+    "elementCode": "label",
+    "extraParams":
+    {
+      "field1": "paybillPayChannel",
+      "detailLinkVisiable": "false",
+      "options1": ["线下支付", "链金师支付", "工商银行支付","包商银行支付"],
+      "optionsValue1": ["offline", "ljs", "icbc","bsb"]
+    },
+    "fieldConfigCode": "paybillPayChannel"
+  },
+  {
+    "showName": "收款人",
+    "elementCode": "label",
+    "extraParams":
+    {
+      "field1": "payeeName",
+      "detailLinkVisiable": "false"
+    },
+    "fieldConfigCode": "payeeName"
+  },
+  {
+    "showName": "应付金额",
+    "elementCode": "label",
+    "extraParams":
+    {
+      "field1": "paymentAmount",
+      "detailLinkVisiable": "false"
+    },
+    "fieldConfigCode": "paymentAmount"
+  },
+  {
+    "showName": "开户银行",
+    "elementCode": "label",
+    "extraParams":
+    {
+      "field1": "payeeBankName",
+      "detailLinkVisiable": "false"
+    },
+    "fieldConfigCode": "payeeBankName"
+  },
+  {
+    "showName": "银行户名",
+    "elementCode": "label",
+    "extraParams":
+    {
+      "field1": "payeeBankAccountName",
+      "detailLinkVisiable": "false"
+    },
+    "fieldConfigCode": "payeeBankAccountName"
+  },
+  {
+    "showName": "银行账号",
+    "elementCode": "label",
+    "extraParams":
+    {
+      "field1": "payeeBankAccountNo",
+      "detailLinkVisiable": "false"
+    },
+    "fieldConfigCode": "driverPayeeBankAccountNo"
+  },
+  {
+    "showName": "收款用户ID",
+    "elementCode": "label",
+    "extraParams":
+    {
+      "field1": "platformPayeeCode",
+      "detailLinkVisiable": "false"
+    },
+    "fieldConfigCode": "platformPayeeCode"
+  },
+  {
+    "showName": "收款用户手机号",
+    "elementCode": "label",
+    "extraParams":
+    {
+      "field1": "payeePhone",
+      "detailLinkVisiable": "false"
+    },
+    "fieldConfigCode": "payeePhone"
+  },
+  {
+    "showName": "运单号",
+    "elementCode": "wayBillLink",
+    "extraParams":
+    {
+      "field1": "waybillNo",
+      "field2": "waybillCode"
+    },
+    "fieldConfigCode": "waybillNo"
+  },
+  {
+      "showName": "车牌号",
+      "elementCode": "popSelectTruck",
+      "extraParams": "{\"field1\":\"truckLicenseNo\",\"field2\":\"truckCode\",\"field3\":\"truckCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入车牌号匹配\",\"outputKey1\":\"truck\",\"outputKey3\":\"truck\",\"inputKey1\":\"truck.truckLicenseNo\",\"inputKey2\":\"truck.code\"}",
+      "fieldConfigCode": "truckLicenseNo"
+  },
+  {
+      "showName": "线路名称",
+      "elementCode": "popSelectRoute",
+      "extraParams": "{\"field1\":\"routeName\",\"readonly1\":\"TRUE\",\"field2\":\"routeCode\",\"field3\":\"routeCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入线路名称\",\"outputKey1\":\"route\",\"outputKey3\":\"route\",\"inputKey1\":\"rates.routeName,route.routeName,logistics.routeName\",\"inputKey2\":\"route.code,rates.routeCode,logistics.routeCode\"}",
+      "fieldConfigCode": "route"
+  },
+  {
+    "showName": "付款备注",
+    "elementCode": "label",
+    "extraParams":
+    {
+      "field1": "description",
+      "detailLinkVisiable": "false"
+    },
+    "fieldConfigCode": "description"
+  },
+  {
+    "showName": "支付时间",
+    "elementCode": "date",
+    "extraParams": "{\"field1\":\"paybillPayTime\",\"format1\":\"yyyy-MM-dd hh:mm:ss\",\"area\":\"other\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\"请输入支付时间\"}",
+    "fieldConfigCode": "paybillPayTime"
+  },
+  {
+    "showName": "结算通过时间",
+    "elementCode": "date",
+    "extraParams": "{\"field1\":\"settleTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+    "fieldConfigCode": "settleTime"
+  }]
+}

@@ -1,0 +1,101 @@
+{
+    "code": 200,
+    "content": [
+      {
+        "showName": "账单号",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"billNo\",\"detailLinkVisiable\":\"true\",\"freeze1\":\"true\"}",
+        "fieldConfigCode": "billNo"
+      },
+      {
+        "showName": "付款方",
+        "elementCode": "popSelectPartner",
+        "extraParams": "{\"field1\":\"payerOrgName\",\"field2\":\"payerOrgCode\",\"field3\":\"payerOrgCode\",\"field4\":\"platformPayerOrgCode\"}",
+        "fieldConfigCode": "payerOrgName"
+      },
+      {
+        "showName": "账单状态",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"billStatus\",\"optionsValue1\":[\"none\",\"pend\",\"accept\",\"reject\",\"destroy\"],\"options1\":[\"待提交审核\",\"待审核\",\"审核通过\",\"审核不通过\",\"已作废\"]}",
+        "fieldConfigCode": "billStatus"
+      },
+      {
+        "showName": "平台收款状态",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"receivableStatus\",\"optionsValue1\":[\"none\",\"all\"],\"options1\":[\"未收款\",\"收款完成\"]}",
+        "fieldConfigCode": "receivableStatus"
+      },
+      {
+        "showName": "开票状态",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"invoiced\",\"optionsValue1\":[\"yes\",\"no\"],\"options1\":[\"已开票\",\"未开票\"]}",
+        "fieldConfigCode": "invoiced"
+      },
+      {
+        "showName": "总单数",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"totalTruck\"}",
+        "fieldConfigCode": "totalTruck"
+      },
+      {
+        "showName": "合规单数",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"complianceTruck\"}",
+        "fieldConfigCode": "complianceTruck"
+      },
+      {
+        "showName": "不合规单数",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"nonComplianceTruck\"}",
+        "fieldConfigCode": "nonComplianceTruck"
+      },
+      {
+        "showName": "待确认单数",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"pendTruck\"}",
+        "fieldConfigCode": "pendTruck"
+      },
+      {
+        "showName": "应付小计总额",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"paymentSubtotalAmount\"}",
+        "fieldConfigCode": "paymentSubtotalAmount"
+      },
+      {
+        "showName": "应付司机劳务费总额",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"paymentDriverSubtotalAmount\"}",
+        "fieldConfigCode": "paymentDriverSubtotalAmount"
+      },
+      {
+        "showName": "应付平台交易费总额",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"paymentTradeSubtotalAmount\"}",
+        "fieldConfigCode": "paymentTradeSubtotalAmount"
+      },
+      {
+        "showName": "创建人",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"creatorUsername\"}",
+        "fieldConfigCode": "creatorUsername"
+      },
+      {
+        "showName": "创建时间",
+        "elementCode": "date",
+        "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+        "fieldConfigCode": "createTime"
+      },
+      {
+        "showName": "修改人",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"updateUsername\"}",
+        "fieldConfigCode": "updateUsername"
+      },
+      {
+        "showName": "修改时间",
+        "elementCode": "date",
+        "extraParams": "{\"field1\":\"updateTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+        "fieldConfigCode": "updateTime"
+      }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "code": 200,
+    "content": [ 
+        {
+            "showName": "司机姓名",
+            "elementCode": "popSelectDriver",
+            "extraParams": "{\"field1\":\"userFullName\",\"field2\":\"userCode\",\"field3\":\"userCode\",\"field4\":\"platformUserCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入司机姓名\",\"outputKey1\":\"driver\",\"outputKey3\":\"driver\",\"outputKey4\":\"driver\",\"inputKey1\":\"driver.fullName\",\"inputKey2\":\"driver.code\",\"inputKey4\":\"driver.userCode\"}",
+            "fieldConfigCode": "userFullName"
+        },
+        {
+            "showName": "手机号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"phone\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"18\",\"placeholder1\":\"请输入手机号\"}",
+            "fieldConfigCode": "phone"
+        },
+        {
+            "showName": "考勤状态",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"attendanceStatus\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"TRUE\",\"optionsValue1\":[\"absent\",\"off\"],\"options1\":[\"旷工\",\"请假\"]}",
+            "fieldConfigCode": "attendanceStatus"
+        },
+        {
+            "showName": "日期",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"attendanceDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "attendanceDate"
+        },
+        {
+            "showName": "合同名称",
+            "elementCode": "popSelectgEmployeeContract",
+            "extraParams": "{\"field1\":\"employeeContractName\",\"field2\":\"employeeContractCode\",\"field3\":\"employeeContractCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "employeeContractName"
+        },
+        {
+            "showName": "创建人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"creatorUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "creatorUser"
+        },
+        {
+            "showName": "创建时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "createTime"
+        }
+    ]
+}

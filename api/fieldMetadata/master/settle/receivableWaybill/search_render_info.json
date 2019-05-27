@@ -1,0 +1,35 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "订单号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"logisticsNo\",\"field2\":\"logisticsCode\"}",
+            "fieldConfigCode": "logisticsNo"
+        },
+        {
+            "showName": "运单号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"waybillNo\",\"field2\":\"code\"}",
+            "fieldConfigCode": "waybillNo"
+        },
+        {
+            "showName": "车牌号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"truckLicenseNo\",\"field2\":\"truckCode\",\"placeholder1\":\"请输入车牌号\"}",
+            "fieldConfigCode": "truckLicenseNo"
+        },
+        {
+            "showName": "发货日期",
+            "elementCode": "dateRange",
+            "extraParams": "{\"field1\":\"from_loadingTime\",\"field3\":\"to_loadingTime\",\"format1\":\"yyyy-MM-dd\",\"format3\":\"yyyy-MM-dd\",\"placeholder2\":\"到\",\"default2\":\"到\"}",
+            "fieldConfigCode": "loadingTime"
+        },
+        {
+            "showName": "收货日期",
+            "elementCode": "dateRange",
+            "extraParams": "{\"field1\":\"from_unloadingTime\",\"field3\":\"to_unloadingTime\",\"format1\":\"yyyy-MM-dd\",\"format3\":\"yyyy-MM-dd\",\"placeholder2\":\"到\",\"default2\":\"到\"}",
+            "fieldConfigCode": "unloadingTime"
+        }
+    ]
+}

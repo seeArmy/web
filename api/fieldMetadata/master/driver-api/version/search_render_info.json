@@ -1,0 +1,17 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "版本名称",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"versionName\",\"placeholder1\":\"请输入版本名称\"}",
+            "fieldConfigCode": "versionName"
+        },
+        {
+            "showName": "应用代码",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"appCode\",\"placeholder1\":\"请输入应用代码\"}",
+            "fieldConfigCode": "appCode"
+        }
+    ]
+}

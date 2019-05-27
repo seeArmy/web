@@ -1,0 +1,71 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "车牌号",
+            "elementCode": "popSelectTruckTrailer",
+            "extraParams": "{\"field1\":\"truckLicenseNo\",\"field2\":\"truckCode\",\"field3\":\"truckCode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入车牌号匹配\",\"outputKey1\":\"truck\",\"outputKey3\":\"truck\",\"inputKey1\":\"truck.truckLicenseNo,trailer.truckLicenseNo\",\"inputKey2\":\"truck.code,trailer.code\"}",
+            "fieldConfigCode": "truckLicenseNo"
+        },
+        {
+            "showName": "司机姓名",
+            "elementCode": "popSelectDriver",
+            "extraParams": "{\"field1\":\"driverName\",\"field2\":\"driverCode\",\"field3\":\"driverCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入司机姓名匹配\",\"outputKey1\":\"driver\",\"outputKey3\":\"driver\",\"inputKey1\":\"driver.fullName\",\"inputKey2\":\"driver.code\"}",
+            "fieldConfigCode": "driverName"
+        },
+        {
+            "showName": "保养时间",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"careDate\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "careDate"
+        },
+        {
+            "showName": "保养地点",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"careAddress\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入保养地点\"}",
+            "fieldConfigCode": "careAddress"
+        },
+        {
+            "showName": "保养金额",
+            "elementCode": "money",
+            "extraParams": "{\"field1\":\"totalAmount\",\"field2\":\"totalAmountUnitCode\",\"default2\":\"元\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过13位（最多2位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"13\",\"placeholder1\":\"请输入保养金额\"}",
+            "fieldConfigCode": "totalAmount"
+        },
+        {
+            "showName": "当前里程",
+            "elementCode": "standardDistance",
+            "extraParams": "{\"field1\":\"currentMileage\",\"field2\":\"currentMileageUnitCode\",\"default2\":\"km\",\"checkRule1\":\"[0-9]{1,10}\",\"checkMsg1\":\"不超过10位的整数\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"10\",\"placeholder1\":\"请输入当前里程\"}",
+            "fieldConfigCode": "currentMileage"
+        },
+        {
+            "showName": "下次保养里程",
+            "elementCode": "standardDistance",
+            "extraParams": "{\"field1\":\"nextCareMileage\",\"field2\":\"nextCareMileageUnitCode\",\"default2\":\"km\",\"checkRule1\":\"[0-9]{1,10}\",\"checkMsg1\":\"不超过10位的整数\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"10\",\"placeholder1\":\"请输入下次保养里程\"}",
+            "fieldConfigCode": "nextCareMileage"
+        },
+        {
+            "showName": "下次保养日期",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"nextCareDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "nextCareDate"
+        },
+        {
+            "showName": "提醒日期",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"remindDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "remindDate"
+        },
+        {
+            "showName": "项目",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"careItemName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入保养项目\"}",
+            "fieldConfigCode": "careItemName"
+        },
+        {
+            "showName": "备注",
+            "elementCode": "textarea",
+            "extraParams": "{\"field1\":\"description\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入备注\"}",
+            "fieldConfigCode": "description"
+        }
+    ]
+}

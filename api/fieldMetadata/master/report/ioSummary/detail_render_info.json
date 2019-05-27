@@ -1,0 +1,44 @@
+{
+  "code": 200,
+  "content": [{
+    "showName": "归属年月",
+    "elementCode": "date",
+    "extraParams": "{\"field1\":\"attributionDate\",\"format1\":\"yyyy-MM\"}",
+    "fieldConfigCode": "attributionDate"
+  }, {
+    "showName": "销项-不含税金额",
+    "elementCode": "number",
+    "extraParams": "{\"field1\":\"outputExcludeTaxAmount\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入不含税金额\"}",
+    "fieldConfigCode": "outputExcludeTaxAmount"
+  }, {
+    "showName": "销项-税额",
+    "elementCode": "number",
+    "extraParams": "{\"field1\":\"outputVatTaxAmount\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入税额\"}",
+    "fieldConfigCode": "outputVatTaxAmount"
+  }, {
+    "showName": "销项-价税合计",
+    "elementCode": "number",
+    "extraParams": "{\"field1\":\"outputTotalAmount\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入价税合计（小写）\"}",
+    "fieldConfigCode": "outputTotalAmount"
+  }, {
+    "showName": "进项-不含税金额",
+    "elementCode": "number",
+    "extraParams": "{\"field1\":\"inputExcludeTaxAmount\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入不含税金额\"}",
+    "fieldConfigCode": "inputExcludeTaxAmount"
+  }, {
+    "showName": "进项-税额",
+    "elementCode": "number",
+    "extraParams": "{\"field1\":\"inputVatTaxAmount\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入税额\"}",
+    "fieldConfigCode": "inputVatTaxAmount"
+  }, {
+    "showName": "进项-价税合计",
+    "elementCode": "number",
+    "extraParams": "{\"field1\":\"inputTotalAmount\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入价税合计（小写）\"}",
+    "fieldConfigCode": "inputTotalAmount"
+  }, {
+    "showName": "毛利",
+    "elementCode": "number",
+    "extraParams": "{\"field1\":\"grossProfit\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入毛利\"}",
+    "fieldConfigCode": "grossProfit"
+  }]
+}

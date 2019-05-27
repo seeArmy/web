@@ -1,0 +1,123 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "运单号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"shippingnotenumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"TRUE\"}",
+            "fieldConfigCode": "shippingnotenumber"
+        },
+        {
+            "showName": "托运时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"consignmentdatetime\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "consignmentdatetime"
+        },
+        {
+            "showName": "业务类型代码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"businesstypecode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "businesstypecode"
+        },
+        {
+            "showName": "统计类型",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"statisticstype\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "statisticstype"
+        },
+        {
+            "showName": "实际承运人ID",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"carrierid\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "carrierid"
+        },
+        {
+            "showName": "备注",
+            "elementCode": "textarea",
+            "extraParams": {
+              "field1": "remark",
+              "maxLength1":512,
+              "detailLinkVisiable": "false"
+            },
+            "fieldConfigCode": "remark"
+        },
+        {
+            "showName": "货源ID",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"sourcegoodsid\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "sourcegoodsid"
+        },
+        {
+            "showName": "合同编号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"contractnumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "contractnumber"
+        },
+        {
+            "showName": "运单状态代码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"shippingnotestatuscode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "shippingnotestatuscode"
+        },
+        {
+            "showName": "状态变更日期",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"statuschangedatetime\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "statuschangedatetime"
+        },
+        {
+            "showName": "预计抵达日期",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"estimatedarrivaldatetime\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "estimatedarrivaldatetime"
+        },
+        {
+            "showName": "发运实际日期",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"despatchactualdatetime\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "despatchactualdatetime"
+        },
+        {
+            "showName": "收货日期",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"goodsreceiptdatetime\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "goodsreceiptdatetime"
+        },
+        {
+            "showName": "运单生成时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"shippingnoteadddatetime\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "shippingnoteadddatetime"
+        },
+        {
+            "showName": "运单生成类型",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"shippingnoteaddtype\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "shippingnoteaddtype"
+        },
+        {
+            "showName": "业务类型名称",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"businesstypename\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "businesstypename"
+        },
+        {
+            "showName": "是否删除",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"isdeleteflag\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "isdeleteflag"
+        },
+        {
+            "showName": "同步时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"synchronizationtime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "synchronizationtime"
+        },
+        {
+            "showName": "同步标识",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"isexception\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "isexception"
+        }
+    ]
+}

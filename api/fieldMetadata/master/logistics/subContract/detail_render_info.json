@@ -1,0 +1,29 @@
+{
+  "code": 200,
+  "content": [
+    {
+        "showName": "承运方",
+        "elementCode": "popSelectPartner",
+        "extraParams": "{\"field1\":\"carrierOrgName\",\"field2\":\"carrierOrgCode\",\"field3\":\"carrierOrgCode\",\"field4\":\"platformCarrierOrgCode\",\"required\":\"false\",\"readonly1\":\"TRUE\",\"maxLength1\":50,\"placeholder1\":\"请输入承运方\",\"outputKey3\":\"partner\",\"inputKey1\":\"partner.orgName\",\"inputKey2\":\"partner.code\",\"inputKey4\":\"partner.orgCode\"}",
+        "fieldConfigCode": "carrierOrgCode"
+    },
+    {
+        "showName": "转包运价",
+        "elementCode": "clientFreightPrice",
+        "extraParams": "{\"field1\":\"clientFreightPrice\",\"field2\":\"clientFreightPriceUnitCode\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过13位（最多2位小数）\",\"required\":\"false\",\"maxLength1\":13,\"placeholder1\":\"请输入转包运价\"}",
+        "fieldConfigCode": "clientFreightPrice"
+    },
+    {
+        "showName": "分配车次",
+        "elementCode": "truckQty",
+        "extraParams": "{\"field1\":\"truckQty\",\"field2\":\"truckQtyUnitCode\",\"default2\":\"车\",\"checkRule1\":\"[0-9]{1,10}\",\"checkMsg1\":\"不超过10位的整数\",\"required\":\"false\",\"maxLength1\":10,\"placeholder1\":\"请输入分配车次\"}",
+        "fieldConfigCode": "truckQty"
+    },
+    {
+        "showName": "备注",
+        "elementCode": "textarea",
+        "extraParams": "{\"field1\":\"description\",\"required\":\"false\",\"maxLength1\":200,\"placeholder1\":\"请输入备注\"}",
+        "fieldConfigCode": "description"
+    }
+  ]
+}

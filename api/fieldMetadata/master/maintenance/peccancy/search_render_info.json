@@ -1,0 +1,34 @@
+{
+  "code": 200,
+  "content": [
+  {
+    "showName": "车牌号",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"truckLicenseNo\",\"placeholder1\":\"请输入车牌号匹配\"}",
+    "fieldConfigCode": "truckLicenseNo"
+  },
+  {
+    "showName": "司机姓名",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"driverName\",\"placeholder1\":\"请输入司机姓名匹配\"}",
+    "fieldConfigCode": "driverName"
+  },
+  {
+    "showName": "处理状态",
+    "elementCode": "select",
+    "extraParams": "{\"field1\":\"status\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"none\",\"processing\",\"solved\"],\"options1\":[\"未处理\",\"处理中\",\"已处理\"]}",
+    "fieldConfigCode": "status"
+  },
+  {
+    "showName": "备注",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"description\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入备注\"}",
+    "fieldConfigCode": "description"
+  },
+  {
+    "showName": "违章类型",
+    "elementCode": "select",
+    "extraParams": "{\"field1\":\"type\",\"optionsValue1\":[\"scene\",\"camera\"],\"options1\":[\"现场\",\"电子眼\"]}",
+    "fieldConfigCode": "type"
+  }]
+}

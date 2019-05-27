@@ -1,0 +1,101 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "车牌号",
+            "elementCode": "popSelectTruckTrailer",
+            "extraParams": "{\"field1\":\"truckLicenseNo\",\"field2\":\"truckCode\",\"field3\":\"truckCode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入车牌号匹配\",\"outputKey1\":\"truck\",\"outputKey3\":\"truck\",\"inputKey1\":\"truck.truckLicenseNo,trailer.truckLicenseNo\",\"inputKey2\":\"truck.code,trailer.code\"}",
+            "fieldConfigCode": "truckLicenseNo"
+        },
+        {
+            "showName": "轮胎号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"tyreNo\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入轮胎号\"}",
+            "fieldConfigCode": "tyreNo"
+        },
+        {
+            "showName": "轮胎品牌型号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"tyreBrand\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入品牌型号\"}",
+            "fieldConfigCode": "tyreBrand"
+        },
+        {
+            "showName": "采购价",
+            "elementCode": "money",
+            "extraParams": "{\"field1\":\"purchasePrice\",\"field2\":\"purchasePriceUnitCode\",\"default2\":\"元\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过13位（最多2位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"13\",\"placeholder1\":\"请输入采购价\"}",
+            "fieldConfigCode": "purchasePrice"
+        },
+        {
+            "showName": "上车日期",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"onDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "onDate"
+        },
+        {
+            "showName": "上车里程读数",
+            "elementCode": "standardDistance",
+            "extraParams": "{\"field1\":\"onMileage\",\"field2\":\"onMileageUnitCode\",\"default2\":\"km\",\"checkRule1\":\"[0-9]{1,10}\",\"checkMsg1\":\"不超过10位整数\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"10\",\"placeholder1\":\"请输入上车里程读数\"}",
+            "fieldConfigCode": "onMileage"
+        },
+        {
+            "showName": "换下轮胎号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"changeTyreNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入更换的轮胎号\"}",
+            "fieldConfigCode": "changeTyreNo"
+        },
+        {
+            "showName": "使用状态",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"status\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"inUse\",\"deactivated\",\"scrapped\"],\"options1\":[\"使用中\",\"已停用\",\"已报废\"]}",
+            "fieldConfigCode": "status"
+        },
+        {
+            "showName": "下车日期",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"offDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "offDate"
+        },
+        {
+            "showName": "下车里程读数",
+            "elementCode": "standardDistance",
+            "extraParams": "{\"field1\":\"offMileage\",\"field2\":\"offMileageUnitCode\",\"default2\":\"km\",\"checkRule1\":\"[0-9]{1,10}\",\"checkMsg1\":\"不超过10位整数\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"10\",\"placeholder1\":\"请输入下车里程读数\"}",
+            "fieldConfigCode": "offMileage"
+        },
+        {
+            "showName": "残值",
+            "elementCode": "money",
+            "extraParams": "{\"field1\":\"tyreSalvage\",\"field2\":\"tyreSalvageUnitCode\",\"default2\":\"元\",\"checkRule1\":\"[0-9]{1,10}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过13位（最多2位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"13\",\"placeholder1\":\"请输入残值\"}",
+            "fieldConfigCode": "tyreSalvage"
+        },
+        {
+            "showName": "运营总里程",
+            "elementCode": "standardDistance",
+            "extraParams": "{\"field1\":\"totalMileage\",\"field2\":\"totalMileageUnitCode\",\"default2\":\"km\",\"checkRule1\":\"[0-9]{1,10}\",\"checkMsg1\":\"不超过10位整数\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"10\",\"placeholder1\":\"请输入运营总里程\"}",
+            "fieldConfigCode": "totalMileage"
+        },
+        {
+            "showName": "创建人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"creatorUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "creatorUser"
+        },
+        {
+            "showName": "创建时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "createTime"
+        },
+        {
+            "showName": "修改人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateUser"
+        },
+        {
+            "showName": "修改时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateTime"
+        }
+    ]
+}

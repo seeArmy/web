@@ -1,0 +1,41 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "发票号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"invoiceNo\"}",
+            "fieldConfigCode": "invoiceNo"
+        },
+        {
+            "showName": "购买方名称（客户）",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"payerOrgName\",\"field2\":\"payerOrgCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"购买方名称（客户）\"}",
+            "fieldConfigCode": "payerOrgName"
+        },
+        {
+            "showName": "发票审核状态",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"status\",\"optionsValue1\":[\"none\",\"pend\",\"accept\",\"reject\"],\"options1\":[\"待提交审核\",\"待审核\",\"审核通过\",\"审核不通过\"]}",
+            "fieldConfigCode": "status"
+        },
+        {
+            "showName": "开票状态",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"invoiced\",\"default1\":\"false\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"true\",\"false\"],\"options1\":[\"已开票\",\"未开票\"]}",
+            "fieldConfigCode": "listInvoiced"
+        },
+        {
+            "showName": "归属年月",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"attributionDate\",\"format1\":\"yyyy-MM\",\"area\":\"\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\"请选择归属年月\"}",
+            "fieldConfigCode": "attributionDate"
+        },
+        {
+            "showName": "销项系统号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"outputNo\",\"required\":\"false\",\"detailLinkVisiable\":\"true\"}",
+            "fieldConfigCode": "outputNo"
+        }
+    ]
+}

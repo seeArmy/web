@@ -1,0 +1,35 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "车牌号",
+            "elementCode": "popSelectLongTruck",
+            "extraParams": "{\"field1\":\"mainTruckLicenseNo\",\"field2\":\"mainTruckCode\",\"field3\":\"mainTruckCode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入主车牌号\",\"outputKey1\":\"mainTruck\",\"outputKey3\":\"mainTruck\",\"inputKey1\":\"mainTruck.truckLicenseNo\",\"inputKey2\":\"mainTruck.code\"}",
+            "fieldConfigCode": "mainTruck"
+        },
+        {
+            "showName": "挂车牌号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"trailerTruckLicenseNo\",\"field2\":\"trailerTruckCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "trailerTruck"
+        },
+        {
+            "showName": "主驾司机",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"driverFullName\"}",
+            "fieldConfigCode": "driver"
+        },
+        {
+            "showName": "副驾司机",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"viceDriverFullName\"}",
+            "fieldConfigCode": "viceDriver"
+        },
+        {
+            "showName": "车辆标签",
+            "elementCode": "tag",
+            "extraParams": "{\"field1\":\"transportTagList\"}",
+            "fieldConfigCode": "transportTagList"
+        }
+    ]
+}

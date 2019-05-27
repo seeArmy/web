@@ -1,0 +1,28 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "车牌号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"truckLicenseNo\",\"placeholder1\":\"请输入车牌号\"}",
+            "fieldConfigCode": "truckLicenseNo"
+        },
+        {
+            "showName": "车辆类型",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"truckType\",\"optionsValue1\":[\"1\",\"2\"],\"options1\":[\"自有\",\"外请\"]}",
+            "fieldConfigCode": "truckType"
+        },{
+            "showName": "车型",
+            "elementCode": "truckModel",
+            "extraParams": "{\"field1\":\"truckModelCode\",\"field2\":\"truckModelName\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"inputKey1\":\"mainTruck.truckModelCode\",\"inputKey2\":\"mainTruck.truckModelName\"}",
+            "fieldConfigCode": "truckModel"
+        },
+        {
+            "showName": "分组",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"truckTag\"}",
+            "fieldConfigCode": "truckTag"
+        }
+    ]
+}

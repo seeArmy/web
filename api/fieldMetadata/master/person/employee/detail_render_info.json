@@ -1,0 +1,155 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "头像",
+            "elementCode": "image",
+            "extraParams": "{\"field1\":\"pictureResourceCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "pictureResourceCode"
+        },
+        {
+            "showName": "姓名",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"fullName\",\"required\":\"true\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入姓名\"}",
+            "fieldConfigCode": "fullName"
+        },
+        {
+            "showName": "帐号状态",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"userStatus\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\" \",\"optionsValue1\":[\"activated\",\"inactivated\"],\"options1\":[\"已激活\",\"未激活\"]}",
+            "fieldConfigCode": "userStatus"
+        },
+        {
+            "showName": "部门",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"departmentName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\"请输入部门\"}",
+            "fieldConfigCode": "departmentName"
+        },
+        {
+            "showName": "角色",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"roleName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\"请输入角色\"}",
+            "fieldConfigCode": "roleName"
+        },
+        {
+            "showName": "手机号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"phone\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"18\",\"placeholder1\":\"请输入手机号\"}",
+            "fieldConfigCode": "phone"
+        },
+        {
+            "showName": "性别",
+            "elementCode": "radio",
+            "extraParams": "{\"field1\":\"gender\",\"default1\":\"male\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"male\",\"female\"],\"options1\":[\"男\",\"女\"]}",
+            "fieldConfigCode": "gender"
+        },
+        {
+            "showName": "身份证号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"identityNumber\",\"checkRule1\":\"([0-9Xx]{15})([0-9Xx]{3})?\",\"checkMsg1\":\"请输入正确的身份证号\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"18\",\"placeholder1\":\"请输入身份证号\"}",
+            "fieldConfigCode": "identityNumber"
+        },
+        {
+            "showName": "政治面貌",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"politicalStatus\",\"default1\":\"qz\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"qz\",\"gqty\",\"zgybdy\",\"zgdy\",\"mgdy\",\"mmmy\",\"mjianhy\",\"mjinhy\",\"ngddy\",\"zgddy\",\"jsxssy\",\"tmmy\",\"wdprs\"],\"options1\":[\"群众\",\"共青团员\",\"中共预备党员\",\"中共党员\",\"民革党员\",\"民盟盟员\",\"民建会员\",\"民进会员\",\"农工党党员\",\"致公党党员\",\"九三学社社员\",\"台盟盟员\",\"无党派人士\"]}",
+            "fieldConfigCode": "politicalStatus"
+        },
+        {
+            "showName": "婚姻状况",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"maritalStatus\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"single\",\"married\",\"divorce\",\"widowed\"],\"options1\":[\"未婚\",\"已婚\",\"离异\",\"丧偶\"]}",
+            "fieldConfigCode": "maritalStatus"
+        },
+        {
+            "showName": "籍贯",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"nativePlace\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入籍贯\"}",
+            "fieldConfigCode": "nativePlace"
+        },
+        {
+            "showName": "户口地",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"registedResidence\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入户口地\"}",
+            "fieldConfigCode": "registedResidence"
+        },
+        {
+            "showName": "身份证地址",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"identityCardAddress\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入身份证地址\"}",
+            "fieldConfigCode": "identityCardAddress"
+        },
+        {
+            "showName": "现居住地址",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"currentResidence\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入现居住地址\"}",
+            "fieldConfigCode": "currentResidence"
+        },
+        {
+            "showName": "紧急联系人",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"emergencyContactPerson\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入紧急联系人\"}",
+            "fieldConfigCode": "emergencyContactPerson"
+        },
+        {
+            "showName": "紧急联系方式",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"emergencyContactPhone\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入紧急联系方式\"}",
+            "fieldConfigCode": "emergencyContactPhone"
+        },
+        {
+            "showName": "学历",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"education\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"doctor\",\"master\",\"bachelor\",\"college\",\"senior\",\"junior\",\"primary\"],\"options1\":[\"博士\",\"硕士\",\"本科\",\"大专\",\"高中\",\"初中\",\"小学\"]}",
+            "fieldConfigCode": "education"
+        },
+        {
+            "showName": "所学专业",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"major\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入所学专业\"}",
+            "fieldConfigCode": "major"
+        },
+        {
+            "showName": "参加工作时间",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"startDateOfFirstJob\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "startDateOfFirstJob"
+        },
+        {
+            "showName": "加入公司时间",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"employmentDate\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "employmentDate"
+        },
+        {
+            "showName": "备注",
+            "elementCode": "textarea",
+            "extraParams": "{\"field1\":\"description\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入备注\"}",
+            "fieldConfigCode": "description"
+        },
+        {
+            "showName": "创建人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"creatorUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "creatorUser"
+        },
+        {
+            "showName": "创建时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "createTime"
+        },
+        {
+            "showName": "修改人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateUser"
+        },
+        {
+            "showName": "修改时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateTime"
+        }
+    ]
+}

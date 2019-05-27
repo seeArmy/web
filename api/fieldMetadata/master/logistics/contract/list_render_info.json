@@ -1,0 +1,66 @@
+{
+  "code": 200,
+  "content": [
+        {
+      "showName": "合同编号",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"contractSystemNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\"}",
+      "fieldConfigCode": "contractSystemNo"
+    },
+    {
+      "showName": "业务编号",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"contractNo\",\"required\":\"false\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"50\"}",
+      "fieldConfigCode": "contractNo"
+    },
+
+    {
+      "showName": "合同状态",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"contractStatus\",\"default1\":\"effective\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"optionsValue1\":[\"ineffective\",\"effective\",\"uneffective\"],\"options1\":[\"待生效\",\"生效中\",\"已失效\"]}",
+      "fieldConfigCode": "contractStatus"
+    },
+    {
+      "showName": "合同名称",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"contractName\",\"required\":\"true\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入合约名称\"}",
+      "fieldConfigCode": "contractName"
+    },
+    {
+      "showName": "合同有效期",
+      "elementCode": "dateRange",
+      "extraParams": "{\"field1\":\"fromContractExpiryDate\",\"field2\":\"contractExpiryDateLable\",\"field3\":\"toContractExpiryDate\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"format3\":\"yyyy-MM-dd HH:mm:ss\",\"default2\":\"到\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\"}",
+      "fieldConfigCode": "contractExpiryDate"
+    },
+    {
+      "showName": "备注",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"description\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "description"
+    },
+    {
+      "showName": "创建人",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"creatorUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "creatorUser"
+    },
+    {
+      "showName": "创建时间",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "createTime"
+    },
+    {
+      "showName": "修改人",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"updateUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "updateUser"
+    },
+    {
+      "showName": "修改时间",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"updateTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "updateTime"
+    }
+  ]
+}

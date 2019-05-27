@@ -1,0 +1,53 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "订单号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"logisticsNo\"}",
+            "fieldConfigCode": "logisticsNo"
+        },
+        {
+            "showName": "托运客户",
+            "elementCode": "selectPartner",
+            "extraParams": "{\"field1\":\"clientOrgName\",\"field2\":\"clientOrgCode\",\"placeholder1\":\"请输入托运客户\"}",
+            "fieldConfigCode": "clientOrg"
+        },
+        {
+            "showName": "线路名称",
+            "elementCode": "selectRoute",
+            "extraParams": "{\"field1\":\"routeName\",\"field2\":\"routeCode\",\"placeholder1\":\"请输入线路名称\"}",
+            "fieldConfigCode": "route"
+        },
+        {
+            "showName": "货品",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"goodsName\",\"placeholder1\":\"请输入货物名称\"}",
+            "fieldConfigCode": "goodsName"
+        },
+        {
+            "showName": "发货单位",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"loadingOrgName\",\"placeholder1\":\"请输入装货单位\"}",
+            "fieldConfigCode": "loadingOrgName"
+        },
+        {
+            "showName": "收货单位",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"unloadingOrgName\",\"placeholder1\":\"请输入卸货单位\"}",
+            "fieldConfigCode": "unloadingOrgName"
+        },
+        {
+            "showName": "发货地",
+            "elementCode": "selectArea",
+            "extraParams": "{\"field1\":\"loadingProvinceCode\",\"field2\":\"loadingCityCode\",\"field3\":\"loadingCountyCode\"}",
+            "fieldConfigCode": "loadingArea"
+        },
+        {
+            "showName": "收货地",
+            "elementCode": "selectArea",
+            "extraParams": "{\"field1\":\"unloadingProvinceCode\",\"field2\":\"unloadingCityCode\",\"field3\":\"unloadingCountyCode\"}",
+            "fieldConfigCode": "unloadingArea"
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+// dialog
+
+.el-dialog--large {
+	width: 70%;
+}
+
+.el-dialog__header {
+	margin: 0 20px;
+	padding: 20px 0 10px;
+	border-bottom: solid 1px $borderColor !important;
+}
+
+.el-dialog__headerbtn {
+	&:focus .el-dialog__close, &:hover .el-dialog__close {
+		color: $uiColor;
+	}
+}
+
+.el-dialog__body {
+	padding: 10px 20px;
+	min-height: auto;
+	max-height: 300px;
+	#list {
+		height: auto !important;
+		.list-wrap {
+			float: none;
+		}
+	}
+	.page-header {
+		position: relative;
+		top: 10px;
+		height: 1px;
+		padding: 0;
+		border-bottom: 0;
+		.page-refresh {
+			display: none;
+		}
+		.hd-opr {
+			position: absolute;
+		}
+	}
+	#advanceSearch {
+		display: none;
+	}
+	#miniSearch {
+		.el-form-item {
+			margin-right: 0;
+		}
+	}
+	.fix-table-wrap {
+		padding: 0 !important;
+		min-height: 100px !important;
+		max-height: 204px !important;
+	}
+}
+
+.el-dialog__footer {
+	margin: 0 20px;
+	padding: 10px 0;
+	border-top: solid 1px $borderColor;
+}

@@ -1,0 +1,117 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "车辆信息id",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"vehicleid\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"TRUE\"}",
+            "fieldConfigCode": "vehicleid"
+        },
+        {
+            "showName": "车辆分类代码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"vehicleclassificationcode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "vehicleclassificationcode"
+        },
+        {
+            "showName": "牌照类型代码",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"licenseplatetypecode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "licenseplatetypecode"
+        },
+        {
+            "showName": "车辆牌照号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"vehiclenumber\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "vehiclenumber"
+        },
+        {
+            "showName": "车牌颜色",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"vehiclelicenseplatecolor\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "vehiclelicenseplatecolor"
+        },
+        {
+            "showName": "挂车牌照号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"trailerlicenceno\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "trailerlicenceno"
+        },
+        {
+            "showName": "车辆长度",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"vehiclelength\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "vehiclelength"
+        },
+        {
+            "showName": "车辆宽度",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"vehiclewidth\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "vehiclewidth"
+        },
+        {
+            "showName": "车辆高度",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"vehicleheight\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "vehicleheight"
+        },
+        {
+            "showName": "满载车辆质量",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"vehicleladenweight\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "vehicleladenweight"
+        },
+        {
+            "showName": "车辆载质量",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"vehicletonnage\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "vehicletonnage"
+        },
+        {
+            "showName": "道路运输证字号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"roadtransportcertificatenumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "roadtransportcertificatenumber"
+        },
+        {
+            "showName": "备注",
+            "elementCode": "textarea",
+            "extraParams": {
+              "field1": "remark",
+              "maxLength1":512,
+              "detailLinkVisiable": "false"
+            },
+            "fieldConfigCode": "remark"
+        },
+        {
+            "showName": "所属实际承运人id",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"carrierid\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "carrierid"
+        },
+        {
+            "showName": "注册时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"registrationdatetime\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd HH:mm:ss\"}",
+            "fieldConfigCode": "registrationdatetime"
+        },
+        {
+            "showName": "是否删除",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"isdeleteflag\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "isdeleteflag"
+        },
+        {
+            "showName": "同步时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"synchronizationtime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "synchronizationtime"
+        },
+        {
+            "showName": "同步标识",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"isexception\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "isexception"
+        }
+    ]
+}

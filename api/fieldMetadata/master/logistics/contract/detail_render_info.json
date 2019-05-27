@@ -1,0 +1,89 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "业务编号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"contractNo\",\"required\":\"false\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"50\"}",
+            "fieldConfigCode": "contractNo"
+        },
+        {
+            "showName": "合同编号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"contractSystemNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\"}",
+            "fieldConfigCode": "contractSystemNo"
+        },
+        {
+            "showName": "合同状态",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"contractStatus\",\"default1\":\"effective\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"optionsValue1\":[\"ineffective\",\"effective\",\"uneffective\"],\"options1\":[\"待生效\",\"生效中\",\"已失效\"]}",
+            "fieldConfigCode": "contractStatus"
+        },
+        {
+            "showName": "合同名称",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"contractName\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入合约名称\"}",
+            "fieldConfigCode": "contractName"
+        },
+        {
+            "showName": "甲方(客户)",
+            "elementCode": "popSelectPartner",
+            "extraParams": "{\"field1\":\"clientOrgName\",\"field2\":\"clientOrgCode\",\"field3\":\"clientOrgCode\",\"field4\":\"platformClientOrgCode\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入托运客户\",\"outputKey1\":\"partner\",\"outputKey3\":\"partner\",\"outputKey4\":\"partner\",\"inputKey1\":\"partner.orgName\",\"inputKey2\":\"partner.code\",\"inputKey4\":\"partner.orgCode\",\"chooseSelf3\":\"TRUE\"}",
+            "fieldConfigCode": "partnerName"
+        },
+        {
+            "showName": "乙方",
+            "elementCode": "popSelectPartner",
+            "extraParams": "{\"field1\":\"carrierOrgName\",\"field2\":\"carrierOrgCode\",\"field3\":\"carrierOrgCode\",\"field4\":\"platformCarrierOrgCode\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"readonly1\":\"TRUE\",\"outputKey1\":\"carrier\",\"outputKey3\":\"carrier\",\"outputKey4\":\"carrier\",\"inputKey1\":\"carrier.orgName\",\"inputKey2\":\"carrier.code\",\"inputKey4\":\"carrier.orgCode\",\"chooseSelf3\":\"TRUE\"}",
+            "fieldConfigCode": "carrierOrg"
+        },
+        {
+            "showName": "合同有效期",
+            "elementCode": "dateRange",
+            "extraParams": "{\"field1\":\"fromContractExpiryDate\",\"field2\":\"contractExpiryDateLable\",\"field3\":\"toContractExpiryDate\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"format3\":\"yyyy-MM-dd HH:mm:ss\",\"default2\":\"到\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\"}",
+            "fieldConfigCode": "contractExpiryDate"
+        },
+        {
+            "showName": "合同描述",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"description\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "description"
+        },
+        {
+            "showName": "合同内容",
+            "elementCode": "textarea",
+            "extraParams": "{\"field1\":\"contractDetail\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入合约内容\"}",
+            "fieldConfigCode": "contractDetail"
+        },
+        {
+            "showName": "附件",
+            "elementCode": "files",
+            "extraParams": "{\"field1\":\"contractAttachment\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "contractAttachment"
+        },
+        {
+            "showName": "创建人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"creatorUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "creatorUser"
+        },
+        {
+            "showName": "创建时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "createTime"
+        },
+        {
+            "showName": "修改人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateUser"
+        },
+        {
+            "showName": "修改时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateTime"
+        }
+    ]
+}

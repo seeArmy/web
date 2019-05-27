@@ -1,0 +1,539 @@
+// biz visual
+@import "../assets/sass/_reset-default.scss";
+@import "../assets/sass/_color.scss";
+
+$themeColor: #0054a7 !default;
+
+body {
+  background-color: $bgLight;
+}
+.org {
+  color: #f48400;
+}
+.blue {
+  color: $blue;
+}
+.red {
+  color: $red;
+}
+.green {
+  color: $green;
+}
+// .biz-visual {
+//   * {
+//     box-sizing: border-box;
+//   }
+// }
+/*--top-section--*/
+.top-section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+  border-bottom: solid 2px $uiColor;
+  background-color: $white;
+  .page-title {
+    padding: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: $baseColor;
+  }
+  #pageRefresh {
+    opacity: .6;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+/*--logistics-section--*/
+.logistics-section {
+  position: absolute;
+  top: 42px;
+  right: 0;
+  left: 0;
+  padding: 15px 15px 0;
+  height: 60px;
+  font-size:14px;
+  .fm-list {
+    li {
+      float: left;
+      width: 20%;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .col2 {
+      width: 40%;
+      padding-left: 90px;
+      white-space: normal;
+      overflow: visible;
+      .fm-tit {
+        float: left;
+        width: 90px;
+        margin-left: -90px;
+      }
+    }
+  }
+  .ele-status .es-item {
+    width: 16px;
+    height: 16px;
+  }
+  .progress {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    height: 20px;
+    background-color: $white;
+    border: solid 1px #ddd;
+    .progress-highlight {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      background-color: #1cba6a;
+      transition: width .2s ease-in-out;
+    }
+    .progress-text {
+      position: absolute;
+      z-index: 20;
+      left: 50%;
+      transform: translateX(-50%);
+      line-height: 20px;
+      color: $white;
+      text-shadow: 1px 1px 0 #999;
+    }
+  }
+  .line-progress {
+    position: relative;
+    width: 95%;
+    height: 20px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 7px;
+      right: 0;
+      left: 0;
+      height: 0;
+      border-bottom: dashed 1px #ddd;
+    }
+    .line-block {
+      position: absolute;
+    }
+    .line-start {
+      top: 0;
+      left: 0;
+    }
+    .line-middle {
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .line-end {
+      top: 0;
+      right: 0;
+    }
+    .line-dot {
+      position: relative;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: #999;
+      border: solid 2px $bgLight;
+      border-radius: 100%;
+    }
+    .line-text,.line-status {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      color: #999;
+      font-size: 12px;
+    }
+    .line-status {
+      display: none;
+      top: -15px;
+    }
+    .line-start:hover,.line-middle:hover,.line-3rd:hover,.line-end:hover {
+      cursor: pointer;
+      .line-status {
+        display: block;
+      }
+    }
+  }
+  .line-middle {
+    .line-dot {
+      background-color: $uiColor;
+    }
+    .line-text,.line-status {
+      color: $uiColor;
+    }
+  } 
+  .line-end {
+    .line-dot {
+      background-color: $green;
+    }
+    .line-text,.line-status {
+      color: $green;
+    }
+  } 
+}
+
+#fourStep {
+  .line-middle {
+    left: 33.3333%;
+  }
+  .line-3rd {
+    left: 66.6666%;
+    .line-dot {
+      background-color: $blue;
+    }
+    .line-text,.line-status {
+      color: $blue;
+    }
+  }
+}
+
+/*--map-section--*/
+.map-section {
+  position: absolute;
+  top: 132px;
+  right: 32%;
+  bottom: 0;
+  left: 0;
+  border: solid 1px #ddd;
+  box-shadow: 2px 2px 2px #eee inset;
+  .map {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*--waybill-section--*/
+.waybill-section {
+  position: absolute;
+  top: 132px;
+  right: 0;
+  bottom: 0;
+  width: 32%;
+  font-size: 14px;
+  .waybill-search,.waybill-list {
+    margin-left: 10px;
+  }
+}
+.waybill-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 40px;
+  border: solid 1px #ddd;
+  background-color: #f5f5f5;
+  .search-hd {
+    padding: 0 10px;
+    line-height: 40px;
+    cursor: pointer;
+    h2 {
+      font-size: 16px;
+    }
+  }
+  .search-bd {
+    position: absolute;
+    z-index: 20;
+    top: 40px;
+    right: -1px;
+    left: -1px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: solid 1px #ddd;
+    border-top: 0;
+  }
+  .fm-list {
+    li {
+      margin-bottom: 10px;
+    }
+    .fm-tit {
+      display: inline-block;
+      width: 80px;
+      font-size: 13px;
+    }
+    .tc {
+      text-align: center;
+    }
+    .txtbox {
+      box-sizing: border-box;
+      padding: 3px 10px;
+      height: 24px;
+      border: solid 1px #dadada;
+      border-radius: 3px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0 20px;
+      margin: 0 5px;
+      height: 24px;
+      line-height: 24px;
+      border: solid 1px transparent;
+      border-radius: 3px;
+      opacity: .8;
+      cursor: pointer;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    .btn-primary {
+      background-color: $uiColor;
+      border: solid 1px $uiColor;
+      color: $white;
+    }
+    .btn-default {
+      background-color: #f9fafc;
+      border: solid 1px #ddd;
+    }
+  }
+}
+
+.waybill-list {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  bottom: 40px;
+  left: 0;
+  overflow: auto;
+  .ele-status .es-item {
+    width: 12px;
+    height: 12px;
+  }
+}
+.waybill-page {
+  position: absolute;
+  height: 40px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: 10px;
+  .el-pagination {
+    margin-top: 4px;
+  }
+  .el-pager li:hover,.el-pagination button:hover {
+    color: #f48400;
+  }
+  .el-pager li.active {
+    background-color: #f48400;
+    border-color: #f48400;
+  }
+  .el-pagination button.disabled {
+    color: #e4e4e4;
+  }
+}
+
+.card-list {
+  margin-bottom: 10px;
+  line-height: 1.4;
+  border: solid 1px #ddd;
+  background-color: #fff;
+  cursor: pointer;
+  &:hover,&.actived {
+    background-color: #ffffe7;
+    border-color: #ccc;
+    .cl-hd {
+      background-color: #bdbdbd;
+      color: $white;
+      .blue {
+        color: $white;
+      }
+    }
+  }
+  .cl-hd {
+    padding: 5px 10px;
+    line-height: 1.4;
+    background-color: #f5f5f5;
+    .index {
+      margin-right: 10px;
+      display: inline-block;
+      color: #666;
+      font-size: 12px;
+      margin-top: 1px;
+    }
+    .view-gps {
+      margin-left: 5px;
+    }
+  }
+  .cl-bd {
+    padding: 5px 10px;
+    .a-index{
+      margin-left: 26px;
+      display: inline-block;
+    }
+  }
+  .cl-info {
+    display: none;
+    margin: 5px 0;
+    padding: 5px 0;
+    border-top: dashed 1px #ddd;
+    border-bottom: dashed 1px #ddd;
+    font-size: 13px;
+    .grey {
+      color: #999;
+    }
+    p {
+      margin-bottom: 5px;
+    }
+  }
+  .tr {
+    display: none;
+    text-align: right;
+  }
+  &.actived {
+    .cl-info,.tr {
+      display: block;
+    }
+  }
+  .pi {
+    position: relative;
+    padding: 0 5px;
+    margin-right: 8px;
+    display: inline-block;
+    background-color: $blue;
+    color: $white;
+    font-size: 12px;
+    &:after {
+      content: '';
+      position: absolute;
+      right: -8px;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      border: solid 8px $blue;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      border-right: 0;
+    }
+  }
+}
+
+.rl-map-info {
+  position: relative;
+  top: 0;
+  width: 320px;
+  white-space: nowrap;
+}
+
+.map-header {
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+  border-bottom: solid 1px #e8e8e8;
+  line-height: 1.5;
+  .truck-detail {
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 3px;
+  }
+  .el-tag--grey {
+    padding: 0 5px;
+    height: 18px;
+    line-height: 18px;
+    border: solid 1px #ddd;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #999;
+  }
+  .status {
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+.map-content {
+  .truck-role {
+    display: inline-block;
+    margin-right: 8px;
+    height: 14px;
+    line-height: 14px;
+    padding: 0 1px;
+    font-size: 12px;
+    font-style: normal;
+    background-color: #f48400;
+    color: #fff;
+    border: solid 1px #f48400;
+    border-radius: 3px;
+  }
+  .copilot {
+    margin-top: 5px;
+    .truck-role {
+      background-color: #2c84de;
+      border-color: #2c84de;
+    }
+  }
+  .to-list, .wb-list {
+    padding: 10px 12px;
+    border-bottom: solid 1px #f6f6f6;
+    .tit {
+      display: inline-block;
+      width: 80px;
+      color: #999;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+  }
+  .gold {
+    color: #993;
+  }
+}
+
+.map-footer {
+  padding: 10px;
+  text-align: center;
+  .btn-grey {
+    display: inline-block;
+    padding: 0 12px;
+    margin: 0 5px;
+    height: 22px;
+    line-height: 22px;
+    text-decoration: none;
+    background-color: #f6f6f6;
+    border: solid 1px #e8e8e8;
+    border-radius: 3px;
+    color: #666;
+    &:hover {
+      background-color: #f48400;
+      color: #fff;
+      border-color: #f48400;
+    }
+  }
+}
+
+.theme-blue {
+  .top-section {
+    border-bottom-color: $themeColor;
+  }
+  .btn-primary,.map-footer .btn-grey:hover {
+    background-color: $themeColor !important;
+    border-color: $themeColor !important; 
+  }
+  .card-list {
+    &:hover,&.actived {
+      background-color: #f3f9ff;
+    }
+  }
+
+  .el-pager li:hover,.el-pagination button:hover {
+    color: $themeColor;
+  }
+  .el-pager li.active {
+    background-color: $themeColor;
+    border-color: $themeColor;
+  }
+
+}

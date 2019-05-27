@@ -1,0 +1,119 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "公司全称",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"orgFullName\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入公司全称\"}",
+            "fieldConfigCode": "orgFullName"
+        },
+        {
+            "showName": "伙伴简称",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"orgName\",\"required\":\"true\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"50\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入伙伴简称\"}",
+            "fieldConfigCode": "orgName"
+        },
+        {
+            "showName": "认证状态",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"certStatus\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"unauthenticated\",\"authenticating\",\"authenticated\",\"failed\"],\"options1\":[\"未认证\",\"认证中\",\"已认证\",\"认证失败\"]}",
+            "fieldConfigCode": "certStatus"
+        },
+        {
+            "showName": "标签",
+            "elementCode": "tag",
+            "extraParams": "{\"field1\":\"orgTag\",\"default1\":\"客户\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"6\"}",
+            "fieldConfigCode": "orgTag"
+        },
+        {
+            "showName": "所在地区",
+            "elementCode": "selectArea",
+            "extraParams": "{\"field1\":\"province\",\"field2\":\"city\",\"field3\":\"county\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "orgArea"
+        },
+        {
+            "showName": "详细地址",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"address\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入详细地址\"}",
+            "fieldConfigCode": "orgAddress"
+        },
+        {
+            "showName": "联系人",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"linkmanFullName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入联系人\"}",
+            "fieldConfigCode": "linkmanFullName"
+        },
+        {
+            "showName": "联系电话",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"linkmanPhone\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入联系电话\"}",
+            "fieldConfigCode": "linkmanPhone"
+        },
+        {
+            "showName": "备注",
+            "elementCode": "textarea",
+            "extraParams": "{\"field1\":\"description\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入备注\"}",
+            "fieldConfigCode": "description"
+        },
+        {
+            "showName": "创建人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"creatorUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "creatorUser"
+        },
+        {
+            "showName": "创建时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "createTime"
+        },
+        {
+            "showName": "修改人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateUser"
+        },
+        {
+            "showName": "修改时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "updateTime"
+        },
+        {
+            "showName": "纳税人识别号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"taxNumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入纳税人识别号\"}",
+            "fieldConfigCode": "orgTaxNumber"
+        },
+        {
+            "showName": "进项税率",
+            "elementCode": "taxRate",
+            "extraParams": "{\"field1\":\"inputTaxRate\",\"field2\":\"inputTaxRateUnit\",\"default2\":\"%\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\"请输入进项税率\"}",
+            "fieldConfigCode": "inputTaxRate"
+        },
+        {
+            "showName": "销项税率",
+            "elementCode": "taxRate",
+            "extraParams": "{\"field1\":\"outputTaxRate\",\"field2\":\"outputTaxRateUnit\",\"default2\":\"%\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\"请输入销项税率\"}",
+            "fieldConfigCode": "outputTaxRate"
+        },
+        {
+            "showName": "代理销项税率",
+            "elementCode": "taxRate",
+            "extraParams": "{\"field1\":\"agencyOutputTaxRate\",\"field2\":\"agencyOutputTaxRateUnit\",\"default2\":\"%\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\"请输入进项税率\"}",
+            "fieldConfigCode": "agencyOutputTaxRate"
+        },
+        {
+            "showName": "代理进项税率",
+            "elementCode": "taxRate",
+            "extraParams": "{\"field1\":\"agencyInputTaxRate\",\"field2\":\"agencyInputTaxRateUnit\",\"default2\":\"%\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\"请输入销项税率\"}",
+            "fieldConfigCode": "agencyInputTaxRate"
+        },
+        {
+            "showName": "伙伴代码",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"orgNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入伙伴代码\"}",
+            "fieldConfigCode": "orgNo"
+        }
+    ]
+}

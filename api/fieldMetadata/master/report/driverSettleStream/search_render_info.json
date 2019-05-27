@@ -1,0 +1,64 @@
+{
+  "code": 200,
+  "content": [
+  {
+    "showName": "司机姓名",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"inDriverName\",\"field2\":\"driverCode\",\"placeholder1\":\"请输入司机姓名\"}",
+    "fieldConfigCode": "inDriverName"
+  },
+  {
+    "showName": "手机号",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"inDriverPhone\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "inDriverPhone"
+  },
+  {
+    "showName": "头车牌号",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"inTruckLicenseNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "inTruckLicenseNo"
+  },
+  {
+    "showName": "收货方",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"inClientOrgName\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入收货方\",\"inputKey1\":\"logistics.unloadingOrgName,route.unloadingOrgName\"}",
+    "fieldConfigCode": "inClientOrgName"
+  },
+  {
+    "showName": "专线",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"inRouteName\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入收货方\",\"inputKey1\":\"logistics.unloadingOrgName,route.unloadingOrgName\"}",
+    "fieldConfigCode": "inRouteName"
+  },
+  {
+    "showName": "工作状态",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"inWorkStatus\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入收货方\",\"inputKey1\":\"logistics.unloadingOrgName,route.unloadingOrgName\"}",
+    "fieldConfigCode": "inWorkStatus"
+  },
+  {
+    "showName": "运单号",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"inWaybillNo\",\"field2\":\"code\",\"area\":\"base\",\"required\":\"true\",\"detailLinkVisiable\":\"true\"}",
+    "fieldConfigCode": "inWaybillNo"
+  },
+  {
+    "showName": "订单号",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"inLogisticsNo\",\"field2\":\"code\",\"area\":\"base\",\"required\":\"true\",\"detailLinkVisiable\":\"true\"}",
+    "fieldConfigCode": "inLogisticsNo"
+  },
+  {
+    "showName": "起始时间",
+    "elementCode": "date",
+    "extraParams": "{\"field1\":\"inBeginTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"area\":\"loading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "inBeginTime"
+  },
+  {
+    "showName": "截止时间",
+    "elementCode": "date",
+    "extraParams": "{\"field1\":\"inEndTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"area\":\"loading\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "inEndTime"
+  }]
+}

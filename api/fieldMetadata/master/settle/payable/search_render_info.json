@@ -1,0 +1,53 @@
+{
+    "code": 200,
+    "content": [
+      {
+        "showName": "收款方名称",
+        "elementCode": "text",
+        "extraParams": "{\"field1\":\"payeeOrgName\"}",
+        "fieldConfigCode": "payeeOrgName"
+      },
+      {
+        "showName": "账单状态",
+        "elementCode": "select",
+        "extraParams": "{\"field1\":\"payableBillStatus\",\"optionsValue1\":[\"none\",\"pend\",\"accept\",\"reject\",\"destroy\"],\"options1\":[\"待提交审核\",\"待审核\",\"审核通过\",\"审核不通过\",\"已作废\"]}",
+        "fieldConfigCode": "payableBillStatus"
+      },
+      {
+        "showName": "付款状态",
+        "elementCode": "select",
+        "extraParams": "{\"field1\":\"payStatus\",\"optionsValue1\":[\"none\",\"part\",\"all\"],\"options1\":[\"未付款\",\"部分付款\",\"全部付款\"]}",
+        "fieldConfigCode": "payStatus"
+      },
+      {
+        "showName": "账单名称",
+        "elementCode": "text",
+        "extraParams": "{\"field1\":\"billName\"}",
+        "fieldConfigCode": "billName"
+      },
+      {
+        "showName": "账单编号",
+        "elementCode": "text",
+        "extraParams": "{\"field1\":\"billNo\"}",
+        "fieldConfigCode": "billNo"
+      },
+      {
+        "showName": "创建时间",
+        "elementCode": "dateRange",
+        "extraParams": "{\"field1\":\"from_createTime\",\"field3\":\"to_createTime\",\"format1\":\"yyyy-MM-dd\",\"format3\":\"yyyy-MM-dd\",\"default2\":\"到\"}",
+        "fieldConfigCode": "createTime"
+      },
+      {
+        "showName": "应付金额",
+        "elementCode": "numberRange",
+        "extraParams": "{\"field1\":\"from_payableAmount\",\"field3\":\"to_payableAmount\",\"default2\":\"到\"}",
+        "fieldConfigCode": "payableAmount"
+      },
+      {
+        "showName": "未付金额",
+        "elementCode": "numberRange",
+        "extraParams": "{\"field1\":\"from_unpaidAmount\",\"field3\":\"to_unpaidAmount\",\"default2\":\"到\"}",
+        "fieldConfigCode": "unpaidAmount"
+      }
+    ]
+}

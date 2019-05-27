@@ -1,0 +1,71 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "付款资金流水号",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"serialNumber\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"true\"}",
+            "fieldConfigCode": "serialNumber"
+        },
+        {
+            "showName": "确认状态",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"confirmStatus\",\"default1\":\"false\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"TRUE\",\"optionsValue1\":[\"true\",\"false\"],\"options1\":[\"已确认\",\"未确认\"]}",
+            "fieldConfigCode": "confirmStatus"
+        },
+        {
+            "showName": "收款方",
+            "elementCode": "popSelectPartner",
+            "extraParams": "{\"field1\":\"carrierOrgName\",\"field2\":\"carrierOrgCode\",\"field3\":\"carrierOrgCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入客户名称\",\"outputKey1\":\"partner\",\"outputKey3\":\"partner\",\"inputKey1\":\"partner.orgName\",\"inputKey2\":\"partner.code\"}",
+            "fieldConfigCode": "carrierOrgName"
+        },
+        {
+            "showName": "支付方式",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"settlingMethod\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"现金\",\"银行转账\",\"油卡\",\"气卡\",\"银行汇票\",\"商业汇票\"],\"options1\":[\"现金\",\"银行转账\",\"油卡\",\"气卡\",\"银行汇票\",\"商业汇票\"]}",
+            "fieldConfigCode": "settlingMethod"
+        },
+        {
+            "showName": "流水金额",
+            "elementCode": "money",
+            "extraParams": "{\"field1\":\"amount\",\"field2\":\"amountUnitCode\",\"default2\":\"元\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "amount"
+        },
+        {
+            "showName": "付款时间",
+            "elementCode": "date",
+            "extraParams": "{\"field1\":\"operateTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "operateTime"
+        },
+        {
+            "showName": "应付账单数",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"paymentNum\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "paymentNum"
+        },
+        {
+            "showName": "流水记录时间",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"updateTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"TRUE\"}",
+            "fieldConfigCode": "updateTime"
+        },
+        {
+            "showName": "备注",
+            "elementCode": "textarea",
+            "extraParams": "{\"field1\":\"description\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\"}",
+            "fieldConfigCode": "description"
+        },
+        {
+            "showName": "记录人",
+            "elementCode": "label",
+            "extraParams": "{\"field1\":\"operateUserFullName\",\"field2\":\"operateUserCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+            "fieldConfigCode": "operateUserFullName"
+        },
+        {
+          "showName": "付款凭证",
+          "elementCode": "file",
+          "extraParams": "{\"field1\":\"voucherResourceCode\",\"required\":\"FALSE\",\"detailLinkVisiable\":\"FALSE\"}",
+          "fieldConfigCode": "voucherResourceCode"
+        }
+    ]
+}

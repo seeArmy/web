@@ -1,0 +1,267 @@
+{
+  "code": 200,
+  "content": [
+  {
+    "showName": "公司全称",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"orgFullName\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入公司全称\"}",
+    "fieldConfigCode": "orgFullName"
+  },
+  {
+    "showName": "公司简称",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"orgName\",\"required\":\"true\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入公司简称\"}",
+    "fieldConfigCode": "orgName"
+  },
+  {
+    "showName": "组织类型",
+    "elementCode": "select",
+    "extraParams": "{\"field1\":\"orgType\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"1\",\"2\",\"3\"],\"options1\":[\"运营方\",\"承运方\",\"托运方\"]}",
+    "fieldConfigCode": "orgType"
+  },
+  {
+    "showName": "认证状态",
+    "elementCode": "select",
+    "extraParams": "{\"field1\":\"certStatus\",\"required\":\"false\",\"readonly1\":\"TRUE\",\"detailLinkVisiable\":\"false\",\"default1\":\"unauthenticated\",\"optionsValue1\":[\"unauthenticated\",\"authenticating\",\"authenticated\",\"failed\"],\"options1\":[\"未认证\",\"认证中\",\"已认证\",\"认证失败\"]}",
+    "fieldConfigCode": "certStatus"
+  },
+  {
+    "showName": "激活状态",
+    "elementCode": "select",
+    "extraParams": "{\"field1\":\"orgStatus\",\"required\":\"false\",\"readonly1\":\"TRUE\",\"detailLinkVisiable\":\"false\",\"default1\":\"inactivated\",\"optionsValue1\":[\"inactivated\",\"activated\"],\"options1\":[\"未激活\",\"已激活\"]}",
+    "fieldConfigCode": "orgStatus"
+  },
+  {
+    "showName": "纳税人识别号",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"taxNumber\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\": 50,\"placeholder1\":\"请输入纳税人识别号\"}",
+    "fieldConfigCode": "orgTaxNumber"
+  },
+  {
+    "showName": "纳税人资质",
+    "elementCode": "select",
+    "extraParams": "{\"field1\":\"taxType\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"general\",\"small\"],\"options1\":[\"一般纳税人\",\"小规模纳税人\"]}",
+    "fieldConfigCode": "taxType"
+  },
+  {
+    "showName": "分组",
+    "elementCode": "newTag",
+    "extraParams": {"field1":"orgTag", "hideAdd1":"TRUE", "tagDatasource1":"organizationTag" },
+    "fieldConfigCode": "orgTag"
+  },
+  {
+    "showName": "所在地区",
+    "elementCode": "selectArea",
+    "extraParams": "{\"field1\":\"province\",\"field2\":\"city\",\"field3\":\"county\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "orgArea"
+  },
+  {
+    "showName": "详细地址",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"address\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入详细地址\"}",
+    "fieldConfigCode": "orgAddress"
+  },
+  {
+    "showName": "业务联系人",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"linkmanFullName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入联系人\"}",
+    "fieldConfigCode": "linkmanFullName"
+  },
+  {
+    "showName": "联系电话",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"linkmanPhone\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入联系电话\"}",
+    "fieldConfigCode": "linkmanPhone"
+  },
+  {
+    "showName": "创建人",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"creatorUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "creatorUser"
+  },
+  {
+    "showName": "创建时间",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "createTime"
+  },
+  {
+    "showName": "修改人",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"updateUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "updateUser"
+  },
+  {
+    "showName": "修改时间",
+    "elementCode": "label",
+    "extraParams": "{\"field1\":\"updateTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+    "fieldConfigCode": "updateTime"
+  },
+  {
+    "showName": "进项税率",
+    "elementCode": "taxRate",
+    "extraParams":
+    {
+      "field1": "inputTaxRate",
+      "field2": "inputTaxRateUnit",
+      "default2": "%",
+      "checkRule1": "\\d{1,6}\\.?\\d{0,2}",
+      "checkMsg1": "请输入合理的值，最多输入两位小数",
+      "required": "false",
+      "detailLinkVisiable": "false",
+      "placeholder1": "请输入进项税率"
+    },
+    "fieldConfigCode": "inputTaxRate"
+  },
+  {
+    "showName": "销项税率",
+    "elementCode": "taxRate",
+    "extraParams":
+    {
+      "field1": "outputTaxRate",
+      "field2": "outputTaxRateUnit",
+      "default2": "%",
+      "checkRule1": "\\d{1,6}\\.?\\d{0,2}",
+      "checkMsg1": "请输入合理的值，最多输入两位小数",
+      "required": "false",
+      "detailLinkVisiable": "false",
+      "placeholder1": "请输入销项税率"
+    },
+    "fieldConfigCode": "outputTaxRate"
+  },
+  {
+    "showName": "备注",
+    "elementCode": "textarea",
+    "extraParams": "{\"field1\":\"description\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入备注\"}",
+    "fieldConfigCode": "description"
+  },
+  {
+    "showName": "油气费",
+    "elementCode": "settleSetting",
+    "extraParams":
+    {
+      "field1": "settleConfigValue1",
+      "field2": "settleConfigUnitCode1",
+      "checkRule1": "\\d{1,6}\\.?\\d{0,3}",
+      "checkMsg1": "请输入合理的值，最多输入三位小数",
+      "required": "false",
+      "detailLinkVisiable": "false",
+      "placeholder1": "请输入油气费",
+      "optionsValue2": ["%", "yuan"],
+      "options2": ["%", "元"]
+    },
+    "fieldConfigCode": "settleConfigValue1"
+  },
+  {
+    "showName": "保险费",
+    "elementCode": "settleSetting",
+    "extraParams":
+    {
+      "field1": "settleConfigValue2",
+      "field2": "settleConfigUnitCode2",
+      "checkRule1": "\\d{1,6}\\.?\\d{0,3}",
+      "checkMsg1": "请输入合理的值，最多输入三位小数",
+      "required": "false",
+      "detailLinkVisiable": "false",
+      "placeholder1": "请输入保险费",
+      "optionsValue2": ["%", "yuan"],
+      "options2": ["%", "元"]
+    },
+    "fieldConfigCode": "settleConfigValue2"
+  },
+  {
+    "showName": "信息费",
+    "elementCode": "settleSetting",
+    "extraParams":
+    {
+      "field1": "settleConfigValue3",
+      "field2": "settleConfigUnitCode3",
+      "checkRule1": "\\d{1,6}\\.?\\d{0,3}",
+      "checkMsg1": "请输入合理的值，最多输入三位小数",
+      "required": "false",
+      "detailLinkVisiable": "false",
+      "placeholder1": "请输入信息费",
+      "optionsValue2": ["%", "yuan"],
+      "options2": ["%", "元"]
+    },
+    "fieldConfigCode": "settleConfigValue3"
+  },
+  {
+    "showName": "附件",
+    "elementCode": "file",
+    "extraParams": "{\"field1\":\"attachmentResourceCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"dialogPreview\":\"TRUE\"}",
+    "fieldConfigCode": "attachmentResourceCode"
+  },
+  {
+    "showName": "发证时间",
+    "elementCode": "date",
+    "extraParams": "{\"field1\":\"attachmentIssuanceDate\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd\"}",
+    "fieldConfigCode": "attachmentIssuanceDate"
+  },
+  {
+    "showName": "截至时间",
+    "elementCode": "date",
+    "extraParams": "{\"field1\":\"attachmentExpirationDate\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd\"}",
+    "fieldConfigCode": "attachmentExpirationDate"
+  },
+  {
+    "showName": "营业执照附件",
+    "elementCode": "file",
+    "extraParams": "{\"field1\":\"businessLicenseResourceCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"dialogPreview\":\"TRUE\"}",
+    "fieldConfigCode": "businessLicenseResourceCode"
+  },
+  {
+    "showName": "统一信用代码",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"creditCode\",\"required\":\"false\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入信用代码\"}",
+    "fieldConfigCode": "creditCode"
+  },
+  {
+    "showName": "执照过期日期",
+    "elementCode": "date",
+    "extraParams": "{\"field1\":\"businessLicenseExpirationDate\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd\"}",
+    "fieldConfigCode": "businessLicenseExpirationDate"
+  },
+  {
+    "showName": "道路运输经营许可证附件",
+    "elementCode": "file",
+    "extraParams": "{\"field1\":\"transportCertificateResourceCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"dialogPreview\":\"TRUE\"}",
+    "fieldConfigCode": "transportCertificateResourceCode"
+  },
+  {
+    "showName": "许可证号码",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"transportCertificate\",\"required\":\"false\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入许可证号码\"}",
+    "fieldConfigCode": "transportCertificate"
+  },
+  {
+    "showName": "证件过期日期",
+    "elementCode": "date",
+    "extraParams": "{\"field1\":\"transportCertificateExpirationDate\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"format1\":\"yyyy-MM-dd\"}",
+    "fieldConfigCode": "transportCertificateExpirationDate"
+  },
+  {
+    "showName": "外部编码",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"orgExternalNo\",\"placeholder1\":\"请输入外部编码\"}",
+    "fieldConfigCode": "orgExternalNo"
+  },
+  {
+    "showName": "法人代表姓名",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"legalPersonName\",\"placeholder1\":\"请输入法人代表姓名\"}",
+    "fieldConfigCode": "legalPersonName"
+  },
+  {
+      "showName": "法人代表身份证号",
+      "elementCode": "text",
+      "extraParams": {"field1":"legalPersonIdentityNumber","checkRule1":"([0-9Xx]{15})([0-9Xx]{3})?","checkMsg1":"请输入正确的身份证号","required":"false","detailLinkVisiable":"false","maxLength1":"18","placeholder1":"请输入法人代表身份证号"},
+      "fieldConfigCode": "legalPersonIdentityNumber"
+  },
+  {
+      "showName": "法人代表身份证附件",
+      "elementCode": "file",
+      "extraParams": {"field1":"legalPersonResourceCode","required":"false","detailLinkVisiable":"false","dialogPreview":"TRUE"},
+      "fieldConfigCode": "legalPersonResourceCode"
+  }]
+}

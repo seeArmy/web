@@ -1,0 +1,113 @@
+{
+  "code": 200,
+  "content": [
+  {
+    "showName": "单车付款单号",
+    "elementCode": "text",
+    "extraParams":
+    {
+      "field1": "paybillNo",
+      "detailLinkVisiable": "false"
+    },
+    "fieldConfigCode": "paybillNo"
+  },
+  {
+    "showName": "付款单类型",
+    "elementCode": "select",
+    "extraParams": {
+      "field1": "paybillType",
+      "detailLinkVisiable": "false",
+      "options1": ["单车", "单项"],
+      "optionsValue1": ["order", "item"]
+    },
+    "fieldConfigCode": "paybillType"
+  },
+  {
+    "showName": "支付状态",
+    "elementCode": "select",
+    "extraParams":
+    {
+      "field1": "paybillPayStatus",
+      "detailLinkVisiable": "false",
+      "options1": ["待支付", "已支付", "支付失败"],
+      "optionsValue1": ["pend", "paid", "failed"]
+    },
+    "fieldConfigCode": "paybillPayStatus"
+  },
+    {
+    "showName": "支付渠道",
+    "elementCode": "select",
+    "extraParams":
+    {
+      "field1": "paybillPayChannel",
+      "detailLinkVisiable": "false",
+      "options1": ["线下支付", "链金师支付", "工商银行支付","包商银行支付"],
+      "optionsValue1": ["offline", "ljs", "icbc","bsb"]
+    },
+    "fieldConfigCode": "paybillPayChannel"
+  },
+  {
+    "showName": "收款人",
+    "elementCode": "text",
+    "extraParams":
+    {
+      "field1": "payeeName",
+      "detailLinkVisiable": "false"
+    },
+    "fieldConfigCode": "payeeName"
+  },
+  {
+    "showName": "收款用户ID",
+    "elementCode": "text",
+    "extraParams":
+    {
+      "field1": "platformPayeeCode",
+      "detailLinkVisiable": "false"
+    },
+    "fieldConfigCode": "platformPayeeCode"
+  },
+  {
+    "showName": "收款用户手机号",
+    "elementCode": "text",
+    "extraParams":
+    {
+      "field1": "payeePhone",
+      "detailLinkVisiable": "false"
+    },
+    "fieldConfigCode": "payeePhone"
+  },
+  {
+    "showName": "运单号",
+    "elementCode": "text",
+    "extraParams":
+    {
+      "field1": "waybillNo",
+      "detailLinkVisiable": "false"
+    },
+    "fieldConfigCode": "waybillNo"
+  },
+  {
+      "showName": "车牌号",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"truckLicenseNo\",\"placeholder1\":\"请输入车牌号\"}",
+      "fieldConfigCode": "truckLicenseNo"
+  },
+  {
+      "showName": "线路名称",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"routeName\",\"placeholder1\":\"请输入线路名称\"}",
+      "fieldConfigCode": "route"
+  },
+  {
+    "showName": "支付时间",
+    "elementCode": "dateRange",
+    "extraParams": "{\"field1\":\"from_paybillPayTime\",\"field3\":\"to_paybillPayTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"format3\":\"yyyy-MM-dd HH:mm:ss\",\"default2\":\"到\"}",
+    "fieldConfigCode": "paybillPayTime"
+  },
+  {
+    "showName": "结算通过时间",
+    "elementCode": "dateRange",
+    "extraParams": "{\"field1\":\"from_settleTime\",\"field3\":\"to_settleTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"format3\":\"yyyy-MM-dd HH:mm:ss\",\"default2\":\"到\"}",
+    "fieldConfigCode": "settleTime"
+  }]
+}

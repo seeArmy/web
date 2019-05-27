@@ -1,0 +1,34 @@
+{
+  "code": 200,
+  "content": [
+  {
+    "showName": "合同编号",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"contractSystemNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\"}",
+    "fieldConfigCode": "contractSystemNo"
+  },
+  {
+    "showName": "业务编号",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"contractNo\",\"required\":\"false\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"50\"}",
+    "fieldConfigCode": "contractNo"
+  },
+  {
+    "showName": "合同名称",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"contractName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入合约名称\"}",
+    "fieldConfigCode": "contractName"
+  },
+  {
+    "showName": "承运方名称",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"carrierOrgName\"}",
+    "fieldConfigCode": "carrierOrgName"
+  },
+  {
+    "showName": "托运方名称",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"clientOrgName\"}",
+    "fieldConfigCode": "clientOrgName"
+  }]
+}

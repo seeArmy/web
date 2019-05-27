@@ -1,0 +1,29 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "姓名",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"fullName\",\"placeholder1\":\"请输入姓名\"}",
+            "fieldConfigCode": "fullName"
+        },
+        {
+            "showName": "手机号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"phone\",\"placeholder1\":\"请输入手机号\"}",
+            "fieldConfigCode": "phone"
+        },
+        {
+            "showName": "所属公司",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"ownerOrgName\",\"placeholder1\":\"请输入所属公司\"}",
+            "fieldConfigCode": "ownerOrgName"
+        },
+        {
+            "showName": "黑名单状态",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"blacklistFlag\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"placeholder1\":\" \",\"optionsValue1\":[\"1\",\"0\"],\"options1\":[\"黑名单\",\"正常\"]}",
+            "fieldConfigCode": "blacklistFlag"
+        }
+    ]
+}

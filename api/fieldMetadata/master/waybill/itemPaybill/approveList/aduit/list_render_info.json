@@ -1,0 +1,123 @@
+{
+  "code": 200,
+  "content": [
+    {
+      "showName": "单车付款单号",
+      "elementCode": "label",
+      "extraParams":
+      {
+        "field1": "paybillNo",
+        "detailLinkVisiable": "false"
+      },
+      "fieldConfigCode": "paybillNo"
+    },
+    {
+      "showName": "付款单类型",
+      "elementCode": "label",
+      "extraParams":
+      {
+        "field1": "paybillType",
+        "detailLinkVisiable": "false",
+        "options1": ["单车", "单项"],
+        "optionsValue1": ["order", "item"]
+      },
+      "fieldConfigCode": "paybillType"
+    },
+    {
+      "showName": "审核状态",
+      "elementCode": "label",
+      "extraParams":
+      {
+        "field1": "paybillApproveStatus",
+        "detailLinkVisiable": "false",
+        "options1": ["待申请", "待审核", "审核通过", "审核不通过"],
+        "optionsValue1": ["ready", "pend", "accept", "reject"]
+      },
+      "fieldConfigCode": "paybillApproveStatus"
+    },
+    {
+      "showName": "数量",
+      "fieldConfigCode": "chargeItemNumberUnitCode",
+      "elementCode": "labelNumberInput",
+      "extraParams": "{\"field1\": \"chargeItemNumber\", \"field2\": \"chargeItemNumberUnitCode\", \"required\": \"false\",\"inputKey2\": \"selectOption.value\", \"outputKey1\": \"selectOption\",\"optionsValue2\":[\"item\",\"litre\",\"kg\",\"ton\",\"km\"],\"options2\":[\"件\",\"升\",\"千克\",\"吨\",\"公里\"]}"
+    },
+    {
+      "showName": "价格",
+      "fieldConfigCode": "chargeItemPriceUnitCode",
+      "elementCode": "labelNumberInput",
+      "extraParams": "{\"field1\": \"chargeItemPrice\",\"field2\": \"chargeItemPriceUnitCode\", \"required\": \"false\",\"inputKey2\": \"chargeItemPrice.value\", \"outputKey1\": \"chargeItemPrice\",\"optionsValue2\":[\"yuanperitem\",\"yuanperlitre\",\"yuanperkg\",\"yuanperton\",\"yuanperkm\"],\"options2\":[\"元/件\",\"元/升\",\"元/千克\",\"元/吨\",\"元/公里\"]}"
+    },
+    {
+      "showName": "金额",
+      "fieldConfigCode": "paymentAmount",
+      "elementCode": "label",
+      "extraParams": "{\"field1\": \"paymentAmount\",\"required\": \"true\",\"inputKey2\": \"chargeItemAmount.value\", \"outputKey1\": \"chargeItemAmount\"}"
+    },
+    {
+      "showName": "运单号",
+      "elementCode": "wayBillLink",
+      "extraParams": "{\"field1\":\"waybillNo\",\"field2\":\"waybillCode\",\"area\":\"base\",\"required\":\"true\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "waybillNo"
+    },
+    {
+      "showName": "车牌号",
+      "elementCode": "popSelectTransport",
+      "extraParams": "{\"field1\":\"truckLicenseNo\",\"field2\":\"truckCode\",\"field3\":\"truckCode\",\"field4\":\"platformTruckCode\",\"area\":\"transporter\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入车牌号\",\"outputKey1\":\"transport\",\"outputKey3\":\"transport\",\"outputKey4\":\"transport\",\"inputKey1\":\"transport.mainTruckLicenseNo\",\"inputKey2\":\"transport.mainTruckCode\",\"inputKey4\":\"transport.mainTruckCode\"}",
+      "fieldConfigCode": "truckLicenseNo"
+    },
+    {
+      "showName": "司机",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"payeeName\",\"area\":\"transporter\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入主驾姓名\",\"outputKey1\":\"driver\",\"outputKey3\":\"driver\",\"outputKey4\":\"driver\",\"inputKey1\":\"transport.driverFullName,driver.fullName\",\"inputKey2\":\"transport.driverCode,driver.code\",\"inputKey4\":\"transport.platformDriverCode,driver.userCode\"}",
+      "fieldConfigCode": "payeeName"
+    },
+    {
+      "showName": "客户",
+      "elementCode": "popSelectPartner",
+      "extraParams": "{\"field1\":\"clientOrgName\",\"field2\":\"clientOrgCode\",\"field3\":\"clientOrgCode\",\"field4\":\"platformClientOrgCode\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请选择托运客户\",\"outputKey1\":\"partner\",\"outputKey3\":\"partner\",\"outputKey4\":\"partner\",\"inputKey1\":\"logistics.clientOrgName,route.clientOrgName,partner.orgName\",\"inputKey2\":\"logistics.clientOrgCode,route.clientOrgCode,partner.code\",\"inputKey4\":\"partner.orgCode\"}",
+      "fieldConfigCode": "clientOrgName"
+    },
+    {
+      "showName": "线路",
+      "elementCode": "popSelectRoute",
+      "extraParams": "{\"field1\":\"routeName\",\"field2\":\"routeCode\",\"field3\":\"routeCode\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入线路\",\"outputKey1\":\"route\",\"outputKey3\":\"route\",\"inputKey1\":\"logistics.routeName,route.routeName\",\"inputKey2\":\"logistics.routeCode,route.code\"}",
+      "fieldConfigCode": "route"
+    },
+    {
+      "showName": "货物总称",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"goodsName\",\"area\":\"base\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入货物总称\",\"inputKey1\":\"logistics.goodsName\"}",
+      "fieldConfigCode": "goodsName"
+    },
+    {
+      "showName": "订单号",
+      "elementCode": "selectLogistics",
+      "extraParams": "{\"field1\":\"logisticsNo\",\"field2\":\"logisticsCode\",\"area\":\"base\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "logisticsCode"
+    },
+    {
+      "showName": "开户银行",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"payeeBankName\",\"area\":\"bank\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入开户行\"}",
+      "fieldConfigCode": "payeeBankName"
+    },
+    {
+      "showName": "银行户名",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"payeeBankAccountName\",\"area\":\"bank\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入银行户名\"}",
+      "fieldConfigCode": "payeeBankAccountName"
+    },
+    {
+      "showName": "银行账号",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"payeeBankAccountNo\",\"area\":\"bank\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"30\",\"placeholder1\":\"请输入银行账号\"}",
+      "fieldConfigCode": "payeeBankAccountNo"
+    },
+    {
+        "showName": "创建时间",
+        "elementCode": "label",
+        "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+        "fieldConfigCode": "createTime"
+    }
+  ]
+}

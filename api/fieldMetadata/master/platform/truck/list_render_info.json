@@ -1,0 +1,102 @@
+{
+  "code": 200,
+  "content": [
+    {
+      "showName": "车牌号",
+      "fieldConfigCode": "truckLicenseNo",
+      "elementCode": "label",
+      "extraParams":
+      {
+        "field1": "truckLicenseNo",
+        "required": "false",
+        "detailLinkVisiable": "true"
+      }
+    },
+    {
+      "showName": "认证状态",
+      "fieldConfigCode": "certStatus",
+      "elementCode": "label",
+      "extraParams":
+      {
+        "field1": "certStatus",
+        "required": "false",
+        "optionsValue1": ["unauthenticated", "authenticating", "authenticated", "failed"],
+        "options1": ["未认证", "认证中", "认证成功", "认证失败"]
+      }
+    },
+    {
+      "showName": "牌照类型",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"truckLicenseType\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"optionsValue1\":[\"01\",\"02\",\"99\"],\"options1\":[\"大型汽车号牌\",\"小型汽车号牌\",\"其他号牌\"]}",
+      "fieldConfigCode": "truckLicenseType"
+    },
+    {
+      "showName": "车辆种类",
+      "fieldConfigCode": "isTrailer",
+      "elementCode": "select",
+      "extraParams": "{\"field1\":\"isTrailer\", \"required\": \"false\", \"optionsValue1\": [\"false\",\"true\"], \"options1\": [\"主车\",\"挂车\"]}"
+    },
+    {
+      "showName": "动力类型",
+      "fieldConfigCode": "powerType",
+      "elementCode": "label",
+      "extraParams":
+      {
+        "field1": "powerType",
+        "optionsValue1": ["oil", "gas"],
+        "options1": ["油车", "气车"]
+      }
+    },
+    {
+      "showName": "车型",
+      "fieldConfigCode": "truckModelCode",
+      "elementCode": "truckModel",
+      "extraParams":
+      {
+        "field1": "truckModelCode",
+        "field2": "truckModelName",
+        "required": "false"
+      }
+    },
+    {
+      "showName": "总质量",
+      "elementCode": "regTonnage",
+      "extraParams": "{\"field1\":\"truckTotalWeight\",\"field2\":\"truckTotalWeightUnitCode\",\"default2\":\"ton\",\"checkRule1\":\"[0-9]{1,6}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过9位（最多2位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"9\",\"placeholder1\":\"请输入车辆总质量\"}",
+      "fieldConfigCode": "truckTotalWeight"
+      },
+    {
+      "showName": "道路运输证号",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"transportLicenseNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"15\",\"placeholder1\":\"请输入车辆道路运输证号\",\"inputKey1\":\"truckModel.roadTransport\"}",
+      "fieldConfigCode": "transportLicenseNo"
+    },
+    {
+      "showName": "载重",
+      "fieldConfigCode": "regTonnage",
+      "elementCode": "regTonnage",
+      "extraParams":
+      {
+        "field1": "regTonnage",
+        "field2": "regTonnageUnitCode",
+        "required": "false"
+      }
+    },
+    {
+      "showName": "车长",
+      "fieldConfigCode": "truckLength",
+      "elementCode": "truckSize",
+      "extraParams":
+      {
+        "field1": "truckLength",
+        "field2": "truckLengthUnitCode",
+        "required": "false"
+      }
+    },
+    {
+      "showName": "创建时间",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "createTime"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+table {
+  font-size: 100%;
+  border-collapse: collapse;
+  thead {
+    color: $white;
+    background-color: lighten($uiColor, 1);
+  }
+  tbody {
+    tr,td {
+      text-align: center;
+      color: $tbFontColor;
+    }
+    tr,td:first-child {
+      text-align: left;
+    }
+    tr,td:nth-child(2) {
+      text-align: left;
+    }
+  }
+
+}

@@ -1,0 +1,108 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "版本号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"versionCode\",\"required\":\"true\",\"detailLinkVisiable\":\"true\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入线路名称\"}",
+            "fieldConfigCode": "versionCode"
+        },
+        {
+            "showName": "版本名称",
+            "elementCode": "popSelectPartner",
+            "extraParams": "{\"field1\":\"versionName\",\"field2\":\"clientOrgCode\",\"field3\":\"clientOrgCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"readonly1\":\"TRUE\",\"placeholder1\":\"请输入客户\",\"outputKey1\":\"client\",\"outputKey3\":\"client\",\"inputKey1\":\"rates.partnerName,client.orgName\",\"inputKey2\":\"client.code,rates.partnerCode\"}",
+            "fieldConfigCode": "versionName"
+        },
+        {
+            "showName": "关于地址",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"aboutUrl\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入发货单位\"}",
+            "fieldConfigCode": "aboutUrl"
+        },
+        {
+            "showName": "下载地址",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"downloadUrl\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入发货联系人\"}",
+            "fieldConfigCode": "downloadUrl"
+        },
+        {
+            "showName": "版本描述",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"versionDes\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入发货联系电话\"}",
+            "fieldConfigCode": "versionDes"
+        },
+        {
+            "showName": "升级信息",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"updateInfo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输收货单位\"}",
+            "fieldConfigCode": "updateInfo"
+        },
+        {
+            "showName": "备注",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"remark\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入收货联系人\"}",
+            "fieldConfigCode": "remark"
+        },
+        {
+            "showName": "注册协议地址",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"registerAgreementUrl\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入收货联系电话\"}",
+            "fieldConfigCode": "registerAgreementUrl"
+        },
+        {
+            "showName": "有效",
+            "elementCode": "radio",
+            "extraParams": "{\"field1\":\"disabled\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"inputKey1\":\"rates.meterageType\",\"optionsValue1\":[\"false\",\"true\"],\"options1\":[\"启用\",\"禁用\"]}",
+            "fieldConfigCode": "disabled"
+        },
+        {
+            "showName": "个人服务协议地址",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"userServiceAgreementUrl\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入收货联系电话\"}",
+            "fieldConfigCode": "userServiceAgreementUrl"
+        },
+        {
+            "showName": "交易规则协议地址",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"businessRolesAgreementUrl\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入收货联系电话\"}",
+            "fieldConfigCode": "businessRolesAgreementUrl"
+        },
+        {
+            "showName": "金融服务协议地址",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"financialServiceAgreementUrl\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入收货联系电话\"}",
+            "fieldConfigCode": "financialServiceAgreementUrl"
+        },
+        {
+            "showName": "接货指南地址",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"receiptFreightGuideUrl\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入收货联系电话\"}",
+            "fieldConfigCode": "receiptFreightGuideUrl"
+        },
+        {
+            "showName": "赚钱秘笈地址",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"makeMoneyGuideUrl\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入收货联系电话\"}",
+            "fieldConfigCode": "makeMoneyGuideUrl"
+        },
+        {
+            "showName": "文件大小（MB）",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"fileSize\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入收货联系电话\"}",
+            "fieldConfigCode": "fileSize"
+        },
+        {
+            "showName": "是否强制更新",
+            "elementCode": "radio",
+            "extraParams": "{\"field1\":\"mustUpdate\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"optionsValue1\":[\"true\",\"false\"],\"options1\":[\"是\",\"否\"]}",
+            "fieldConfigCode": "mustUpdate"
+        },
+        {
+            "showName": "应用代码",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"appCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入收货联系电话\"}",
+            "fieldConfigCode": "appCode"
+        }
+        
+    ]
+}

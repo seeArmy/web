@@ -1,0 +1,35 @@
+{
+  "code": 200,
+  "content": [
+    {
+      "showName": "司机姓名",
+      "fieldConfigCode": "fullName",
+      "elementCode": "text",
+      "extraParams": "{\"field1\": \"fullName\", \"placeholder1\":\"请输入司机姓名\"}"
+    },
+    {
+      "showName": "手机号",
+      "fieldConfigCode": "phone",
+      "elementCode": "text",
+      "extraParams": "{\"field1\": \"phone\", \"placeholder1\":\"请输入手机号\"}"
+    },
+    {
+      "showName": "审核状态",
+      "fieldConfigCode": "certStatus",
+      "elementCode": "select",
+      "extraParams": "{\"field1\":\"certStatus\",\"default1\":\"authenticating\", \"required\": \"false\", \"optionsValue1\": [\"authenticating\",\"authenticated\",\"failed\"], \"options1\": [\"待审核\",\"审核通过\",\"审核不通过\"]}"
+    },
+    {
+      "showName": "提交时间",
+      "fieldConfigCode": "requestTime",
+      "elementCode": "dateRange",
+      "extraParams": "{\"field1\":\"from_requestTime\",\"field3\":\"to_requestTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"format3\":\"yyyy-MM-dd HH:mm:ss\",\"default2\":\"到\"}"
+    },
+    {
+      "showName": "审核人",
+      "fieldConfigCode": "auditUserFullname",
+      "elementCode": "text",
+      "extraParams": "{\"field1\": \"auditUserFullname\", \"placeholder1\":\"请输入审核人名称\"}"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "公司全称",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"orgFullName\",\"placeholder1\":\"请输入公司全称\"}",
+            "fieldConfigCode": "orgFullName"
+        },
+        {
+            "showName": "伙伴简称",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"orgName\",\"placeholder1\":\"请输入伙伴简称\"}",
+            "fieldConfigCode": "orgName"
+        },
+        {
+            "showName": "标签",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"orgTag\",\"placeholder1\":\"请输入标签\"}",
+            "fieldConfigCode": "orgTag"
+        }
+    ]
+}

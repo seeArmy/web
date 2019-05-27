@@ -1,0 +1,180 @@
+{
+  "code": 200,
+  "content": [
+    {
+      "showName": "车牌号",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"truckLicenseNo\",\"field2\":\"truckCode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入车牌号\"}",
+      "fieldConfigCode": "truckLicenseNo"
+    },
+    {
+      "showName": "牌照颜色",
+      "elementCode": "select",
+      "extraParams": "{\"field1\":\"truckLicenseColor\",\"default1\":\"2\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"optionsValue1\":[\"1\",\"2\"],\"options1\":[\"蓝色\",\"黄色\"]}",
+      "fieldConfigCode": "truckLicenseColor"
+    },
+    {
+      "showName": "牌照类型",
+      "elementCode": "select",
+      "extraParams": "{\"field1\":\"truckLicenseType\",\"default1\":\"truck\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"optionsValue1\":[\"01\",\"02\",\"99\"],\"options1\":[\"大型汽车号牌\",\"小型汽车号牌\",\"其他号牌\"]}",
+      "fieldConfigCode": "truckLicenseType"
+    },
+    {
+      "showName": "车辆种类",
+      "fieldConfigCode": "isTrailer",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"isTrailer\", \"required\": \"false\", \"optionsValue1\": [\"false\",\"true\"], \"options1\": [\"主车\",\"挂车\"]}"
+    },
+    {
+      "showName": "车长",
+      "elementCode": "truckSize",
+      "extraParams": "{\"field1\":\"truckLength\",\"field2\":\"truckLengthUnitCode\",\"default2\":\"meter\",\"checkRule1\":\"[0-9]{1,6}(\\\\.[0-9]{0,3})?\",\"checkMsg1\":\"不超过10位（最多3位小数）\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"10\",\"readonly2\":\"FALSE\",\"placeholder1\":\"请输入车长\",\"inputKey1\":\"truckModel.vclLng\"}",
+      "fieldConfigCode": "truckLength"
+    },
+    {
+      "showName": "载重",
+      "elementCode": "regTonnage",
+      "extraParams": "{\"field1\":\"regTonnage\",\"field2\":\"regTonnageUnitCode\",\"default2\":\"ton\",\"checkRule1\":\"[0-9]{1,6}(\\\\.[0-9]{0,2})?\",\"checkMsg1\":\"不超过9位（最多2位小数）\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"9\",\"readonly2\":\"FALSE\",\"placeholder1\":\"请输入载重\",\"inputKey1\":\"truckModel.ldTn\"}",
+      "fieldConfigCode": "regTonnage"
+    },
+    {
+      "showName": "发动机号码",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"truckEngineNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入发动机号码\"}",
+      "fieldConfigCode": "truckEngineNo"
+    },
+    {
+      "showName": "行驶证过期日期",
+      "elementCode": "date",
+      "extraParams": "{\"field1\":\"drivingLicenseExpirationDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "drivingLicenseExpirationDate"
+    },
+    {
+      "showName": "强险保单号",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"tciNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入交强险保单号\"}",
+      "fieldConfigCode": "tciNo"
+    },
+    {
+      "showName": "强险保险公司",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"tciCompany\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入交强险保险公司\"}",
+      "fieldConfigCode": "tciCompany"
+    },
+    {
+      "showName": "强险过期日期",
+      "elementCode": "date",
+      "extraParams": "{\"field1\":\"tciExpirationDate\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "tciExpirationDate"
+    },
+    {
+      "showName": "商险保单号",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"vicNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入商业险保单号\"}",
+      "fieldConfigCode": "vicNo"
+    },
+    {
+      "showName": "商险保险公司",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"vicCompany\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入商业险保险公司\"}",
+      "fieldConfigCode": "vicCompany"
+    },
+    {
+      "showName": "商险过期日期",
+      "elementCode": "date",
+      "extraParams": "{\"field1\":\"vicExpirationDate\",\"format1\":\"yyyy-MM-dd\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "vicExpirationDate"
+    },
+    {
+      "showName" : "车辆认证结果",
+      "elementCode" : "radio",
+      "extraParams" : "{\"field1\":\"certStatus\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"authenticated\",\"failed\"],\"options1\":[\"认证通过\",\"认证不通过\"]}",
+      "fieldConfigCode" : "certStatus"
+    },
+    {
+      "showName": "备注",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"auditDescription\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"200\",\"placeholder1\":\"请输入备注\"}",
+      "fieldConfigCode": "auditDescription"
+    },
+    {
+      "showName": "行驶证",
+      "elementCode": "file",
+      "extraParams": "{\"field1\":\"drivingLicenseRecourseCode\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"dialogPreview\":\"FALSE\"}",
+      "fieldConfigCode": "drivingLicenseRecourseCode"
+    },
+    {
+      "showName": "交强险保单",
+      "elementCode": "file",
+      "extraParams": "{\"field1\":\"tciResourceCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"dialogPreview\":\"FALSE\"}",
+      "fieldConfigCode": "tciResourceCode"
+    },
+    {
+      "showName": "商业险保单",
+      "elementCode": "file",
+      "extraParams": "{\"field1\":\"vicResourceCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"dialogPreview\":\"FALSE\"}",
+      "fieldConfigCode": "vicResourceCode"
+    },
+    {
+      "showName": "提交公司",
+      "fieldConfigCode": "requestOrgFullname",
+      "elementCode": "label",
+      "extraParams": {"field1": "requestOrgFullname", "required": "false"}
+    },
+    {
+      "showName" : "提交人",
+      "elementCode" : "label",
+      "extraParams" : "{\"field1\":\"requestUserFullname\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode" : "requestUserFullname"
+    },
+    {
+      "showName" : "提交时间",
+      "elementCode" : "label",
+      "extraParams" : "{\"field1\":\"requestTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode" : "requestTime"
+    },
+
+    {
+      "showName": "创建人",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"creatorUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "creatorUser"
+    },
+    {
+      "showName": "创建时间",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "createTime"
+    },
+    {
+      "showName": "道路运输证号",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"transportLicenseNo\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入道路运输证号\",\"inputKey1\":\"truckModel.roadTransport\"}",
+      "fieldConfigCode": "transportLicenseNo"
+    },
+    {
+        "showName": "所有人(业户名称)",
+        "elementCode": "text",
+        "extraParams": "{\"field1\":\"truckOwner\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入车辆所有人\"}",
+        "fieldConfigCode": "truckOwner"
+    },
+    {
+      "showName": "运输经营许可证号",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"vehiclePermitNumber\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"50\",\"placeholder1\":\"请输入运输经营许可证号\"}",
+      "fieldConfigCode": "vehiclePermitNumber"
+    },
+    {
+      "showName": "经营证过期日期",
+      "elementCode": "date",
+      "extraParams": "{\"field1\":\"transportLicenseExpirationDate\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"inputKey1\":\"truckModel.vdtTm\"}",
+      "fieldConfigCode": "transportLicenseExpirationDate"
+    },
+    {
+      "showName": "运输证",
+      "elementCode": "file",
+      "extraParams": "{\"field1\":\"transportLicenseRecourseCode\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"dialogPreview\":\"FALSE\"}",
+      "fieldConfigCode": "transportLicenseRecourseCode"
+    }
+  ]
+}

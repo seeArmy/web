@@ -1,0 +1,101 @@
+{
+    "code": 200,
+    "content": [
+        {
+            "showName": "运单号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"waybillNo\",\"placeholder1\":\"请输入运单号\"}",
+            "fieldConfigCode": "waybillNo"
+        },
+        {
+            "showName": "车牌号",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"truckLicenseNo\",\"placeholder1\":\"请输入车牌号\"}",
+            "fieldConfigCode": "truckLicenseNo"
+        },
+        {
+            "showName": "来源订单",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"logisticsNo\",\"placeholder1\":\"请输入来源订单号\"}",
+            "fieldConfigCode": "logisticsNo"
+        },
+        {
+            "showName": "运单状态",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"waybillStatus\",\"optionsValue1\":[\"unloading\",\"going\",\"finish\",\"cancel\"],\"options1\":[\"待发货\",\"运输中\",\"运输完成\",\"运单取消\"]}",
+            "fieldConfigCode": "waybillStatus"
+        },
+        {
+            "showName": "调车模式",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"scheduleType\",\"default1\":\"self\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"self\",\"platform\"],\"options1\":[\"自助调车\",\"委托调车\"]}",
+            "fieldConfigCode": "scheduleType"
+        },
+        {
+            "showName": "司机确认状态",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"driverConfirmStatus\",\"area\":\"base\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"none\",\"accept\",\"reject\"],\"options1\":[\"未确认\",\"已确认\",\"已拒绝\"]}",
+            "fieldConfigCode": "driverConfirmStatus"
+        },
+        {
+            "showName": "客户",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"clientOrgName\",\"placeholder1\":\"请输入客户名称\"}",
+            "fieldConfigCode": "clientOrg"
+        },
+        {
+            "showName": "主驾",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"driverFullName\",\"field2\":\"driverCode\",\"placeholder1\":\"请输入主驾\"}",
+            "fieldConfigCode": "driverFullName"
+        },
+        {
+            "showName": "单车结算状态",
+            "elementCode": "select",
+            "extraParams": "{\"field1\":\"settleStatus\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"unsettle\",\"pass\",\"settle\"],\"options1\":[\"未结算\",\"结算通过\",\"暂不结算，保存信息\"]}",
+            "fieldConfigCode": "settleStatus"
+        },
+        {
+            "showName": "线路名称",
+            "elementCode": "selectRoute",
+            "extraParams": "{\"field1\":\"routeName\",\"field2\":\"routeCode\",\"placeholder1\":\"请输入线路名称\"}",
+            "fieldConfigCode": "route"
+        },
+        {
+            "showName": "发货单位",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"loadingOrgName\",\"placeholder1\":\"请输入发货单位\"}",
+            "fieldConfigCode": "loadingOrgName"
+        },
+         {
+            "showName": "创建人",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"creatorUsername\",\"placeholder1\":\"请输入创建人\"}",
+            "fieldConfigCode": "creatorUser"
+        },
+        {
+            "showName": "收货单位",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"unloadingOrgName\",\"placeholder1\":\"请输入收货单位\"}",
+            "fieldConfigCode": "unloadingOrgName"
+        },
+        {
+            "showName": "发货地",
+            "elementCode": "selectArea",
+            "extraParams": "{\"field1\":\"loadingProvinceCode\",\"field2\":\"loadingCityCode\",\"field3\":\"loadingCountyCode\"}",
+            "fieldConfigCode": "loadingArea"
+        },
+        {
+            "showName": "收货地",
+            "elementCode": "selectArea",
+            "extraParams": "{\"field1\":\"unloadingProvinceCode\",\"field2\":\"unloadingCityCode\",\"field3\":\"unloadingCountyCode\"}",
+            "fieldConfigCode": "unloadingArea"
+        },
+        {
+            "showName": "标签",
+            "elementCode": "text",
+            "extraParams": "{\"field1\":\"waybillTag\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"maxLength1\":20,\"placeholder1\":\"请输入标签\"}",
+            "fieldConfigCode": "waybillTag"
+        }
+    ]
+}

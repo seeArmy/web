@@ -1,0 +1,19 @@
+{
+    "code": 200,
+    "content": [{
+      "showName": "发货日期",
+      "fieldConfigCode": "departDate",
+      "elementCode": "dateRange",
+      "extraParams": {"field1":"from_departDate","field3":"to_departDate","format1":"yyyy-MM-dd","format3":"yyyy-MM-dd","default2":"到"}
+    }, {
+      "showName": "收货日期",
+      "fieldConfigCode": "returnDate",
+      "elementCode": "dateRange",
+      "extraParams": {"field1":"from_returnDate","field3":"to_returnDate","format1":"yyyy-MM-dd","format3":"yyyy-MM-dd","default2":"到"}
+    }, {
+      "showName": "车牌号",
+      "fieldConfigCode": "truckNo",
+      "elementCode": "text",
+      "extraParams": {"field1": "truckNo"}
+    }]
+}

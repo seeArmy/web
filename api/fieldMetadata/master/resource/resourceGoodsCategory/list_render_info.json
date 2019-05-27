@@ -1,0 +1,47 @@
+{
+  "code": 200,
+  "content": [
+    {
+      "showName": "货物分类编号",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"goodsCategorySystemNo\",\"required\":\"false\",\"detailLinkVisiable\":\"true\"}",
+      "fieldConfigCode": "goodsCategorySystemNo"
+    },
+    {
+      "showName": "货物分类线下编号",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"goodsCategoryNo\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "goodsCategoryNo"
+    },
+    {
+      "showName": "货物分类名称",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"goodsCategoryName\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "goodsCategoryName"
+    },
+    {
+      "showName": "国标货物类型",
+      "elementCode": "select",
+      "extraParams": "{\"field1\":\"goodsCategoryGb\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"90\",\"92\",\"93\",\"94\",\"95\",\"96\",\"999\"],\"options1\":[\"电子产品\",\"商品汽车\",\"冷藏货物\",\"大宗货物\",\"快速消费品\",\"农产品\",\"其他\"],\"inputKey1\":\"logistics.cargoTypeClassificationCode\"}",
+      "fieldConfigCode": "goodsCategoryGb"
+    },
+    {
+      "showName": "计量标准",
+      "elementCode": "radio",
+      "extraParams": "{\"field1\":\"meterageType\",\"default1\":\"ready\",\"readonly1\":\"TRUE\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"ton\",\"cube\",\"item\"],\"options1\":[\"吨\",\"方\",\"件\"]}",
+      "fieldConfigCode": "meterageType"
+    },
+    {
+      "showName": "创建人",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"creatorUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "creatorUser"
+    },
+    {
+      "showName": "创建时间",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "createTime"
+    }
+  ]
+}

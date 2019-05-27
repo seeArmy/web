@@ -1,0 +1,94 @@
+{
+  "code": 200,
+  "content": [
+    {
+      "showName": "合同名称",
+      "elementCode": "text",
+      "extraParams": "{\"field1\":\"contractName\",\"required\":\"true\",\"detailLinkVisiable\":\"false\",\"maxLength1\":\"20\",\"placeholder1\":\"请输入合约名称\"}",
+      "fieldConfigCode": "contractName"
+    },
+    {
+      "showName": "底薪",
+      "elementCode": "money",
+      "extraParams": "{\"field1\":\"baseSalary\",\"default2\":\"元/月\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "baseSalary"
+    },
+    {
+      "showName": "底薪参考值",
+      "elementCode": "money",
+      "extraParams": "{\"field1\":\"referenceBaseSalary\",\"default2\":\"元/月\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"required\":\"TRUE\"}",
+      "fieldConfigCode": "referenceBaseSalary"
+    },
+    {
+      "showName": "是否启用补贴",
+      "elementCode": "radio",
+      "extraParams": "{\"field1\":\"enableAllowances\",\"default1\":\"\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"yes\",\"no\"],\"options1\":[\"启用\",\"禁用\"]}",
+      "fieldConfigCode": "enableAllowances"
+    },
+    {
+      "showName": "试用期提成",
+      "elementCode": "radio",
+      "extraParams": "{\"field1\":\"enableProbationCommission\",\"default1\":\"\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"yes\",\"no\"],\"options1\":[\"有\",\"无\"]}",
+      "fieldConfigCode": "enableProbationCommission"
+    },
+    {
+      "showName": "顶班结算",
+      "elementCode": "money",
+      "extraParams": "{\"field1\":\"relayFee\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"default2\":\"元／车\"}",
+      "fieldConfigCode": "relayFee"
+    },
+    {
+      "showName": " 预提费用",
+      "elementCode": "money",
+      "extraParams": "{\"field1\":\"accruedExpense\",\"default2\":\"% \",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "accruedExpense"
+    },
+    {
+      "showName": "提成方式",
+      "elementCode": "settleSetting",
+      "extraParams":
+      {
+        "field1": "commission",
+        "field2": "commissionUnit",
+        "checkRule1": "\\d{1,6}\\.?\\d{0,3}",
+        "checkMsg1": "请输入合理的值，最多输入三位小数",
+        "required": "false",
+        "detailLinkVisiable": "false",
+        "placeholder1": "请输入",
+        "optionsValue2": ["ton", "truck", "kilometer"],
+        "options2": ["元／吨", "元／车", "元／公里"]
+      },
+      "fieldConfigCode": "commission"
+    },
+    {
+      "showName": " 中介费用",
+      "elementCode": "money",
+      "extraParams": "{\"field1\":\"agencyFee\",\"required\":\"false\",\"default2\":\"元/车\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "agencyFee"
+    },
+    {
+      "showName": "提成单位",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"commissionUnit\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "commissionUnit"
+    },
+    {
+      "showName": "是否启用提成",
+      "elementCode": "radio",
+      "extraParams": "{\"field1\":\"enableCommission\",\"default1\":\"\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"yes\",\"no\"],\"options1\":[\"有\",\"无\"]}",
+      "fieldConfigCode": "enableCommission"
+    },
+    {
+      "showName": "创建人",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"creatorUsername\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "creatorUser"
+    },
+    {
+      "showName": "创建时间",
+      "elementCode": "label",
+      "extraParams": "{\"field1\":\"createTime\",\"format1\":\"yyyy-MM-dd HH:mm:ss\",\"required\":\"false\",\"detailLinkVisiable\":\"false\"}",
+      "fieldConfigCode": "createTime"
+    }
+  ]
+}

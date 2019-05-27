@@ -1,0 +1,146 @@
+// 车辆轨迹
+
+@import '../assets/sass/rltx.scss';
+@import '../assets/sass/rl-pagination.scss';
+
+$themeColor: #0054a7 !default;
+$white: #ffffff !default;
+
+.truck-gps-page {
+    color: #666;
+    font-size: 12px;
+    line-height: 22px;
+    a {
+        color: #666;
+    }
+    .red {
+        color: $red;
+    }
+    .green {
+        color: $green;
+    }
+    .blue {
+        color: $blue;
+    }
+}
+
+/*--header--*/
+.header {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    border-bottom: solid 2px $uiColor;
+    background-color: $bgLight;
+
+}
+
+.el-form--inline .el-form-item {
+    margin-bottom: 0;
+}
+
+.el-form--inline .el-form-item__content {
+    vertical-align: middle;
+}
+
+.el-date-editor {
+    width: 100% !important;
+}
+
+.line {
+    text-align: center;
+}
+
+.map {
+    position: absolute;
+    top: 42px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #f6f6f6;
+}
+
+.tradialog {
+    .el-form-item__label {
+        color: #999;
+        &::after {
+            content: '：';
+            display: inline-block;
+        }
+    }
+}
+
+.gps-search {
+  .el-date-editor--datetime {
+    display: inline-block;
+    width: 194px !important;
+  }
+  .info-list {
+    margin-right: 20px !important;
+  }
+  .info-item {
+    margin-right: 20px;
+    font-size: 14px;
+    color: #48576a;
+  }
+}
+
+@media (max-width: 1366px) {
+   .el-form--inline .el-form-item {
+        margin-right: 5px;
+   }
+   .el-date-editor {
+        // width: 160px !important;
+   }
+   .gps-setting {
+        .el-button {
+            padding: 1px 5px !important;
+        }
+   }
+}
+
+
+.theme-blue {
+  .header {
+    border-bottom-color: $themeColor;
+  }
+  .el-input__inner, .el-textarea__inner {
+    &:hover {
+      border-color: $themeColor;
+    }
+    &:focus {
+      background-color: lighten($themeColor, 65%);
+      color: $themeColor;
+      border-color: $themeColor;
+      box-shadow: 0 0 3px lighten($themeColor, 30%);
+    }
+  }
+  .el-button--default {
+        &:hover, &:focus {
+            border-color: $themeColor !important;
+            color: $themeColor !important;
+        }
+  }
+  .el-button--primary {
+    background-color: $themeColor !important;
+    border-color: $themeColor !important;
+    &:hover, &:focus {
+      color: $white !important;
+      background-color: lighten($themeColor, 10%) !important;
+      border-color: lighten($themeColor, 10%) !important;
+    }
+  }
+    .el-date-table td.current:not(.disabled), .el-date-table td.end-date, .el-date-table td.start-date {
+        background-color: $themeColor !important;
+    }
+    .el-picker-panel__link-btn, .el-time-panel__btn.confirm, .el-picker-panel__icon-btn:hover, .el-date-picker__header-label:hover, .el-date-picker__header-label.active {
+        color: $themeColor;
+    }
+    .el-time-panel__content::before, .el-time-panel__content::after {
+        background-color: $themeColor;
+    }
+    
+}

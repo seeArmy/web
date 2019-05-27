@@ -1,0 +1,22 @@
+{
+  "code": 200,
+  "content": [{
+    "showName": "归属年月",
+    "elementCode": "date",
+    "extraParams": "{\"field1\":\"attributionDate\",\"format1\":\"yyyy-MM\"}",
+    "fieldConfigCode": "attributionDate"
+  },
+   {
+    "showName": "客户",
+    "elementCode": "text",
+    "extraParams": "{\"field1\":\"payerOrgName\",\"placeholder1\":\"请输入客户名称\"}",
+    "fieldConfigCode": "payerOrgName"
+  },{
+    "showName": "税目类型",
+    "elementCode": "select",
+    "extraParams": "{\"field1\":\"vatType\",\"default1\":\"unconfirm\",\"required\":\"false\",\"detailLinkVisiable\":\"false\",\"optionsValue1\":[\"transport\",\"agency\"],\"options1\":[\"运输费\",\"代理费\"]}",
+    "fieldConfigCode": "vatType"
+  }]
+}
+
+
